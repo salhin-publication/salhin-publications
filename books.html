@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>همه کتاب‌ها | انتشارات صالحین</title>
+
+<meta name="description"
+content="فهرست کامل کتاب‌های انتشارات صالحین در حوزه‌های ادبیات، علم و دانش، دین، فرهنگ و میراث بشری.">
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f7f7f5;
+    color: #222;
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 15px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.logo span {
+
+    display: block;
+
+    direction: ltr;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+nav {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+
+    padding: 6px 8px;
+
+    font-size: 14px;
+}
+
+nav a:hover {
+
+    color: #8a5a25;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    background:
+    linear-gradient(
+        135deg,
+        #eee8dc,
+        #ffffff
+    );
+
+    text-align: center;
+
+    padding: 70px 25px;
+}
+
+.hero h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 5px;
+}
+
+.hero .english {
+
+    direction: ltr;
+
+    color: #777;
+
+    font-size: 19px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #555;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 60px 25px;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filter-title {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.filter-title h2 {
+
+    font-size: 28px;
+}
+
+.filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 50px;
+}
+
+.filter {
+
+    border: 1px solid #aaa;
+
+    background: white;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+.filter:hover {
+
+    background: #333;
+
+    color: white;
+}
+
+
+/* =========================
+   BOOK GRID
+========================= */
+
+.books {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   BOOK CARD
+========================= */
+
+.book {
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.book:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.08);
+}
+
+
+/* COVER */
+
+.cover {
+
+    height: 360px;
+
+    background: #eee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #888;
+
+    text-align: center;
+}
+
+
+/* BOOK CONTENT */
+
+.book-content {
+
+    padding: 22px;
+}
+
+.category {
+
+    font-size: 13px;
+
+    color: #777;
+
+    margin-bottom: 7px;
+}
+
+.book h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 7px;
+}
+
+.author {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+.description {
+
+    color: #666;
+
+    font-size: 14px;
+
+    min-height: 70px;
+}
+
+
+/* BUTTON */
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    background: #333;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+.button:hover {
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.info {
+
+    margin-top: 70px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 35px;
+
+    text-align: center;
+}
+
+.info h2 {
+
+    margin-bottom: 15px;
+}
+
+.info p {
+
+    color: #666;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 50px;
+}
+
+footer p {
+
+    margin: 5px;
+}
+
+.footer-english {
+
+    direction: ltr;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px) {
+
+    .books {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width:650px) {
+
+    .header-inner {
+
+        flex-direction: column;
+    }
+
+    .books {
+
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="header-inner">
+
+
+<div class="logo">
+
+انتشارات صالحین
+
+<span>
+Salihin Publications
+</span>
+
+</div>
+
+
+<nav>
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="literature.html">
+ادبیات
+</a>
+
+<a href="science.html">
+علم و دانش
+</a>
+
+<a href="culture.html">
+دین و فرهنگ
+</a>
+
+<a href="books.html">
+همه کتاب‌ها
+</a>
+
+<a href="iran.html">
+خرید ایران
+</a>
+
+<a href="international.html">
+International
+</a>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<div class="hero">
+
+<h1>
+همه کتاب‌ها
+</h1>
+
+<div class="english">
+All Books
+</div>
+
+<p>
+
+فهرست کتاب‌های انتشارات صالحین
+در حوزه‌های ادبی، علمی،
+فرهنگی و دینی.
+
+</p>
+
+</div>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="container">
+
+
+<!-- FILTER -->
+
+<div class="filter-title">
+
+<h2>
+انتخاب بخش
+</h2>
+
+</div>
+
+
+<div class="filters">
+
+
+<a
+class="filter"
+href="books.html">
+
+همه کتاب‌ها
+
+</a>
+
+
+<a
+class="filter"
+href="literature.html">
+
+ادبیات و هنر
+
+</a>
+
+
+<a
+class="filter"
+href="science.html">
+
+علم و دانش
+
+</a>
+
+
+<a
+class="filter"
+href="culture.html">
+
+دین، فرهنگ و میراث بشری
+
+</a>
+
+
+</div>
+
+
+
+<!-- =========================
+     BOOKS
+========================= -->
+
+<div class="books">
+
+
+<!-- BOOK 1 -->
+
+<div class="book">
+
+
+<div class="cover">
+
+تصویر جلد کتاب اول
+
+</div>
+
+
+<div class="book-content">
+
+
+<div class="category">
+
+علم و دانش
+
+</div>
+
+
+<h3>
+
+عنوان کتاب اول
+
+</h3>
+
+
+<div class="author">
+
+نویسنده: نام نویسنده
+
+</div>
+
+
+<p class="description">
+
+معرفی کوتاه کتاب در این قسمت
+قرار می‌گیرد.
+
+</p>
+
+
+<a
+class="button"
+href="book1.html">
+
+مشاهده کتاب
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- BOOK 2 -->
+
+<div class="book">
+
+
+<div class="cover">
+
+تصویر جلد کتاب دوم
+
+</div>
+
+
+<div class="book-content">
+
+
+<div class="category">
+
+ادبیات و هنر
+
+</div>
+
+
+<h3>
+
+عنوان کتاب دوم
+
+</h3>
+
+
+<div class="author">
+
+نویسنده: نام نویسنده
+
+</div>
+
+
+<p class="description">
+
+معرفی کوتاه کتاب در این قسمت
+قرار می‌گیرد.
+
+</p>
+
+
+<a
+class="button"
+href="#">
+
+مشاهده کتاب
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- BOOK 3 -->
+
+<div class="book">
+
+
+<div class="cover">
+
+تصویر جلد کتاب سوم
+
+</div>
+
+
+<div class="book-content">
+
+
+<div class="category">
+
+دین، فرهنگ و میراث بشری
+
+</div>
+
+
+<h3>
+
+عنوان کتاب سوم
+
+</h3>
+
+
+<div class="author">
+
+نویسنده: نام نویسنده
+
+</div>
+
+
+<p class="description">
+
+معرفی کوتاه کتاب در این قسمت
+قرار می‌گیرد.
+
+</p>
+
+
+<a
+class="button"
+href="#">
+
+مشاهده کتاب
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- BOOK 4 -->
+
+<div class="book">
+
+
+<div class="cover">
+
+تصویر جلد کتاب چهارم
+
+</div>
+
+
+<div class="book-content">
+
+
+<div class="category">
+
+علم و دانش
+
+</div>
+
+
+<h3>
+
+عنوان کتاب چهارم
+
+</h3>
+
+
+<div class="author">
+
+نویسنده: نام نویسنده
+
+</div>
+
+
+<p class="description">
+
+معرفی کوتاه کتاب در این قسمت
+قرار می‌گیرد.
+
+</p>
+
+
+<a
+class="button"
+href="#">
+
+مشاهده کتاب
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- BOOK 5 -->
+
+<div class="book">
+
+
+<div class="cover">
+
+تصویر جلد کتاب پنجم
+
+</div>
+
+
+<div class="book-content">
+
+
+<div class="category">
+
+ادبیات و هنر
+
+</div>
+
+
+<h3>
+
+عنوان کتاب پنجم
+
+</h3>
+
+
+<div class="author">
+
+نویسنده: نام نویسنده
+
+</div>
+
+
+<p class="description">
+
+معرفی کوتاه کتاب در این قسمت
+قرار می‌گیرد.
+
+</p>
+
+
+<a
+class="button"
+href="#">
+
+مشاهده کتاب
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<!-- BOOK 6 -->
+
+<div class="book">
+
+
+<div class="cover">
+
+تصویر جلد کتاب ششم
+
+</div>
+
+
+<div class="book-content">
+
+
+<div class="category">
+
+دین، فرهنگ و میراث بشری
+
+</div>
+
+
+<h3>
+
+عنوان کتاب ششم
+
+</h3>
+
+
+<div class="author">
+
+نویسنده: نام نویسنده
+
+</div>
+
+
+<p class="description">
+
+معرفی کوتاه کتاب در این قسمت
+قرار می‌گیرد.
+
+</p>
+
+
+<a
+class="button"
+href="#">
+
+مشاهده کتاب
+
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- =========================
+     INFORMATION
+========================= -->
+
+<div class="info">
+
+
+<h2>
+کتاب‌های انتشارات صالحین
+</h2>
+
+
+<p>
+
+در این صفحه تمامی آثار منتشرشده
+انتشارات صالحین قرار خواهند گرفت.
+
+هر کتاب دارای صفحه اختصاصی،
+معرفی کامل، اطلاعات کتاب،
+نسخه چاپی و نسخه الکترونیکی
+خواهد بود.
+
+</p>
+
+
+</div>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<p>
+© Salihin Publications
+</p>
+
+<p>
+انتشارات صالحین
+</p>
+
+<p class="footer-english">
+Literature • Science • Culture • Religion
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
