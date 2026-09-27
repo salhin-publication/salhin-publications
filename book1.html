@@ -1,951 +1,1164 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>و این کتاب عشق است؛ گالاتئا و پیگمالیون | انتشارات صالحین</title>
+<title>و این کتاب عشق است؛ گالاتئا و پیگمالیون | انتشارات صالحین</title>
 
-    <meta name="description"
-          content="و این کتاب عشق است؛ گالاتئا و پیگمالیون، رمانی از جلال‌الدین ولی‌الله، منتشر شده توسط انتشارات صالحین.">
+<meta name="description"
+content="و این کتاب عشق است؛ گالاتئا و پیگمالیون، رمانی از جلال‌الدین ولی‌الله، منتشر شده توسط انتشارات صالحین.">
 
-    <style>
-        * {
-            box-sizing: border-box;
-    
-        body {
-            margin: 0;
-            font-family: Tahoma, Arial, sans-serif;
-            background: #f7f5f0;
-            color: #333;
-            line-height: 2;
-        }
+<style>
+*{box-sizing:border-box}
 
-        header {
-            background: #243447;
-            color: white;
-            padding: 18px 5%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        }
+body{
+margin:0;
+font-family:Tahoma,Arial,sans-serif;
+background:#f7f5f0;
+color:#333;
+line-height:2;
+}
 
-        .header-inner {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
+header{
+background:#243447;
+color:white;
+padding:18px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
 
-        .logo {
-            font-size: 23px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
+.header-inner{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
 
-        .logo span {
-            display: block;
-            font-size: 13px;
-            font-weight: normal;
-            direction: ltr;
-            text-align: right;
-            margin-top: 2px;
-        }
+.logo{
+font-size:23px;
+font-weight:bold;
+white-space:nowrap;
+}
 
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            justify-content: center;
-        }
+.logo span{
+display:block;
+font-size:13px;
+font-weight:normal;
+direction:ltr;
+text-align:right;
+margin-top:2px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 7px 10px;
-            border-radius: 6px;
-            font-size: 14px;
-        }
+nav{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+justify-content:center;
+}
 
-        nav a:hover {
-            background: rgba(255,255,255,0.15);
-        }
+nav a{
+color:white;
+text-decoration:none;
+padding:7px 10px;
+border-radius:6px;
+font-size:14px;
+}
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
+nav a:hover{
+background:rgba(255,255,255,.15);
+}
 
-        .hero {
-            background: linear-gradient(135deg, #34495e, #6d4c41);
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
 
-        .hero h1 {
-            margin: 0 0 10px;
-            font-size: 38px;
-        }
+.hero{
+background:linear-gradient(135deg,#34495e,#6d4c41);
+color:white;
+padding:70px 20px;
+text-align:center;
+}
 
-        .hero h2 {
-            margin: 0;
-            font-size: 23px;
-            font-weight: normal;
-        }
+.hero h1{
+margin:0 0 10px;
+font-size:38px;
+}
 
-        .author {
-            margin-top: 20px;
-            font-size: 18px;
-        }
+.hero h2{
+margin:0;
+font-size:23px;
+font-weight:normal;
+}
 
-        .book-main {
-            display: grid;
-            grid-template-columns: 320px 1fr;
-            gap: 45px;
-            align-items: start;
-            margin: 50px auto;
-        }
+.author{
+margin-top:20px;
+font-size:18px;
+}
 
-        .cover-box {
-            background: white;
-            padding: 18px;
-            border-radius: 12px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.12);
-            text-align: center;
-        }
+.book-main{
+display:grid;
+grid-template-columns:320px 1fr;
+gap:45px;
+align-items:start;
+margin:50px auto;
+}
 
-        .cover-box img {
-            width: 100%;
-            max-width: 280px;
-            height: auto;
-            display: block;
-            margin: auto;
-            border-radius: 5px;
-        }
+.cover-box{
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 4px 18px rgba(0,0,0,.12);
+text-align:center;
+}
 
-        .cover-placeholder {
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #e9e4dc;
-            color: #777;
-            border-radius: 5px;
-            padding: 20px;
-        }
+.cover-box img{
+width:100%;
+max-width:280px;
+height:auto;
+display:block;
+margin:auto;
+border-radius:5px;
+}
 
-        .book-intro {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-        }
+.book-intro{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
 
-        .book-intro h2 {
-            margin-top: 0;
-            color: #34495e;
-        }
+.book-intro h2{
+margin-top:0;
+color:#34495e;
+}
 
-        section {
-            margin: 45px auto;
-        }
+section{
+margin:45px auto;
+}
 
-        .section-title {
-            font-size: 27px;
-            color: #34495e;
-            border-right: 5px solid #6d4c41;
-            padding-right: 15px;
-            margin-bottom: 25px;
-        }
+.section-title{
+font-size:27px;
+color:#34495e;
+border-right:5px solid #6d4c41;
+padding-right:15px;
+margin-bottom:25px;
+}
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
+.info-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
 
-        .info-item {
-            background: white;
-            padding: 15px 18px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
+.info-item{
+background:white;
+padding:15px 18px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
 
-        .info-item strong {
-            color: #34495e;
-        }
+.info-item strong{
+color:#34495e;
+}
 
-        .toc {
-            background: white;
-            padding: 25px 30px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-        }
+.toc{
+background:white;
+padding:25px 30px;
+border-radius:12px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
 
-        .toc details summary {
-            cursor: pointer;
-            background: #34495e;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 7px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+.toc details summary{
+cursor:pointer;
+background:#34495e;
+color:white;
+padding:14px 18px;
+border-radius:7px;
+font-weight:bold;
+margin-bottom:20px;
+}
 
-        .toc ol {
-            padding-right: 25px;
-            margin: 0;
-        }
+.toc ol{
+padding-right:25px;
+margin:0;
+}
 
-        .toc li {
-            margin-bottom: 8px;
-        }
+.toc li{
+margin-bottom:8px;
+}
 
-        .toc li::marker {
-            color: #6d4c41;
-        }
+.toc li::marker{
+color:#6d4c41;
+}
 
-        .author-box,
-        .copyright-box,
-        .description-box {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.07);
-        }
+.author-box,
+.copyright-box,
+.description-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 15px rgba(0,0,0,.07);
+}
 
-        .purchase-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
+.description-box p{
+text-align:justify;
+margin:0 0 20px;
+}
 
-        .purchase-card {
-            background: white;
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-            border-top: 5px solid #6d4c41;
-        }
+.description-box h3{
+color:#34495e;
+margin-top:30px;
+}
 
-        .purchase-card h3 {
-            margin-top: 0;
-            color: #34495e;
-        }
+.quote{
+font-size:18px;
+font-weight:bold;
+text-align:center!important;
+padding:15px 20px;
+margin:25px 0!important;
+background:#f1ede6;
+border-right:4px solid #6d4c41;
+border-radius:6px;
+}
 
-        .price {
-            font-size: 22px;
-            font-weight: bold;
-            color: #7a4f35;
-            margin: 15px 0;
-        }
+.purchase-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
 
-        .button {
-            display: inline-block;
-            padding: 10px 18px;
-            margin: 5px 3px;
-            background: #34495e;
-            color: white;
-            text-decoration: none;
-            border-radius: 7px;
-        }
+.purchase-card{
+background:white;
+padding:28px;
+border-radius:12px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+border-top:5px solid #6d4c41;
+}
 
-        .button:hover {
-            background: #1f2f3d;
-        }
+.purchase-card h3{
+margin-top:0;
+color:#34495e;
+}
 
-        .button.secondary {
-            background: #6d4c41;
-        }
+.price{
+font-size:22px;
+font-weight:bold;
+color:#7a4f35;
+margin:15px 0;
+}
 
-        .note {
-            background: #f1ede6;
-            border-right: 4px solid #6d4c41;
-            padding: 15px 20px;
-            margin-top: 20px;
-            border-radius: 6px;
-        }
+.button{
+display:inline-block;
+padding:10px 18px;
+margin:5px 3px;
+background:#34495e;
+color:white;
+text-decoration:none;
+border-radius:7px;
+}
 
-        .copyright-box {
-            border-right: 5px solid #8b0000;
-        }
+.button:hover{
+background:#1f2f3d;
+}
 
-        footer {
-            background: #243447;
-            color: white;
-            margin-top: 60px;
-            padding: 35px 20px;
-            text-align: center;
-        }
+.button.secondary{
+background:#6d4c41;
+}
 
-        footer a {
-            color: white;
-        }
+.note{
+background:#f1ede6;
+border-right:4px solid #6d4c41;
+padding:15px 20px;
+margin-top:20px;
+border-radius:6px;
+}
 
-        @media (max-width: 850px) {
+.copyright-box{
+border-right:5px solid #8b0000;
+}
 
-            .header-inner {
-                flex-direction: column;
-            }
+footer{
+background:#243447;
+color:white;
+margin-top:60px;
+padding:35px 20px;
+text-align:center;
+}
 
-            .book-main {
-                grid-template-columns: 1fr;
-            }
+footer a{
+color:white;
+}
 
-            .cover-box {
-                max-width: 360px;
-                margin: auto;
-                width: 100%;
-            }
+@media(max-width:850px){
+.header-inner{flex-direction:column}
+.book-main{grid-template-columns:1fr}
+.cover-box{
+max-width:360px;
+margin:auto;
+width:100%;
+}
+.info-grid,
+.purchase-grid{
+grid-template-columns:1fr;
+}
+.hero h1{font-size:29px}
+.hero h2{font-size:19px}
+}
 
-            .info-grid,
-            .purchase-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: 29px;
-            }
-
-            .hero h2 {
-                font-size: 19px;
-            }
-        }
-
-        @media (max-width: 550px) {
-
-            nav {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            nav a {
-                text-align: center;
-            }
-
-            .book-intro {
-                padding: 20px;
-            }
-
-            .section-title {
-                font-size: 23px;
-            }
-        }
-    </style>
+@media(max-width:550px){
+nav{
+flex-direction:column;
+width:100%;
+}
+nav a{text-align:center}
+.book-intro{padding:20px}
+.section-title{font-size:23px}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <div class="header-inner">
+<div class="header-inner">
 
-        <div class="logo">
-            انتشارات صالحین
-            <span>Salihin Publications</span>
-        </div>
+<div class="logo">
+انتشارات صالحین
+<span>Salihin Publications</span>
+</div>
 
-        <nav>
-            <a href="index.html">خانه</a>
-            <a href="literature.html">ادبیات و هنر</a>
-            <a href="science.html">علم و دانش</a>
-            <a href="culture.html">دین و فرهنگ</a>
-            <a href="books.html">همه کتاب‌ها</a>
-            <a href="iran.html">خرید در ایران</a>
-            <a href="international.html">فروش جهانی</a>
-        </nav>
+<nav>
+<a href="index.html">خانه</a>
+<a href="literature.html">ادبیات و هنر</a>
+<a href="science.html">علم و دانش</a>
+<a href="culture.html">دین و فرهنگ</a>
+<a href="books.html">همه کتاب‌ها</a>
+<a href="iran.html">خرید در ایران</a>
+<a href="international.html">فروش جهانی</a>
+</nav>
 
-    </div>
+</div>
 </header>
 
 
-<!-- HERO -->
-
 <div class="hero">
 
-    <h1>و این کتاب عشق است</h1>
+<h1>و این کتاب عشق است</h1>
 
-    <h2>گالاتئا و پیگمالیون</h2>
+<h2>گالاتئا و پیگمالیون</h2>
 
-    <div class="author">
-        نوشتهٔ جلال‌الدین ولی‌الله
-    </div>
+<div class="author">
+نوشتهٔ جلال‌الدین ولی‌الله
+</div>
 
 </div>
 
 
 <main class="container">
 
+
 <!-- BOOK INTRO -->
 
 <div class="book-main">
 
-    <div class="cover-box">
-
-        <img src="images/galatea-pygmalion.jpg"
-             alt="جلد کتاب و این کتاب عشق است؛ گالاتئا و پیگمالیون">
-
-    </div>
-
-    <div class="book-intro">
-
-        <h2>و این کتاب عشق است؛ گالاتئا و پیگمالیون</h2>
-
-        <p>
-            <strong>گالاتئا و پیگمالیون</strong>
-        </p>
-
-        <p>
-            رمانی از <strong>جلال‌الدین ولی‌الله</strong>
-            منتشرشده توسط <strong>انتشارات صالحین</strong>.
-        </p>
-
-        <div class="note">
-            <strong>یادداشت بالای عنوان:</strong>
-            و این کتاب عشق است
-        </div>
-
-        <div class="note">
-            <strong>یادداشت عنوان دیگر:</strong>
-            و این کتاب عشق است: گالاتئا و پیگمالیون
-        </div>
-
-    </div>
-
-  
-
-            <h2>و این کتاب عشق است؛ گالاتئا و پیگمالیون</h2>
-
-            <p>
-                <strong>گالاتئا و پیگمالیون</strong>
-            </p>
-
-            <p>
-                رمانی از <strong>جلال‌الدین ولی‌الله</strong>
-                منتشرشده توسط <strong>انتشارات صالحین</strong>.
-            </p>
-
-            <div class="note">
-                <strong>یادداشت بالای عنوان:</strong>
-                و این کتاب عشق است
-            </div>
-
-            <div class="note">
-                <strong>یادداشت عنوان دیگر:</strong>
-                و این کتاب عشق است: گالاتئا و پیگمالیون
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- DESCRIPTION -->
-
-    <section>
-
-        <h2 class="section-title">معرفی کتاب</h2>
-
-        <div class="description-box">
-
-            <p>
-                <strong>و این کتاب عشق است؛ گالاتئا و پیگمالیون</strong>
-            </p>
-
-            <p>
-                این بخش به معرفی رسمی رمان اختصاص دارد.
-                متن کامل معرفی کتاب می‌تواند در این قسمت قرار گیرد.
-            </p>
-
-            <p>
-                <strong>توجه:</strong>
-                متن معرفی نهایی کتاب پس از دریافت متن رسمی نویسنده
-                در این قسمت جایگزین خواهد شد.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- BOOK INFORMATION -->
-
-    <section>
-
-        <h2 class="section-title">مشخصات کتاب</h2>
-
-        <div class="info-grid">
-
-            <div class="info-item">
-                <strong>عنوان:</strong>
-                و این کتاب عشق است؛ گالاتئا و پیگمالیون
-            </div>
-
-            <div class="info-item">
-                <strong>نویسنده:</strong>
-                جلال‌الدین ولی‌الله
-            </div>
-
-            <div class="info-item">
-                <strong>ناشر:</strong>
-                انتشارات صالحین
-            </div>
-
-            <div class="info-item">
-                <strong>محل نشر:</strong>
-                تهران
-            </div>
-
-            <div class="info-item">
-                <strong>سال نشر:</strong>
-                ۱۴۰۵
-            </div>
-
-            <div class="info-item">
-                <strong>نوبت چاپ:</strong>
-                اول
-            </div>
-
-            <div class="info-item">
-                <strong>تعداد صفحات:</strong>
-                ۵۵۰ صفحه
-            </div>
-
-            <div class="info-item">
-                <strong>قطع:</strong>
-                وزیری
-            </div>
-
-            <div class="info-item">
-                <strong>نوع جلد:</strong>
-                جلد براق برجسته
-            </div>
-
-            <div class="info-item">
-                <strong>تیراژ:</strong>
-                ۱۰٬۰۰۰ نسخه
-            </div>
-
-            <div class="info-item">
-                <strong>شابک:</strong>
-                978-622-87864-9-0
-            </div>
-
-            <div class="info-item">
-                <strong>موضوع:</strong>
-                رمان بزرگسالان و کودکان
-            </div>
-
-            <div class="info-item">
-                <strong>رده‌بندی کنگره:</strong>
-                PIR 8363
-            </div>
-
-            <div class="info-item">
-                <strong>شماره کتابشناسی ملی:</strong>
-                ۱۰۵۰۵۹۹۶
-            </div>
-
-            <div class="info-item">
-                <strong>رده‌بندی دیویی:</strong>
-                ۸۳۶۳ فا
-            </div>
-
-            <div class="info-item">
-                <strong>زبان:</strong>
-                فارسی
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- TABLE OF CONTENTS -->
-
-    <section>
-
-        <h2 class="section-title">فهرست قصه‌ها و مطالب</h2>
-
-        <div class="toc">
-
-            <details>
-
-                <summary>
-                    نمایش / پنهان کردن فهرست کامل کتاب
-                </summary>
-
-                <ol>
-
-                    <li>قصه عشق</li>
-                    <li>پیگمالیون</li>
-                    <li>کودکی پیگمالیون</li>
-                    <li>قصه ارواح در پشت بام حمام</li>
-                    <li>پدر بزرگ و مادر بزرگ</li>
-                    <li>قصه دنیای شیرین</li>
-                    <li>حکمت پدر بزرگ</li>
-                    <li>قصه‌های مادر بزرگ</li>
-                    <li>قصه ماهرو و آرش</li>
-                    <li>دنیای قصه‌ها</li>
-                    <li>عشق در نگاه پدر بزرگ</li>
-                    <li>عقل و عشق در نظر مادر بزرگ</li>
-                    <li>چهارده سالگی پیگمالیون</li>
-                    <li>مروارید</li>
-                    <li>قصه عروسک مروارید</li>
-                    <li>داستان مرگ پیگمالیون</li>
-                    <li>قصه شهر ارواح</li>
-                    <li>قصه عروسکی برای مروارید</li>
-                    <li>شکوه مادر</li>
-                    <li>خواهری چون برلیان</li>
-                    <li>برلیان جواهری در کنار برادر</li>
-                    <li>سحر کلام</li>
-                    <li>قدرت قصه</li>
-                    <li>خبر آمدن مروارید</li>
-                    <li>عشق از دیدگاه برلیان</li>
-                    <li>قصه عشق مروارید</li>
-                    <li>فراغ مروارید</li>
-                    <li>خیال مروارید</li>
-                    <li>قصه عشق آرتمیسیا</li>
-                    <li>رویارویی با عالیجناب عشق</li>
-                    <li>شهر چشمان آرتیمسیا</li>
-                    <li>خواب و خیال آرتمیسیا</li>
-                    <li>خواستگاری آرتیمسیا</li>
-                    <li>قصه عشق هلن</li>
-                    <li>جلوه هلن</li>
-                    <li>چگونه می‌توان یک دوشیزه را به خود علاقمند کرد؟</li>
-                    <li>دیدار با هلن</li>
-                    <li>داستان هلن، زیباترین زن دنیا</li>
-                    <li>اسطوره هلن، شاهزاده دو سرزمین</li>
-                    <li>زیبایی از نظر پیگمالیون</li>
-                    <li>درد فراق هلن</li>
-                    <li>یاد هلن</li>
-                    <li>باغ بهشت</li>
-                    <li>هلن در کشتی</li>
-                    <li>پدرو</li>
-                    <li>هجران هلن</li>
-                    <li>هیاهوی هلن در کشتی</li>
-                    <li>در فراغ هلن</li>
-                    <li>نامه‌ای از هلن</li>
-                    <li>قصه عشق رویا</li>
-                    <li>رویا</li>
-                    <li>نمایشنامه ازدواج تولد مکرر</li>
-                    <li>مسئله این است کدامیک؟ دارا یا زارا؟</li>
-                    <li>رویا در چشمان پیگمالیون</li>
-                    <li>نقش رویا</li>
-                    <li>دیدار رویا</li>
-                    <li>نشان عشق، والاترین نشان</li>
-                    <li>احساس رویا</li>
-                    <li>احساس پیگما</li>
-                    <li>دیدار برلیان با رویا</li>
-                    <li>پایان رویا</li>
-                    <li>قصه عشق کراتیا</li>
-                    <li>مردمان شهر گزنوس</li>
-                    <li>گستره عشق</li>
-                    <li>مردمان گزنوس چه کسانی بودند؟</li>
-                    <li>عشق و آزادی</li>
-                    <li>پیگمالیون در شهر گزنوس</li>
-                    <li>پدیده‌ای به نام کراتیا</li>
-                    <li>جلوه نیکوکراتیا</li>
-                    <li>گفتگوی کراتیا و پیگما</li>
-                    <li>مرام کراتیا</li>
-                    <li>نقشی از کراتیا</li>
-                    <li>دوستی دیرینه کراتیا و برلیان</li>
-                    <li>هماورد کراتیا و پیگما</li>
-                    <li>کراتیا که بود؟!</li>
-                    <li>خیال کراتیا</li>
-                    <li>جزیره ناشناخته‌ای به نام کراتیا</li>
-                    <li>عشق در نظر کراتیا</li>
-                    <li>جهان‌گستری عشق</li>
-                    <li>اسرار نهان</li>
-                    <li>زن کودن</li>
-                    <li>علت عشق</li>
-                    <li>قصه چرخ گردون</li>
-                    <li>فیلفوس</li>
-                    <li>دیدار با فیلفوس</li>
-                    <li>شب‌نشینی نخبگان</li>
-                    <li>آیا در عالم الهه‌ای هست؟</li>
-                    <li>قصه عشق لیلی و راز فیلفوس</li>
-                    <li>قصه هیرون و کیمیون</li>
-                    <li>دو عامل موفقیت</li>
-                    <li>چشمه شفابخش</li>
-                    <li>قصه هرون مخوف و چشمه مرگ</li>
-                    <li>قصه عشق هیرون و ایوا</li>
-                    <li>باران عشق نفرت را می‌زداید</li>
-                    <li>دره مرگ</li>
-                    <li>تداوم عشق ایرا و خوشبختی هیرون</li>
-                    <li>مرگ عشق در هیرون و دگردیسی او</li>
-                    <li>قصه سوزناک فراق ایوا</li>
-                    <li>مستی عشق</li>
-                    <li>سزای مجرمین</li>
-                    <li>هیرون مخوف</li>
-                    <li>قصه عشق فدرا</li>
-                    <li>عشق به مردم</li>
-                    <li>یک شب هولناک</li>
-                    <li>سدبانان</li>
-                    <li>هفاستوس</li>
-                    <li>قیام هفاستوس</li>
-                    <li>اواغوراس</li>
-                    <li>خواستگاری کراتیا</li>
-                    <li>در تمنای کراتیا</li>
-                    <li>عشق و هنر</li>
-                    <li>شکوه کراتیا</li>
-                    <li>عشق و فهم درست</li>
-                    <li>قصه عشق الکترا</li>
-                    <li>احساس الکترا</li>
-                    <li>جلوه الکترا</li>
-                    <li>شرح عقل و عشق</li>
-                    <li>عشق خواهر به برادر</li>
-                    <li>برلیان و پیگما</li>
-                    <li>الکترا نماد عشق و عقل</li>
-                    <li>اندیشمندان زمین</li>
-                    <li>قصه بت چین و امپراطور لیو هنگ</li>
-                    <li>سرانجام عشق بت چین و امپراطور چین</li>
-                    <li>بت چین که بود؟</li>
-                    <li>سفر عشق</li>
-                    <li>راهنمایان بشر</li>
-                    <li>اما لوجیا که بود؟</li>
-                    <li>عشق از نظر بت چین</li>
-                    <li>الکترا در قصر خود</li>
-                    <li>روایت الکترا از عشق</li>
-                    <li>داستان فانوس</li>
-                    <li>قصه هیرو و لیاندر</li>
-                    <li>عشق و شهوت، دو داستان واقعی</li>
-                    <li>قصه عشق ونوس و زنون</li>
-                    <li>قصه هرا، تجسمی از غلبه شهوت</li>
-                    <li>فرمانده هگساندروس</li>
-                    <li>و اما هرا که بود؟</li>
-                    <li>زشتی تجاوز</li>
-                    <li>خوشبختی یا موفقیت</li>
-                    <li>مزرعه عقاب کوه</li>
-                    <li>داستان شاهزاده و کاتب دربار</li>
-                    <li>قصه عشق مهرانگیز و رادمهر</li>
-                    <li>عشق از نگاه رادمهر</li>
-                    <li>عشق از نگاه مهرانگیز</li>
-                    <li>دوران هجران و جدایی دو دلداده</li>
-                    <li>مباحثه دو دلداده دیگر</li>
-                    <li>قدرت عشق و زیبایی</li>
-                    <li>قدرت عزم و اراده</li>
-                    <li>سحر زبان خوش</li>
-                    <li>مکاشفه اندیشمندان زمین</li>
-                    <li>فرهنگ‌ها و زنان</li>
-                    <li>روند تکامل اجتماعات بشری</li>
-                    <li>خانه دیونیسوس و آیون</li>
-                    <li>عالم‌گیری عشق</li>
-                    <li>غروب الکترا</li>
-                    <li>قصه عشق ونوس</li>
-                    <li>پایان سخن</li>
-                    <li>پایان</li>
-
-                </ol>
-
-            </details>
-
-        </div>
-
-    </section>
-
-
-    <!-- AUTHOR -->
-
-    <section>
-
-        <h2 class="section-title">درباره نویسنده</h2>
-
-        <div class="author-box">
-
-            <h3>جلال‌الدین ولی‌الله</h3>
-
-            <p>
-                اطلاعات تکمیلی درباره نویسنده در این بخش قرار خواهد گرفت.
-            </p>
-
-            <p>
-                این قسمت بعداً می‌تواند شامل معرفی نویسنده،
-                آثار، سوابق علمی و ادبی و سایر اطلاعات مورد نظر
-                نویسنده باشد.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- PURCHASE IN IRAN -->
-
-    <section>
-
-        <h2 class="section-title">خرید در ایران</h2>
-
-        <div class="purchase-grid">
-
-            <div class="purchase-card">
-
-                <h3>نسخه چاپی معمولی</h3>
-
-                <p>
-                    چاپ اول ـ ۱۴۰۵
-                </p>
-
-                <div class="price">
-                    ۲٬۰۰۰٬۰۰۰ تومان
-                </div>
-
-                <a href="#" class="button">
-                    خرید نسخه چاپی
-                </a>
-
-            </div>
-
-
-            <div class="purchase-card">
-
-                <h3>نسخه چاپی مجلل</h3>
-
-                <p>
-                    جلد براق برجسته
-                </p>
-
-                <div class="price">
-                    ۴٬۰۰۰٬۰۰۰ تومان
-                </div>
-
-                <a href="#" class="button">
-                    خرید نسخه مجلل
-                </a>
-
-            </div>
-
-
-            <div class="purchase-card">
-
-                <h3>نسخه الکترونیکی</h3>
-
-                <p>
-                    نسخه PDF کتاب
-                </p>
-
-                <div class="price">
-                    قیمت متعاقباً اعلام می‌شود
-                </div>
-
-                <a href="#" class="button secondary">
-                    خرید نسخه الکترونیکی
-                </a>
-
-            </div>
-
-
-            <div class="purchase-card">
-
-                <h3>نمونه کتاب</h3>
-
-                <p>
-                    بخشی از کتاب برای مطالعه پیش از خرید
-                </p>
-
-                <a href="#" class="button secondary">
-                    مشاهده نمونه
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- INTERNATIONAL -->
-
-    <section>
-
-        <h2 class="section-title">فروش جهانی</h2>
-
-        <div class="purchase-grid">
-
-            <div class="purchase-card">
-
-                <h3>نسخه چاپی بین‌المللی</h3>
-
-                <p>
-                    اطلاعات قیمت و روش ارسال بین‌المللی
-                    در این بخش قرار خواهد گرفت.
-                </p>
-
-                <a href="international.html" class="button">
-                    اطلاعات فروش جهانی
-                </a>
-
-            </div>
-
-
-            <div class="purchase-card">
-
-                <h3>نسخه دیجیتال</h3>
-
-                <p>
-                    نسخه الکترونیکی برای خریداران خارج از ایران
-                </p>
-
-                <a href="international.html" class="button secondary">
-                    خرید دیجیتال
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- COPYRIGHT -->
-
-    <section>
-
-        <h2 class="section-title">حقوق نشر</h2>
-
-        <div class="copyright-box">
-
-            <p>
-                کلیه حقوق اعم از چاپ و نشر و کپی و اقتباس،
-                نشر الکترونیکی و فروش و هر شکل دیگر بهره‌برداری
-                از این اثر در انحصار انتشارات صالحین است.
-            </p>
-
-            <p>
-                هرگونه استفاده غیرقانونی مورد پیگرد قرار می‌گیرد.
-            </p>
-
-            <p>
-                چاپ، نشر و توزیع از انتشارات صالحین.
-            </p>
-
-            <p>
-                <strong>شماره تلفن توزیع و فروش:</strong>
-                09125791009
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- BACK TO BOOKS -->
-
-    <section style="text-align:center;">
-
-        <a href="literature.html" class="button">
-            ← بازگشت به ادبیات و هنر
-        </a>
-
-        <a href="books.html" class="button secondary">
-            همه کتاب‌ها
-        </a>
-
-    </section>
+<div class="cover-box">
+
+<img src="images/galatea-pygmalion.jpg"
+alt="جلد کتاب و این کتاب عشق است؛ گالاتئا و پیگمالیون">
+
+</div>
+
+<div class="book-intro">
+
+<h2>و این کتاب عشق است؛ گالاتئا و پیگمالیون</h2>
+
+<p>
+<strong>گالاتئا و پیگمالیون</strong>
+</p>
+
+<p>
+رمانی از <strong>جلال‌الدین ولی‌الله</strong>
+منتشرشده توسط <strong>انتشارات صالحین</strong>.
+</p>
+
+<div class="note">
+<strong>یادداشت بالای عنوان:</strong>
+و این کتاب عشق است
+</div>
+
+<div class="note">
+<strong>یادداشت عنوان دیگر:</strong>
+و این کتاب عشق است: گالاتئا و پیگمالیون
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ABOUT THE BOOK -->
+
+<section>
+
+<h2 class="section-title">درباره کتاب</h2>
+
+<div class="description-box">
+
+<p>
+<strong>در بارة این کتاب:</strong>
+</p>
+
+<p>
+و این کتاب عشق است. کتابی با نگاهی بین المللی به عشق است.
+عشق چیست؟ چه دیدگاه ها و تعاریفی از عشق از نظر انسان وجود دارد؟
+چه رابطه ایی بین عشق و روابط زناشویی وجود دارد؟
+آیا عشق همان لذائذ جنسی است؟
+چه در عشق دو دلداده چه عشق به نوع بشر و تعالی اخلاق و جامعة او،
+چه موانعی در راه رسیدن به عشق وجود دارد؟
+آیا هر چه بلوغ فکری و عاطفی انسان تکامل یافته تر باشد عشق او واقعی تر و عمیق تر است؟
+چه رابطه ایی بین تعالی فردی و تعالی جوامع انسانی و تمدن بشری و عشق وجود دارد؟
+</p>
+
+<p>
+عشق مجازی چیست؟
+آیا عشق مجازی در تعالی عقلانی و فکری و تعمیق احساسات و عواطف روانی انسان نقش دارد؟
+آیا همان گونه که انسان در راه رسیدن به رشد فیزیکی و بدنی دارای مراحل تکاملی
+در درک عشق و حس آن نیز مراحل تکامل عقلی و معنوی وجود دارد؟
+عشق چه نقش روانشناختی در آرامش روح و روان انسان دارد؟
+آیا عشق می تواند موتور پیشران و محرک تمام قوای پنهان انسان باشد
+که زندگی و ملزومات آن را بسازد؟
+آیا عشق نیروبخش و حیات آفرین است؟
+آیا همان گونه که ارکان زندگی دو زوج با عشق ساخته و هموار می شود
+در ساختن مدینه فاضله و آرمان های متعالی اجتماعات بشری نیز عشق می‌تواند بنیاد و زیربنا باشد؟
+چگونه عشق عالم گیر می شود؟
+</p>
+
+<p>
+زیبایی چیست؟
+چرا هرکس درک و تعریف خود را از زیبایی دارد؟
+آیا زیبایی خود فضیلت است؟
+عشق های موهوم و بیمارگونه کدامند؟
+آیا عشق می تواند نوعی بیماری روانی باشد؟
+چه رابطه ایی بین پاکی و فضیلیت و پرهیزکاری و عشق واقعی وجود دارد؟
+آیا عشق در همه ذرات عالم جاری است؟
+قصه و داستان و رمان چه نقشی در ساختن ساختار تخیل و تفکرات انسانی دارد؟
+</p>
+
+<p>
+آیا تکامل نوع بشر از نقطه ایی آغاز شده که به شرح ماجراهای خود و قصه گویی و داستان سرایی پرداخت؟
+و این ماجراها و تجربیات و داستان ها را نسل به نسل به آیندگان منتقل کرد؟
+آیا بین مغز ما و مغز افلاطون و احساس ما و احساسات افلاطون و ارسطو تفاوت معنی داری وجود دارد؟
+قصه و داستان کدام بخش معارف بشری را پوشش می دهند؟
+چه رابطه ایی بین هنر و عشق وجود دارد؟
+چه رابطه ایی بین عقل و عشق وجود دارد؟
+نهایت التذاذ معنوی عشق به کجا می انجامد؟
+</p>
+
+<p>
+آیا عشق می تواند درمان بسیاری از دردها اجتماع و فرد باشد یا این یک اغراق شاعرانه است؟
+اغراق چه تاثیری در به جنبش درآوردن انسان در اقدام های او دارد؟
+سرنوشت چیست؟ و به چه عواملی بستگی دارد؟
+آزادی و اختیار چه نقشی در تعالی انسان دارند؟
+چه رابطه ایی بین آزادگی و آزادگی و تعالی عشق وجود دارد؟
+این ها و بسیاری دیگر سوالاتی هستند که در این کتاب به بخشی از آنها پاسخ داده شده است.
+</p>
+
+<p>
+این کتاب مراحل تکامل جوانی پیکرتراش به نام پیگمالیون را به تصویر کشیده است.
+در هفت خوان عشق از طریق قصه های کودکانی و خیال انگیز سورآلیستی
+تا وقایع اجتماعی و طرح معضلات و موانع پیشرفت های اجتماعی،
+سر شار از قصه های عشق و وفاداری و پند و اندرز و راهکار و برون رفت
+از بن بست های فکری و روانی و اجتماعی است.
+</p>
+
+<p class="quote">
+……
+</p>
+
+<h3>قصه عشق</h3>
+
+<p class="quote">
+قصه عشق یکی بیش نیست وین عجب
+از هر کسی که می شنوم نامکرر است(حافظ).
+</p>
+
+<p>
+و این کتاب عشق است.
+داستان عشق و دلدادگی و سرمستی و مهجوری و محضوری و قرار و بی‌قراری است.
+غم هجران است و شادی وصال و شیوه تداوم هستی و زندگی است.
+جلوه های یار و تجلی‌های بسیار دلدار است.
+نقش و خط و خال خوش دلآرام است.
+و دل تنگ ومشتاق و لرزان و بی‌قرار یار.
+یادگاری از صدای سخن عشق است.
+</p>
+
+<p class="quote">
+از صدای سخن عشق ندیدم خوش تر
+یادگاری که در این گنبد دوار بماند.
+</p>
+
+<p>
+اسطوره پیگمالیون یکی از جذاب ترین داستان‌های اساطیری یونان است
+که همواره الهام بخش هنرمندان، نویسندگان و اندیشمندان بوده است.
+این داستان درباره پیگمالیون، یک پادشاه و مجسمه ساز ماهر قبرسی است
+که به دلیل کمال گرایی و عشق عمیق به هنر،
+به جای دلبستن به یک انسان واقعی، عاشق اثری می‌شود که خود خلق کرده است.
+</p>
+
+<p>
+داستان گالاتئا و پیگمالیون اولین داستان عشق در عالم ماست.
+در واقع داستان گالاتئا و پیگمالیون داستان همه ماست.
+هریک از ما نقشی از یک موجود زیبا و منحصر به فرد در وجود خود داریم.
+که از قبل در هستی ما تعبیه شده است.
+و بی‌قراری ما از فراق و جستجوی اوست.
+گالاتئا و پیگمالیون در وجود هرکسی موجودی خاص اوست، متناسب با روحیات او.
+اگر مرد باشیم آن نقش یک زن است و اگر زن باشیم آن نقش یک مرد است.
+نقشی زیبا در وجود و ناخودآگاه ماست که تمام عمر به دنبال آن می‌گردیم.
+حتی اگر او را یافتیم و یک عمر در کنار او شاد و سبکبال زیستیم.
+باز در پایان راه دل ما بی‌قرار می‌شود گویی که گذر عمر به اندازه یک چشم به هم زدن بود.
+چرا بی‌قراریم؟
+زیرا باز نقش دیگری را در روح و قلب خود داریم که به سوی او در سفریم.
+و او زیباترین الهه‌ است.
+که زیباتر از او نیست.
+االهه‌ای که هر کس نقشی از او در ذهن خود دارد.
+</p>
+
+<p>
+داستان پیگمالیون و گالاتئا داستانی است که زمان و مکان نمی‌شناسد.
+گرچه در قالب یکی از افسانه‌‌ها و اسطوره‌‌های یونان باستان است
+ولی داستانی جهانی و فرا مرزی متعلق به همه ملت‌ها و اقوام است.
+بنابر این در این روایت، داستان به صورتی جهان وطنی ذکر گردیده است
+که تعلق خاطر همگان را برانگیزد.
+این داستان انسان است.
+داستان عشق و دلدادگی است.
+عشق و دلدادگی داستانی ابدی و جهانی است.
+</p>
+
+<p>
+داستان عشق داستان همه ماست.
+وقتی که این کتاب را می‌خوانید به یاد و خاطره ایام گذشته خواهید افتاد.
+یاد و خاطره عشق یا عشق های که داشته‌اید.
+یاد جوانی و جاودانی.
+شور و سرمستی.
+و سبکبالی جوانی.
+</p>
+
+<p>
+و اگر نوجوان هستید.
+در اندیشه خواهید بود که در برخورد با جناب عشق در آینده و حال خود
+چگونه رفتار کنید که خاطره‌ا‌یی به یاد ماندنی برای همه عمر شما باشد.
+</p>
+
+<p>
+عشق جوهره‌ا‌ی سرشته در وجود همه ماست.
+این قصه عشق پیگمالیون به گالاتئاست.
+قصه عشق شما چگونه است؟
+</p>
+
+<p>
+در گذشته روایت‌هایی از این قصه شکل گرفته است.
+یک راوی به فراخور زاویه نگاه خود به عالم، به آن نگریسته است.
+و در آینده شاید مردمان دیگری در زمان‌های دیگر و مکان‌های دیگر
+روایت‌های دیگری از این داستان ارائه دهند اما این روایت من است.
+</p>
+
+<p>
+در روایت اولیه که اووید شاعر رومی در سال هشتم میلادی
+در کتاب دگردیسی‌ها نگاشته است پیگمالیون زن محبوب خود را نمی‌یابد.
+از یافتن ناامید می‌شود و به سمت و سویی می‌رود که متناسب با انتظارات خود از یک زن،
+مجسمه او را بسازد.
+او عاشق پیکری می‌شود که از ذهن او تجلی یافته و خود او را تراشیده
+و پیرایش و پردازش و آرایش کرده است.
+</p>
+
+<p>
+برنارد شاو نویسنده انگلیسی در قرن نوزدهم با توجه جامعه طبقاتی جدید آن زمان،
+روایت دیگری از این داستان ارائه داده است که در آن شاو،
+فضیلت را در قالب آداب طبقه اشراف انگلیس در آن زمان می‌داند.
+در ایران صادق هدایت، روایتی نهیلیسی (پوچ انگاری زندگی)
+از این داستان با نام «عروسک پشت پرده» نوشته است
+که حاصل پوچ انگاری زندگی و گرفتاری در خلأ انزوا و اوهام میگساری
+به پایان تلخی می‌انجامد.
+نمی‌خواهیم بگوییم که صادق هدایت پیرو پوچی و پوچ گرایی بود.
+بلکه او در این داستان می گوید که نهایت جمع گریزی و فرد گرایی به پوچی می انجامد.
+</p>
+
+<p>
+همچنین ژان لئون رژوم در فرانسه بر مبنای این اسطوره نقاشی می کشد.
+<em>پیگمالیون و گالاتئا</em>
+(Pygmalion et Galatée)
+نام اثر برجسته‌ای از ژان لئون ژروم،
+نقاش و تندیس‌گر مشهور فرانسوی است که در سال ۱۸۹۰ میلادی خلق شد.
+این اثر اکنون در موزه متروپولیتن نیویورک نگه‌داری می‌شود.
+موضوع نگاره، پیگمالیون یک مفهوم اساطیر یونانی است
+و به عشق دیوانه‌وار هنرمند به آثاری که خلق می‌کند، اشاره دارد.
+</p>
+
+<p>
+اگر مشتاق شده‌اید به همه این روایت‌های سری بزنید.
+به هر حال اگر آن نگارش ها نبود این روایت هم شکل نمی‌گرفت.
+همه اینها میراث فرهنگ و تمدن بشری است.
+این روایت، نگاهی واقع گرایانه در عین حال رمانتیک به این ماجرا دارد
+و مقدمه‌ایی از نگاه فلسفی و عرفانی به عشق است.
+و بیان می دارد که هریک ما موجودی زیبا و ایده آل در نهاد خود داریم
+که تمام عمر به دنبال او می‌گردیم.
+و اگر یافتیم و در تطابق با آن نبود سعی در تغییر او
+در راستای ایده‌آل های ذهنی و واقعی خود می‌کنیم.
+چه بسیار زنان که مردانی را به راه آورده اند و تعالی بخشیده اند
+و چه بسیار مردان که زنایی را از روی نسخه ایده آل خود
+به رئال یا واقعیت آورده‌اند و تعالی بخشیده‌اند.
+</p>
+
+<p>
+از این دیدگاه ازدواج یک کارگاه پیکرتراشی است.
+که در آن به تدریج دل بستگی ها به زیبایی‌های ظاهری
+به سوی عشق به زیبایی‌های معنوی و روانی و اخلاق می گراید.
+</p>
+
+<p>
+در این ماجرا خیال و واقعیت، در دنیای حقیقی با هم عجین می‌شوند.
+ایده آل در بستری رئال (در واقعیت زندگی) به وحدت و وصلت می‌رسند.
+و گویای آن است که برای فرد بالفعل ایدآلی وجود ندارد.
+مگر در تلاشی پیگیر ایده او عالی شود
+و این ایده متعال را با رئال یا واقعیت زندگی خود پیوند دهد.
+</p>
+
+<p>
+زندگی سفری است برای یافتن.
+هر یک از ما آن پیکره زیبا و منحصر به فرد را اول در خانه و کارگاه دل
+و وجود خود و در آسمان خیال خود می‌نگریم و آرزو می‌کنیم
+که روزی او را ملاقات کنیم تا در کنار او خوشبخت شویم
+و در طی طریق این عالم به عالم فراگیر عشق رهسپاریم.
+</p>
+
+<p>
+پیگمالیون پیکرتراش در این داستان،
+ناامید از پیوند با محبوب خود، می‌رود که در هر رویارویی با عشق کمال یابد
+تا در ذهن خود نقش واضحی از محبوب را رویت کند
+و قادر به تراش آن از سنگ مرمر باشد.
+و بر او چنان عشق ورزد به امید آنکه، شاید روزی این نقش بی بدیل،
+حیات یابد و او را از خشونت و سردی و نیاز به این دنیای دون و سنگلاخ برهاند.
+و در کنار او مسیری زیبا و شاد به سوی آینده و خوشبختی را سپری نماید.
+</p>
+
+<p>
+این مجموعه شامل قصه‌ها و داستان‌ها و ماجراهایی است
+که نه تنها برای بزرگسالان بلکه برای نوجوانان و جوانان قصه‌ایی دارد.
+نه تنها می‌تواند در عشق و زندگی الهام بخش جوانان باشد
+بلکه آنها روزی این کتاب را در دست گرفته در رختخواب
+برای کودکان خود خواهند خواند تا در خواب آنان یاری کنند
+و تخیل آنها را غنا بخشند.
+</p>
+
+<p>
+در این کتاب علاوه بر شعر و ماجرا و بحث‌های فلسفی و عرفانی
+داستان جن و پری و اراوح و شهر قصه‌های مادر بزرگ است.
+علاوه بر اعتراض به جهالت‌های تاریخی بشر و نکوهش خشم و خشونت
+و خیانت و بغض و بخل و حسد،
+جهدی است برای درک و فهم عشق و تفاهیم متقابل
+و تحمل یکدیگر در رهسپاری به سوی صلح و عشق و مهر پایدار.
+</p>
+
+<p>
+چه در اسطوره اووید و چه در این روایت،
+حال و هوای قصه به زمانی برمی‌گردد که هنوز در یونان و روم
+هیچ آئین و دین رسمی ظهور و بروز نیافته است
+و در آنجا اسطوره الهه ها، مانند ونوس و آفرودیت و هرا و آتنا
+در اذهان نقش بسته است.
+و عقاید مردمان نواحی مختلف متکی بر باورهای قومی و قبیله ایی بوده است.
+</p>
+
+<p class="quote">
+آنچه می‌گویم بقدر فهم توست
+مُردم اندر حسرت فهم درست(مولانا)
+</p>
+
+</div>
+
+</section>
+
+
+<!-- BOOK INFORMATION -->
+
+<section>
+
+<h2 class="section-title">مشخصات کتاب</h2>
+
+<div class="info-grid">
+
+<div class="info-item">
+<strong>عنوان:</strong>
+و این کتاب عشق است؛ گالاتئا و پیگمالیون
+</div>
+
+<div class="info-item">
+<strong>نویسنده:</strong>
+جلال‌الدین ولی‌الله
+</div>
+
+<div class="info-item">
+<strong>ناشر:</strong>
+انتشارات صالحین
+</div>
+
+<div class="info-item">
+<strong>محل نشر:</strong>
+تهران
+</div>
+
+<div class="info-item">
+<strong>سال نشر:</strong>
+۱۴۰۵
+</div>
+
+<div class="info-item">
+<strong>نوبت چاپ:</strong>
+اول
+</div>
+
+<div class="info-item">
+<strong>تعداد صفحات:</strong>
+۵۵۰ صفحه
+</div>
+
+<div class="info-item">
+<strong>قطع:</strong>
+وزیری
+</div>
+
+<div class="info-item">
+<strong>نوع جلد:</strong>
+جلد براق برجسته
+</div>
+
+<div class="info-item">
+<strong>تیراژ:</strong>
+۱۰٬۰۰۰ نسخه
+</div>
+
+<div class="info-item">
+<strong>شابک:</strong>
+978-622-87864-9-0
+</div>
+
+<div class="info-item">
+<strong>موضوع:</strong>
+رمان بزرگسالان و کودکان
+</div>
+
+<div class="info-item">
+<strong>رده‌بندی کنگره:</strong>
+PIR 8363
+</div>
+
+<div class="info-item">
+<strong>شماره کتابشناسی ملی:</strong>
+۱۰۵۰۵۹۹۶
+</div>
+
+<div class="info-item">
+<strong>رده‌بندی دیویی:</strong>
+۸۳۶۳ فا
+</div>
+
+<div class="info-item">
+<strong>زبان:</strong>
+فارسی
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TABLE OF CONTENTS -->
+
+<section>
+
+<h2 class="section-title">فهرست قصه‌ها و مطالب</h2>
+
+<div class="toc">
+
+<details>
+
+<summary>
+نمایش / پنهان کردن فهرست کامل کتاب
+</summary>
+
+<ol>
+
+<li>قصه عشق</li>
+<li>پیگمالیون</li>
+<li>کودکی پیگمالیون</li>
+<li>قصه ارواح در پشت بام حمام</li>
+<li>پدر بزرگ و مادر بزرگ</li>
+<li>قصه دنیای شیرین</li>
+<li>حکمت پدر بزرگ</li>
+<li>قصه‌های مادر بزرگ</li>
+<li>قصه ماهرو و آرش</li>
+<li>دنیای قصه‌ها</li>
+<li>عشق در نگاه پدر بزرگ</li>
+<li>عقل و عشق در نظر مادر بزرگ</li>
+<li>چهارده سالگی پیگمالیون</li>
+<li>مروارید</li>
+<li>قصه عروسک مروارید</li>
+<li>داستان مرگ پیگمالیون</li>
+<li>قصه شهر ارواح</li>
+<li>قصه عروسکی برای مروارید</li>
+<li>شکوه مادر</li>
+<li>خواهری چون برلیان</li>
+<li>برلیان جواهری در کنار برادر</li>
+<li>سحر کلام</li>
+<li>قدرت قصه</li>
+<li>خبر آمدن مروارید</li>
+<li>عشق از دیدگاه برلیان</li>
+<li>قصه عشق مروارید</li>
+<li>فراغ مروارید</li>
+<li>خیال مروارید</li>
+<li>قصه عشق آرتمیسیا</li>
+<li>رویارویی با عالیجناب عشق</li>
+<li>شهر چشمان آرتیمسیا</li>
+<li>خواب و خیال آرتمیسیا</li>
+<li>خواستگاری آرتیمسیا</li>
+<li>قصه عشق هلن</li>
+<li>جلوه هلن</li>
+<li>چگونه می‌توان یک دوشیزه را به خود علاقمند کرد؟</li>
+<li>دیدار با هلن</li>
+<li>داستان هلن، زیباترین زن دنیا</li>
+<li>اسطوره هلن، شاهزاده دو سرزمین</li>
+<li>زیبایی از نظر پیگمالیون</li>
+<li>درد فراق هلن</li>
+<li>یاد هلن</li>
+<li>باغ بهشت</li>
+<li>هلن در کشتی</li>
+<li>پدرو</li>
+<li>هجران هلن</li>
+<li>هیاهوی هلن در کشتی</li>
+<li>در فراغ هلن</li>
+<li>نامه‌ای از هلن</li>
+<li>قصه عشق رویا</li>
+<li>رویا</li>
+<li>نمایشنامه ازدواج تولد مکرر</li>
+<li>مسئله این است کدامیک؟ دارا یا زارا؟</li>
+<li>رویا در چشمان پیگمالیون</li>
+<li>نقش رویا</li>
+<li>دیدار رویا</li>
+<li>نشان عشق، والاترین نشان</li>
+<li>احساس رویا</li>
+<li>احساس پیگما</li>
+<li>دیدار برلیان با رویا</li>
+<li>پایان رویا</li>
+<li>قصه عشق کراتیا</li>
+<li>مردمان شهر گزنوس</li>
+<li>گستره عشق</li>
+<li>مردمان گزنوس چه کسانی بودند؟</li>
+<li>عشق و آزادی</li>
+<li>پیگمالیون در شهر گزنوس</li>
+<li>پدیده‌ای به نام کراتیا</li>
+<li>جلوه نیکوکراتیا</li>
+<li>گفتگوی کراتیا و پیگما</li>
+<li>مرام کراتیا</li>
+<li>نقشی از کراتیا</li>
+<li>دوستی دیرینه کراتیا و برلیان</li>
+<li>هماورد کراتیا و پیگما</li>
+<li>کراتیا که بود؟!</li>
+<li>خیال کراتیا</li>
+<li>جزیره ناشناخته‌ای به نام کراتیا</li>
+<li>عشق در نظر کراتیا</li>
+<li>جهان‌گستری عشق</li>
+<li>اسرار نهان</li>
+<li>زن کودن</li>
+<li>علت عشق</li>
+<li>قصه چرخ گردون</li>
+<li>فیلفوس</li>
+<li>دیدار با فیلفوس</li>
+<li>شب‌نشینی نخبگان</li>
+<li>آیا در عالم الهه‌ای هست؟</li>
+<li>قصه عشق لیلی و راز فیلفوس</li>
+<li>قصه هیرون و کیمیون</li>
+<li>دو عامل موفقیت</li>
+<li>چشمه شفابخش</li>
+<li>قصه هرون مخوف و چشمه مرگ</li>
+<li>قصه عشق هیرون و ایوا</li>
+<li>باران عشق نفرت را می‌زداید</li>
+<li>دره مرگ</li>
+<li>تداوم عشق ایرا و خوشبختی هیرون</li>
+<li>مرگ عشق در هیرون و دگردیسی او</li>
+<li>قصه سوزناک فراق ایوا</li>
+<li>مستی عشق</li>
+<li>سزای مجرمین</li>
+<li>هیرون مخوف</li>
+<li>قصه عشق فدرا</li>
+<li>عشق به مردم</li>
+<li>یک شب هولناک</li>
+<li>سدبانان</li>
+<li>هفاستوس</li>
+<li>قیام هفاستوس</li>
+<li>اواغوراس</li>
+<li>خواستگاری کراتیا</li>
+<li>در تمنای کراتیا</li>
+<li>عشق و هنر</li>
+<li>شکوه کراتیا</li>
+<li>عشق و فهم درست</li>
+<li>قصه عشق الکترا</li>
+<li>احساس الکترا</li>
+<li>جلوه الکترا</li>
+<li>شرح عقل و عشق</li>
+<li>عشق خواهر به برادر</li>
+<li>برلیان و پیگما</li>
+<li>الکترا نماد عشق و عقل</li>
+<li>اندیشمندان زمین</li>
+<li>قصه بت چین و امپراطور لیو هنگ</li>
+<li>سرانجام عشق بت چین و امپراطور چین</li>
+<li>بت چین که بود؟</li>
+<li>سفر عشق</li>
+<li>راهنمایان بشر</li>
+<li>اما لوجیا که بود؟</li>
+<li>عشق از نظر بت چین</li>
+<li>الکترا در قصر خود</li>
+<li>روایت الکترا از عشق</li>
+<li>داستان فانوس</li>
+<li>قصه هیرو و لیاندر</li>
+<li>عشق و شهوت، دو داستان واقعی</li>
+<li>قصه عشق ونوس و زنون</li>
+<li>قصه هرا، تجسمی از غلبه شهوت</li>
+<li>فرمانده هگساندروس</li>
+<li>و اما هرا که بود؟</li>
+<li>زشتی تجاوز</li>
+<li>خوشبختی یا موفقیت</li>
+<li>مزرعه عقاب کوه</li>
+<li>داستان شاهزاده و کاتب دربار</li>
+<li>قصه عشق مهرانگیز و رادمهر</li>
+<li>عشق از نگاه رادمهر</li>
+<li>عشق از نگاه مهرانگیز</li>
+<li>دوران هجران و جدایی دو دلداده</li>
+<li>مباحثه دو دلداده دیگر</li>
+<li>قدرت عشق و زیبایی</li>
+<li>قدرت عزم و اراده</li>
+<li>سحر زبان خوش</li>
+<li>مکاشفه اندیشمندان زمین</li>
+<li>فرهنگ‌ها و زنان</li>
+<li>روند تکامل اجتماعات بشری</li>
+<li>خانه دیونیسوس و آیون</li>
+<li>عالم‌گیری عشق</li>
+<li>غروب الکترا</li>
+<li>قصه عشق ونوس</li>
+<li>پایان سخن</li>
+<li>پایان</li>
+
+</ol>
+
+</details>
+
+</div>
+
+</section>
+
+
+<!-- AUTHOR -->
+
+<section>
+
+<h2 class="section-title">درباره نویسنده</h2>
+
+<div class="author-box">
+
+<h3>جلال‌الدین ولی‌الله</h3>
+
+<p>
+اطلاعات تکمیلی درباره نویسنده در این بخش قرار خواهد گرفت.
+</p>
+
+<p>
+این قسمت بعداً می‌تواند شامل معرفی نویسنده،
+آثار، سوابق علمی و ادبی و سایر اطلاعات مورد نظر
+نویسنده باشد.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PURCHASE IN IRAN -->
+
+<section>
+
+<h2 class="section-title">خرید در ایران</h2>
+
+<div class="purchase-grid">
+
+<div class="purchase-card">
+
+<h3>نسخه چاپی معمولی</h3>
+
+<p>
+چاپ اول ـ ۱۴۰۵
+</p>
+
+<div class="price">
+۲٬۰۰۰٬۰۰۰ تومان
+</div>
+
+<a href="#" class="button">
+خرید نسخه چاپی
+</a>
+
+</div>
+
+
+<div class="purchase-card">
+
+<h3>نسخه چاپی مجلل</h3>
+
+<p>
+جلد براق برجسته
+</p>
+
+<div class="price">
+۴٬۰۰۰٬۰۰۰ تومان
+</div>
+
+<a href="#" class="button">
+خرید نسخه مجلل
+</a>
+
+</div>
+
+
+<div class="purchase-card">
+
+<h3>نسخه الکترونیکی</h3>
+
+<p>
+نسخه PDF کتاب
+</p>
+
+<div class="price">
+قیمت متعاقباً اعلام می‌شود
+</div>
+
+<a href="#" class="button secondary">
+خرید نسخه الکترونیکی
+</a>
+
+</div>
+
+
+<div class="purchase-card">
+
+<h3>نمونه کتاب</h3>
+
+<p>
+بخشی از کتاب برای مطالعه پیش از خرید
+</p>
+
+<a href="#" class="button secondary">
+مشاهده نمونه
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTERNATIONAL -->
+
+<section>
+
+<h2 class="section-title">فروش جهانی</h2>
+
+<div class="purchase-grid">
+
+<div class="purchase-card">
+
+<h3>نسخه چاپی بین‌المللی</h3>
+
+<p>
+اطلاعات قیمت و روش ارسال بین‌المللی
+در این بخش قرار خواهد گرفت.
+</p>
+
+<a href="international.html" class="button">
+اطلاعات فروش جهانی
+</a>
+
+</div>
+
+
+<div class="purchase-card">
+
+<h3>نسخه دیجیتال</h3>
+
+<p>
+نسخه الکترونیکی برای خریداران خارج از ایران
+</p>
+
+<a href="international.html" class="button secondary">
+خرید دیجیتال
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COPYRIGHT -->
+
+<section>
+
+<h2 class="section-title">حقوق نشر</h2>
+
+<div class="copyright-box">
+
+<p>
+کلیه حقوق اعم از چاپ و نشر و کپی و اقتباس،
+نشر الکترونیکی و فروش و هر شکل دیگر بهره‌برداری
+از این اثر در انحصار انتشارات صالحین است.
+</p>
+
+<p>
+هرگونه استفاده غیرقانونی مورد پیگرد قرار می‌گیرد.
+</p>
+
+<p>
+چاپ، نشر و توزیع از انتشارات صالحین.
+</p>
+
+<p>
+<strong>شماره تلفن توزیع و فروش:</strong>
+09125791009
+</p>
+
+</div>
+
+</section>
+
+
+<!-- BACK TO BOOKS -->
+
+<section style="text-align:center;">
+
+<a href="literature.html" class="button">
+← بازگشت به ادبیات و هنر
+</a>
+
+<a href="books.html" class="button secondary">
+همه کتاب‌ها
+</a>
+
+</section>
 
 
 </main>
@@ -953,13 +1166,13 @@
 
 <footer>
 
-    <p>
-        © ۱۴۰۵ انتشارات صالحین
-    </p>
+<p>
+© ۱۴۰۵ انتشارات صالحین
+</p>
 
-    <p>
-        Salihin Publications
-    </p>
+<p>
+Salihin Publications
+</p>
 
 </footer>
 
