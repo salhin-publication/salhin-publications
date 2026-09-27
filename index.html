@@ -1,536 +1,1256 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>انتشارات صالحین | Salihin Publications</title>
+<meta charset="UTF-8">
 
-    <meta name="description"
-          content="وب‌سایت رسمی انتشارات صالحین؛ معرفی و فروش کتاب‌های چاپی و الکترونیکی در ایران و سراسر جهان.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<title>انتشارات صالحین | Salihin Publications</title>
 
-        body {
-            font-family: Tahoma, Arial, sans-serif;
-            background: #f7f7f5;
-            color: #222;
-            line-height: 1.8;
-        }
+<meta name="description"
+content="انتشارات صالحین؛ انتشار و معرفی آثار ادبی، علمی، فرهنگی و دینی و فروش کتاب‌های چاپی و الکترونیکی در ایران و سراسر جهان.">
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+<style>
 
-        /* Header */
-        header {
-            background: white;
-            border-bottom: 1px solid #ddd;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+/* =========================
+   GENERAL
+========================= */
 
-        .header-inner {
-            max-width: 1200px;
-            margin: auto;
-            padding: 15px 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        .logo-text {
-            font-size: 25px;
-            font-weight: bold;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .logo-text span {
-            display: block;
-            font-size: 13px;
-            font-weight: normal;
-            direction: ltr;
-            text-align: right;
-        }
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f7f7f5;
+    color: #222;
+    line-height: 1.9;
+}
 
-        nav {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-        nav a {
-            font-size: 15px;
-            padding: 6px 8px;
-        }
 
-        nav a:hover {
-            color: #8a5a25;
-        }
+/* =========================
+   HEADER
+========================= */
 
-        /* Hero */
-        .hero {
-            background: linear-gradient(135deg, #eee8dc, #ffffff);
-            padding: 75px 20px;
-            text-align: center;
-        }
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+.header-inner {
+    max-width: 1250px;
+    margin: auto;
+    padding: 15px 25px;
 
-        .hero .english {
-            direction: ltr;
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        .hero p {
-            max-width: 720px;
-            margin: auto;
-            font-size: 18px;
-            color: #555;
-        }
+    gap: 25px;
+}
 
-        .buttons {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
 
-        .button {
-            display: inline-block;
-            padding: 11px 22px;
-            border-radius: 6px;
-            background: #333;
-            color: white;
-        }
+/* LOGO */
 
-        .button.secondary {
-            background: white;
-            color: #333;
-            border: 1px solid #999;
-        }
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
-        /* Sections */
-        section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 55px 25px;
-        }
+.logo span {
+    display: block;
+    direction: ltr;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: right;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 35px;
-        }
 
-        .section-title h2 {
-            font-size: 30px;
-        }
+/* NAVIGATION */
 
-        .section-title p {
-            color: #777;
-            margin-top: 8px;
-        }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
 
-        /* Books */
-        .books {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 25px;
-        }
+nav a {
+    padding: 6px 8px;
+    font-size: 14px;
+}
 
-        .book {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 25px;
-            text-align: center;
-        }
+nav a:hover {
+    color: #8a5a25;
+}
 
-        .book-cover {
-            height: 260px;
-            background: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 18px;
-            color: #888;
-        }
 
-        .book h3 {
-            margin-bottom: 8px;
-        }
+/* =========================
+   HERO
+========================= */
 
-        .book p {
-            color: #666;
-            font-size: 14px;
-        }
+.hero {
+    background: linear-gradient(
+        135deg,
+        #eee8dc,
+        #ffffff
+    );
 
-        .book .button {
-            margin-top: 15px;
-            font-size: 14px;
-        }
+    padding: 85px 25px;
 
-        /* Sales */
-        .sales {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
+    text-align: center;
+}
 
-        .sales-box {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 30px;
-        }
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 5px;
+}
 
-        .sales-box h3 {
-            font-size: 23px;
-            margin-bottom: 15px;
-        }
+.hero .english-title {
+    direction: ltr;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
 
-        .sales-box ul {
-            padding-right: 20px;
-            margin-bottom: 20px;
-        }
+.hero p {
+    max-width: 850px;
+    margin: auto;
 
-        .sales-box li {
-            margin-bottom: 7px;
-        }
+    font-size: 18px;
+    color: #555;
+}
 
-        /* About */
-        .about {
-            background: white;
-            max-width: none;
-        }
+.hero-buttons {
+    margin-top: 30px;
 
-        .about-inner {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-        }
+    display: flex;
+    justify-content: center;
 
-        /* Footer */
-        footer {
-            background: #222;
-            color: #eee;
-            text-align: center;
-            padding: 35px 20px;
-        }
+    gap: 12px;
+    flex-wrap: wrap;
+}
 
-        footer p {
-            margin: 5px;
-        }
 
-        .english-link {
-            direction: ltr;
-            display: inline-block;
-        }
+/* =========================
+   BUTTONS
+========================= */
 
-        @media (max-width: 750px) {
-            .header-inner {
-                flex-direction: column;
-            }
+.button {
+    display: inline-block;
 
-            nav {
-                justify-content: center;
-            }
+    padding: 11px 24px;
 
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+    background: #333;
+    color: white;
+
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button-light {
+    background: white;
+    color: #333;
+    border: 1px solid #999;
+}
+
+
+/* =========================
+   MAIN SECTIONS
+========================= */
+
+section {
+    max-width: 1250px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   THREE MAIN CATEGORIES
+========================= */
+
+.categories {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+.category {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    min-height: 360px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 0.2s,
+                box-shadow 0.2s;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.08);
+}
+
+
+.category-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+
+.category h3 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+
+.category .english {
+    direction: ltr;
+
+    font-size: 15px;
+
+    color: #777;
+
+    margin-bottom: 18px;
+}
+
+
+.category p {
+    color: #666;
+
+    font-size: 15px;
+
+    min-height: 85px;
+}
+
+
+.category-list {
+    margin-top: 15px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LITERATURE
+========================= */
+
+.literature {
+    border-top: 4px solid #8a5a25;
+}
+
+
+/* =========================
+   SCIENCE
+========================= */
+
+.science {
+    border-top: 4px solid #4d6f58;
+}
+
+
+/* =========================
+   CULTURE
+========================= */
+
+.culture {
+    border-top: 4px solid #66558a;
+}
+
+
+/* =========================
+   ALL BOOKS
+========================= */
+
+.all-books {
+    background: white;
+
+    text-align: center;
+
+    padding: 65px 25px;
+
+    max-width: none;
+}
+
+.all-books-inner {
+    max-width: 850px;
+    margin: auto;
+}
+
+.all-books h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.all-books p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SALES
+========================= */
+
+.sales-section {
+    max-width: 1250px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.sales {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 28px;
+}
+
+
+.sales-box {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    padding: 35px;
+}
+
+
+.sales-box h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.sales-box p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+.sales-box ul {
+    padding-right: 22px;
+
+    margin-bottom: 25px;
+}
+
+
+.sales-box li {
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+
+    max-width: none;
+}
+
+.about-inner {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-inner h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.about-inner p {
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #666;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #222;
+
+    color: #eee;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.footer-english {
+    direction: ltr;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .sales {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .header-inner {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero .english-title {
+        font-size: 19px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-    <div class="header-inner">
 
-        <div class="logo-text">
-            انتشارات صالحین
-            <span>Salihin Publications</span>
-        </div>
+<div class="header-inner">
 
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#books">کتاب‌ها</a>
-            <a href="#iran">خرید در ایران</a>
-            <a href="#world">فروش بین‌المللی</a>
-            <a href="#about">درباره ما</a>
-            <a href="#contact">تماس</a>
-            <a href="#">English</a>
-        </nav>
 
-    </div>
+<div class="logo">
+
+انتشارات صالحین
+
+<span>
+Salihin Publications
+</span>
+
+</div>
+
+
+<nav>
+
+<a href="#home">
+خانه
+</a>
+
+<a href="#categories">
+بخش‌ها
+</a>
+
+<a href="#books">
+همه کتاب‌ها
+</a>
+
+<a href="#sales">
+خرید در ایران
+</a>
+
+<a href="#international">
+فروش جهانی
+</a>
+
+<a href="#about">
+درباره ما
+</a>
+
+<a href="#contact">
+تماس
+</a>
+
+<a href="#">
+English
+</a>
+
+</nav>
+
+
+</div>
+
 </header>
 
 
+
+<!-- =========================
+     HERO
+========================= -->
+
 <main id="home">
 
-    <div class="hero">
 
-        <h1>انتشارات صالحین</h1>
+<div class="hero">
 
-        <div class="english">
-            Salihin Publications
-        </div>
 
-        <p>
-            وب‌سایت رسمی انتشارات صالحین برای معرفی، انتشار و فروش
-            کتاب‌های چاپی و الکترونیکی در ایران و سراسر جهان.
-        </p>
+<h1>
+انتشارات صالحین
+</h1>
 
-        <div class="buttons">
-            <a class="button" href="#books">مشاهده کتاب‌ها</a>
-            <a class="button secondary" href="#iran">خرید در ایران</a>
-            <a class="button secondary" href="#world">International Sales</a>
-        </div>
 
-    </div>
+<div class="english-title">
+Salihin Publications
+</div>
 
 
-    <!-- Books -->
+<p>
 
-    <section id="books">
+انتشارات صالحین با هدف انتشار،
+معرفی و عرضه آثار ادبی، علمی،
+فرهنگی و دینی در ایران و سراسر جهان.
 
-        <div class="section-title">
-            <h2>کتاب‌های انتشارات</h2>
-            <p>کتاب‌های چاپی و الکترونیکی</p>
-        </div>
+</p>
 
-        <div class="books">
 
-            <div class="book">
+<div class="hero-buttons">
 
-                <div class="book-cover">
-                    تصویر جلد کتاب
-                </div>
 
-                <h3>کتاب اول</h3>
+<a
+class="button"
+href="#categories">
 
-                <p>
-                    معرفی کوتاه کتاب در این قسمت قرار می‌گیرد.
-                </p>
+ورود به بخش‌های انتشارات
 
-                <a class="button" href="#">
-                    مشاهده کتاب
-                </a>
+</a>
 
-            </div>
 
+<a
+class="button button-light"
+href="#books">
 
-            <div class="book">
+مشاهده همه کتاب‌ها
 
-                <div class="book-cover">
-                    تصویر جلد کتاب
-                </div>
+</a>
 
-                <h3>کتاب دوم</h3>
 
-                <p>
-                    معرفی کوتاه کتاب در این قسمت قرار می‌گیرد.
-                </p>
+</div>
 
-                <a class="button" href="#">
-                    مشاهده کتاب
-                </a>
 
-            </div>
+</div>
 
 
-            <div class="book">
 
-                <div class="book-cover">
-                    تصویر جلد کتاب
-                </div>
+<!-- =========================
+     THREE MAIN CATEGORIES
+========================= -->
 
-                <h3>کتاب سوم</h3>
+<section id="categories">
 
-                <p>
-                    معرفی کوتاه کتاب در این قسمت قرار می‌گیرد.
-                </p>
 
-                <a class="button" href="#">
-                    مشاهده کتاب
-                </a>
+<div class="section-title">
 
-            </div>
+<h2>
+بخش‌های اصلی انتشارات
+</h2>
 
-        </div>
+<p>
+برای ورود به حوزه موردنظر خود یکی از بخش‌های زیر را انتخاب کنید.
+</p>
 
-    </section>
+</div>
 
 
-    <!-- Iran Sales -->
 
-    <section id="iran">
+<div class="categories">
 
-        <div class="section-title">
-            <h2>خرید در ایران</h2>
-            <p>فروش کتاب چاپی و کتاب الکترونیکی</p>
-        </div>
 
-        <div class="sales">
+<!-- LITERATURE -->
 
-            <div class="sales-box">
+<div class="category literature">
 
-                <h3>کتاب چاپی</h3>
 
-                <ul>
-                    <li>مشاهده مشخصات کتاب</li>
-                    <li>قیمت به تومان</li>
-                    <li>پرداخت از طریق درگاه ایرانی</li>
-                    <li>ارسال نسخه چاپی</li>
-                </ul>
+<div>
 
-                <a class="button" href="#">
-                    خرید کتاب
-                </a>
+<div class="category-icon">
+📚
+</div>
 
-            </div>
 
+<h3>
+ادبیات و هنر
+</h3>
 
-            <div class="sales-box">
 
-                <h3>کتاب PDF</h3>
+<div class="english">
+Literature &amp; Arts
+</div>
 
-                <ul>
-                    <li>مشاهده نمونه کتاب</li>
-                    <li>خرید PDF کامل</li>
-                    <li>خرید فصل کتاب</li>
-                    <li>دانلود پس از پرداخت</li>
-                </ul>
 
-                <a class="button" href="#">
-                    خرید PDF
-                </a>
+<p>
 
-            </div>
+آثار ادبی و هنری شامل
+داستان، قصه، شعر، رمان،
+نمایشنامه و آثار ادبی
+کودکان و نوجوانان.
 
-        </div>
+</p>
 
-    </section>
 
+<div class="category-list">
 
-    <!-- International -->
+داستان • قصه • شعر • رمان
+<br>
+نمایشنامه • ادبیات کودکان
+<br>
+و سایر آثار ادبی
 
-    <section id="world">
+</div>
 
-        <div class="section-title">
+</div>
 
-            <h2>فروش بین‌المللی</h2>
 
-            <p class="english-link">
-                International Book &amp; PDF Sales
-            </p>
+<a
+class="button"
+href="literature.html">
 
-        </div>
+ورود به بخش ادبیات
 
-        <div class="sales">
+</a>
 
-            <div class="sales-box">
 
-                <h3>Printed Books</h3>
+</div>
 
-                <ul>
-                    <li>International book sales</li>
-                    <li>Prices in foreign currency</li>
-                    <li>International delivery</li>
-                </ul>
 
-                <a class="button" href="#">
-                    Buy Printed Book
-                </a>
 
-            </div>
+<!-- SCIENCE -->
 
+<div class="category science">
 
-            <div class="sales-box">
 
-                <h3>Digital Books</h3>
+<div>
 
-                <ul>
-                    <li>Full PDF purchase</li>
-                    <li>Chapter purchase</li>
-                    <li>Digital download</li>
-                </ul>
+<div class="category-icon">
+🔬
+</div>
 
-                <a class="button" href="#">
-                    Buy PDF
-                </a>
 
-            </div>
+<h3>
+علم و دانش
+</h3>
 
-        </div>
 
-    </section>
+<div class="english">
+Science &amp; Knowledge
+</div>
 
 
-    <!-- About -->
+<p>
 
-    <div class="about" id="about">
+کتاب‌های علمی،
+دانشگاهی، آموزشی،
+پژوهشی و تخصصی
+در حوزه‌های گوناگون دانش.
 
-        <section>
+</p>
 
-            <div class="about-inner">
 
-                <div class="section-title">
-                    <h2>درباره انتشارات صالحین</h2>
-                </div>
+<div class="category-list">
 
-                <p>
-                    انتشارات صالحین با هدف انتشار و معرفی آثار علمی،
-                    فرهنگی، آموزشی و ادبی فعالیت می‌کند.
-                </p>
+علوم طبیعی • محیط زیست
+<br>
+علوم انسانی • آموزش
+<br>
+پژوهش • فناوری • و سایر علوم
 
-            </div>
+</div>
 
-        </section>
+</div>
 
-    </div>
 
+<a
+class="button"
+href="science.html">
 
-    <!-- Contact -->
+ورود به بخش علم و دانش
 
-    <section id="contact">
+</a>
 
-        <div class="section-title">
 
-            <h2>تماس با ما</h2>
+</div>
 
-            <p>
-                برای اطلاعات بیشتر درباره کتاب‌ها و شیوه خرید
-                با انتشارات صالحین تماس بگیرید.
-            </p>
 
-        </div>
 
-    </section>
+<!-- CULTURE -->
+
+<div class="category culture">
+
+
+<div>
+
+<div class="category-icon">
+🌍
+</div>
+
+
+<h3>
+دین، فرهنگ و میراث بشری
+</h3>
+
+
+<div class="english">
+Religion, Culture &amp; Human Heritage
+</div>
+
+
+<p>
+
+آثار مرتبط با دین،
+فرهنگ، آداب و رسوم،
+تاریخ فرهنگی،
+تمدن‌ها و میراث بشری.
+
+</p>
+
+
+<div class="category-list">
+
+دین و اندیشه • فرهنگ
+<br>
+آداب و رسوم • تمدن‌ها
+<br>
+تاریخ فرهنگی • میراث بشری
+
+</div>
+
+</div>
+
+
+<a
+class="button"
+href="culture.html">
+
+ورود به این بخش
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ALL BOOKS
+========================= -->
+
+<div
+class="all-books"
+id="books">
+
+
+<div class="all-books-inner">
+
+
+<h2>
+همه کتاب‌ها
+</h2>
+
+
+<p>
+
+برای مشاهده فهرست کامل آثار
+انتشارات صالحین، شامل آثار ادبی،
+علمی، فرهنگی و دینی.
+
+</p>
+
+
+<a
+class="button"
+href="books.html">
+
+مشاهده همه کتاب‌ها
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- =========================
+     SALES
+========================= -->
+
+<div
+class="sales-section"
+id="sales">
+
+
+<div class="section-title">
+
+<h2>
+خرید کتاب در ایران
+</h2>
+
+<p>
+نسخه چاپی و الکترونیکی
+</p>
+
+</div>
+
+
+<div class="sales">
+
+
+<div class="sales-box">
+
+
+<h3>
+کتاب چاپی
+</h3>
+
+
+<p>
+
+خرید نسخه چاپی کتاب‌ها
+با قیمت به تومان و ارسال
+در داخل ایران.
+
+</p>
+
+
+<ul>
+
+<li>
+مشاهده مشخصات کتاب
+</li>
+
+<li>
+قیمت به تومان
+</li>
+
+<li>
+پرداخت از طریق درگاه ایرانی
+</li>
+
+<li>
+ارسال نسخه چاپی
+</li>
+
+</ul>
+
+
+<a
+class="button"
+href="iran.html">
+
+خرید کتاب در ایران
+
+</a>
+
+
+</div>
+
+
+
+<div class="sales-box">
+
+
+<h3>
+کتاب الکترونیکی PDF
+</h3>
+
+
+<p>
+
+خرید نسخه الکترونیکی،
+کتاب کامل یا فصل‌های منتخب.
+
+</p>
+
+
+<ul>
+
+<li>
+PDF کامل کتاب
+</li>
+
+<li>
+خرید فصل منتخب
+</li>
+
+<li>
+پرداخت آنلاین
+</li>
+
+<li>
+دریافت فایل پس از پرداخت
+</li>
+
+</ul>
+
+
+<a
+class="button"
+href="iran.html">
+
+خرید PDF در ایران
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =========================
+     INTERNATIONAL SALES
+========================= -->
+
+<section id="international">
+
+
+<div class="section-title">
+
+<h2>
+فروش بین‌المللی
+</h2>
+
+<p>
+International Book &amp; Digital Sales
+</p>
+
+</div>
+
+
+<div class="sales">
+
+
+<div class="sales-box">
+
+
+<h3>
+Printed Books
+</h3>
+
+
+<p>
+
+Purchase printed editions
+of Salihin Publications
+for international readers.
+
+</p>
+
+
+<ul>
+
+<li>
+International prices
+</li>
+
+<li>
+Printed editions
+</li>
+
+<li>
+International delivery
+where available
+</li>
+
+</ul>
+
+
+<a
+class="button"
+href="international.html">
+
+International Book Sales
+
+</a>
+
+
+</div>
+
+
+
+<div class="sales-box">
+
+
+<h3>
+Digital Books &amp; PDF
+</h3>
+
+
+<p>
+
+Purchase digital editions
+and selected chapters.
+
+</p>
+
+
+<ul>
+
+<li>
+Full PDF
+</li>
+
+<li>
+Selected chapters
+</li>
+
+<li>
+Digital delivery
+</li>
+
+</ul>
+
+
+<a
+class="button"
+href="international.html">
+
+International PDF Sales
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<div
+class="about"
+id="about">
+
+
+<section>
+
+
+<div class="about-inner">
+
+
+<h2>
+درباره انتشارات صالحین
+</h2>
+
+
+<p>
+
+انتشارات صالحین با هدف انتشار،
+معرفی و عرضه آثار علمی،
+فرهنگی، آموزشی، ادبی و
+دینی فعالیت می‌کند.
+
+این انتشارات تلاش دارد آثار
+ارزشمند نویسندگان را در اختیار
+خوانندگان فارسی‌زبان و
+مخاطبان بین‌المللی قرار دهد.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+</div>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+class="contact"
+id="contact">
+
+
+<div class="section-title">
+
+<h2>
+تماس با ما
+</h2>
+
+
+<p>
+
+برای اطلاعات بیشتر درباره
+انتشار کتاب، خرید کتاب،
+فروش PDF و همکاری با
+انتشارات صالحین با ما تماس بگیرید.
+
+</p>
+
+
+</div>
+
+
+<a
+class="button"
+href="#">
+
+اطلاعات تماس
+
+</a>
+
+
+</section>
+
 
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    <p>© Salihin Publications</p>
 
-    <p>انتشارات صالحین</p>
+<p>
+© Salihin Publications
+</p>
+
+
+<p>
+انتشارات صالحین
+</p>
+
+
+<p class="footer-english">
+Literature • Science • Culture • Religion
+</p>
+
 
 </footer>
 
+
 </body>
+
 </html>
