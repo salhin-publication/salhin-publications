@@ -3,18 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Salihin Publications</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f7f4ee;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 18px 0;
+        }
+
+        .header-inner {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 13px;
+            font-weight: normal;
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 11px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+
+        .language-link {
+            border: 1px solid #aaa;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #e8e0d2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+        }
+
+        .hero h2 {
+            font-size: 26px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: 25px auto 0;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #555;
+        }
+
+        footer {
+            margin-top: 70px;
+            padding: 30px 20px;
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        @media (max-width: 850px) {
+
+            .header-inner {
+                flex-direction: column;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Salihin Publications</h1>
+<header>
 
-<p>Welcome to Salihin Publications.</p>
+    <div class="header-inner">
 
-<p>
-    <a href="../index.html">فارسی</a>
-</p>
+        <div class="logo">
+            Salihin Publications
+            <span>انتشارات صالحین</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="literature.html">
+                Literature & Art
+            </a>
+
+            <a href="science.html">
+                Science & Knowledge
+            </a>
+
+            <a href="culture.html">
+                Religion & Culture
+            </a>
+
+            <a href="books.html">
+                Books
+            </a>
+
+            <a href="international.html">
+                International Sales
+            </a>
+
+            <a href="../index.html" class="language-link">
+                فارسی
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Salihin Publications</h1>
+
+    <h2>Books, Literature, Knowledge and Culture</h2>
+
+    <p>
+        Welcome to Salihin Publications,
+        an independent publishing house dedicated
+        to literature, science, knowledge, culture
+        and the publication of valuable books.
+    </p>
+
+</section>
+
+
+<main class="container">
+
+    <h2 class="section-title">
+        Explore Salihin Publications
+    </h2>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Literature & Art</h3>
+
+            <p>
+                Discover novels, literary works,
+                artistic books and other creative
+                publications.
+            </p>
+
+            <a href="literature.html" class="button">
+                Explore
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Science & Knowledge</h3>
+
+            <p>
+                Explore scientific, educational
+                and knowledge-based publications
+                from Salihin Publications.
+            </p>
+
+            <a href="science.html" class="button">
+                Explore
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Religion & Culture</h3>
+
+            <p>
+                Books and publications related
+                to culture, religion, thought
+                and human values.
+            </p>
+
+            <a href="culture.html" class="button">
+                Explore
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Books</h3>
+
+            <p>
+                Browse the complete collection
+                of books published by
+                Salihin Publications.
+            </p>
+
+            <a href="books.html" class="button">
+                View Books
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>International Sales</h3>
+
+            <p>
+                Information about purchasing
+                Salihin Publications books
+                from outside Iran.
+            </p>
+
+            <a href="international.html" class="button">
+                Learn More
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Contact</h3>
+
+            <p>
+                For information about books,
+                publishing and international
+                cooperation, please contact us.
+            </p>
+
+            <a href="contact.html" class="button">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © Salihin Publications
+    </p>
+
+    <p>
+        Independent Publishing House
+    </p>
+
+    <p>
+        <a href="../index.html">
+            فارسی
+        </a>
+    </p>
+
+</footer>
 
 </body>
 </html>
