@@ -3,183 +3,258 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-    <title>Books | Salihin Publications</title>
+<title>
+And This Is the Book of Love: Galatea and Pygmalion
+</title>
 
-    <style>
+<meta name="description"
+      content="And This Is the Book of Love: Galatea and Pygmalion by Jalaleddin Valiallah. Seven illustrated digital parts.">
 
-        * {
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            margin: 0;
-            font-family: Georgia, "Times New Roman", serif;
-            background: #f7f4ee;
-            color: #333;
-            line-height: 1.7;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        header {
-            background: #222;
-            color: white;
-            padding: 18px 0;
-        }
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f4ee;
+    color: #29251f;
+    line-height: 1.8;
+}
 
-        .header-inner {
-            width: 92%;
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
+header {
+    background: #202820;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
 
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+}
 
-        .logo span {
-            display: block;
-            font-size: 13px;
-            font-weight: normal;
-            opacity: .8;
-        }
+header p {
+    margin: 12px 0 0;
+    font-size: 19px;
+    color: #ddd;
+}
 
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
+nav {
+    background: #303a30;
+    text-align: center;
+    padding: 13px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 11px;
-            border-radius: 5px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
 
-        nav a:hover {
-            background: #555;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        .language-link {
-            border: 1px solid #aaa;
-        }
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 20px;
+}
 
-        .hero {
-            text-align: center;
-            padding: 65px 20px;
-            background: #e8e0d2;
-        }
+.book-intro {
+    background: white;
+    margin-top: 35px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
 
-        .hero h1 {
-            font-size: 42px;
-            margin: 0 0 10px;
-        }
+.book-cover {
+    width: 300px;
+    text-align: center;
+}
 
-        .hero p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: auto;
-        }
+.book-cover img {
+    max-width: 100%;
+    max-height: 470px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+}
 
-        .container {
-            width: 92%;
-            max-width: 1100px;
-            margin: 50px auto;
-        }
+.book-description {
+    flex: 1;
+}
 
-        .book-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
+.book-description h2 {
+    font-size: 31px;
+    font-weight: normal;
+    margin-top: 0;
+}
 
-        .book-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,.08);
-            text-align: center;
-        }
+.author {
+    font-size: 20px;
+    font-style: italic;
+}
 
-        .book-card img {
-            width: 100%;
-            max-width: 280px;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
+.details {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f2eee5;
+    border-radius: 7px;
+}
 
-        .book-card h2 {
-            font-size: 25px;
-            margin-top: 5px;
-        }
+.parts-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 65px 0 15px;
+}
 
-        .book-card p {
-            color: #555;
-        }
+.parts-introduction {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+}
 
-        .button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 22px;
-            background: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+.part {
+    background: white;
+    margin: 35px 0;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
 
-        .button:hover {
-            background: #555;
-        }
+.part-content {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
 
-        footer {
-            margin-top: 70px;
-            padding: 30px 20px;
-            background: #222;
-            color: white;
-            text-align: center;
-        }
+.part-image {
+    width: 300px;
+    text-align: center;
+}
 
-        footer a {
-            color: white;
-        }
+.part-image img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
 
-        @media (max-width: 850px) {
+.part-text {
+    flex: 1;
+}
 
-            .header-inner {
-                flex-direction: column;
-            }
+.part h3 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 0;
+}
 
-            .hero h1 {
-                font-size: 34px;
-            }
-        }
+.part-number {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+}
 
-        @media (max-width: 550px) {
+.buy-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f2eee5;
+    border-radius: 7px;
+}
 
-            nav {
-                flex-direction: column;
-                width: 100%;
-            }
+.price {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
 
-            nav a {
-                text-align: center;
-            }
-        }
+.buy-button {
+    display: inline-block;
+    padding: 11px 24px;
+    background: #303a30;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-    </style>
+.buy-button:hover {
+    background: #202820;
+}
+
+.complete-edition {
+    margin: 65px 0 30px;
+    padding: 40px;
+    background: #e8e3d8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.complete-edition h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+footer {
+    margin-top: 70px;
+    background: #202820;
+    color: #ddd;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .book-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-cover {
+        width: 85%;
+    }
+
+    .part-content {
+        flex-direction: column;
+    }
+
+    .part-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 7px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -189,121 +264,529 @@
 
 <header>
 
-    <div class="header-inner">
+<h1>
+And This Is the Book of Love
+</h1>
 
-        <div class="logo">
+<p>
+Galatea and Pygmalion
+</p>
 
-            Salihin Publications
-
-            <span>
-                انتشارات صالحین
-            </span>
-
-        </div>
-
-
-        <nav>
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="literature.html">
-                Literature & Art
-            </a>
-
-            <a href="science.html">
-                Science & Knowledge
-            </a>
-
-            <a href="culture.html">
-                Religion & Culture
-            </a>
-
-            <a href="books.html">
-                Books
-            </a>
-
-            <a href="international.html">
-                International Sales
-            </a>
-
-            <a href="../index.html"
-               class="language-link">
-                فارسی
-            </a>
-
-        </nav>
-
-    </div>
+<p>
+Jalaleddin Valiallah
+</p>
 
 </header>
 
 
-<section class="hero">
+<nav>
 
-    <h1>
-        Books
-    </h1>
+<a href="index.html">Home</a>
 
-    <p>
-        Explore books published by
-        Salihin Publications.
-    </p>
+<a href="literature.html">
+Literature & Arts
+</a>
 
-</section>
+<a href="science.html">
+Science & Knowledge
+</a>
+
+<a href="culture.html">
+Religion, Culture & Heritage
+</a>
+
+<a href="books.html">
+All Books
+</a>
+
+<a href="international.html">
+International Sales
+</a>
+
+<a href="../index.html">
+فارسی
+</a>
+
+</nav>
 
 
 <main class="container">
 
 
-    <div class="book-grid">
+<section class="book-intro">
 
 
-        <!-- BOOK 1 -->
+<div class="book-cover">
 
-        <div class="book-card">
+<img src="images/book1/cover.jpg"
+     alt="And This Is the Book of Love: Galatea and Pygmalion">
 
-            <img
-                src="../images/galatea-pygmalion.jpg"
-                alt="Galatea and Pygmalion">
-
-            <h2>
-                And This Book Is Love
-            </h2>
-
-            <p>
-                <strong>
-                    Galatea and Pygmalion
-                </strong>
-            </p>
-
-            <p>
-                A novel by
-                <strong>
-                    Jalaleddin Valiollah
-                </strong>
-            </p>
-
-            <p>
-                Published by
-                <strong>
-                    Salihin Publications
-                </strong>
-            </p>
-
-            <a
-                href="book-1.html"
-                class="button">
-
-                View Book
-
-            </a>
-
-        </div>
+</div>
 
 
-    </div>
+<div class="book-description">
+
+<h2>
+And This Is the Book of Love:
+<br>
+Galatea and Pygmalion
+</h2>
+
+<p class="author">
+By Jalaleddin Valiallah
+</p>
+
+<p>
+A novel exploring love, beauty, imagination and the
+complex relationship between the human being and the
+ideal of beauty.
+</p>
+
+<p>
+The English digital edition is presented in seven
+independent illustrated parts. Each part can be
+purchased and downloaded separately.
+</p>
+
+
+<div class="details">
+
+<strong>Language:</strong> English<br>
+
+<strong>Format:</strong> Digital PDF<br>
+
+<strong>Edition:</strong> Illustrated English Edition<br>
+
+<strong>Parts:</strong> 7
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<h2 class="parts-title">
+The Seven Parts
+</h2>
+
+
+<p class="parts-introduction">
+
+The book is divided into seven independent digital
+parts. Each part has its own introduction and
+illustration. After payment, the corresponding PDF
+will be made available for download.
+
+</p>
+
+
+
+<!-- PART 1 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-1.jpg"
+     alt="Part One illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part One
+</div>
+
+<h3>
+Part One
+</h3>
+
+<p>
+A short introduction to the first part of
+<em>And This Is the Book of Love: Galatea and Pygmalion</em>
+will appear here.
+</p>
+
+<p>
+This section will contain the first portion of
+the English edition together with its own
+illustration.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PART 2 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-2.jpg"
+     alt="Part Two illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part Two
+</div>
+
+<h3>
+Part Two
+</h3>
+
+<p>
+A short introduction to the second part of
+the novel will appear here.
+</p>
+
+<p>
+The illustration for this part will be
+different from the illustrations used for
+the other parts.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PART 3 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-3.jpg"
+     alt="Part Three illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part Three
+</div>
+
+<h3>
+Part Three
+</h3>
+
+<p>
+A short introduction to the third part
+of the novel will appear here.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PART 4 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-4.jpg"
+     alt="Part Four illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part Four
+</div>
+
+<h3>
+Part Four
+</h3>
+
+<p>
+A short introduction to the fourth part
+of the novel will appear here.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PART 5 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-5.jpg"
+     alt="Part Five illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part Five
+</div>
+
+<h3>
+Part Five
+</h3>
+
+<p>
+A short introduction to the fifth part
+of the novel will appear here.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PART 6 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-6.jpg"
+     alt="Part Six illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part Six
+</div>
+
+<h3>
+Part Six
+</h3>
+
+<p>
+A short introduction to the sixth part
+of the novel will appear here.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PART 7 -->
+
+<section class="part">
+
+<div class="part-content">
+
+
+<div class="part-image">
+
+<img src="images/book1/part-7.jpg"
+     alt="Part Seven illustration">
+
+</div>
+
+
+<div class="part-text">
+
+<div class="part-number">
+Part Seven
+</div>
+
+<h3>
+Part Seven
+</h3>
+
+<p>
+A short introduction to the seventh and
+final part of the novel will appear here.
+</p>
+
+
+<div class="buy-box">
+
+<div class="price">
+Price: $0.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase & Download PDF
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="complete-edition">
+
+<h2>
+Complete Seven-Part Edition
+</h2>
+
+<p>
+Readers who wish to obtain the complete
+English digital edition may purchase all
+seven parts together.
+</p>
+
+<p>
+The complete edition will contain all seven
+PDF files.
+</p>
+
+<div class="price">
+Complete Edition: $5.99
+</div>
+
+<a href="#"
+   class="buy-button">
+Purchase Complete Edition
+</a>
+
+</section>
 
 
 </main>
@@ -311,19 +794,21 @@
 
 <footer>
 
-    <p>
-        © Salihin Publications
-    </p>
+<p>
+© 2026 Salihin Publications
+</p>
 
-    <p>
-        Independent Publishing House
-    </p>
+<p>
+And This Is the Book of Love: Galatea and Pygmalion
+</p>
 
-    <p>
-        <a href="../index.html">
-            فارسی
-        </a>
-    </p>
+<p>
+Jalaleddin Valiallah
+</p>
+
+<a href="index.html">
+Back to English Home
+</a>
 
 </footer>
 
