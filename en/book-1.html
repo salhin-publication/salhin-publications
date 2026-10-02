@@ -1,801 +1,1111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>And This Is the Book of Love: Galatea and Pygmalion | Salihin Publications</title>
+<title>
+And This Is the Book of Love: Galatea and Pygmalion | Salihin Publications
+</title>
 
-    <meta name="description"
-          content="And This Is the Book of Love: Galatea and Pygmalion by Jalaleddin Valiallah. An English edition published by Salihin Publications.">
+<meta name="description"
+content="And This Is the Book of Love: Galatea and Pygmalion by Jalaleddin Valiallah. Published by Salihin Publications.">
 
-    <style>
+<style>
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            font-family: Georgia, "Times New Roman", serif;
-            background: #f7f4ef;
-            color: #2d2925;
-            line-height: 1.7;
-        }
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f4ef;
+    color: #2d2925;
+    line-height: 1.8;
+}
 
-        header {
-            background: #2f2924;
-            color: white;
-            padding: 20px 5%;
-        }
+header {
+    background: #2f2924;
+    color: white;
+    padding: 20px 5%;
+}
 
-        .header-inner {
-            max-width: 1150px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-            justify-content: flex-end;
-        }
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: flex-end;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        .hero {
-            max-width: 1150px;
-            margin: 50px auto 30px;
-            padding: 0 25px;
-            text-align: center;
-        }
+.hero {
+    max-width: 1150px;
+    margin: 50px auto 30px;
+    padding: 0 25px;
+    text-align: center;
+}
 
-        .hero h1 {
-            font-size: 42px;
-            line-height: 1.25;
-            margin-bottom: 15px;
-            color: #332b25;
-        }
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #332b25;
+}
 
-        .author {
-            font-size: 22px;
-            color: #76675b;
-            margin-bottom: 30px;
-        }
+.author {
+    font-size: 22px;
+    color: #76675b;
+    margin-bottom: 30px;
+}
 
-        .book-cover {
-            max-width: 360px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 25px auto 40px;
-            border-radius: 4px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.20);
-        }
+.book-cover {
+    max-width: 360px;
+    width: 100%;
+    display: block;
+    margin: 25px auto 40px;
+    border-radius: 4px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+}
 
-        .book-info {
-            max-width: 850px;
-            margin: 0 auto 50px;
-            padding: 30px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-            text-align: left;
-        }
+.book-info {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
 
-        .book-info h2 {
-            margin-top: 0;
-            color: #493b31;
-        }
+.book-info h2 {
+    margin-top: 0;
+    color: #493b31;
+}
 
-        .book-info table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+.book-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-        .book-info td {
-            padding: 9px 5px;
-            border-bottom: 1px solid #e7e0d8;
-            vertical-align: top;
-        }
+.book-info td {
+    padding: 9px 5px;
+    border-bottom: 1px solid #e7e0d8;
+    vertical-align: top;
+}
 
-        .book-info td:first-child {
-            width: 180px;
-            font-weight: bold;
-            color: #5d4d41;
-        }
+.book-info td:first-child {
+    width: 180px;
+    font-weight: bold;
+    color: #5d4d41;
+}
 
-        .section-title {
-            max-width: 1000px;
-            margin: 60px auto 30px;
-            padding: 0 25px;
-            text-align: center;
-        }
+.about {
+    max-width: 950px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
 
-        .section-title h2 {
-            font-size: 32px;
-            color: #332b25;
-            margin-bottom: 8px;
-        }
+.about h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #493b31;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
 
-        .section-title p {
-            color: #76675b;
-        }
+.about h3 {
+    font-size: 26px;
+    color: #493b31;
+    margin-top: 45px;
+}
 
-        .parts {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 25px 50px;
-        }
+.about p {
+    margin: 0 0 20px;
+    text-align: justify;
+}
 
-        .part {
-            background: white;
-            margin-bottom: 35px;
-            padding: 25px;
-            border-radius: 9px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-            overflow: hidden;
-        }
+.about .quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 19px;
+    margin: 30px 15px;
+    color: #5d5148;
+}
 
-        .part h3 {
-            font-size: 27px;
-            color: #493b31;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
+.parts-title {
+    max-width: 1000px;
+    margin: 60px auto 30px;
+    padding: 0 25px;
+    text-align: center;
+}
 
-        .part-image {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            display: block;
-            margin: 0 auto 25px;
-            border-radius: 5px;
-        }
+.parts-title h2 {
+    font-size: 34px;
+    color: #332b25;
+}
 
-        .introduction {
-            margin-bottom: 25px;
-        }
+.parts-title p {
+    color: #76675b;
+}
 
-        .introduction h4 {
-            font-size: 20px;
-            color: #59493d;
-            margin-bottom: 8px;
-        }
+.parts {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px 50px;
+}
 
-        .pdf-box {
-            margin-top: 25px;
-            padding: 20px;
-            background: #f4efe8;
-            border-radius: 7px;
-            text-align: center;
-        }
+.part {
+    background: white;
+    margin-bottom: 35px;
+    padding: 25px;
+    border-radius: 9px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
 
-        .price {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #493b31;
-        }
+.part h3 {
+    font-size: 27px;
+    color: #493b31;
+    margin-top: 0;
+}
 
-        .button {
-            display: inline-block;
-            padding: 11px 22px;
-            background: #493b31;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 15px;
-        }
+.part-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 5px;
+}
 
-        .button:hover {
-            background: #2f2924;
-        }
+.introduction {
+    margin-bottom: 25px;
+}
 
-        .complete-edition {
-            max-width: 850px;
-            margin: 20px auto 70px;
-            padding: 35px;
-            background: #332b25;
-            color: white;
-            text-align: center;
-            border-radius: 9px;
-        }
+.pdf-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f4efe8;
+    border-radius: 7px;
+    text-align: center;
+}
 
-        .complete-edition h2 {
-            margin-top: 0;
-            font-size: 30px;
-        }
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #493b31;
+}
 
-        .complete-edition p {
-            max-width: 700px;
-            margin: 15px auto 25px;
-        }
+.button {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #493b31;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-        .complete-edition .button {
-            background: white;
-            color: #332b25;
-        }
+.button:hover {
+    background: #2f2924;
+}
 
-        .navigation {
-            max-width: 1000px;
-            margin: 0 auto 60px;
-            padding: 0 25px;
-            text-align: center;
-        }
+.complete-edition {
+    max-width: 850px;
+    margin: 30px auto 70px;
+    padding: 35px;
+    background: #332b25;
+    color: white;
+    text-align: center;
+    border-radius: 9px;
+}
 
-        .navigation a {
-            display: inline-block;
-            margin: 5px 8px;
-            padding: 9px 17px;
-            border: 1px solid #cfc5bb;
-            border-radius: 5px;
-            color: #493b31;
-            text-decoration: none;
-        }
+.complete-edition h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
 
-        .navigation a:hover {
-            background: #eee7df;
-        }
+.navigation {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 0 25px;
+    text-align: center;
+}
 
-        footer {
-            background: #2f2924;
-            color: #ddd;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 30px;
-        }
+.navigation a {
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 9px 17px;
+    border: 1px solid #cfc5bb;
+    border-radius: 5px;
+    color: #493b31;
+    text-decoration: none;
+}
 
-        footer p {
-            margin: 5px 0;
-        }
+footer {
+    background: #2f2924;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 20px;
+}
 
-        @media (max-width: 700px) {
+@media (max-width: 700px) {
 
-            .header-inner {
-                flex-direction: column;
-                text-align: center;
-            }
+    .header-inner {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            nav {
-                justify-content: center;
-            }
+    nav {
+        justify-content: center;
+    }
 
-            .hero h1 {
-                font-size: 31px;
-            }
+    .hero h1 {
+        font-size: 31px;
+    }
 
-            .author {
-                font-size: 19px;
-            }
+    .about {
+        padding: 25px;
+    }
 
-            .book-info {
-                padding: 20px;
-            }
+    .book-info td:first-child {
+        width: 120px;
+    }
+}
 
-            .book-info td:first-child {
-                width: 120px;
-            }
-
-            .section-title h2 {
-                font-size: 27px;
-            }
-
-            .part {
-                padding: 18px;
-            }
-
-            .part h3 {
-                font-size: 24px;
-            }
-        }
-
-    </style>
+</style>
 </head>
 
 <body>
 
 <header>
 
-    <div class="header-inner">
+<div class="header-inner">
 
-        <div class="logo">
-            Salihin Publications
-        </div>
+<div class="logo">
+Salihin Publications
+</div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">Books</a>
-            <a href="index.html">Literature &amp; Arts</a>
-            <a href="index.html">International Sales</a>
-            <a href="../index.html">Persian</a>
-        </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html">Books</a>
+<a href="index.html">Literature &amp; Arts</a>
+<a href="index.html">International Sales</a>
+<a href="../index.html">Persian</a>
+</nav>
 
-    </div>
+</div>
 
 </header>
 
 
 <main>
 
-    <!-- BOOK TITLE -->
 
-    <section class="hero">
+<section class="hero">
 
-        <h1>
-            And This Is the Book of Love:<br>
-            Galatea and Pygmalion
-        </h1>
+<h1>
+And This Is the Book of Love:<br>
+Galatea and Pygmalion
+</h1>
 
-        <div class="author">
-            By <strong>Jalaleddin Valiallah</strong>
-        </div>
+<div class="author">
+By <strong>Jalaleddin Valiallah</strong>
+</div>
 
-        <!--
-        COVER IMAGE
+<img
+src="images/book1/cover.jpg"
+alt="And This Is the Book of Love: Galatea and Pygmalion"
+class="book-cover"
+>
 
-        Upload the English cover later to:
+</section>
 
-        en/images/book1/cover.jpg
 
-        If the image does not yet exist, the rest of the page
-        will still work.
-        -->
 
-        <img
-            src="images/book1/cover.jpg"
-            alt="And This Is the Book of Love: Galatea and Pygmalion"
-            class="book-cover"
-        >
+<section class="book-info">
 
-    </section>
+<h2>Book Information</h2>
+
+<table>
 
+<tr>
+<td>Title</td>
+<td>
+And This Is the Book of Love:
+Galatea and Pygmalion
+</td>
+</tr>
+
+<tr>
+<td>Author</td>
+<td>Jalaleddin Valiallah</td>
+</tr>
+
+<tr>
+<td>Publisher</td>
+<td>Salihin Publications</td>
+</tr>
+
+<tr>
+<td>Place of Publication</td>
+<td>Tehran</td>
+</tr>
+
+<tr>
+<td>Publication Year</td>
+<td>1405</td>
+</tr>
+
+<tr>
+<td>ISBN</td>
+<td>978-622-87864-9-0</td>
+</tr>
+
+<tr>
+<td>Length</td>
+<td>550 pages</td>
+</tr>
+
+<tr>
+<td>Language</td>
+<td>Persian</td>
+</tr>
+
+<tr>
+<td>Subjects</td>
+<td>
+Persian Fiction — 21st Century;
+Love — Fiction
+</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<!-- ABOUT THE BOOK -->
+
+<section class="about">
+
+<h2>About the Book</h2>
+
+
+<p>
+And This Is the Book of Love is a book with an international
+perspective on love. What is love? What views and definitions of
+love have human beings developed? What relationship exists between
+love and marital relationships? Is love merely sexual pleasure?
+Whether in the love between two lovers, or in the love of humanity
+and the moral advancement of human society, what obstacles stand in
+the way of attaining love?
+</p>
+
+<p>
+Does a greater degree of intellectual and emotional maturity make
+human love more genuine and profound? What relationship exists
+between individual development, the development of human societies
+and civilization, and love?
+</p>
+
+<p>
+What is <em>imaginal love</em>? Can imaginal love contribute to
+the intellectual and rational development of human beings and to the
+deepening of their feelings and emotions? Just as human beings pass
+through stages of physical growth, are there also stages of
+intellectual and spiritual development in their understanding and
+experience of love?
+</p>
+
+<p>
+What psychological role does love play in bringing peace to the
+human mind and soul? Can love become the driving force that awakens
+the hidden powers within human beings and enables them to build a
+life and fulfill its necessities? Is love a source of strength and
+a force that gives life?
+</p>
+
+<p>
+Just as love can build and smooth the foundations of married life,
+can it also serve as the foundation for the creation of an ideal
+society and the higher aspirations of human communities? How can
+love become universal?
+</p>
+
+<p>
+What is beauty? Why does every person have his or her own
+understanding and definition of beauty? Is beauty itself a virtue?
+What are imaginary and pathological forms of love? Can love itself
+become a psychological illness?
+</p>
+
+<p>
+What relationship exists between purity, virtue, piety, and genuine
+love? Is love flowing through every particle of the universe? What
+role do stories, tales, and novels play in shaping the structures of
+human imagination and thought?
+</p>
+
+<p>
+Did the development of humankind begin at the point when human
+beings started telling stories about their experiences and passing
+those stories from one generation to the next?
+</p>
+
+<p>
+Is there any meaningful difference between our brains and the brain
+of Plato, or between our feelings and those of Plato and Aristotle?
+What part of human knowledge is covered by stories and narratives?
+What relationship exists between art and love? What relationship
+exists between reason and love? Where does the ultimate spiritual
+delight of love lead?
+</p>
+
+<p>
+Can love heal many of the wounds of society and the individual, or
+is this merely poetic exaggeration? What effect does exaggeration
+have in moving human beings toward action? What is destiny, and upon
+what does it depend? What role do freedom and free will play in
+human development? What relationship exists between independence,
+freedom, and the elevation of love?
+</p>
+
+<p>
+These, and many other questions, are explored in this book, with
+some of them finding their answers through its stories, reflections,
+and journeys.
+</p>
+
+
+<p>
+The book portrays the stages of development of a young sculptor
+named Pygmalion. Through the seven stages of love, from children's
+tales and imaginative surreal stories to social events and the
+exploration of social problems and obstacles to progress, the book
+is filled with stories of love and fidelity, wisdom and counsel,
+and possible paths out of intellectual, psychological, and social
+dead ends.
+</p>
+
+
+<h3>And This Is the Story of Love</h3>
+
+
+<p class="quote">
+“There is but one story of love;
+yet I marvel at all who tell it as though it were new.”
+<br>
+— Hafez
+</p>
+
+
+<p>
+And This Is the Book of Love. It is a story of love and devotion,
+intoxication and separation, presence and absence, tranquility and
+restlessness. It is the sorrow of separation and the joy of reunion.
+It is a reflection on the continuity of existence and life.
+</p>
+
+<p>
+It is the manifestation of the beloved in countless forms: the
+lines, colors, marks, and beauty of the one who brings peace to the
+heart. It is the heart longing, trembling, and restless for the
+beloved. It is a remembrance of the voice of love.
+</p>
+
+
+<p class="quote">
+“I have heard nothing more beautiful than the voice of love,
+a remembrance that may remain beneath this revolving dome.”
+<br>
+— Rumi
+</p>
+
+
+<p>
+The myth of Pygmalion is one of the most fascinating stories of
+ancient Greece and has continually inspired artists, writers, and
+thinkers. It tells of Pygmalion, a Cypriot king and skilled
+sculptor who, because of his perfectionism and profound devotion to
+art, falls in love not with a real human being but with a work he
+has created himself.
+</p>
+
+<p>
+The story of Galatea and Pygmalion is the first story of love in
+our world. In truth, the story of Galatea and Pygmalion is the story
+of all of us.
+</p>
+
+<p>
+Each of us carries within ourselves the image of a beautiful and
+unique being, something seemingly placed within our existence from
+the beginning. Our restlessness is born from separation from this
+image and from our search for it.
+</p>
+
+<p>
+Galatea and Pygmalion exist within each person as a particular
+being, corresponding to that person's nature and inner world. If we
+are men, the image may appear as a woman; if we are women, it may
+appear as a man. It is a beautiful image within our being and
+unconscious mind that we spend our lives seeking.
+</p>
+
+<p>
+Even if we find it and live happily and lightly beside it for a
+lifetime, at the end of the journey our hearts become restless
+again, as though the passing of a lifetime had been no more than the
+blink of an eye.
+</p>
+
+<p>
+Why are we restless? Because another image remains within our soul
+and heart, and we are journeying toward it. It is the most beautiful
+of all ideals, a goddess beyond whom there seems to be no greater
+beauty—an ideal of which every person carries an image within the
+mind.
+</p>
+
+<p>
+The story of Pygmalion and Galatea knows neither time nor place.
+Although it takes the form of one of the legends and myths of
+ancient Greece, it is a universal and transnational story belonging
+to all peoples and cultures.
+</p>
+
+<p>
+For this reason, the story in this book is presented in a
+cosmopolitan form, intended to awaken a sense of belonging in
+readers everywhere. It is the story of humanity. It is the story of
+love and devotion. Love and devotion are an eternal and universal
+story.
+</p>
+
+<p>
+The story of love is the story of all of us. As you read this book,
+you may remember days gone by: the memory of a love, or loves, you
+once experienced; the memory of youth and dreams of immortality,
+the excitement and intoxication of youth, and its lightness of
+spirit.
+</p>
+
+<p>
+And if you are young, you may find yourself wondering how you will
+meet Love, now and in the future, and how you might act so that the
+memory becomes one that remains with you throughout your life.
+</p>
+
+<p>
+Love is an essence woven into the being of every one of us. This is
+the story of Pygmalion's love for Galatea. What is the story of your
+love?
+</p>
+
+<p>
+Many versions of this story have been told in the past. Each
+narrator has approached it according to his or her own vision of the
+world. Perhaps in the future, people in other times and other
+places will tell other versions of the same story. But this is my
+version.
+</p>
+
+<p>
+In the earliest known version, written by the Roman poet Ovid in
+the eighth year of the Common Era in his <em>Metamorphoses</em>,
+Pygmalion cannot find the woman he desires. Losing hope of finding
+her, he turns toward creating a sculpture that corresponds to his
+expectations of an ideal woman.
+</p>
+
+<p>
+He falls in love with a figure that has emerged from his own mind,
+which he himself has carved, refined, shaped, and adorned.
+</p>
+
+<p>
+In the nineteenth century, the English writer Bernard Shaw offered
+another interpretation of the story, reflecting the newly emerging
+class structure of his time. In Shaw's version, virtue is understood
+through the customs and manners of the English aristocracy of that
+period.
+</p>
+
+<p>
+In Iran, Sadegh Hedayat wrote a nihilistic interpretation of the
+story in <em>The Doll Behind the Curtain</em>. His narrative leads
+to a tragic ending through the experience of meaninglessness,
+isolation, illusion, and escape into destructive fantasies.
+</p>
+
+<p>
+This is not to say that Sadegh Hedayat himself was an advocate of
+nihilism. Rather, the story suggests that the extreme rejection of
+society and excessive individualism can ultimately lead to
+emptiness.
+</p>
+
+<p>
+The French painter and sculptor Jean-Léon Gérôme also created a
+celebrated work based on this myth. <em>Pygmalion and Galatea</em>
+(<em>Pygmalion et Galatée</em>) is a renowned work created by Gérôme
+in 1890. The painting is now held by The Metropolitan Museum of Art
+in New York. Its subject is Pygmalion, a figure from Greek mythology,
+and the work evokes the passionate love of an artist for the work he
+has created.
+</p>
+
+<p>
+If you have become curious about these different versions of the
+story, you may wish to explore them. After all, without those
+earlier works, this version could not have taken shape. They are all
+part of the cultural and civilizational heritage of humanity.
+</p>
+
+<p>
+This version offers a realistic yet romantic perspective on the
+story and serves as an introduction to philosophical and mystical
+approaches to love.
+</p>
+
+<p>
+It suggests that each of us carries within ourselves a beautiful and
+ideal being whom we spend our lives seeking. If we find that person
+and discover that he or she does not correspond to our ideal, we may
+try to transform the relationship—and sometimes the person
+themselves—in the direction of our mental and lived ideals.
+</p>
+
+<p>
+How many women have helped men find their way and rise toward a
+higher level of being? How many men have helped women move from an
+idealized image toward a lived reality, and helped them grow?
+</p>
+
+<p>
+From this perspective, marriage is a workshop of sculpture: a place
+where attachment to outward beauty can gradually develop into love
+for spiritual, psychological, and moral beauty.
+</p>
+
+<p>
+In this journey, imagination and reality become intertwined in the
+real world. The ideal and the real seek union within the context of
+life.
+</p>
+
+<p>
+The story suggests that no individual possesses a perfect ideal in
+actual existence. Rather, perfection emerges through a persistent
+effort to elevate one's ideal and connect that elevated ideal with
+the reality of one's life.
+</p>
+
+<p>
+Life is a journey of discovery. Each of us first sees that beautiful
+and unique figure in the house and workshop of the heart and within
+the sky of imagination. We dream of meeting that figure one day,
+living beside it in happiness, and continuing our journey through
+this world toward the greater universe of love.
+</p>
+
+<p>
+In this story, Pygmalion the sculptor, disappointed in his attempt
+to unite with his beloved, sets out to become more complete through
+every encounter with love, so that he may see a clear image of his
+beloved in his mind and become capable of carving it from marble.
+</p>
+
+<p>
+He loves this incomparable image, hoping that perhaps one day it
+will come alive and rescue him from the harshness, coldness, and
+burdens of this lower and rocky world, allowing him to travel a
+beautiful and joyful path toward the future and happiness.
+</p>
+
+<p>
+This collection contains tales, stories, and adventures that speak
+not only to adults but also to adolescents and young people. It may
+inspire young people in love and life; and perhaps one day they will
+hold this book in their hands and read it beside the beds of their
+own children, helping them fall asleep and enriching their
+imaginations.
+</p>
+
+<p>
+Alongside poetry, adventures, and philosophical and mystical
+discussions, the book contains stories of spirits and fairies and
+the enchanted cities of grandmother's tales.
+</p>
+
+<p>
+Beyond protesting against humanity's historical ignorance and
+condemning anger, violence, betrayal, hatred, greed, and envy, the
+book is an attempt to understand love, mutual understanding, and
+the ability to tolerate one another on the journey toward peace,
+love, and enduring affection.
+</p>
+
+<p>
+Both in Ovid's myth and in this retelling, the atmosphere of the
+story reaches back to a time when no established religion had yet
+fully emerged in Greece and Rome. The myths of goddesses such as
+Venus, Aphrodite, Hera, and Athena lived in the imagination, while
+the beliefs of people in different regions were largely rooted in
+ethnic and tribal traditions.
+</p>
+
+<p class="quote">
+“What I say is only as much as you can understand;
+I die in longing for true understanding.”
+<br>
+— Rumi
+</p>
+
+</section>
+
+
+
+<!-- SEVEN PARTS -->
+
+<section class="parts-title">
+
+<h2>The Seven Parts of the Book</h2>
+
+<p>
+The book is presented in seven parts. Each part will have its own
+introduction, its own illustration, and its own downloadable digital
+edition.
+</p>
+
+</section>
+
+
+<section class="parts">
+
+
+<article class="part">
+
+<h3>Part One</h3>
+
+<img
+src="images/book1/part-1.jpg"
+alt="Illustration for Part One"
+class="part-image"
+>
+
+<div class="introduction">
+
+<p>
+The introduction to Part One will be added here.
+</p>
+
+</div>
+
+<div class="pdf-box">
+
+<div class="price">
+Digital Edition — Part One
+</div>
+
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="part">
+
+<h3>Part Two</h3>
+
+<img
+src="images/book1/part-2.jpg"
+alt="Illustration for Part Two"
+class="part-image"
+>
+
+<div class="introduction">
+
+<p>
+The introduction to Part Two will be added here.
+</p>
+
+</div>
+
+<div class="pdf-box">
+
+<div class="price">
+Digital Edition — Part Two
+</div>
+
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="part">
+
+<h3>Part Three</h3>
+
+<img
+src="images/book1/part-3.jpg"
+alt="Illustration for Part Three"
+class="part-image"
+>
+
+<div class="introduction">
+
+<p>
+The introduction to Part Three will be added here.
+</p>
+
+</div>
+
+<div class="pdf-box">
+
+<div class="price">
+Digital Edition — Part Three
+</div>
+
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="part">
+
+<h3>Part Four</h3>
+
+<img
+src="images/book1/part-4.jpg"
+alt="Illustration for Part Four"
+class="part-image"
+>
+
+<div class="introduction">
+
+<p>
+The introduction to Part Four will be added here.
+</p>
+
+</div>
+
+<div class="pdf-box">
+
+<div class="price">
+Digital Edition — Part Four
+</div>
+
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
+
+</div>
+
+</article>
+
 
-    <!-- BOOK INFORMATION -->
 
-    <section class="book-info">
+<article class="part">
 
-        <h2>Book Information</h2>
+<h3>Part Five</h3>
 
-        <table>
+<img
+src="images/book1/part-5.jpg"
+alt="Illustration for Part Five"
+class="part-image"
+>
 
-            <tr>
-                <td>Title</td>
-                <td>
-                    And This Is the Book of Love:
-                    Galatea and Pygmalion
-                </td>
-            </tr>
+<div class="introduction">
 
-            <tr>
-                <td>Author</td>
-                <td>Jalaleddin Valiallah</td>
-            </tr>
+<p>
+The introduction to Part Five will be added here.
+</p>
 
-            <tr>
-                <td>Publisher</td>
-                <td>Salihin Publications</td>
-            </tr>
+</div>
 
-            <tr>
-                <td>Place of Publication</td>
-                <td>Tehran</td>
-            </tr>
+<div class="pdf-box">
 
-            <tr>
-                <td>Publication Year</td>
-                <td>1405</td>
-            </tr>
+<div class="price">
+Digital Edition — Part Five
+</div>
 
-            <tr>
-                <td>ISBN</td>
-                <td>978-622-87864-9-0</td>
-            </tr>
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
 
-            <tr>
-                <td>Length</td>
-                <td>550 pages</td>
-            </tr>
+</div>
 
-            <tr>
-                <td>Language</td>
-                <td>Persian</td>
-            </tr>
+</article>
 
-            <tr>
-                <td>Subjects</td>
-                <td>
-                    Persian Fiction — 21st Century;
-                    Love — Fiction
-                </td>
-            </tr>
 
-        </table>
 
-    </section>
+<article class="part">
 
+<h3>Part Six</h3>
 
-    <!-- INTRODUCTION -->
+<img
+src="images/book1/part-6.jpg"
+alt="Illustration for Part Six"
+class="part-image"
+>
 
-    <section class="section-title">
+<div class="introduction">
 
-        <h2>About the Book</h2>
+<p>
+The introduction to Part Six will be added here.
+</p>
 
-        <p>
-            And This Is the Book of Love: Galatea and Pygmalion
-            is a literary work by Jalaleddin Valiallah.
-        </p>
+</div>
 
-        <p>
-            The English edition is presented in seven separate parts.
-            Each part will have its own introduction, illustration,
-            and digital edition.
-        </p>
+<div class="pdf-box">
 
-    </section>
+<div class="price">
+Digital Edition — Part Six
+</div>
 
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
 
-    <!-- SEVEN PARTS -->
+</div>
 
-    <section class="section-title">
+</article>
 
-        <h2>The Seven Parts of the Book</h2>
 
-        <p>
-            Select a part to read its introduction and obtain
-            its digital edition.
-        </p>
 
-    </section>
+<article class="part">
 
+<h3>Part Seven</h3>
 
-    <section class="parts">
+<img
+src="images/book1/part-7.jpg"
+alt="Illustration for Part Seven"
+class="part-image"
+>
 
+<div class="introduction">
 
-        <!-- PART ONE -->
+<p>
+The introduction to Part Seven will be added here.
+</p>
 
-        <article class="part">
+</div>
 
-            <h3>Part One</h3>
+<div class="pdf-box">
 
-            <!--
-            Upload image later:
+<div class="price">
+Digital Edition — Part Seven
+</div>
 
-            en/images/book1/part-1.jpg
-            -->
+<a href="#" class="button">
+Purchase &amp; Download PDF
+</a>
 
-            <img
-                src="images/book1/part-1.jpg"
-                alt="Illustration for Part One"
-                class="part-image"
-            >
+</div>
 
-            <div class="introduction">
+</article>
 
-                <h4>Introduction</h4>
 
-                <p>
-                    The introduction to Part One will be placed here.
-                </p>
+</section>
 
-            </div>
 
-            <div class="pdf-box">
 
-                <div class="price">
-                    Digital Edition — Part One
-                </div>
+<section class="complete-edition">
 
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
+<h2>
+Complete Seven-Part Edition
+</h2>
 
-            </div>
+<p>
+The complete English digital edition will eventually contain all
+seven parts of <em>And This Is the Book of Love: Galatea and
+Pygmalion</em>.
+</p>
 
-        </article>
+<a href="#" class="button">
+Purchase Complete Edition
+</a>
 
+</section>
 
-        <!-- PART TWO -->
 
-        <article class="part">
 
-            <h3>Part Two</h3>
+<section class="navigation">
 
-            <img
-                src="images/book1/part-2.jpg"
-                alt="Illustration for Part Two"
-                class="part-image"
-            >
+<a href="index.html">
+← Back to English Home
+</a>
 
-            <div class="introduction">
+<a href="../index.html">
+Persian Website
+</a>
 
-                <h4>Introduction</h4>
+</section>
 
-                <p>
-                    The introduction to Part Two will be placed here.
-                </p>
-
-            </div>
-
-            <div class="pdf-box">
-
-                <div class="price">
-                    Digital Edition — Part Two
-                </div>
-
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- PART THREE -->
-
-        <article class="part">
-
-            <h3>Part Three</h3>
-
-            <img
-                src="images/book1/part-3.jpg"
-                alt="Illustration for Part Three"
-                class="part-image"
-            >
-
-            <div class="introduction">
-
-                <h4>Introduction</h4>
-
-                <p>
-                    The introduction to Part Three will be placed here.
-                </p>
-
-            </div>
-
-            <div class="pdf-box">
-
-                <div class="price">
-                    Digital Edition — Part Three
-                </div>
-
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- PART FOUR -->
-
-        <article class="part">
-
-            <h3>Part Four</h3>
-
-            <img
-                src="images/book1/part-4.jpg"
-                alt="Illustration for Part Four"
-                class="part-image"
-            >
-
-            <div class="introduction">
-
-                <h4>Introduction</h4>
-
-                <p>
-                    The introduction to Part Four will be placed here.
-                </p>
-
-            </div>
-
-            <div class="pdf-box">
-
-                <div class="price">
-                    Digital Edition — Part Four
-                </div>
-
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- PART FIVE -->
-
-        <article class="part">
-
-            <h3>Part Five</h3>
-
-            <img
-                src="images/book1/part-5.jpg"
-                alt="Illustration for Part Five"
-                class="part-image"
-            >
-
-            <div class="introduction">
-
-                <h4>Introduction</h4>
-
-                <p>
-                    The introduction to Part Five will be placed here.
-                </p>
-
-            </div>
-
-            <div class="pdf-box">
-
-                <div class="price">
-                    Digital Edition — Part Five
-                </div>
-
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- PART SIX -->
-
-        <article class="part">
-
-            <h3>Part Six</h3>
-
-            <img
-                src="images/book1/part-6.jpg"
-                alt="Illustration for Part Six"
-                class="part-image"
-            >
-
-            <div class="introduction">
-
-                <h4>Introduction</h4>
-
-                <p>
-                    The introduction to Part Six will be placed here.
-                </p>
-
-            </div>
-
-            <div class="pdf-box">
-
-                <div class="price">
-                    Digital Edition — Part Six
-                </div>
-
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- PART SEVEN -->
-
-        <article class="part">
-
-            <h3>Part Seven</h3>
-
-            <img
-                src="images/book1/part-7.jpg"
-                alt="Illustration for Part Seven"
-                class="part-image"
-            >
-
-            <div class="introduction">
-
-                <h4>Introduction</h4>
-
-                <p>
-                    The introduction to Part Seven will be placed here.
-                </p>
-
-            </div>
-
-            <div class="pdf-box">
-
-                <div class="price">
-                    Digital Edition — Part Seven
-                </div>
-
-                <a href="#" class="button">
-                    Purchase &amp; Download PDF
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </section>
-
-
-    <!-- COMPLETE DIGITAL EDITION -->
-
-    <section class="complete-edition">
-
-        <h2>Complete Digital Edition</h2>
-
-        <p>
-            The complete English digital edition will eventually
-            include all seven parts of
-            <em>And This Is the Book of Love: Galatea and Pygmalion</em>.
-        </p>
-
-        <p>
-            The complete edition will be made available as a single
-            digital package after the international payment system
-            is established.
-        </p>
-
-        <a href="#" class="button">
-            Purchase Complete Edition
-        </a>
-
-    </section>
-
-
-    <!-- NAVIGATION -->
-
-    <section class="navigation">
-
-        <a href="index.html">
-            ← Back to English Home
-        </a>
-
-        <a href="../index.html">
-            Persian Website
-        </a>
-
-    </section>
 
 </main>
 
 
 <footer>
 
-    <p>
-        <strong>Salihin Publications</strong>
-    </p>
+<p>
+<strong>Salihin Publications</strong>
+</p>
 
-    <p>
-        Books, Literature, Science, Culture and Human Heritage
-    </p>
+<p>
+And This Is the Book of Love: Galatea and Pygmalion
+</p>
 
-    <p>
-        &copy; 2026 Salihin Publications. All rights reserved.
-    </p>
+<p>
+Jalaleddin Valiallah
+</p>
+
+<p>
+&copy; 2026 Salihin Publications. All rights reserved.
+</p>
 
 </footer>
-
 
 </body>
 </html>
