@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>تماس با ما | انتشارات صالحین</title>
+<title>تماس با ما | انتشارات صالحین</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Tahoma, Arial, sans-serif;
-            background: #f7f5f0;
-            color: #333;
-            line-height: 2;
-        }
+<style>
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 2;
+}
 
-        header {
-            background: #ffffff;
-            padding: 30px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
+header {
+    background: #222;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 30px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
 
-        header p {
-            margin: 5px 0 0;
-            color: #777;
-            font-size: 16px;
-        }
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
 
-        nav {
-            background: #333;
-            text-align: center;
-            padding: 12px 5px;
-        }
+nav {
+    background: #444;
+    text-align: center;
+    padding: 12px 5px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 9px;
-            font-size: 15px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 15px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        .container {
-            max-width: 850px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+.container {
+    max-width: 900px;
+    margin: 35px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
 
-        .box {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
 
-        h2 {
-            margin-top: 0;
-            color: #333;
-        }
+h3 {
+    color: #444;
+    margin-top: 30px;
+}
 
-        h3 {
-            margin-top: 35px;
-            color: #444;
-        }
+.request-box {
+    background: #f1f5f8;
+    border-right: 5px solid #555;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 8px;
+}
 
-        .contact-box {
-            margin: 25px 0;
-            padding: 20px;
-            background: #f4f4f4;
-            border-right: 4px solid #666;
-        }
+.request-box ul {
+    margin-top: 10px;
+}
 
-        .email {
-            direction: ltr;
-            text-align: left;
-            display: inline-block;
-            font-family: Arial, sans-serif;
-            font-size: 17px;
-        }
+.email-box {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 18px;
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
 
-        .email a {
-            color: #333;
-            text-decoration: none;
-        }
+.email {
+    direction: ltr;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
 
-        .email a:hover {
-            text-decoration: underline;
-        }
+.copy-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-        footer {
-            margin-top: 60px;
-            padding: 25px;
-            background: #333;
-            color: white;
-            text-align: center;
-            font-size: 14px;
-        }
+.copy-button:hover {
+    background: #333;
+}
 
-        @media (max-width: 600px) {
-            .box {
-                padding: 25px 20px;
-            }
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-            nav a {
-                display: inline-block;
-                margin: 4px 6px;
-            }
+.back-button:hover {
+    background: #111;
+}
 
-            header h1 {
-                font-size: 25px;
-            }
-        }
-    </style>
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 6px;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -137,84 +165,121 @@
     <a href="culture.html">دین، فرهنگ و میراث بشری</a>
     <a href="books.html">همه کتاب‌ها</a>
     <a href="about.html">درباره ما</a>
-    <a href="contact.html">تماس با ما</a>
+    <a href="contact.html">تماس</a>
     <a href="index-en.html">English</a>
 </nav>
 
 <div class="container">
 
-    <div class="box">
+    <h2>تماس با انتشارات صالحین</h2>
 
-        <h2>تماس با ما</h2>
+    <p>
+        از نویسندگان، پژوهشگران، مترجمان و خوانندگان گرامی
+        برای ارتباط با انتشارات صالحین دعوت می‌کنیم.
+    </p>
 
-        <p>
-            انتشارات صالحین از ارتباط با نویسندگان، پژوهشگران،
-            مترجمان، خوانندگان و علاقه‌مندان به کتاب استقبال می‌کند.
-        </p>
+    <div class="request-box">
 
-        <p>
-            برای دریافت اطلاعات درباره کتاب‌ها، نسخه‌های چاپی و
-            الکترونیکی، شیوه خرید، همکاری در انتشار آثار و سایر
-            امور مرتبط با انتشارات، می‌توانید با ما تماس بگیرید.
-        </p>
-
-        <div class="contact-box">
-
-            <h3>پست الکترونیکی رسمی انتشارات</h3>
-
-            <p class="email">
-                <a href="mailto:salhin.publications@proton.me">
-                    salhin.publications@proton.me
-                </a>
-            </p>
-
-        </div>
-
-        <h3>درباره کتاب‌ها و خرید</h3>
+        <h3>درخواست خرید کتاب یا PDF</h3>
 
         <p>
-            برای پرسش درباره یک کتاب، لطفاً عنوان کامل کتاب را
-            در پیام خود ذکر کنید تا پاسخ‌گویی با دقت بیشتری انجام شود.
+            اگر از طریق صفحه یک کتاب به این بخش آمده‌اید،
+            لطفاً در پیام خود مشخص کنید که چه موردی را درخواست دارید.
         </p>
+
+        <p>برای مثال می‌توانید یکی از موارد زیر را بنویسید:</p>
+
+        <ul>
+            <li>درخواست نسخه چاپی کامل کتاب</li>
+            <li>درخواست نسخه معمولی کتاب</li>
+            <li>درخواست نسخه نفیس کتاب</li>
+            <li>درخواست PDF کامل کتاب</li>
+            <li>درخواست PDF قسمت اول</li>
+            <li>درخواست PDF قسمت دوم</li>
+            <li>درخواست PDF قسمت سوم</li>
+            <li>درخواست PDF قسمت چهارم</li>
+            <li>درخواست PDF قسمت پنجم</li>
+            <li>درخواست PDF قسمت ششم</li>
+            <li>درخواست PDF قسمت هفتم</li>
+        </ul>
+
+        <p>
+            همچنین لطفاً نام و نام خانوادگی و راه ارتباطی خود را
+            در پیام ذکر کنید تا بتوانیم درخواست شما را پیگیری کنیم.
+        </p>
+
+    </div>
+
+    <div class="request-box">
 
         <h3>پیشنهاد انتشار و همکاری</h3>
 
         <p>
-            نویسندگان، پژوهشگران، مترجمان و صاحبان آثار می‌توانند
-            پیشنهادهای خود را برای بررسی و همکاری از طریق ایمیل
-            رسمی انتشارات ارسال کنند.
+            نویسندگان، پژوهشگران و مترجمانی که مایل به همکاری با
+            انتشارات صالحین یا پیشنهاد انتشار یک اثر هستند،
+            می‌توانند موضوع درخواست و مشخصات اثر خود را ارسال کنند.
         </p>
+
+    </div>
+
+    <div class="request-box">
 
         <h3>ارتباطات بین‌المللی</h3>
 
         <p>
-            انتشارات صالحین برای ارتباط با خوانندگان و علاقه‌مندان
-            خارج از ایران نیز از طریق همین نشانی ایمیل پاسخ‌گو خواهد بود.
+            برای ارتباطات مربوط به فروش جهانی، همکاری‌های بین‌المللی،
+            حقوق نشر، ترجمه و سایر امور انتشاراتی نیز می‌توانید
+            با انتشارات صالحین تماس بگیرید.
         </p>
 
-        <div class="contact-box">
+    </div>
 
-            <h3>نشانی رسمی ارتباط</h3>
+    <div class="email-box">
 
-            <p>
-                <strong>Salihin Publications</strong>
-            </p>
+        <h3>آدرس رسمی انتشارات</h3>
 
-            <p class="email">
-                <a href="mailto:salhin.publications@proton.me">
-                    salhin.publications@proton.me
-                </a>
-            </p>
-
+        <div class="email">
+            salhin.publications@proton.me
         </div>
 
+        <br>
+
+        <button class="copy-button" onclick="copyEmail()">
+            کپی آدرس ایمیل
+        </button>
+
+        <p id="copyMessage"></p>
+
+        <p>
+            لطفاً پس از کپی کردن آدرس، پیام خود را از طریق
+            ایمیل برای انتشارات صالحین ارسال کنید.
+        </p>
+
     </div>
+
+    <a class="back-button" href="index.html">
+        بازگشت به صفحه اصلی
+    </a>
 
 </div>
 
 <footer>
     © 2026 Salihin Publications — انتشارات صالحین
 </footer>
+
+<script>
+function copyEmail() {
+    const email = "salhin.publications@proton.me";
+
+    navigator.clipboard.writeText(email).then(function() {
+        document.getElementById("copyMessage").textContent =
+            "آدرس ایمیل کپی شد.";
+    }).catch(function() {
+        document.getElementById("copyMessage").textContent =
+            "لطفاً آدرس ایمیل را به صورت دستی کپی کنید.";
+    });
+}
+</script>
 
 </body>
 </html>
