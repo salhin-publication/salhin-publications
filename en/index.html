@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +13,26 @@
         * {
             box-sizing: border-box;
         }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #333333;
-}
 
-h1, h2, h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    line-height: 1.3;
-}
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #333333;
+            background: #faf9f6;
+        }
 
-p, li, nav a {
-    font-size: 16px;
-    font-weight: 400;
-}
-       
+        h1, h2, h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        p, li, nav a {
+            font-size: 16px;
+        }
+
         header {
             background: #202820;
             color: white;
@@ -48,7 +50,7 @@ p, li, nav a {
         header p {
             margin: 8px 0 0;
             font-size: 18px;
-            color: #ddd;
+            color: #dddddd;
         }
 
         nav {
@@ -58,54 +60,38 @@ p, li, nav a {
         }
 
         nav a {
+            display: inline-block;
             color: white;
             text-decoration: none;
-            margin: 0 12px;
-            font-size: 16px;
+            margin: 5px 12px;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        .hero {
+        .welcome-section {
             max-width: 1150px;
-            margin: 40px auto;
-            padding: 20px;
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .hero-text {
-            flex: 1;
-        }
-
-        .hero-text h2 {
-            font-size: 34px;
-            font-weight: normal;
-            margin-top: 0;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-        }
-
-        .hero-image {
-            flex: 1;
+            margin: 35px auto 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
-        .hero-image img {
-            max-width: 100%;
-            max-height: 420px;
-            border-radius: 6px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+        .welcome-section h2 {
+            margin: 0 0 22px;
+            font-size: 34px;
+            font-weight: normal;
+        }
+
+        .welcome-section p {
+            max-width: 850px;
+            margin: 12px auto;
+            font-size: 18px;
         }
 
         .section {
             max-width: 1150px;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 20px;
         }
 
@@ -118,7 +104,7 @@ p, li, nav a {
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 25px;
         }
 
@@ -127,7 +113,7 @@ p, li, nav a {
             padding: 30px;
             text-align: center;
             border-radius: 8px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
         }
 
         .card h3 {
@@ -136,10 +122,12 @@ p, li, nav a {
         }
 
         .card p {
-            color: #555;
+            color: #555555;
         }
 
-        .card a {
+        .card a,
+        .featured-text a,
+        .international a {
             display: inline-block;
             margin-top: 12px;
             padding: 9px 18px;
@@ -149,6 +137,12 @@ p, li, nav a {
             border-radius: 4px;
         }
 
+        .card a:hover,
+        .featured-text a:hover,
+        .international a:hover {
+            background: #465646;
+        }
+
         .featured {
             background: white;
             padding: 35px;
@@ -156,37 +150,30 @@ p, li, nav a {
             display: flex;
             gap: 35px;
             align-items: center;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
         }
 
         .featured-image {
-            width: 260px;
+            flex: 0 0 260px;
             text-align: center;
         }
 
         .featured-image img {
             max-width: 100%;
             max-height: 350px;
+            height: auto;
+            object-fit: contain;
         }
 
         .featured-text {
             flex: 1;
+            min-width: 0;
         }
 
         .featured-text h3 {
             font-size: 28px;
             font-weight: normal;
             margin-top: 0;
-        }
-
-        .featured-text a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #303a30;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
         }
 
         .international {
@@ -199,7 +186,7 @@ p, li, nav a {
         footer {
             margin-top: 60px;
             background: #202820;
-            color: #ddd;
+            color: #dddddd;
             text-align: center;
             padding: 35px 20px;
         }
@@ -209,15 +196,17 @@ p, li, nav a {
             text-decoration: none;
         }
 
-        @media (max-width: 800px) {
+        footer a:hover {
+            text-decoration: underline;
+        }
 
+        @media (max-width: 800px) {
             header h1 {
                 font-size: 32px;
             }
 
-            .hero {
-                flex-direction: column;
-                text-align: center;
+            .welcome-section h2 {
+                font-size: 28px;
             }
 
             .cards {
@@ -229,9 +218,13 @@ p, li, nav a {
                 text-align: center;
             }
 
-            nav a {
-                display: inline-block;
-                margin: 5px 8px;
+            .featured-image {
+                flex-basis: auto;
+                width: 100%;
+            }
+
+            .international {
+                padding: 25px;
             }
         }
     </style>
@@ -240,50 +233,24 @@ p, li, nav a {
 <body>
 
 <header>
-
     <h1>Salihin Publications</h1>
-
     <p>Books, Knowledge, Literature, Culture and Human Heritage</p>
-
 </header>
 
-
 <nav>
-
     <a href="index.html">Home</a>
-
-    <a href="literature.html">Literature & Arts</a>
-
-    <a href="science.html">Science & Knowledge</a>
-
-    <a href="culture.html">Religion, Culture & Heritage</a>
-
+    <a href="literature.html">Literature &amp; Arts</a>
+    <a href="science.html">Science &amp; Knowledge</a>
+    <a href="culture.html">Religion, Culture &amp; Heritage</a>
     <a href="books.html">All Books</a>
-
     <a href="international.html">International Sales</a>
-
     <a href="../index.html">فارسی</a>
-
 </nav>
 
+<main>
 
-<section class="hero">
-
-
-<!-- Welcome Section -->
-<section class="welcome-section">
-
-    <div class="welcome-content">
-
-        <h1 class="main-welcome">
-            Welcome to Salihin Publications
-        </h1>
-
-        <div class="welcome-line"></div>
-
-        <p class="welcome-lead">
-            Books, Literature, Knowledge, Culture and Human Heritage
-        </p>
+    <section class="welcome-section">
+        <h2>Welcome to Salihin Publications</h2>
 
         <p>
             We present books that bring together literature, science,
@@ -294,161 +261,99 @@ p, li, nav a {
             Our aim is to make meaningful works available to readers
             in Iran and around the world.
         </p>
+    </section>
 
-        <div class="welcome-buttons">
+    <section class="section">
+        <h2>Our Publishing Sections</h2>
 
-            <a href="book-1.html" class="welcome-button">
-                Explore Our Books
-            </a>
+        <div class="cards">
+
+            <div class="card">
+                <h3>Literature &amp; Arts</h3>
+                <p>
+                    Novels, stories, poetry, fiction and works of literary
+                    and artistic imagination.
+                </p>
+                <a href="literature.html">Explore</a>
+            </div>
+
+            <div class="card">
+                <h3>Science &amp; Knowledge</h3>
+                <p>
+                    Scientific works, environmental knowledge, education,
+                    technology and interdisciplinary studies.
+                </p>
+                <a href="science.html">Explore</a>
+            </div>
+
+            <div class="card">
+                <h3>Religion, Culture &amp; Human Heritage</h3>
+                <p>
+                    Works related to religion, culture, history and the
+                    heritage of humanity.
+                </p>
+                <a href="culture.html">Explore</a>
+            </div>
 
         </div>
+    </section>
 
-    </div>
+    <section class="section">
+        <h2>Featured Book</h2>
 
-</section>
+        <div class="featured">
 
-<section class="section">
+            <div class="featured-image">
+                <img
+                    src="galatea-pygmalion-en.jpg"
+                    alt="Cover of And This Is the Book of Love: Galatea and Pygmalion">
+            </div>
 
-    <h2>Our Publishing Sections</h2>
+            <div class="featured-text">
+                <h3>And This Is the Book of Love: Galatea and Pygmalion</h3>
 
-    <div class="cards">
+                <p>A novel by Jalaleddin Valiallah.</p>
 
-        <div class="card">
+                <p>
+                    A literary exploration of love, beauty, imagination
+                    and the relationship between human beings and the
+                    ideal of beauty.
+                </p>
 
-            <h3>Literature & Arts</h3>
+                <a href="book-1.html">Read More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="international">
+            <h2>International Publications</h2>
 
             <p>
-                Novels, stories, poetry, fiction and works of literary and
-                artistic imagination.
-            </p>
-
-            <a href="literature.html">
-                Explore
-            </a>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Science & Knowledge</h3>
-
-            <p>
-                Scientific works, environmental knowledge, education,
-                technology and interdisciplinary studies.
-            </p>
-
-            <a href="science.html">
-                Explore
-            </a>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Religion, Culture & Human Heritage</h3>
-
-            <p>
-                Works related to religion, culture, history and the heritage
-                of humanity.
-            </p>
-
-            <a href="culture.html">
-                Explore
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="section">
-
-    <h2>Featured Book</h2>
-
-    <div class="featured">
-
-        <div class="featured-image">
-
-            <img src="images/galatea-pygmalion-en.png"
-                 alt="And This Book Is Love: Galatea and Pygmalion">
-
-        </div>
-
-
-        <div class="featured-text">
-
-            <h3>
-                And This Book Is Love:
-                Galatea and Pygmalion
-            </h3>
-
-            <p>
-                A novel by Jalaleddin Valiallah.
+                Selected books by Salihin Publications will be introduced
+                to readers outside Iran through our international edition
+                and digital publication program.
             </p>
 
             <p>
-                A literary exploration of love, beauty, imagination and the
-                relationship between human beings and the ideal of beauty.
+                English-language pages may contain additional illustrations,
+                photographs and visual materials that differ from the
+                Persian editions.
             </p>
 
-            <a href="book-1.html">
-                Read More
-            </a>
-
+            <a href="international.html">International Sales</a>
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-<section class="section">
-
-    <div class="international">
-
-        <h2>International Publications</h2>
-
-        <p>
-            Selected books by Salihin Publications will be introduced to
-            readers outside Iran through our international edition and
-            digital publication program.
-        </p>
-
-        <p>
-            English-language pages may contain additional illustrations,
-            photographs and visual materials that are different from the
-            Persian editions.
-        </p>
-
-        <a href="international.html">
-            International Sales
-        </a>
-
-    </div>
-
-</section>
-
+</main>
 
 <footer>
-
+    <p>&copy; 2026 Salihin Publications</p>
+    <p>Tehran, Iran</p>
     <p>
-        © 2026 Salihin Publications
+        <a href="../index.html">Return to Persian Website</a>
     </p>
-
-    <p>
-        Tehran, Iran
-    </p>
-
-    <p>
-        <a href="../index.html">
-            Return to Persian Website
-        </a>
-    </p>
-
 </footer>
 
 </body>
