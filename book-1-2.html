@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>قسمت دوم: قصه عشق آرتیمسیا | و این کتاب عشق است | انتشارات صالحین</title>
+
+<meta name="description" content="قسمت دوم، پرده دوم نمایش: قصه عشق آرتیمسیا از کتاب و این کتاب عشق است؛ گالاتئا و پیگمالیون، نوشته جلال‌الدین ولی‌الله.">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f7f5f0;
+    color: #333;
+    line-height: 2.1;
+}
+
+header {
+    background: #243447;
+    color: white;
+    padding: 15px 5%;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    direction: ltr;
+    text-align: right;
+    line-height: 1.5;
+}
+
+nav.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+nav.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 9px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+nav.main-nav a:hover {
+    background: rgba(255,255,255,.15);
+}
+
+.container {
+    width: 92%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.page-heading {
+    text-align: center;
+    margin: 35px auto 25px;
+    padding: 25px 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.page-heading h1 {
+    color: #34495e;
+    font-size: 30px;
+    margin: 0 0 8px;
+}
+
+.page-heading h2 {
+    font-size: 22px;
+    color: #76512f;
+    margin: 8px 0;
+}
+
+.page-heading p {
+    margin: 5px 0;
+}
+
+.section-title {
+    font-size: 25px;
+    color: #34495e;
+    border-right: 5px solid #6d4c41;
+    padding-right: 15px;
+    margin: 25px 0;
+}
+
+.story-part {
+    margin: 30px auto;
+}
+
+.description-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+}
+
+.description-box h3 {
+    color: #34495e;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 22px;
+}
+
+.description-box p {
+    text-align: justify;
+    margin: 0 0 20px;
+    overflow-wrap: anywhere;
+}
+
+.poem {
+    margin: 25px 0;
+    padding: 20px;
+    background: #f7f2ea;
+    border-right: 4px solid #8a6745;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 2.2;
+}
+
+.poem p {
+    text-align: center;
+    margin: 0;
+}
+
+.purchase-card {
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    border-top: 5px solid #6d4c41;
+}
+
+.purchase-card h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7a4f35;
+    margin: 12px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px 3px;
+    background: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #1f2f3d;
+}
+
+.button.secondary {
+    background: #76512f;
+}
+
+.order-section {
+    margin: 40px auto;
+}
+
+.order-section .section-title {
+    margin-bottom: 20px;
+}
+
+.order-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    border-top: 5px solid #6d4c41;
+}
+
+.order-card ol {
+    padding-right: 25px;
+}
+
+.order-card li {
+    margin-bottom: 8px;
+}
+
+.bank-number {
+    direction: ltr;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    background: #f7f2ea;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.contact-value {
+    direction: ltr;
+    unicode-bidi: embed;
+    overflow-wrap: anywhere;
+}
+
+.part-next {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+}
+
+footer {
+    background: #243447;
+    color: white;
+    margin-top: 50px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        white-space: normal;
+    }
+
+    .logo span {
+        text-align: center;
+    }
+
+    .page-heading h1 {
+        font-size: 25px;
+    }
+
+    .description-box {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding: 10px;
+    }
+
+    nav.main-nav {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav.main-nav a {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .page-heading {
+        padding: 20px 12px;
+    }
+
+    .page-heading h1 {
+        font-size: 22px;
+    }
+
+    .page-heading h2 {
+        font-size: 18px;
+    }
+
+    .description-box,
+    .order-card,
+    .purchase-card {
+        padding: 17px;
+    }
+
+    .description-box h3 {
+        font-size: 19px;
+    }
+
+    .poem {
+        padding: 14px 8px;
+        font-size: 14px;
+    }
+
+    .bank-number {
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            انتشارات صالحین
+            <span>Salihin Publications</span>
+        </div>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+            <a href="index.html">خانه</a>
+            <a href="literature.html">ادبیات و هنر</a>
+            <a href="science.html">علم و دانش</a>
+            <a href="culture.html">دین و فرهنگ</a>
+            <a href="books.html">همه کتاب‌ها</a>
+            <a href="iran.html">خرید در ایران</a>
+            <a href="international.html">فروش جهانی</a>
+            <a href="reviews.html">نقد و نظر</a>
+            <a href="contact.html">تماس با ما</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="page-heading">
+        <h1>و این کتاب عشق است</h1>
+        <h2>گالاتئا و پیگمالیون</h2>
+        <p>نویسنده: جلال‌الدین ولی‌الله</p>
+        <p>انتشارات صالحین</p>
+
+        <p>
+            <a class="button" href="book-1.html">صفحه معرفی کتاب</a>
+            <a class="button secondary" href="book-1.html#contents">فهرست هفت قسمت کتاب</a>
+        </p>
+    </div>
+
+    <section class="story-part" id="part-2">
+
+        <h2 class="section-title">قسمت دوم</h2>
+
+        <div class="description-box">
+
+            <h3>پرده دوم نمایش</h3>
+            <h3>قصه عشق آرتیمسیا</h3>
+
+            <p>
+                همه آسمان خیال پیگمالیون سرشار از ابر خیال و خواب مروارید است و او ده‌ها پیکر رعنا و صورت زیبا از او با عشق و شور خلق می‌کند. یا به فروش می‌رساند و یا بر تالارها و سردر ایوان‌ها و گذرگاه‌ها می‌نهد و یکی از زیباترین و ظریف‌ترین آن را در طاقی از هفت طاق کاخ خود ساخته می‌نهد. گویی که کم‌کم می‌خواهد او را به طاق نسیان در تالار ذهن خود بسپارد. و به‌تدریج یاد و خاطره‌های مروارید می‌رود که کم‌رنگ شده و به همان نسبت ابرهای رخوت و بی‌حوصلگی و بی‌عملی و کاهلی در آسمان ذهن او ظاهر می‌شوند. تا عشق آرتیمسیا از راه می‌رسد.
+            </p>
+
+            <p>
+                عشق آرتمسیا، شرحی از عشق در نگاه اول است. لحظه‌ای چشمان آن‌ها به هم تلاقی می‌کند و کار پیگمالیون تمام است. او اکنون عاشق شده است و برای اولین بار سر بلند می‌کند و درمی‌یابد که در این عالم موجودی به نام زن هم هست؟ تفاوت این عشق با عشق مروارید در آن است که پیگمالیون اکنون وارد سرزمین بلوغ شده است. آن عشق و احساس کودکانه و شفقت‌آمیزی که نسبت به مروارید داشت، اکنون شور و حرارتی دیگر نسبت به آرتمیسیا یافته است. آرتیمسیا در نظر او موجودی مقدس است؛ الهه‌ای از آسمان که با وقار و غرور پا بر زمین نهاده است. او چنان در نظر او بزرگ و باشکوه و زیبا می‌نماید که در خیال او نقشی اثیری و افسانه‌ای برای او قائل می‌شود. و همین سبب می‌گردد در برخورد با آرتیمسیا دست و پای خود را گم کند و موجودی ناتوان و بی‌روح و گنگ و کرخت بنماید.
+            </p>
+
+            <p>
+                عشق پیگمالیون به آرتمسیا یادآور نوعی آبلوموفیسم است. رمان آبلوموف اثر ایوان گنچاروف است. آبلوموف جوانی نازپرورده و ملاک‌زاده است که از خانواده فئودال و اشراف آن زمان روسیه، که می‌رود تا پایه‌های آن سست و لرزان شود، ارث برده؛ کسی که در برخورد با تضادهای اجتماعی در نقطه‌ای ساکن ایستاده و توان هیچ حرکتی و غیرتی از خود ندارد تا این زندگی راکد و ساکن را، که در واقع داستان زندگی و مرحله تکاملی آن زمان مردمان روس است، تغییر بدهد. بنابراین نوعی بی‌دست‌وپایی و دست‌و‌دامن‌کوتاهی و کرختی و بی‌عملی در او ایجاد می‌شود که در مواجهه با عشق اولگا، که دختری عمل‌گرا و باهوش است، درمی‌ماند و در باتلاق ناتوانی و بی‌دست‌وپایی خود غوطه‌ور می‌شود.
+            </p>
+
+            <p>
+                شاید نوعی آبلوموفیسم و بی‌عرضگی در مقاطعی از زندگی همه ما وجود داشته باشد. جایی که برآیند نیروهای درون با نیروهای بیرون ما صفر می‌شود و بر روی نقطه صفر بی‌حرکت می‌مانیم. آبلوموف رمانی عاشقانه و زیباست. آبلوموف که عاشق اولگا، دختری زیبا، شده است، ماه‌ها و روزها و ساعت‌ها می‌آید و زیر یک درخت روبه‌روی پنجره روشن اولگا می‌نشیند و به رویا و خیال اولگا می‌رود. روزها و ماه‌ها در گرما و سرما و باران او زیر آن درخت نشسته و به پنجره طبقه بالای اولگا چشم می‌دوزد و در خیال خود و خیال اولگا غوطه‌ور می‌شود؛ در حالی که چند قدم و چند پله آن‌طرف‌تر، اولگا دست‌یافتنی‌تر از آن است که آبلوموف می‌اندیشد.
+            </p>
+
+            <p>
+                داستان آبلوموف داستانی عاشقانه و زیباست؛ داستانی روان‌شناختی از بی‌دست‌وپایی و بی‌عرضگی و ناتوانی و کرختی در برخورد با عشق و زندگی است. پیگمالیون برخلاف آبلوموف که ملاک‌زاده‌ای اشرافی و نازپرورده است، در تمام عمر خود عمل‌گرا و اقدام‌گری توانمند بوده است که زندگی خود و دیگران را از توهم و بن‌بست بیرون می‌کشد و راه زندگی و عشق و دلدادگی دیگران را هموار نموده است. او گاهی پنجاه نفر از دختران و پسران جوان را با خود به گشت‌های تفریحی در باغ‌ها و مراکز تاریخی باستانی پافوس یونان می‌برد، بی‌آنکه به هیچ‌یک از دختران نظریه خریدارانه داشته باشد.
+            </p>
+
+            <p>
+                اما اکنون او در شهر چشمان آرتمیسیا گم شده است. گویی عشق آرتمیسیا و چشمان آرتمیسیا او را جادو کرده است و او ناتوان و دردمند و بی‌دست‌وپا و بی‌زبان و زبان‌بسته، ساعت‌ها در روز و شب به او می‌اندیشد و تنها دلخوشی او این است که در دقایقی از روز که آرتمیسیا درنگی از مسیر او از تالار هنر شهر تا خانه عبور می‌کند، او را یک نظر ببیند، بی‌آنکه توان آن را داشته باشد کلامی به او بگوید یا حرکتی از خود بروز دهد.
+            </p>
+
+            <p>
+                ماه‌ها و روزها می‌گذرد و او اکنون سوژه و موضوع دیگری برای پیکرتراشی یافته است. او در این ماه‌ها و روزها با تراش پیکر رعنا و صورت زیبا و چشمان روشن آرتمیسیا می‌گذراند. این آبلوموفیسم پیگمالیون به کجا می‌انجامد؟
+            </p>
+
+            <p class="quote">
+                تا به کجا کشد مرا<br>
+                مستی بی‌امان تو (مولانا)
+            </p>
+
+            <p>
+                آیا او به وصال آرتیمیسیا نائل می‌شود؟ آیا موانعی در رسیدن به این وصال وجود دارد؟ آیا عشقی معصومانه‌تر و خالصانه‌تر از عشق پیگمالیون به آرتمیسیا وجود دارد؟ آیا آن‌ها به وصال هم می‌رسند و عشق آن‌ها تداوم می‌یابد، یا در سراب ناکامی‌ها طوفان شور پیگمالیون به زمین فرو می‌رود و شور و حرارت عشق او بخار می‌شود و به آسمان سراب می‌رود؟ آیا آن‌ها به وصال هم می‌رسند، اما بعد از چندی ناسازگاری‌های آنان سر برمی‌آورد و سبززار زندگی آنان را می‌خشکاند و بر باد فنا می‌دهد؟ این‌ها موضوعات و احتمالاتی است که با خواندن قصه عشق آرتمیسیا و پیگمالیون به آن می‌رسید.
+            </p>
+
+            <p>
+                با خواندن این قصه شما انتقادهایی بر آن دارید؟ شما فکر می‌کنید این قصه چگونه می‌تواند بهتر از این که هست باشد؟ آیا اصلاً آرتمیسیایی در زندگی شما بوده است که در برابر او گنگ و کرخت و ساکن مانند جن‌زدگان و جادو‌شدگان شده باشید؟ شما چه نقشی از تصویر آرتمیسیا در ذهن خود دارید؟ شهر چشمان و نقش صورت آرتمیسیای شما چگونه بوده است؟ تصویر واقعی و ذهنی که از او دارید را برای من ارسال فرمایید. داستان سلوک خود با آرتمیسیا را برایم مرقوم فرموده و ارسال نمایید.
+            </p>
+
+            <p>
+                نشانی پست الکترونیکی انتشارات:
+                <a href="mailto:salhin.publications@proton.me">
+                    <span class="contact-value">salhin.publications@proton.me</span>
+                </a>
+            </p>
+
+            <p>
+                و این هم بخشی از شعرهایی که پیگمالیون با عشق و شور و حال خود برای آرتمیسیای خود سروده است:
+            </p>
+
+            <div class="poem">
+                <p>آرتمسیای من، سلطان قلبم تویی.</p>
+                <p>تو نهایت زیبایی در کائنات هستی!</p>
+                <p>چه کسی می‌تواند شکوه این همه زیبایی را درک کند، جز من؟</p>
+                <p>چه کسی می‌تواند این همه زیبایی را پاس بدارد جز من؟</p>
+                <p>بهای زیبایی و مهر قلب تو چیست؟!</p>
+                <p>جز جان ناچیز من؟!</p>
+                <p>بهای برق چشمان زیبای تو</p>
+                <p>جز عشقی پرشور و شرر است؟!</p>
+                <p>چه کسی قادر است تا پای جان</p>
+                <p>از وجود گرانقدر تو دفاع نماید جز من؟</p>
+                <p>تو را در لایه‌های پنهان قلب خود حفاظت می‌کنم.</p>
+                <p>برای تو ای مروارید نهان در قلب من،</p>
+                <p>چون صدفی خواهم بود.</p>
+                <p>به هر موجی در تلاطم، که آسایش تو را فراهم کنم.</p>
+                <p>فنا شوم اگر روزی جز شادی تو خواهم!</p>
+            </div>
+
+            <div class="poem">
+                <p>ای آرتمیسیای قصه‌ها</p>
+                <p>مرا دریاب و به جزیره ناشناخته خود راه ده</p>
+                <p>که بر گستره تو هر روز گوهری نو کشف کنم.</p>
+                <p>مرا به رنگین‌کمان چشمان خود فراخوان</p>
+                <p>که چو منشور، هر روز رنگی نو در آن یابم.</p>
+                <p>چشمان مرا به آسمان پرشکوه خود جلب کن.</p>
+                <p>که هر شب ستاره‌ای جدید در آن رصد کنم.</p>
+                <p>مرا به شهر چشمان خود دعوت کن.</p>
+                <p>که روشنی چشمان تو، شادی من</p>
+                <p>و اندوه قلب تو اندوه من باشد.</p>
+                <p>مرا به فراخنای دنیای زیبای خود بکشان</p>
+                <p>که هر روز تفسیر دیگری از آن بر تو بیان کنم.</p>
+                <p>مرا در کنار خود بخواه</p>
+                <p>که هر شب با شمارش نفس‌های تو به خواب روم.</p>
+                <p>ای عشق بی‌فرجام من</p>
+                <p>تو روشنی صبح منی!</p>
+                <p>تو مونس شب‌های تار منی!</p>
+                <p>تو شمع روشنی و من</p>
+                <p>بر گرد نوری هستم که بر قلبم می‌تابانی.</p>
+                <p>پروانه خواهم شد، از پیله خود درآمده</p>
+                <p>و به سوی تو بال خواهم گشود.</p>
+                <p>گشایش بال‌های پرواز من به عروج</p>
+                <p>از بوی مهر توست که در باد نشر می‌یابد.</p>
+                <p>شور عشق تو و شوق دیدار تو را به ابر خواهم سپرد.</p>
+                <p>که با بارش آرام و عاشقانه مه بر تو</p>
+                <p>راز دل مرا به تو بازگوید.</p>
+                <p>راز دل خود را به باد خواهم گفت</p>
+                <p>که با نسیم صبحگاهان به تو رساند.</p>
+            </div>
+
+            <div class="poem">
+                <p>ای باد حدیث من نهانش می‌گو.</p>
+                <p>سر دل من به صد زبانش می‌گو</p>
+                <p>می‌گو، نه چنان‌که ملالش گیرد.</p>
+                <p>می‌گو سخنی و در میانش می‌گو. (حافظ)</p>
+            </div>
+
+        </div>
+
+        <div class="purchase-card">
+            <h3>خرید PDF قسمت دوم: قصه عشق آرتیمسیا</h3>
+
+            <p>
+                نسخه کامل این قسمت به‌صورت PDF پس از ثبت درخواست و تأیید پرداخت برای خریدار ارسال می‌شود.
+            </p>
+
+            <div class="price">۱۰۰٬۰۰۰ تومان</div>
+
+            <a class="button secondary" href="#order-instructions">
+                درخواست خرید PDF قسمت دوم
+            </a>
+        </div>
+
+    </section>
+
+    <section class="order-section" id="order-instructions">
+
+        <h2 class="section-title">روش پرداخت و ثبت درخواست</h2>
+
+        <div class="order-card">
+
+            <p><strong>شماره شبای بانک سپه:</strong></p>
+
+            <p class="bank-number" dir="ltr">
+                IR0201500000150501481687
+            </p>
+
+            <p><strong>به نام:</strong> لاله قارونی</p>
+
+            <p><strong>پس از واریز، این اطلاعات را ارسال کنید:</strong></p>
+
+            <ol>
+                <li>تصویر یا سند واریز وجه؛</li>
+                <li>عنوان نسخه چاپی یا شماره قسمت PDF درخواستی؛</li>
+                <li>نام و نام خانوادگی گیرنده؛</li>
+                <li>نشانی دقیق پستی و کد پستی؛</li>
+                <li>شماره تلفن همراه برای هماهنگی و پیگیری.</li>
+            </ol>
+
+            <p>
+                درخواست و رسید پرداخت را به ایمیل رسمی انتشارات بفرستید و سپس به شماره تلفن زیر پیامک دهید.
+                فایل PDF یا نسخه چاپی مطابق درخواست، پس از بررسی پرداخت و اطلاعات ارسالی، در اولین فرصت
+                ارسال خواهد شد.
+            </p>
+
+            <p>
+                <strong>ایمیل انتشارات:</strong>
+                <a href="mailto:salhin.publications@proton.me">
+                    <span class="contact-value">salhin.publications@proton.me</span>
+                </a>
+            </p>
+
+            <p>
+                <strong>شماره پیامک و پیگیری:</strong>
+                <span class="contact-value" dir="ltr">09125791009</span>
+            </p>
+
+        </div>
+
+    </section>
+
+    <nav class="part-next" aria-label="پیوندهای قسمت‌های کتاب">
+
+        <a class="button secondary" href="book-1-1.html">
+            بازگشت به قسمت اول
+        </a>
+
+        <a class="button" href="book-1.html#contents">
+            بازگشت به فهرست هفت قسمت
+        </a>
+
+        <a class="button" href="book-1-3.html">
+            ورود به قسمت سوم
+        </a>
+
+        <a class="button secondary" href="contact.html">
+            تماس با انتشارات
+        </a>
+
+    </nav>
+
+</main>
+
+<footer>
+    <p>© ۱۴۰۵ انتشارات صالحین</p>
+    <p>Salihin Publications</p>
+    <p>
+        <a href="mailto:salhin.publications@proton.me">
+            salhin.publications@proton.me
+        </a>
+    </p>
+    <p>
+        <a href="reviews.html">نقد و نظر صاحب‌نظران و خوانندگان</a>
+    </p>
+</footer>
+
+</body>
+</html>
