@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Part One: The Love of Morvarid | And This Is the Book of Love | Salihin Publications</title>
+
+<meta name="description" content="Part One, The Love of Morvarid, from And This Is the Book of Love: Galatea and Pygmalion, by Jalaleddin Valiallah, published by Salihin Publications.">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f5f0;
+    color: #333;
+    line-height: 1.9;
+}
+
+header {
+    background: #243447;
+    color: white;
+    padding: 16px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    direction: ltr;
+    text-align: left;
+    margin-top: 2px;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 9px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,.15);
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.page-heading {
+    margin: 35px auto 25px;
+    padding: 30px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.page-heading h1 {
+    color: #34495e;
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.page-heading h2 {
+    color: #76512f;
+    font-size: 23px;
+    margin: 8px 0;
+}
+
+.page-heading p {
+    margin: 5px 0;
+}
+
+.book-main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 30px auto 45px;
+}
+
+.cover-box {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.12);
+    text-align: center;
+}
+
+.cover-box img {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.book-intro {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+.book-intro h2 {
+    color: #34495e;
+    margin-top: 0;
+}
+
+section {
+    margin: 38px auto;
+}
+
+.section-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    color: #34495e;
+    border-left: 5px solid #6d4c41;
+    padding-left: 15px;
+    margin-bottom: 22px;
+}
+
+.description-box,
+.author-box,
+.copyright-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+}
+
+.description-box p {
+    text-align: justify;
+    margin: 0 0 20px;
+}
+
+.description-box h3 {
+    color: #34495e;
+    margin-top: 25px;
+}
+
+.note {
+    background: #f1ede6;
+    border-left: 4px solid #6d4c41;
+    padding: 14px 18px;
+    margin-top: 18px;
+    border-radius: 6px;
+}
+
+.quote {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center !important;
+    padding: 18px;
+    margin: 25px 0 !important;
+    background: #f1ede6;
+    border-left: 4px solid #6d4c41;
+    border-radius: 6px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.info-item {
+    background: white;
+    padding: 14px 17px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    overflow-wrap: anywhere;
+}
+
+.info-item strong {
+    color: #34495e;
+}
+
+.toc {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+.toc details summary {
+    cursor: pointer;
+    background: #34495e;
+    color: white;
+    padding: 13px 17px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.toc ol {
+    padding-left: 28px;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 7px;
+}
+
+.purchase-card {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    border-top: 5px solid #6d4c41;
+    margin: 25px auto;
+}
+
+.purchase-card h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7a4f35;
+    margin: 12px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 17px;
+    margin: 5px 3px;
+    background: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #1f2f3d;
+}
+
+.button.secondary {
+    background: #76512f;
+}
+
+.order-card {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    border-top: 5px solid #6d4c41;
+}
+
+.order-card ol {
+    padding-left: 25px;
+}
+
+.order-card li {
+    margin-bottom: 7px;
+}
+
+.bank-number {
+    direction: ltr;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    background: #f7f2ea;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.contact-value {
+    direction: ltr;
+    unicode-bidi: embed;
+    overflow-wrap: anywhere;
+    font-family: Arial, sans-serif;
+}
+
+.part-next {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+}
+
+footer {
+    background: #243447;
+    color: white;
+    margin-top: 55px;
+    padding: 30px 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+        white-space: normal;
+    }
+
+    .logo span {
+        text-align: center;
+    }
+
+    .book-main {
+        grid-template-columns: 1fr;
+    }
+
+    .cover-box {
+        max-width: 350px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 28px;
+    }
+
+    .page-heading h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding: 10px;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav a {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .page-heading {
+        padding: 22px 12px;
+    }
+
+    .page-heading h1 {
+        font-size: 24px;
+    }
+
+    .page-heading h2 {
+        font-size: 18px;
+    }
+
+    .book-intro,
+    .description-box,
+    .author-box,
+    .copyright-box,
+    .purchase-card,
+    .order-card {
+        padding: 18px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .bank-number {
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            Salihin Publications
+            <span>Books, Culture, Knowledge and Literature</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="literature.html">Literature &amp; Art</a>
+            <a href="science.html">Science &amp; Knowledge</a>
+            <a href="culture.html">Culture &amp; Heritage</a>
+            <a href="books.html">All Books</a>
+            <a href="iran.html">Buying in Iran</a>
+            <a href="international.html">Worldwide Sales</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="page-heading">
+        <h1>And This Is the Book of Love</h1>
+        <h2>Galatea and Pygmalion</h2>
+        <p>By Jalaleddin Valiallah</p>
+        <p>Salihin Publications</p>
+
+        <p>
+            <a class="button" href="book-1.html">Main Book Page</a>
+            <a class="button secondary" href="book-1.html#contents">Contents of the Seven Parts</a>
+        </p>
+    </div>
+
+
+    <!-- BOOK INTRODUCTION -->
+
+    <div class="book-main">
+
+        <div class="cover-box">
+            <img
+                src="galatea-pygmalion-en.jpg"
+                alt="Cover of And This Is the Book of Love: Galatea and Pygmalion"
+                onerror="this.style.display='none';">
+            <p><strong>And This Is the Book of Love</strong></p>
+            <p>Galatea and Pygmalion</p>
+        </div>
+
+        <div class="book-intro">
+
+            <h2>Part One: The Love of Morvarid</h2>
+
+            <p>
+                <strong>The First Act: The Story of Morvarid's Love</strong>
+            </p>
+
+            <p>
+                This first part introduces the beginning of Pygmalion's story, the
+                meaning of love, and the formation of his character. It invites
+                readers into the world of his childhood, family, early stories,
+                and the ways in which the characters understand love and life.
+            </p>
+
+            <div class="note">
+                <strong>Book title:</strong>
+                And This Is the Book of Love: Galatea and Pygmalion
+            </div>
+
+            <div class="note">
+                <strong>Author:</strong>
+                Jalaleddin Valiallah
+            </div>
+
+            <div class="note">
+                <strong>Publisher:</strong>
+                Salihin Publications
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PART ONE: STORY AND DESCRIPTION -->
+
+    <section id="part-1">
+
+        <h2 class="section-title">Part One: The Love of Morvarid</h2>
+
+        <div class="description-box">
+
+            <h3>The First Act: The Story of Morvarid's Love</h3>
+
+            <p>
+                This part follows the beginning of Pygmalion's story, exploring
+                love and the development of his character. It introduces readers
+                to his childhood, his family, the stories that shape his
+                imagination, and the characters' perspectives on love and life.
+            </p>
+
+            <p>
+                The story of Morvarid's love represents the first step in
+                Pygmalion's gradual development in understanding and experiencing
+                love. Morvarid is Pygmalion's cousin and, together with his
+                younger sister, one of his childhood companions. The three grow
+                up together and eventually reach adolescence and adulthood.
+                During childhood, they spend much of their time together. They
+                sleep beside Morvarid's doll, and each of them tells little
+                stories to help the doll fall asleep. Their days are filled with
+                happiness and play.
+            </p>
+
+            <p>
+                Then adolescence arrives, and the freedom of their companionship
+                becomes more restricted. Eventually, Morvarid's family moves to
+                another city, and separation comes. In understanding the
+                complicated yet sometimes simple relationships of life, Morvarid
+                has advanced beyond Pygmalion because she is a girl and has
+                begun to perceive the emotional signals between them. How will
+                she use her behaviour and glances to attract Pygmalion's love?
+            </p>
+
+            <p>
+                Pygmalion, however, is still living in the world of childhood.
+                He does not yet understand or feel the powerful, passionate love
+                that is beginning to emerge around him. These experiences form
+                part of a series of meaningful and delightful events whose
+                details can be explored in the full novel.
+            </p>
+
+            <p>
+                The passage out of childhood gains depth and meaning through
+                overcoming imagined fears and developing the power of childhood
+                imagination. Stories of spirits, fairies, ghosts, love,
+                courtship, and the captivating beauty of the heroines in a
+                grandmother's tales all contribute to this process. How does
+                the hero of a grandmother's story reach his beautiful and
+                elusive beloved? What obstacles and dangers must he overcome?
+                What actions must he avoid? How should he behave when he meets
+                the beautiful woman he loves?
+            </p>
+
+            <p>
+                These stories also ask what gives life its meaning, and how
+                love, devotion, and the journey toward a beloved give a hero's
+                life purpose. What becomes of such heroic efforts in the end?
+                These are some of the questions that emerge in the first part
+                of the novel.
+            </p>
+
+            <p>
+                The old woman said: "There are rules to travelling the path of
+                love. First, you must learn them; second, you must observe them.
+                And third, when you reach your beloved, there will be other
+                rules that you will learn at that time. Then another teacher
+                will guide you—not only through the sweetness of her words,
+                but also through the arch of her eyebrows, the tresses of her
+                hair, and her grace, charm, and coquettish gestures..."
+            </p>
+
+            <p>
+                Every movement of the beautiful woman now revealed another
+                aspect of beauty. Her laughter brought a new and unparalleled
+                play of lines to her joyful face. Every gesture was a delight
+                to behold. She was not merely a motionless statue; she was
+                dynamic, like the waves of the sea. She embodied a world of
+                beauty and a wave of delicacy and tenderness, accompanied by
+                compassion and kindness.
+            </p>
+
+            <p>
+                ...This was part of the grandmother's tale. That was how the
+                grandmother was: this was only one of her hundreds of stories.
+                She carried the children into the world of tales and legends,
+                an ethereal and imaginary world full of hope, dreams, beauty,
+                and devotion. In that world, the dead came back to life and
+                demons and monsters were bound. They floated in an ocean of
+                imagination, in another realm known as the unseen world, where
+                anything was possible and whatever could not happen in the
+                visible world could come true.
+            </p>
+
+            <p>
+                It was a land of multi-headed serpents and dragons breathing
+                fire, of the Simurgh, flying carpets, love, hope, and beautiful
+                women. Then the grandmother brought them back to reality. Yet
+                they returned having reached the fulfilment of their
+                imagination, and once again had to live on this earthly ground.
+                What a world childhood is! Such was the grandmother.
+            </p>
+
+            <p>
+                ...And the mother said: "Art is what a woman needs. The art of
+                loving and being loved, the art of being praised and adored—as
+                though a heavenly goddess had placed a part of herself within
+                the being called woman. Satisfaction in praise and adoration:
+                and a part within man—the art of admiring and praising a woman,
+                and captivating her through art and ability."
+            </p>
+
+            <p>
+                ...Art is a land of spiritual elevation, with springs that
+                quench the human thirst for understanding and experiencing
+                beauty and wonder.
+            </p>
+
+            <p>
+                This was enough to bring order to Pygmalion's being. His
+                thoughts became steadier, and his will became a powerful
+                driving force.
+            </p>
+
+            <p>
+                ...A woman's love is like a climbing vine. Women are often
+                more realistic than people imagine, contrary to the common
+                belief that they are dreamers and fantasists. The vine's
+                growth is limited: it seeks a tall tree around which to climb
+                toward the sky. For women, what can be reached is real, rather
+                than what exists only in fantasy and dreams and cannot be
+                attained. Like a vine creeping along the ground and wrapping
+                itself around the nearest tree, it adapts to what is within
+                reach. Nature has made women accommodating and conciliatory;
+                they are symbols of union and fertility. Men and women differ.
+                If women were exactly like men, union would be more difficult.
+            </p>
+
+            <p>
+                What wise lessons are hidden in these stories? How must
+                Pygmalion and his sister, Berlian, develop their abilities in
+                order to enjoy a life filled with love and happiness? What do
+                these lessons have to do with finding Pygmalion's beautiful
+                beloved and learning how to behave and live with her? These
+                delightful stories carry Pygmalion into a world of dreams and
+                sweet imaginings. But what happens in real life?
+            </p>
+
+            <p>
+                Morvarid is close at hand, living in the family home. In
+                Pygmalion's imagination and vision of the future, there is no
+                beloved more beautiful, noble, or lovable than she. But can he
+                bring this companion, already so close to him, into the home
+                and magnificent palace he has prepared for her in his mind?
+                Or will he become an example of the person whose beloved is
+                at home while he wanders the world, like someone who has water
+                in a pitcher but remains thirsty?
+            </p>
+
+            <p>
+                What obstacles can arise between a person and a beloved who
+                seems so close and attainable? Can Pygmalion reach Morvarid,
+                with whom he has spent more than twelve years of his life?
+                Will they finally be united, only to discover that the lasting
+                love they seek was the love of childhood itself? These are
+                some of the questions concealed within the first act and the
+                first part, the story of Morvarid's love.
+            </p>
+
+            <p>
+                The love of Morvarid and Pygmalion is one of those loves that
+                may remain beside us for years, accompanying us through life,
+                while we fail to recognise, understand, or properly respond
+                to it. Perhaps one reason is that we have not yet reached
+                physical or emotional maturity; perhaps there are dozens of
+                other reasons why we overlook what is near and available to
+                us. When do we finally recognise it? Only after it has gone
+                far away from us?
+            </p>
+
+            <p>
+                If we attain the love we seek, will it endure, or will it
+                falter halfway and return us to the same immaturity and
+                childhood from which we hoped to escape? Who was your cousin
+                or childhood companion? Have you had a Morvarid in your life?
+                What did she look like? What is your image of Morvarid's
+                beauty and stature? What memories do you share with her?
+                You may write to me about this, or send me your own imagined
+                picture of your Morvarid.
+            </p>
+
+            <p>
+                This part continues Pygmalion's journey and experiences
+                through stories and reflections on Morvarid, family,
+                emotional relationships, the power of storytelling, and the
+                role of love in shaping thought and feeling.
+            </p>
+
+        </div>
+
+        <div class="purchase-card">
+
+            <h3>Purchase Part One PDF: The Love of Morvarid</h3>
+
+            <p>
+                The complete text of this part is supplied as a PDF after
+                the purchase request has been received and payment has been
+                verified.
+            </p>
+
+            <div class="price">300,000 Iranian tomans</div>
+
+            <a class="button secondary" href="#order-instructions">
+                Request Part One PDF
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOK INFORMATION -->
+
+    <section id="book-information">
+
+        <h2 class="section-title">Book Information</h2>
+
+        <div class="info-grid">
+
+            <div class="info-item">
+                <strong>Title:</strong>
+                And This Is the Book of Love: Galatea and Pygmalion
+            </div>
+
+            <div class="info-item">
+                <strong>Author:</strong>
+                Jalaleddin Valiallah
+            </div>
+
+            <div class="info-item">
+                <strong>Publisher:</strong>
+                Salihin Publications
+            </div>
+
+            <div class="info-item">
+                <strong>Place of publication:</strong>
+                Tehran, Iran
+            </div>
+
+            <div class="info-item">
+                <strong>Publication year:</strong>
+                1405 (Iranian calendar)
+            </div>
+
+            <div class="info-item">
+                <strong>Edition:</strong>
+                First edition
+            </div>
+
+            <div class="info-item">
+                <strong>Length:</strong>
+                550 pages
+            </div>
+
+            <div class="info-item">
+                <strong>Book size:</strong>
+                Vaziri format
+            </div>
+
+            <div class="info-item">
+                <strong>Cover:</strong>
+                Glossy embossed cover
+            </div>
+
+            <div class="info-item">
+                <strong>Print run:</strong>
+                10,000 copies
+            </div>
+
+            <div class="info-item">
+                <strong>ISBN:</strong>
+                978-622-87864-9-0
+            </div>
+
+            <div class="info-item">
+                <strong>Subject:</strong>
+                Fiction for adults and children
+            </div>
+
+            <div class="info-item">
+                <strong>Congress classification:</strong>
+                PIR 8363
+            </div>
+
+            <div class="info-item">
+                <strong>National bibliography number:</strong>
+                10505996
+            </div>
+
+            <div class="info-item">
+                <strong>Dewey classification:</strong>
+                8363 FA
+            </div>
+
+            <div class="info-item">
+                <strong>Language of the printed book:</strong>
+                Persian
+            </div>
+
+        </div>
+
+        <div class="note">
+            <strong>Language note:</strong>
+            This webpage is an English-language introduction to the book.
+            The published book described here is in Persian.
+        </div>
+
+    </section>
+
+
+    <!-- TABLE OF CONTENTS -->
+
+    <section id="contents">
+
+        <h2 class="section-title">Stories and Contents</h2>
+
+        <div class="toc">
+
+            <details>
+                <summary>Show / Hide the Book's Contents</summary>
+
+                <ol>
+                    <li>The Story of Love</li>
+                    <li>Pygmalion</li>
+                    <li>Pygmalion's Childhood</li>
+                    <li>The Ghost Story on the Bathhouse Roof</li>
+                    <li>Grandfather and Grandmother</li>
+                    <li>The Story of the Sweet World</li>
+                    <li>Grandfather's Wisdom</li>
+                    <li>Grandmother's Stories</li>
+                    <li>The Story of Mahru and Arash</li>
+                    <li>The World of Stories</li>
+                    <li>Love in Grandfather's Eyes</li>
+                    <li>Reason and Love in Grandmother's View</li>
+                    <li>Pygmalion at Fourteen</li>
+                    <li>Morvarid</li>
+                    <li>The Story of Morvarid's Doll</li>
+                    <li>The Story of Pygmalion's Death</li>
+                    <li>The City of Spirits</li>
+                    <li>A Doll for Morvarid</li>
+                    <li>The Majesty of Motherhood</li>
+                    <li>A Sister Like Berlian</li>
+                    <li>Berlian, a Jewel Beside Her Brother</li>
+                    <li>The Magic of Eloquence</li>
+                    <li>The Power of Storytelling</li>
+                    <li>News of Morvarid's Arrival</li>
+                    <li>Love from Berlian's Perspective</li>
+                    <li>The Story of Morvarid's Love</li>
+                    <li>Separation from Morvarid</li>
+                    <li>Imagining Morvarid</li>
+                    <li>The Story of Artemisia's Love</li>
+                    <li>Encountering His Excellency, Love</li>
+                    <li>The City of Artemisia's Eyes</li>
+                    <li>Artemisia in Dreams and Imagination</li>
+                    <li>Proposing to Artemisia</li>
+                    <li>The Story of Helen's Love</li>
+                    <li>Helen's Appearance</li>
+                    <li>How Can One Win a Young Woman's Affection?</li>
+                    <li>Meeting Helen</li>
+                    <li>The Story of Helen, the Most Beautiful Woman in the World</li>
+                    <li>The Legend of Helen, Princess of Two Lands</li>
+                    <li>Beauty in Pygmalion's Eyes</li>
+                    <li>The Pain of Separation from Helen</li>
+                    <li>Remembering Helen</li>
+                    <li>The Garden of Paradise</li>
+                    <li>Helen on the Ship</li>
+                    <li>Pedro</li>
+                    <li>Helen's Absence</li>
+                    <li>The Turmoil Surrounding Helen on the Ship</li>
+                    <li>In Helen's Absence</li>
+                    <li>A Letter from Helen</li>
+                    <li>The Story of Roya's Love</li>
+                    <li>Roya</li>
+                    <li>The Play: Marriage, Repeated Birth</li>
+                    <li>The Question: Which One, Dara or Zara?</li>
+                    <li>Roya in Pygmalion's Eyes</li>
+                    <li>The Role of Roya</li>
+                    <li>Meeting Roya</li>
+                    <li>The Sign of Love, the Highest Honour</li>
+                    <li>Roya's Feelings</li>
+                    <li>Pygma's Feelings</li>
+                    <li>Berlian Meets Roya</li>
+                    <li>The End of Roya</li>
+                    <li>The Story of Kratia's Love</li>
+                    <li>The People of Xenos</li>
+                    <li>The Scope of Love</li>
+                    <li>Who Were the People of Xenos?</li>
+                    <li>Love and Freedom</li>
+                    <li>Pygmalion in the City of Xenos</li>
+                    <li>A Phenomenon Called Kratia</li>
+                    <li>The Radiance of Nicocratia</li>
+                    <li>The Conversation Between Kratia and Pygma</li>
+                    <li>Kratia's Way of Life</li>
+                    <li>An Image of Kratia</li>
+                    <li>The Long Friendship of Kratia and Berlian</li>
+                    <li>Kratia and Pygma in Contest</li>
+                    <li>Who Was Kratia?</li>
+                    <li>Kratia in Imagination</li>
+                    <li>An Unknown Island Called Kratia</li>
+                    <li>Love in Kratia's View</li>
+                    <li>The Global Reach of Love</li>
+                    <li>Hidden Secrets</li>
+                    <li>The Foolish Woman</li>
+                    <li>The Cause of Love</li>
+                    <li>The Story of the Turning Wheel</li>
+                    <li>Philphos</li>
+                    <li>Meeting Philphos</li>
+                    <li>An Evening Gathering of Intellectuals</li>
+                    <li>Is There a Goddess in the World?</li>
+                    <li>The Story of Layla and Philphos's Secret</li>
+                    <li>The Story of Hiron and Kimion</li>
+                    <li>Two Factors of Success</li>
+                    <li>The Healing Spring</li>
+                    <li>The Tale of Terrible Hiron and the Spring of Death</li>
+                    <li>The Love Story of Hiron and Eva</li>
+                    <li>The Rain of Love Washes Away Hatred</li>
+                    <li>The Valley of Death</li>
+                    <li>The Continuity of Love and Hiron's Happiness</li>
+                    <li>The Death of Love in Hiron and His Transformation</li>
+                    <li>The Heartbreaking Story of Eva's Absence</li>
+                    <li>The Intoxication of Love</li>
+                    <li>The Punishment of Criminals</li>
+                    <li>Terrible Hiron</li>
+                    <li>The Story of Phaedra's Love</li>
+                    <li>Love for the People</li>
+                    <li>A Terrifying Night</li>
+                    <li>The Dam Guardians</li>
+                    <li>Hephaestus</li>
+                    <li>The Uprising of Hephaestus</li>
+                    <li>Evagoras</li>
+                    <li>Kratia's Proposal</li>
+                    <li>Longing for Kratia</li>
+                    <li>Love and Art</li>
+                    <li>The Majesty of Kratia</li>
+                    <li>Love and True Understanding</li>
+                    <li>The Story of Electra's Love</li>
+                    <li>Electra's Feelings</li>
+                    <li>Electra's Appearance</li>
+                    <li>Reason and Love: An Explanation</li>
+                    <li>A Sister's Love for Her Brother</li>
+                    <li>Berlian and Pygma</li>
+                    <li>Electra as a Symbol of Love and Reason</li>
+                    <li>The Thinkers of the Earth</li>
+                    <li>The Story of the Chinese Idol and Emperor Liu Heng</li>
+                    <li>The Fate of the Chinese Idol and the Emperor</li>
+                    <li>Who Was the Chinese Idol?</li>
+                    <li>The Journey of Love</li>
+                    <li>Guides for Humanity</li>
+                    <li>Who Was Emmalogia?</li>
+                    <li>Love in the View of the Chinese Idol</li>
+                    <li>Electra in Her Palace</li>
+                    <li>Electra's Account of Love</li>
+                    <li>The Story of the Lantern</li>
+                    <li>The Story of Hero and Leander</li>
+                    <li>Love and Lust: Two Real Stories</li>
+                    <li>The Story of Venus and Zenon</li>
+                    <li>The Story of Hera: An Embodiment of the Triumph of Lust</li>
+                    <li>Commander Hegesandros</li>
+                    <li>And Who Was Hera?</li>
+                    <li>The Ugliness of Sexual Assault</li>
+                    <li>Happiness or Success</li>
+                    <li>The Eagle Mountain Farm</li>
+                    <li>The Prince and the Court Scribe</li>
+                    <li>The Love Story of Mehrangiz and Radmehr</li>
+                    <li>Love in Radmehr's View</li>
+                    <li>Love in Mehrangiz's View</li>
+                    <li>The Separation of Two Lovers</li>
+                    <li>A Debate Between Two Other Lovers</li>
+                    <li>The Power of Love and Beauty</li>
+                    <li>The Power of Resolve and Will</li>
+                    <li>The Magic of Kind Words</li>
+                    <li>The Revelation of the Thinkers of the Earth</li>
+                    <li>Cultures and Women</li>
+                    <li>The Evolution of Human Societies</li>
+                    <li>The House of Dionysus and Ion</li>
+                    <li>The Universal Reach of Love</li>
+                    <li>Electra's Sunset</li>
+                </ol>
+
+            </details>
+
+        </div>
+
+        <p class="note">
+            This contents list is provided as a guide to the book. It does not
+            provide access to the complete text of the individual stories.
+        </p>
+
+    </section>
+
+
+    <!-- PURCHASE OPTIONS -->
+
+    <section id="purchase">
+
+        <h2 class="section-title">Purchase Options</h2>
+
+        <div class="purchase-card">
+
+            <h3>Part One PDF: The Love of Morvarid</h3>
+
+            <p>
+                The complete PDF of Part One is available upon request.
+                Please use the order instructions below and identify the
+                requested part clearly.
+            </p>
+
+            <div class="price">300,000 Iranian tomans</div>
+
+            <a class="button secondary" href="#order-instructions">
+                Order Part One PDF
+            </a>
+
+        </div>
+
+        <div class="purchase-card">
+
+            <h3>Printed Book</h3>
+
+            <p>
+                To request the printed book, please provide your full name,
+                postal address, postal code, and telephone number. Shipping
+                costs within Iran are additional.
+            </p>
+
+            <a class="button" href="#order-instructions">
+                Request the Printed Book
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ORDER INSTRUCTIONS -->
+
+    <section id="order-instructions">
+
+        <h2 class="section-title">Payment and Ordering Instructions</h2>
+
+        <div class="order-card">
+
+            <p><strong>Bank Sepah IBAN:</strong></p>
+
+            <p class="bank-number" dir="ltr">
+                IR0201500000150501481687
+            </p>
+
+            <p><strong>Account holder:</strong> Laleh Qarouni</p>
+
+            <p><strong>After making the payment, please send:</strong></p>
+
+            <ol>
+                <li>A picture or copy of the payment receipt;</li>
+                <li>The title of the printed edition or the number of the PDF part requested;</li>
+                <li>The recipient's full name;</li>
+                <li>The complete postal address and postal code;</li>
+                <li>A mobile telephone number for coordination and follow-up.</li>
+            </ol>
+
+            <p>
+                Send your order request and payment receipt to the publisher's
+                official email address. Then send a text message to the
+                telephone number below. After the payment and submitted
+                information have been checked, the requested PDF or printed
+                book will be dispatched as soon as possible.
+            </p>
+
+            <p>
+                <strong>Official publisher email:</strong>
+                <a href="mailto:salhin.publications@proton.me">
+                    <span class="contact-value">salhin.publications@proton.me</span>
+                </a>
+            </p>
+
+            <p>
+                <strong>SMS and order follow-up:</strong>
+                <span class="contact-value" dir="ltr">09125791009</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LINKS TO OTHER PARTS -->
+
+    <nav class="part-next" aria-label="Book parts navigation">
+
+        <a class="button secondary" href="book-1.html">
+            Back to the Main Book Page
+        </a>
+
+        <a class="button" href="book-1-2.html">
+            Continue to Part Two: The Love of Artemisia
+        </a>
+
+        <a class="button secondary" href="contact.html">
+            Contact the Publisher
+        </a>
+
+        <a class="button" href="index.html">
+            English Home Page
+        </a>
+
+    </nav>
+
+</main>
+
+<footer>
+
+    <p>© 1405 Salihin Publications</p>
+
+    <p>And This Is the Book of Love: Galatea and Pygmalion</p>
+
+    <p>Author: Jalaleddin Valiallah</p>
+
+    <p>
+        <a href="mailto:salhin.publications@proton.me">
+            salhin.publications@proton.me
+        </a>
+    </p>
+
+    <p>
+        <a href="reviews.html">Reviews and Readers' Opinions</a>
+    </p>
+
+</footer>
+
+</body>
+</html>
