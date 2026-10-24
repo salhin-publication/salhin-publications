@@ -70,6 +70,22 @@
             text-decoration: underline;
         }
 
+        /* دکمه تغییر زبان در منوی بالای صفحه */
+        nav a.language-link {
+            background: #f2eee4;
+            color: #202820;
+            padding: 5px 15px;
+            margin: 5px 12px;
+            border: 1px solid #d8d0c0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        nav a.language-link:hover {
+            background: #ffffff;
+            text-decoration: none;
+        }
+
         .welcome-section {
             max-width: 1150px;
             margin: 35px auto 20px;
@@ -200,6 +216,14 @@
             text-decoration: underline;
         }
 
+        footer a.language-footer {
+            display: inline-block;
+            padding: 7px 18px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
         @media (max-width: 800px) {
             header h1 {
                 font-size: 32px;
@@ -244,7 +268,7 @@
     <a href="culture.html">Religion, Culture &amp; Heritage</a>
     <a href="books.html">All Books</a>
     <a href="international.html">International Sales</a>
-    <a href="../index.html">فارسی</a>
+    <a class="language-link" href="../index.html" lang="fa" dir="rtl">فارسی | نسخهٔ فارسی</a>
 </nav>
 
 <main>
@@ -352,7 +376,7 @@
     <p>&copy; 2026 Salihin Publications</p>
     <p>Tehran, Iran</p>
     <p>
-        <a href="../index.html">Return to Persian Website</a>
+        <a class="language-footer" href="../index.html" lang="fa" dir="rtl">بازگشت به وب‌سایت فارسی</a>
     </p>
 </footer>
 
