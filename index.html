@@ -77,6 +77,7 @@ button{
   line-height:1.35;
   white-space:nowrap;
   color:#fff;
+  flex-shrink:0;
 }
 
 .brand-en{
@@ -91,24 +92,35 @@ button{
 
 /* NAVIGATION */
 
+.main-nav{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  gap:3px;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+}
+
 .main-nav>a,
 .nav-trigger{
   display:inline-flex;
+  flex-direction:row;
   align-items:center;
   justify-content:center;
   gap:5px;
-  padding:7px 10px;
-  border:1px solid transparent;
+  padding:7px 9px;
+  border:0;
   border-radius:5px;
   background:transparent;
-  color:#ffffff !important;
+  color:#fff !important;
   opacity:1;
   font-family:Tahoma,Arial,sans-serif;
   font-size:12px;
   font-weight:bold;
   white-space:nowrap;
   cursor:pointer;
-  transition:background .2s,color .2s,border-color .2s;
+  transition:background .2s,color .2s;
 }
 
 .main-nav>a:hover,
@@ -116,34 +128,11 @@ button{
 .nav-trigger[aria-expanded="true"]{
   background:#ffffff20;
   color:#ffe0a8 !important;
-  border-color:#ffffff35;
-}
-
-.dropdown a{
-  display:block;
-  padding:9px 12px;
-  border-radius:5px;
-  font-size:12px;
-  font-weight:bold;
-  color:#263442 !important;
-  background:#ffffff;
-}
-
-.dropdown a:hover{
-  background:#f4eee4;
-  color:#8a5b22 !important;
-}
-}
-
-.main-nav>a:hover,
-.nav-trigger:hover,
-.nav-trigger[aria-expanded="true"]{
-  background:#ffffff20;
-  color:#ffe0a8;
 }
 
 .nav-group{
   position:relative;
+  flex:0 0 auto;
 }
 
 .chevron{
@@ -168,6 +157,7 @@ button{
   border-top:3px solid var(--gold);
   border-radius:0 0 8px 8px;
   box-shadow:0 9px 24px #132b4030;
+  z-index:1100;
 }
 
 .nav-group.open .dropdown{
@@ -179,11 +169,15 @@ button{
   padding:8px 11px;
   border-radius:5px;
   font-size:12px;
+  font-weight:bold;
+  color:var(--ink) !important;
+  background:#fff;
+  white-space:normal;
 }
 
 .dropdown a:hover{
   background:#f4eee4;
-  color:#8a5b22;
+  color:#8a5b22 !important;
 }
 
 /* HERO */
@@ -592,6 +586,8 @@ footer p{
 
   .main-nav{
     justify-content:center;
+    flex-wrap:nowrap;
+    max-width:100%;
   }
 
   .main-nav>a,
@@ -758,28 +754,29 @@ footer p{
         </button>
 
         <div class="dropdown">
-          <a href="books.html">فهرست همه کتاب‌ها</a>
+          <a href="#books">فهرست کتاب‌ها</a>
           <a href="book1.html">کتاب اول: و این کتاب عشق است</a>
         </div>
       </div>
 
-           <div class="nav-group">
+      <div class="nav-group">
         <button class="nav-trigger" type="button" aria-expanded="false">
           خرید کتاب <span class="chevron">▾</span>
         </button>
 
         <div class="dropdown">
-          <a href="iran.html">خرید در ایران</a>
-          <a href="international.html">فروش جهانی</a>
+          <a href="#sales">خرید در ایران</a>
+          <a href="#international">فروش جهانی</a>
         </div>
       </div>
 
       <a href="#about">درباره ما</a>
-      <a href="contact.html">تماس</a>
+      <a href="#contact">تماس</a>
       <a href="review.html">نقد و نظر</a>
       <a href="en/index.html" lang="en" dir="ltr">English</a>
 
     </nav>
+
   </div>
 </header>
 
@@ -800,6 +797,7 @@ footer p{
     </p>
 
     <div class="hero-buttons">
+
       <a class="button button-gold" href="#categories">
         ورود به بخش‌های انتشارات
       </a>
@@ -807,6 +805,7 @@ footer p{
       <a class="button button-outline" href="#books">
         مشاهده همه کتاب‌ها
       </a>
+
     </div>
 
   </section>
@@ -931,7 +930,7 @@ footer p{
         از انتشارات صالحین.
       </p>
 
-      <a class="button button-gold" href="books.html">
+      <a class="button button-gold" href="#books">
         مشاهده فهرست همه کتاب‌ها
       </a>
 
@@ -966,7 +965,7 @@ footer p{
           <li>ثبت درخواست خرید نسخه چاپی</li>
         </ul>
 
-        <a class="button" href="iran.html">
+        <a class="button" href="#sales">
           خرید کتاب در ایران
         </a>
 
@@ -987,7 +986,7 @@ footer p{
           <li>دریافت فایل پس از تأیید پرداخت</li>
         </ul>
 
-        <a class="button" href="iran.html">
+        <a class="button" href="#sales">
           خرید PDF در ایران
         </a>
 
@@ -1024,7 +1023,7 @@ footer p{
           <li>Delivery where available</li>
         </ul>
 
-        <a class="button" href="international.html">
+        <a class="button" href="#international">
           International Book Sales
         </a>
 
@@ -1046,7 +1045,7 @@ footer p{
           <li>Digital delivery</li>
         </ul>
 
-        <a class="button" href="international.html">
+        <a class="button" href="#international">
           International PDF Sales
         </a>
 
@@ -1105,19 +1104,19 @@ footer p{
 
 <nav class="quick-links" aria-label="پیوندهای تکمیلی">
 
-  <a href="index.html">خانه</a>
+  <a href="#home">خانه</a>
 
-  <a href="books.html">همه کتاب‌ها</a>
+  <a href="#books">همه کتاب‌ها</a>
 
-  <a href="iran.html">خرید در ایران</a>
+  <a href="#sales">خرید در ایران</a>
 
-  <a href="international.html">فروش جهانی</a>
+  <a href="#international">فروش جهانی</a>
 
   <a href="review.html">
     نقد و نظر صاحب‌نظران و خوانندگان
   </a>
 
-  <a href="contact.html">تماس با ما</a>
+  <a href="#contact">تماس با ما</a>
 
 </nav>
 
