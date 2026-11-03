@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Salihin Publications | Books, Literature and Knowledge</title>
-<meta name="description" content="Salihin Publications: Literature, science, culture, religion and human heritage. Printed and digital books for readers in Iran and around the world.">
+<title>Salihin Publications</title>
+<meta name="description" content="Salihin Publications – Literature, Science, Culture, Religion and Human Heritage.">
 
 <style>
 :root{
@@ -29,7 +29,7 @@
 
 html{
   scroll-behavior:smooth;
-  scroll-padding-top:105px;
+  scroll-padding-top:110px;
 }
 
 body{
@@ -48,9 +48,7 @@ button{
   font:inherit;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .site-header{
   position:sticky;
@@ -140,7 +138,7 @@ button{
   position:absolute;
   top:calc(100% + 7px);
   left:0;
-  min-width:225px;
+  min-width:235px;
   padding:7px;
   background:#fff;
   color:var(--ink);
@@ -166,15 +164,7 @@ button{
   color:#8a5b22;
 }
 
-.drop-sep{
-  height:1px;
-  background:var(--line);
-  margin:5px;
-}
-
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
   position:relative;
@@ -214,7 +204,6 @@ button{
   font-size:32px;
   line-height:1.5;
   color:#fff;
-  white-space:nowrap;
 }
 
 .hero .english-title{
@@ -240,9 +229,7 @@ button{
   margin-top:15px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 
 .button{
   display:inline-flex;
@@ -255,6 +242,7 @@ button{
   color:#fff;
   font-size:12px;
   transition:.18s;
+  cursor:pointer;
 }
 
 .button:hover{
@@ -278,9 +266,7 @@ button{
   color:#fff;
 }
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* GENERAL SECTIONS */
 
 .page-section{
   max-width:1200px;
@@ -313,9 +299,7 @@ button{
   border-radius:3px;
 }
 
-/* =========================
-   THREE CATEGORIES
-========================= */
+/* CATEGORIES */
 
 .categories{
   display:grid;
@@ -406,9 +390,7 @@ button{
   min-width:145px;
 }
 
-/* =========================
-   ALL BOOKS
-========================= */
+/* ALL BOOKS */
 
 .all-books-band{
   background:linear-gradient(100deg,#e8edf0,#fff 50%,#f1e8d9);
@@ -434,9 +416,32 @@ button{
   margin:4px 0 12px;
 }
 
-/* =========================
-   SALES
-========================= */
+/* BOOK FEATURE */
+
+.book-feature{
+  max-width:900px;
+  margin:22px auto 0;
+  padding:18px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-left:4px solid var(--gold);
+  border-radius:8px;
+  text-align:left;
+}
+
+.book-feature h3{
+  color:var(--navy);
+  font-size:17px;
+  margin-bottom:5px;
+}
+
+.book-feature p{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+
+/* SALES */
 
 .sales-grid{
   display:grid;
@@ -480,9 +485,7 @@ button{
   text-align:left;
 }
 
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about-band{
   background:#e9eef0;
@@ -508,9 +511,7 @@ button{
   color:#53616b;
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact{
   text-align:center;
@@ -523,9 +524,28 @@ button{
   margin:5px auto 13px;
 }
 
-/* =========================
-   QUICK LINKS
-========================= */
+.contact-details{
+  max-width:650px;
+  margin:15px auto 0;
+  padding:17px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  text-align:center;
+}
+
+.contact-details p{
+  margin:5px auto;
+}
+
+.contact-email{
+  direction:ltr;
+  display:inline-block;
+  color:var(--navy);
+  font-weight:bold;
+}
+
+/* QUICK LINKS */
 
 .quick-links{
   display:flex;
@@ -549,9 +569,7 @@ button{
   border-bottom-color:var(--gold);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
   background:#12283d;
@@ -571,9 +589,7 @@ footer p{
   font-size:10px;
 }
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media(max-width:900px){
 
@@ -603,9 +619,7 @@ footer p{
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:600px){
 
@@ -644,7 +658,7 @@ footer p{
   }
 
   .hero h1{
-    font-size:clamp(17px,4.5vw,25px);
+    font-size:clamp(18px,4.5vw,25px);
   }
 
   .hero .english-title{
@@ -723,19 +737,17 @@ footer p{
   .about-inner{
     padding:22px 14px;
   }
-}
 
+  .book-feature{
+    padding:14px;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header class="site-header">
-
   <div class="header-inner">
 
     <a class="brand" href="#home">
@@ -748,66 +760,50 @@ footer p{
       <a href="#home">Home</a>
 
       <div class="nav-group">
-
         <button class="nav-trigger" type="button" aria-expanded="false">
           Sections <span class="chevron">▾</span>
         </button>
-
         <div class="dropdown">
           <a href="#literature">Literature &amp; Arts</a>
           <a href="#science">Science &amp; Knowledge</a>
           <a href="#culture">Religion, Culture &amp; Human Heritage</a>
         </div>
-
       </div>
 
       <div class="nav-group">
-
         <button class="nav-trigger" type="button" aria-expanded="false">
           Books <span class="chevron">▾</span>
         </button>
-
         <div class="dropdown">
-          <a href="books.html">All Published Books</a>
+          <a href="#books">All Published Books</a>
           <a href="book-1.html">Book One: And This Is the Book of Love</a>
         </div>
-
       </div>
 
       <a href="#books">All Books</a>
 
       <div class="nav-group">
-
         <button class="nav-trigger" type="button" aria-expanded="false">
           Book Sales <span class="chevron">▾</span>
         </button>
-
         <div class="dropdown">
-          <a href="iran.html">Purchases in Iran</a>
-          <a href="international.html">Worldwide Sales</a>
+          <a href="#iran-sales">Purchases in Iran</a>
+          <a href="#international-sales">Worldwide Sales</a>
         </div>
-
       </div>
 
       <a href="#about">About Us</a>
-
-      <a href="contact.html">Contact</a>
-
+      <a href="#contact">Contact</a>
       <a href="reviews.html">Reviews</a>
-
       <a href="../index.html" lang="fa" dir="rtl">فارسی</a>
 
     </nav>
-
   </div>
-
 </header>
 
-<!-- =========================
-     HERO
-========================= -->
-
 <main id="home">
+
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -824,7 +820,6 @@ footer p{
     </p>
 
     <div class="hero-buttons">
-
       <a class="button button-gold" href="#categories">
         Explore Our Sections
       </a>
@@ -832,27 +827,18 @@ footer p{
       <a class="button button-outline" href="#books">
         Browse All Books
       </a>
-
     </div>
 
   </section>
 
-  <!-- =========================
-       THREE MAIN CATEGORIES
-  ========================= -->
+  <!-- CATEGORIES -->
 
   <section class="page-section" id="categories">
 
     <div class="section-heading">
-
       <h2>Our Main Sections</h2>
-
-      <p>
-        Select one of the following sections to explore its publications.
-      </p>
-
+      <p>Select a section to explore its publications.</p>
       <div class="heading-rule"></div>
-
     </div>
 
     <div class="categories">
@@ -862,29 +848,25 @@ footer p{
       <article class="category literature" id="literature">
 
         <div>
-
           <div class="category-icon">📚</div>
 
           <h3>Literature &amp; Arts</h3>
 
-          <div class="english">
-            Literature &amp; Arts
-          </div>
+          <div class="english">Literature &amp; Arts</div>
 
           <p>
-            Literary and artistic works, including stories, tales,
-            poetry, novels, plays, and literature for children and young adults.
+            Stories, tales, poetry, novels, plays,
+            and literary works for children and young adults.
           </p>
 
           <div class="category-list">
             Stories • Tales • Poetry • Novels<br>
             Drama • Children's Literature
           </div>
-
         </div>
 
-        <a class="button" href="literature.html">
-          Enter Literature &amp; Arts
+        <a class="button" href="book-1.html">
+          Enter Book One
         </a>
 
       </article>
@@ -894,29 +876,25 @@ footer p{
       <article class="category science" id="science">
 
         <div>
-
           <div class="category-icon">🔬</div>
 
           <h3>Science &amp; Knowledge</h3>
 
-          <div class="english">
-            Science &amp; Knowledge
-          </div>
+          <div class="english">Science &amp; Knowledge</div>
 
           <p>
             Scientific, academic, educational, research-based,
-            and specialized publications across different fields of knowledge.
+            and specialized publications across different fields.
           </p>
 
           <div class="category-list">
             Natural Sciences • Environment<br>
             Humanities • Education • Technology
           </div>
-
         </div>
 
-        <a class="button" href="science.html">
-          Enter Science &amp; Knowledge
+        <a class="button" href="#science">
+          Explore This Section
         </a>
 
       </article>
@@ -926,7 +904,6 @@ footer p{
       <article class="category culture" id="culture">
 
         <div>
-
           <div class="category-icon">🌍</div>
 
           <h3>Religion, Culture &amp; Human Heritage</h3>
@@ -937,18 +914,17 @@ footer p{
 
           <p>
             Publications on religion, thought, traditions,
-            cultural history, civilizations, and the shared heritage of humanity.
+            cultural history, civilizations, and human heritage.
           </p>
 
           <div class="category-list">
             Religion • Thought • Culture<br>
-            Civilizations • Cultural History • Heritage
+            Civilizations • History • Heritage
           </div>
-
         </div>
 
-        <a class="button" href="culture.html">
-          Enter This Section
+        <a class="button" href="#culture">
+          Explore This Section
         </a>
 
       </article>
@@ -957,9 +933,7 @@ footer p{
 
   </section>
 
-  <!-- =========================
-       ALL BOOKS
-  ========================= -->
+  <!-- ALL BOOKS -->
 
   <section class="all-books-band" id="books">
 
@@ -972,30 +946,32 @@ footer p{
         by Salihin Publications.
       </p>
 
-      <a class="button button-gold" href="books.html">
-        View the Complete Book Catalogue
-      </a>
+      <div class="book-feature" id="featured-book">
+
+        <h3>Book One: And This Is the Book of Love</h3>
+
+        <p>
+          Galatea and Pygmalion — By Jalaleddin Valiallah.
+        </p>
+
+        <a class="button button-gold" href="book-1.html">
+          View Book One
+        </a>
+
+      </div>
 
     </div>
 
   </section>
 
-  <!-- =========================
-       SALES IN IRAN
-  ========================= -->
+  <!-- IRAN SALES -->
 
-  <section class="page-section" id="sales">
+  <section class="page-section" id="iran-sales">
 
     <div class="section-heading">
-
       <h2>Purchasing Books in Iran</h2>
-
-      <p>
-        Printed editions and electronic publications
-      </p>
-
+      <p>Printed editions and electronic publications</p>
       <div class="heading-rule"></div>
-
     </div>
 
     <div class="sales-grid">
@@ -1015,8 +991,8 @@ footer p{
           <li>Requests for printed editions</li>
         </ul>
 
-        <a class="button" href="iran.html">
-          Purchase Printed Books
+        <a class="button" href="#contact">
+          Request a Printed Book
         </a>
 
       </div>
@@ -1033,11 +1009,11 @@ footer p{
         <ul>
           <li>Complete PDF editions</li>
           <li>Purchase of individual parts</li>
-          <li>Delivery after payment confirmation</li>
+          <li>Digital delivery after order confirmation</li>
         </ul>
 
-        <a class="button" href="iran.html">
-          Purchase PDF Books in Iran
+        <a class="button" href="#contact">
+          Request a PDF Book
         </a>
 
       </div>
@@ -1046,22 +1022,14 @@ footer p{
 
   </section>
 
-  <!-- =========================
-       INTERNATIONAL SALES
-  ========================= -->
+  <!-- INTERNATIONAL SALES -->
 
-  <section class="page-section" id="international">
+  <section class="page-section" id="international-sales">
 
     <div class="section-heading">
-
       <h2>International Sales</h2>
-
-      <p>
-        Printed Books and Digital Publications Worldwide
-      </p>
-
+      <p>Printed Books and Digital Publications Worldwide</p>
       <div class="heading-rule"></div>
-
     </div>
 
     <div class="sales-grid">
@@ -1078,11 +1046,11 @@ footer p{
         <ul>
           <li>Printed editions</li>
           <li>International prices</li>
-          <li>Delivery where available</li>
+          <li>Delivery subject to availability</li>
         </ul>
 
-        <a class="button" href="international.html">
-          International Book Sales
+        <a class="button" href="#contact">
+          Ask About International Print Orders
         </a>
 
       </div>
@@ -1099,11 +1067,11 @@ footer p{
         <ul>
           <li>Complete PDF editions</li>
           <li>Selected parts</li>
-          <li>Digital delivery</li>
+          <li>Digital delivery arrangements</li>
         </ul>
 
-        <a class="button" href="international.html">
-          International PDF Sales
+        <a class="button" href="#contact">
+          Ask About Digital Orders
         </a>
 
       </div>
@@ -1112,9 +1080,7 @@ footer p{
 
   </section>
 
-  <!-- =========================
-       ABOUT US
-  ========================= -->
+  <!-- ABOUT -->
 
   <section class="about-band" id="about">
 
@@ -1134,9 +1100,7 @@ footer p{
 
   </section>
 
-  <!-- =========================
-       CONTACT
-  ========================= -->
+  <!-- CONTACT -->
 
   <section class="page-section contact" id="contact">
 
@@ -1147,46 +1111,53 @@ footer p{
       <p>
         For questions about publishing, purchasing printed books
         or PDF editions, and cooperation with Salihin Publications,
-        please visit our contact page.
+        please contact the publisher.
       </p>
 
       <div class="heading-rule"></div>
 
     </div>
 
-    <a class="button button-gold" href="contact.html">
-      Contact Information and Communication Channels
-    </a>
+    <div class="contact-details">
+
+      <p><strong>Salihin Publications</strong></p>
+
+      <p>
+        Publisher's official email:
+      </p>
+
+      <p>
+        <a class="contact-email" href="mailto:salhin.publications@proton.me">
+          salhin.publications@proton.me
+        </a>
+      </p>
+
+      <p>
+        For orders, please include the book title,
+        requested edition, and your contact details.
+      </p>
+
+    </div>
 
   </section>
 
 </main>
 
-<!-- =========================
-     QUICK LINKS
-========================= -->
+<!-- QUICK LINKS -->
 
 <nav class="quick-links" aria-label="Additional Links">
 
-  <a href="index.html">Home</a>
-
-  <a href="books.html">All Books</a>
-
-  <a href="iran.html">Purchases in Iran</a>
-
-  <a href="international.html">Worldwide Sales</a>
-
+  <a href="#home">Home</a>
+  <a href="#books">All Books</a>
+  <a href="#iran-sales">Purchases in Iran</a>
+  <a href="#international-sales">Worldwide Sales</a>
   <a href="reviews.html">Reviews and Readers' Comments</a>
-
-  <a href="contact.html">Contact Us</a>
-
+  <a href="#contact">Contact Us</a>
   <a href="../index.html" lang="fa" dir="rtl">صفحه فارسی</a>
 
 </nav>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1200,12 +1171,9 @@ footer p{
 
 </footer>
 
-<!-- =========================
-     DROPDOWN MENU SCRIPT
-========================= -->
+<!-- DROPDOWN MENU SCRIPT -->
 
 <script>
-
 (function(){
 
   const groups=[
@@ -1220,14 +1188,10 @@ footer p{
 
         group.classList.remove('open');
 
-        const button=
-          group.querySelector('.nav-trigger');
+        const button=group.querySelector('.nav-trigger');
 
         if(button){
-          button.setAttribute(
-            'aria-expanded',
-            'false'
-          );
+          button.setAttribute('aria-expanded','false');
         }
 
       }
@@ -1238,8 +1202,7 @@ footer p{
 
   groups.forEach(group=>{
 
-    const trigger=
-      group.querySelector('.nav-trigger');
+    const trigger=group.querySelector('.nav-trigger');
 
     trigger.addEventListener('click',function(event){
 
@@ -1250,10 +1213,7 @@ footer p{
 
       closeAll(group);
 
-      group.classList.toggle(
-        'open',
-        shouldOpen
-      );
+      group.classList.toggle('open',shouldOpen);
 
       trigger.setAttribute(
         'aria-expanded',
@@ -1289,7 +1249,6 @@ footer p{
   });
 
 })();
-
 </script>
 
 </body>
