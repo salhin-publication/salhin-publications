@@ -1,646 +1,1295 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Salihin Publications</title>
-<meta name="description" content="Salihin Publications – Literature, Arts, Science, Knowledge, Religion, Culture and Human Heritage.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salihin Publications | Books, Literature and Knowledge</title>
+<meta name="description" content="Salihin Publications: Literature, science, culture, religion and human heritage. Printed and digital books for readers in Iran and around the world.">
 
 <style>
-* {
-    box-sizing: border-box;
+:root{
+  --navy:#17324d;
+  --navy2:#244967;
+  --gold:#c69a52;
+  --gold-light:#f3e7d1;
+  --teal:#397b78;
+  --plum:#725477;
+  --ink:#263442;
+  --muted:#64717b;
+  --paper:#f3f5f6;
+  --white:#fff;
+  --line:#dce3e7;
 }
 
-html {
-    scroll-behavior: smooth;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.55;
-    color: #333;
-    background: #faf9f6;
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:105px;
 }
 
-/* HEADER */
-header {
-    background: #202820;
-    color: white;
-    text-align: center;
-    padding: 13px 12px 10px;
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.8;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 27px;
-    font-weight: normal;
-    letter-spacing: .5px;
+a{
+  text-decoration:none;
+  color:inherit;
 }
 
-header p {
-    margin: 3px 0 0;
-    font-size: 12px;
-    color: #ddd;
+button{
+  font:inherit;
 }
 
-/* NAVIGATION */
-nav {
-    background: #303a30;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 3px 8px;
-    position: relative;
-    z-index: 100;
+/* =========================
+   HEADER
+========================= */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  color:#fff;
+  background:linear-gradient(110deg,var(--navy),var(--navy2));
+  border-bottom:3px solid var(--gold);
+  box-shadow:0 3px 14px #142b4030;
 }
 
-nav a,
-.dropbtn {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: 12px;
-    padding: 8px 11px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    white-space: nowrap;
+.header-inner{
+  max-width:1240px;
+  margin:auto;
+  padding:8px 20px;
+  min-height:66px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
 }
 
-nav a:hover,
-.dropbtn:hover,
-.dropdown.active .dropbtn {
-    background: #465646;
+.brand{
+  flex:0 0 auto;
+  font-size:21px;
+  font-weight:bold;
+  line-height:1.35;
+  white-space:nowrap;
+  color:#fff;
 }
 
-/* DROPDOWN MENU */
-.dropdown {
-    position: relative;
-    display: inline-block;
+.brand-en{
+  display:block;
+  direction:ltr;
+  text-align:left;
+  font-size:11px;
+  font-weight:normal;
+  color:#e3d4b9;
+  letter-spacing:.25px;
 }
 
-.dropbtn::after {
-    content: " ▾";
-    font-size: 10px;
+.main-nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:3px;
+  flex-wrap:wrap;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 205px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,.16);
-    border-radius: 0 0 5px 5px;
-    overflow: hidden;
-    z-index: 200;
+.main-nav>a,
+.nav-trigger{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:7px 9px;
+  border:0;
+  border-radius:5px;
+  background:transparent;
+  color:#fff;
+  font-size:12px;
+  white-space:nowrap;
+  cursor:pointer;
 }
 
-.dropdown-content a {
-    display: block;
-    color: #303a30;
-    padding: 9px 13px;
-    font-size: 12px;
-    border-bottom: 1px solid #eee;
+.main-nav>a:hover,
+.nav-trigger:hover,
+.nav-trigger[aria-expanded="true"]{
+  background:#ffffff20;
+  color:#ffe0a8;
 }
 
-.dropdown-content a:hover {
-    background: #eeeae1;
+.nav-group{
+  position:relative;
 }
 
-.dropdown.active .dropdown-content {
-    display: block;
+.chevron{
+  font-size:10px;
+  transition:transform .2s;
 }
 
-.language-link {
-    background: #f2eee4 !important;
-    color: #202820 !important;
-    border-radius: 4px;
-    margin: 3px 5px;
-    font-weight: bold;
-    padding: 6px 11px;
+.nav-trigger[aria-expanded="true"] .chevron{
+  transform:rotate(180deg);
 }
 
-/* WELCOME */
-.welcome-section {
-    max-width: 1050px;
-    margin: 13px auto 8px;
-    padding: 8px 16px;
-    text-align: center;
+.dropdown{
+  display:none;
+  position:absolute;
+  top:calc(100% + 7px);
+  left:0;
+  min-width:225px;
+  padding:7px;
+  background:#fff;
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-top:3px solid var(--gold);
+  border-radius:0 0 8px 8px;
+  box-shadow:0 9px 24px #132b4030;
 }
 
-.welcome-section h2 {
-    font-size: 23px;
-    font-weight: normal;
-    margin: 0 0 5px;
-    color: #303a30;
+.nav-group.open .dropdown{
+  display:block;
 }
 
-.welcome-section p {
-    font-size: 13px;
-    margin: 3px auto;
-    max-width: 850px;
+.dropdown a{
+  display:block;
+  padding:8px 11px;
+  border-radius:5px;
+  font-size:12px;
 }
 
-/* GENERAL SECTIONS */
-.section {
-    max-width: 1050px;
-    margin: 15px auto;
-    padding: 0 15px;
+.dropdown a:hover{
+  background:#f4eee4;
+  color:#8a5b22;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 19px;
-    font-weight: normal;
-    margin: 8px 0 11px;
-    color: #303a30;
+.drop-sep{
+  height:1px;
+  background:var(--line);
+  margin:5px;
 }
 
-/* THREE PUBLISHING SECTIONS */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 12px;
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  padding:32px 18px 30px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 12% 15%,#ffffff18 0 2px,transparent 3px),
+    radial-gradient(circle at 88% 80%,#ffffff14 0 3px,transparent 4px),
+    linear-gradient(115deg,#18334e 0%,#28566b 56%,#397b78 100%);
+  border-bottom:5px solid var(--gold);
 }
 
-.card {
-    background: white;
-    padding: 13px 11px;
-    text-align: center;
-    border-radius: 6px;
-    border: 1px solid #eeeae2;
-    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+.hero:before,
+.hero:after{
+  content:"";
+  position:absolute;
+  border:1px solid #ffffff20;
+  border-radius:50%;
+  width:230px;
+  height:230px;
+  pointer-events:none;
 }
 
-.card h3 {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 2px 0 6px;
-    color: #303a30;
+.hero:before{
+  right:-90px;
+  top:-130px;
 }
 
-.card p {
-    font-size: 12px;
-    color: #555;
-    margin: 4px 0 8px;
-    line-height: 1.5;
+.hero:after{
+  left:-100px;
+  bottom:-160px;
 }
 
-.card a,
-.featured-text a,
-.international a {
-    display: inline-block;
-    background: #303a30;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 6px 13px;
-    margin-top: 4px;
-    font-size: 12px;
+.hero h1{
+  font-size:32px;
+  line-height:1.5;
+  color:#fff;
+  white-space:nowrap;
 }
 
-.card a:hover,
-.featured-text a:hover,
-.international a:hover {
-    background: #526452;
+.hero .english-title{
+  direction:ltr;
+  font-size:15px;
+  color:#f1d8ad;
+  margin:0 0 9px;
+  letter-spacing:.4px;
 }
 
-/* FEATURED BOOK */
-.featured {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: white;
-    padding: 14px 17px;
-    border: 1px solid #eeeae2;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+.hero p{
+  max-width:760px;
+  margin:auto;
+  color:#f1f4f5;
+  font-size:13px;
 }
 
-.featured-image {
-    flex: 0 0 125px;
-    text-align: center;
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:15px;
 }
 
-.featured-image img {
-    max-width: 115px;
-    max-height: 165px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+/* =========================
+   BUTTONS
+========================= */
+
+.button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 15px;
+  border:1px solid var(--gold);
+  border-radius:5px;
+  background:var(--navy);
+  color:#fff;
+  font-size:12px;
+  transition:.18s;
 }
 
-.featured-text {
-    flex: 1;
-    min-width: 0;
+.button:hover{
+  background:#315a78;
+  transform:translateY(-1px);
 }
 
-.featured-text h3 {
-    font-size: 19px;
-    font-weight: normal;
-    margin: 0 0 5px;
-    color: #303a30;
+.button-gold{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#172d40;
 }
 
-.featured-text p {
-    font-size: 13px;
-    margin: 5px 0;
+.button-gold:hover{
+  background:#d8b575;
 }
 
-/* INTERNATIONAL */
-.international {
-    background: #e8e3d8;
-    padding: 15px 18px;
-    text-align: center;
-    border-radius: 6px;
+.button-outline{
+  background:transparent;
+  border-color:#ffffff9c;
+  color:#fff;
 }
 
-.international h2 {
-    font-size: 19px;
-    font-weight: normal;
-    margin: 0 0 6px;
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.page-section{
+  max-width:1200px;
+  margin:auto;
+  padding:29px 20px;
 }
 
-.international p {
-    font-size: 12px;
-    margin: 5px auto;
-    max-width: 850px;
+.section-heading{
+  text-align:center;
+  margin-bottom:17px;
 }
 
-/* FOOTER */
-footer {
-    margin-top: 25px;
-    background: #202820;
-    color: #ddd;
-    text-align: center;
-    padding: 13px 10px;
-    font-size: 12px;
+.section-heading h2{
+  font-size:23px;
+  color:var(--navy);
+  line-height:1.5;
 }
 
-footer p {
-    margin: 3px 0;
+.section-heading p{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:3px;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
+.heading-rule{
+  width:55px;
+  height:3px;
+  background:var(--gold);
+  margin:8px auto 0;
+  border-radius:3px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* =========================
+   THREE CATEGORIES
+========================= */
+
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:13px;
 }
 
-footer .language-footer {
-    display: inline-block;
-    padding: 4px 12px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+.category{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  text-align:center;
+  padding:16px 13px 14px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:9px;
+  border-top:4px solid var(--gold);
+  box-shadow:0 4px 13px #19344a0d;
+  transition:transform .18s,box-shadow .18s;
 }
 
-/* MOBILE */
-@media (max-width: 650px) {
-
-    header {
-        padding: 10px 7px;
-    }
-
-    header h1 {
-        font-size: 23px;
-    }
-
-    header p {
-        font-size: 10px;
-    }
-
-    nav {
-        justify-content: center;
-        padding: 3px;
-    }
-
-    nav a,
-    .dropbtn {
-        font-size: 11px;
-        padding: 7px 8px;
-    }
-
-    .dropdown-content {
-        min-width: 175px;
-    }
-
-    .welcome-section {
-        margin: 10px auto 5px;
-        padding: 7px 12px;
-    }
-
-    .welcome-section h2 {
-        font-size: 20px;
-    }
-
-    .welcome-section p {
-        font-size: 12px;
-    }
-
-    .section {
-        margin: 12px auto;
-        padding: 0 9px;
-    }
-
-    .cards {
-        gap: 7px;
-    }
-
-    .card {
-        padding: 10px 6px;
-    }
-
-    .card h3 {
-        font-size: 13px;
-    }
-
-    .card p {
-        font-size: 10px;
-    }
-
-    .card a {
-        font-size: 10px;
-        padding: 5px 8px;
-    }
-
-    .featured {
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .featured-image {
-        flex: 0 0 85px;
-    }
-
-    .featured-image img {
-        max-width: 80px;
-        max-height: 125px;
-    }
-
-    .featured-text h3 {
-        font-size: 15px;
-    }
-
-    .featured-text p {
-        font-size: 11px;
-    }
-
-    .international {
-        padding: 12px;
-    }
-
-    .international h2 {
-        font-size: 17px;
-    }
-
-    .international p {
-        font-size: 11px;
-    }
+.category:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px #19344a18;
 }
 
-/* VERY SMALL SCREENS */
-@media (max-width: 350px) {
-    nav a,
-    .dropbtn {
-        padding: 6px 5px;
-        font-size: 10px;
-    }
-
-    .card h3 {
-        font-size: 11px;
-    }
+.category.science{
+  border-top-color:var(--teal);
 }
+
+.category.culture{
+  border-top-color:var(--plum);
+}
+
+.category-icon{
+  width:43px;
+  height:43px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 5px;
+  border-radius:50%;
+  background:var(--gold-light);
+  font-size:23px;
+}
+
+.science .category-icon{
+  background:#e2efed;
+}
+
+.culture .category-icon{
+  background:#eee7f0;
+}
+
+.category h3{
+  font-size:17px;
+  line-height:1.55;
+  color:var(--navy);
+}
+
+.category .english{
+  direction:ltr;
+  font-size:10px;
+  color:#87919a;
+  margin:1px 0 7px;
+}
+
+.category p{
+  font-size:11px;
+  color:#596873;
+  line-height:1.9;
+  min-height:58px;
+}
+
+.category-list{
+  font-size:10px;
+  color:#7b858b;
+  line-height:1.85;
+  margin-top:5px;
+}
+
+.category .button{
+  margin-top:3px;
+  min-width:145px;
+}
+
+/* =========================
+   ALL BOOKS
+========================= */
+
+.all-books-band{
+  background:linear-gradient(100deg,#e8edf0,#fff 50%,#f1e8d9);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.all-books-inner{
+  max-width:900px;
+  margin:auto;
+  padding:23px 20px;
+  text-align:center;
+}
+
+.all-books-inner h2{
+  font-size:22px;
+  color:var(--navy);
+}
+
+.all-books-inner p{
+  font-size:12px;
+  color:var(--muted);
+  margin:4px 0 12px;
+}
+
+/* =========================
+   SALES
+========================= */
+
+.sales-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+}
+
+.sales-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:17px 19px;
+  box-shadow:0 3px 12px #19344a0a;
+}
+
+.sales-box h3{
+  font-size:17px;
+  color:var(--navy);
+  margin-bottom:5px;
+}
+
+.sales-box p{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:7px;
+}
+
+.sales-box ul{
+  padding-left:18px;
+  font-size:11px;
+  color:#53616b;
+  margin-bottom:10px;
+}
+
+.sales-box li{
+  margin:2px 0;
+}
+
+.international-box{
+  direction:ltr;
+  text-align:left;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-band{
+  background:#e9eef0;
+  border-top:1px solid #d9e1e5;
+  border-bottom:1px solid #d9e1e5;
+}
+
+.about-inner{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  padding:26px 20px;
+}
+
+.about-inner h2{
+  font-size:22px;
+  color:var(--navy);
+  margin-bottom:7px;
+}
+
+.about-inner p{
+  font-size:12px;
+  color:#53616b;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  text-align:center;
+}
+
+.contact p{
+  font-size:12px;
+  color:var(--muted);
+  max-width:700px;
+  margin:5px auto 13px;
+}
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.quick-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:7px 17px;
+  padding:12px 15px;
+  background:var(--navy);
+  color:#edf2f5;
+  font-size:11px;
+}
+
+.quick-links a{
+  padding:3px 2px;
+  border-bottom:1px solid transparent;
+}
+
+.quick-links a:hover{
+  color:#f3d49f;
+  border-bottom-color:var(--gold);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#12283d;
+  color:#e8edf0;
+  text-align:center;
+  padding:17px 12px;
+  font-size:11px;
+}
+
+footer p{
+  margin:2px;
+}
+
+.footer-english{
+  direction:ltr;
+  color:#c5d0d7;
+  font-size:10px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+  .header-inner{
+    flex-direction:column;
+    gap:4px;
+    padding:7px 10px;
+  }
+
+  .brand{
+    text-align:center;
+    font-size:19px;
+  }
+
+  .brand-en{
+    text-align:center;
+  }
+
+  .main-nav{
+    justify-content:center;
+  }
+
+  .main-nav>a,
+  .nav-trigger{
+    font-size:11px;
+    padding:6px 7px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+  .header-inner{
+    gap:3px;
+  }
+
+  .main-nav{
+    width:100%;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    justify-content:flex-start;
+    scrollbar-width:thin;
+    padding-bottom:3px;
+  }
+
+  .main-nav>a,
+  .nav-trigger{
+    font-size:10px;
+    padding:6px 7px;
+  }
+
+  .main-nav>*{
+    flex:0 0 auto;
+  }
+
+  .dropdown{
+    position:fixed;
+    top:93px;
+    left:8px;
+    max-width:calc(100vw - 16px);
+  }
+
+  .hero{
+    padding:25px 13px 23px;
+  }
+
+  .hero h1{
+    font-size:clamp(17px,4.5vw,25px);
+  }
+
+  .hero .english-title{
+    font-size:13px;
+  }
+
+  .hero p{
+    font-size:11px;
+  }
+
+  .page-section{
+    padding:23px 10px;
+  }
+
+  .section-heading h2{
+    font-size:20px;
+  }
+
+  .categories{
+    gap:7px;
+  }
+
+  .category{
+    padding:11px 6px 10px;
+    gap:7px;
+    border-radius:7px;
+  }
+
+  .category-icon{
+    width:34px;
+    height:34px;
+    font-size:19px;
+  }
+
+  .category h3{
+    font-size:12px;
+    line-height:1.6;
+  }
+
+  .category .english{
+    font-size:8px;
+    min-height:24px;
+    line-height:1.4;
+  }
+
+  .category p{
+    font-size:9px;
+    line-height:1.7;
+    min-height:91px;
+  }
+
+  .category-list{
+    font-size:8px;
+    line-height:1.7;
+  }
+
+  .category .button{
+    min-width:0;
+    width:100%;
+    font-size:9px;
+    padding:6px 3px;
+  }
+
+  .sales-grid{
+    grid-template-columns:1fr;
+  }
+
+  .sales-box{
+    padding:14px;
+  }
+
+  .all-books-inner{
+    padding:20px 13px;
+  }
+
+  .about-inner{
+    padding:22px 14px;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Salihin Publications</h1>
-    <p>Books, Knowledge, Literature, Culture and Human Heritage</p>
-</header>
+<!-- =========================
+     HEADER
+========================= -->
 
-<nav>
+<header class="site-header">
 
-    <a href="index.html">Home</a>
+  <div class="header-inner">
 
-    <div class="dropdown">
-        <button class="dropbtn" type="button" aria-expanded="false">
-            Sections
-        </button>
-        <div class="dropdown-content">
-            <a href="literature.html">Literature &amp; Arts</a>
-            <a href="science.html">Science &amp; Knowledge</a>
-            <a href="culture.html">Religion, Culture &amp; Heritage</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn" type="button" aria-expanded="false">
-            Books
-        </button>
-        <div class="dropdown-content">
-            <a href="book-1.html">Book 1 – And This Is the Book of Love</a>
-            <a href="culture.html">Books on Religion and Culture</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn" type="button" aria-expanded="false">
-            Sales
-        </button>
-        <div class="dropdown-content">
-            <a href="international.html">International Sales</a>
-            <a href="../index.html#buy">Purchasing in Iran</a>
-        </div>
-    </div>
-
-    <a href="books.html">All Books</a>
-
-    <a href="international.html">International</a>
-
-    <a class="language-link" href="../index.html" lang="fa" dir="rtl">
-        فارسی
+    <a class="brand" href="#home">
+      Salihin Publications
+      <span class="brand-en">Literature · Science · Culture</span>
     </a>
 
-</nav>
+    <nav class="main-nav" aria-label="Main Navigation">
 
-<main>
+      <a href="#home">Home</a>
 
-    <section class="welcome-section">
-        <h2>Welcome to Salihin Publications</h2>
+      <div class="nav-group">
+
+        <button class="nav-trigger" type="button" aria-expanded="false">
+          Sections <span class="chevron">▾</span>
+        </button>
+
+        <div class="dropdown">
+          <a href="#literature">Literature &amp; Arts</a>
+          <a href="#science">Science &amp; Knowledge</a>
+          <a href="#culture">Religion, Culture &amp; Human Heritage</a>
+        </div>
+
+      </div>
+
+      <div class="nav-group">
+
+        <button class="nav-trigger" type="button" aria-expanded="false">
+          Books <span class="chevron">▾</span>
+        </button>
+
+        <div class="dropdown">
+          <a href="books.html">All Published Books</a>
+          <a href="book-1.html">Book One: And This Is the Book of Love</a>
+        </div>
+
+      </div>
+
+      <a href="#books">All Books</a>
+
+      <div class="nav-group">
+
+        <button class="nav-trigger" type="button" aria-expanded="false">
+          Book Sales <span class="chevron">▾</span>
+        </button>
+
+        <div class="dropdown">
+          <a href="iran.html">Purchases in Iran</a>
+          <a href="international.html">Worldwide Sales</a>
+        </div>
+
+      </div>
+
+      <a href="#about">About Us</a>
+
+      <a href="contact.html">Contact</a>
+
+      <a href="reviews.html">Reviews</a>
+
+      <a href="../index.html" lang="fa" dir="rtl">فارسی</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main id="home">
+
+  <section class="hero">
+
+    <h1>Welcome to Salihin Publications</h1>
+
+    <div class="english-title">
+      Literature · Science · Culture · Human Heritage
+    </div>
+
+    <p>
+      Salihin Publications is dedicated to publishing, presenting,
+      and distributing valuable literary, scientific, educational,
+      cultural, and religious works in Iran and throughout the world.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a class="button button-gold" href="#categories">
+        Explore Our Sections
+      </a>
+
+      <a class="button button-outline" href="#books">
+        Browse All Books
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       THREE MAIN CATEGORIES
+  ========================= -->
+
+  <section class="page-section" id="categories">
+
+    <div class="section-heading">
+
+      <h2>Our Main Sections</h2>
+
+      <p>
+        Select one of the following sections to explore its publications.
+      </p>
+
+      <div class="heading-rule"></div>
+
+    </div>
+
+    <div class="categories">
+
+      <!-- LITERATURE -->
+
+      <article class="category literature" id="literature">
+
+        <div>
+
+          <div class="category-icon">📚</div>
+
+          <h3>Literature &amp; Arts</h3>
+
+          <div class="english">
+            Literature &amp; Arts
+          </div>
+
+          <p>
+            Literary and artistic works, including stories, tales,
+            poetry, novels, plays, and literature for children and young adults.
+          </p>
+
+          <div class="category-list">
+            Stories • Tales • Poetry • Novels<br>
+            Drama • Children's Literature
+          </div>
+
+        </div>
+
+        <a class="button" href="literature.html">
+          Enter Literature &amp; Arts
+        </a>
+
+      </article>
+
+      <!-- SCIENCE -->
+
+      <article class="category science" id="science">
+
+        <div>
+
+          <div class="category-icon">🔬</div>
+
+          <h3>Science &amp; Knowledge</h3>
+
+          <div class="english">
+            Science &amp; Knowledge
+          </div>
+
+          <p>
+            Scientific, academic, educational, research-based,
+            and specialized publications across different fields of knowledge.
+          </p>
+
+          <div class="category-list">
+            Natural Sciences • Environment<br>
+            Humanities • Education • Technology
+          </div>
+
+        </div>
+
+        <a class="button" href="science.html">
+          Enter Science &amp; Knowledge
+        </a>
+
+      </article>
+
+      <!-- CULTURE -->
+
+      <article class="category culture" id="culture">
+
+        <div>
+
+          <div class="category-icon">🌍</div>
+
+          <h3>Religion, Culture &amp; Human Heritage</h3>
+
+          <div class="english">
+            Religion, Culture &amp; Human Heritage
+          </div>
+
+          <p>
+            Publications on religion, thought, traditions,
+            cultural history, civilizations, and the shared heritage of humanity.
+          </p>
+
+          <div class="category-list">
+            Religion • Thought • Culture<br>
+            Civilizations • Cultural History • Heritage
+          </div>
+
+        </div>
+
+        <a class="button" href="culture.html">
+          Enter This Section
+        </a>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       ALL BOOKS
+  ========================= -->
+
+  <section class="all-books-band" id="books">
+
+    <div class="all-books-inner">
+
+      <h2>All Books</h2>
+
+      <p>
+        Browse the books published and made available
+        by Salihin Publications.
+      </p>
+
+      <a class="button button-gold" href="books.html">
+        View the Complete Book Catalogue
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       SALES IN IRAN
+  ========================= -->
+
+  <section class="page-section" id="sales">
+
+    <div class="section-heading">
+
+      <h2>Purchasing Books in Iran</h2>
+
+      <p>
+        Printed editions and electronic publications
+      </p>
+
+      <div class="heading-rule"></div>
+
+    </div>
+
+    <div class="sales-grid">
+
+      <div class="sales-box">
+
+        <h3>Printed Books</h3>
 
         <p>
-            We present books that bring together literature, science,
-            culture, religion, and the heritage of humanity.
+          Purchase printed editions of books with prices
+          in Iranian tomans and delivery within Iran.
         </p>
+
+        <ul>
+          <li>Book descriptions and prices</li>
+          <li>Information about delivery costs</li>
+          <li>Requests for printed editions</li>
+        </ul>
+
+        <a class="button" href="iran.html">
+          Purchase Printed Books
+        </a>
+
+      </div>
+
+      <div class="sales-box">
+
+        <h3>Electronic Books and PDF Editions</h3>
 
         <p>
-            Our aim is to make meaningful works available to readers
-            in Iran and around the world.
+          Obtain complete electronic editions or selected
+          parts of published books.
         </p>
-    </section>
 
-    <section class="section">
+        <ul>
+          <li>Complete PDF editions</li>
+          <li>Purchase of individual parts</li>
+          <li>Delivery after payment confirmation</li>
+        </ul>
 
-        <h2 class="section-title">Our Publishing Sections</h2>
+        <a class="button" href="iran.html">
+          Purchase PDF Books in Iran
+        </a>
 
-        <div class="cards">
+      </div>
 
-            <div class="card">
-                <h3>Literature &amp; Arts</h3>
-                <p>
-                    Novels, stories, poetry, fiction and literary
-                    and artistic imagination.
-                </p>
-                <a href="literature.html">Explore</a>
-            </div>
+    </div>
 
-            <div class="card">
-                <h3>Science &amp; Knowledge</h3>
-                <p>
-                    Science, environmental knowledge, education,
-                    technology and interdisciplinary studies.
-                </p>
-                <a href="science.html">Explore</a>
-            </div>
+  </section>
 
-            <div class="card">
-                <h3>Religion, Culture &amp; Human Heritage</h3>
-                <p>
-                    Religion, culture, history and the heritage
-                    of humanity.
-                </p>
-                <a href="culture.html">Explore</a>
-            </div>
+  <!-- =========================
+       INTERNATIONAL SALES
+  ========================= -->
 
-        </div>
+  <section class="page-section" id="international">
 
-    </section>
+    <div class="section-heading">
 
-    <section class="section">
+      <h2>International Sales</h2>
 
-        <h2 class="section-title">Featured Book</h2>
+      <p>
+        Printed Books and Digital Publications Worldwide
+      </p>
 
-        <div class="featured">
+      <div class="heading-rule"></div>
 
-            <div class="featured-image">
-                <img
-                    src="galatea-pygmalion-en.jpg"
-                    alt="And This Is the Book of Love: Galatea and Pygmalion">
-            </div>
+    </div>
 
-            <div class="featured-text">
+    <div class="sales-grid">
 
-                <h3>And This Is the Book of Love: Galatea and Pygmalion</h3>
+      <div class="sales-box international-box">
 
-                <p>A novel by Jalaleddin Valiallah.</p>
+        <h3>Printed Books</h3>
 
-                <p>
-                    A literary exploration of love, beauty, imagination
-                    and the relationship between human beings and the
-                    ideal of beauty.
-                </p>
+        <p>
+          Printed editions of Salihin Publications
+          for readers outside Iran.
+        </p>
 
-                <a href="book-1.html">Read More</a>
+        <ul>
+          <li>Printed editions</li>
+          <li>International prices</li>
+          <li>Delivery where available</li>
+        </ul>
 
-            </div>
+        <a class="button" href="international.html">
+          International Book Sales
+        </a>
 
-        </div>
+      </div>
 
-    </section>
+      <div class="sales-box international-box">
 
-    <section class="section">
+        <h3>Digital Books &amp; PDF</h3>
 
-        <div class="international">
+        <p>
+          Digital editions and selected parts
+          of published books.
+        </p>
 
-            <h2>International Publications</h2>
+        <ul>
+          <li>Complete PDF editions</li>
+          <li>Selected parts</li>
+          <li>Digital delivery</li>
+        </ul>
 
-            <p>
-                Selected books by Salihin Publications will be introduced
-                to readers outside Iran through our international edition
-                and digital publication program.
-            </p>
+        <a class="button" href="international.html">
+          International PDF Sales
+        </a>
 
-            <p>
-                English-language pages may contain additional illustrations,
-                photographs and visual materials that differ from the
-                Persian editions.
-            </p>
+      </div>
 
-            <a href="international.html">International Sales</a>
+    </div>
 
-        </div>
+  </section>
 
-    </section>
+  <!-- =========================
+       ABOUT US
+  ========================= -->
+
+  <section class="about-band" id="about">
+
+    <div class="about-inner">
+
+      <h2>About Salihin Publications</h2>
+
+      <p>
+        Salihin Publications is dedicated to publishing,
+        presenting, and distributing valuable scientific,
+        cultural, educational, literary, and religious works.
+        Our aim is to make the works of authors and researchers
+        accessible to Persian-speaking readers and international audiences.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section class="page-section contact" id="contact">
+
+    <div class="section-heading">
+
+      <h2>Contact Us</h2>
+
+      <p>
+        For questions about publishing, purchasing printed books
+        or PDF editions, and cooperation with Salihin Publications,
+        please visit our contact page.
+      </p>
+
+      <div class="heading-rule"></div>
+
+    </div>
+
+    <a class="button button-gold" href="contact.html">
+      Contact Information and Communication Channels
+    </a>
+
+  </section>
 
 </main>
 
+<!-- =========================
+     QUICK LINKS
+========================= -->
+
+<nav class="quick-links" aria-label="Additional Links">
+
+  <a href="index.html">Home</a>
+
+  <a href="books.html">All Books</a>
+
+  <a href="iran.html">Purchases in Iran</a>
+
+  <a href="international.html">Worldwide Sales</a>
+
+  <a href="reviews.html">Reviews and Readers' Comments</a>
+
+  <a href="contact.html">Contact Us</a>
+
+  <a href="../index.html" lang="fa" dir="rtl">صفحه فارسی</a>
+
+</nav>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    <p>&copy; 2026 Salihin Publications</p>
-    <p>Tehran, Iran</p>
+  <p>© 1405 Salihin Publications</p>
 
-    <p>
-        <a class="language-footer" href="../index.html" lang="fa" dir="rtl">
-            بازگشت به وب‌سایت فارسی
-        </a>
-    </p>
+  <p>Literature • Science • Culture • Religion</p>
+
+  <p class="footer-english">
+    Published and distributed by Salihin Publications
+  </p>
 
 </footer>
 
+<!-- =========================
+     DROPDOWN MENU SCRIPT
+========================= -->
+
 <script>
-document.querySelectorAll(".dropbtn").forEach(function(button) {
 
-    button.addEventListener("click", function(event) {
+(function(){
 
-        event.stopPropagation();
+  const groups=[
+    ...document.querySelectorAll('.nav-group')
+  ];
 
-        const current = button.parentElement;
-        const wasOpen = current.classList.contains("active");
+  function closeAll(except){
 
-        document.querySelectorAll(".dropdown").forEach(function(menu) {
-            menu.classList.remove("active");
-            menu.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
-        });
+    groups.forEach(group=>{
 
-        if (!wasOpen) {
-            current.classList.add("active");
-            button.setAttribute("aria-expanded", "true");
+      if(group!==except){
+
+        group.classList.remove('open');
+
+        const button=
+          group.querySelector('.nav-trigger');
+
+        if(button){
+          button.setAttribute(
+            'aria-expanded',
+            'false'
+          );
         }
+
+      }
+
     });
 
-});
+  }
 
-document.addEventListener("click", function() {
+  groups.forEach(group=>{
 
-    document.querySelectorAll(".dropdown").forEach(function(menu) {
-        menu.classList.remove("active");
-        menu.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
+    const trigger=
+      group.querySelector('.nav-trigger');
+
+    trigger.addEventListener('click',function(event){
+
+      event.stopPropagation();
+
+      const shouldOpen=
+        !group.classList.contains('open');
+
+      closeAll(group);
+
+      group.classList.toggle(
+        'open',
+        shouldOpen
+      );
+
+      trigger.setAttribute(
+        'aria-expanded',
+        String(shouldOpen)
+      );
+
     });
 
-});
+  });
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        document.querySelectorAll(".dropdown").forEach(function(menu) {
-            menu.classList.remove("active");
-            menu.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
-        });
+  document.addEventListener('click',function(event){
+
+    if(!event.target.closest('.nav-group')){
+      closeAll();
     }
-});
+
+  });
+
+  document.addEventListener('keydown',function(event){
+
+    if(event.key==='Escape'){
+      closeAll();
+    }
+
+  });
+
+  document.querySelectorAll('.dropdown a').forEach(link=>{
+
+    link.addEventListener('click',function(){
+      closeAll();
+    });
+
+  });
+
+})();
+
 </script>
 
 </body>
