@@ -1,256 +1,428 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Salihin Publications</title>
+<title>Salihin Publications</title>
+<meta name="description" content="Salihin Publications – Literature, Arts, Science, Knowledge, Religion, Culture and Human Heritage.">
 
-    <meta name="description" content="Salihin Publications – Literature, Arts, Science, Knowledge, Religion, Culture and Human Heritage.">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            line-height: 1.7;
-            color: #333333;
-            background: #faf9f6;
-        }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    color: #333;
+    background: #faf9f6;
+}
 
-        h1, h2, h3 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            line-height: 1.3;
-        }
+/* HEADER */
+header {
+    background: #202820;
+    color: white;
+    text-align: center;
+    padding: 13px 12px 10px;
+}
 
-        p, li, nav a {
-            font-size: 16px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: normal;
+    letter-spacing: .5px;
+}
 
-        header {
-            background: #202820;
-            color: white;
-            padding: 35px 20px;
-            text-align: center;
-        }
+header p {
+    margin: 3px 0 0;
+    font-size: 12px;
+    color: #ddd;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-            font-weight: normal;
-            letter-spacing: 1px;
-        }
+/* NAVIGATION */
+nav {
+    background: #303a30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 3px 8px;
+    position: relative;
+    z-index: 100;
+}
 
-        header p {
-            margin: 8px 0 0;
-            font-size: 18px;
-            color: #dddddd;
-        }
+nav a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 8px 11px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+}
 
-        nav {
-            background: #303a30;
-            text-align: center;
-            padding: 12px 10px;
-        }
+nav a:hover,
+.dropbtn:hover,
+.dropdown.active .dropbtn {
+    background: #465646;
+}
 
-        nav a {
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            margin: 5px 12px;
-        }
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+.dropbtn::after {
+    content: " ▾";
+    font-size: 10px;
+}
 
-        /* دکمه تغییر زبان در منوی بالای صفحه */
-        nav a.language-link {
-            background: #f2eee4;
-            color: #202820;
-            padding: 5px 15px;
-            margin: 5px 12px;
-            border: 1px solid #d8d0c0;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 205px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.16);
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    z-index: 200;
+}
 
-        nav a.language-link:hover {
-            background: #ffffff;
-            text-decoration: none;
-        }
+.dropdown-content a {
+    display: block;
+    color: #303a30;
+    padding: 9px 13px;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+}
 
-        .welcome-section {
-            max-width: 1150px;
-            margin: 35px auto 20px;
-            padding: 30px 20px;
-            text-align: center;
-        }
+.dropdown-content a:hover {
+    background: #eeeae1;
+}
 
-        .welcome-section h2 {
-            margin: 0 0 22px;
-            font-size: 34px;
-            font-weight: normal;
-        }
+.dropdown.active .dropdown-content {
+    display: block;
+}
 
-        .welcome-section p {
-            max-width: 850px;
-            margin: 12px auto;
-            font-size: 18px;
-        }
+.language-link {
+    background: #f2eee4 !important;
+    color: #202820 !important;
+    border-radius: 4px;
+    margin: 3px 5px;
+    font-weight: bold;
+    padding: 6px 11px;
+}
 
-        .section {
-            max-width: 1150px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+/* WELCOME */
+.welcome-section {
+    max-width: 1050px;
+    margin: 13px auto 8px;
+    padding: 8px 16px;
+    text-align: center;
+}
 
-        .section h2 {
-            text-align: center;
-            font-size: 30px;
-            font-weight: normal;
-            margin-bottom: 30px;
-        }
+.welcome-section h2 {
+    font-size: 23px;
+    font-weight: normal;
+    margin: 0 0 5px;
+    color: #303a30;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 25px;
-        }
+.welcome-section p {
+    font-size: 13px;
+    margin: 3px auto;
+    max-width: 850px;
+}
 
-        .card {
-            background: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-        }
+/* GENERAL SECTIONS */
+.section {
+    max-width: 1050px;
+    margin: 15px auto;
+    padding: 0 15px;
+}
 
-        .card h3 {
-            font-size: 23px;
-            font-weight: normal;
-        }
+.section-title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: normal;
+    margin: 8px 0 11px;
+    color: #303a30;
+}
 
-        .card p {
-            color: #555555;
-        }
+/* THREE PUBLISHING SECTIONS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
 
-        .card a,
-        .featured-text a,
-        .international a {
-            display: inline-block;
-            margin-top: 12px;
-            padding: 9px 18px;
-            background: #303a30;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-        }
+.card {
+    background: white;
+    padding: 13px 11px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #eeeae2;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+}
 
-        .card a:hover,
-        .featured-text a:hover,
-        .international a:hover {
-            background: #465646;
-        }
+.card h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 2px 0 6px;
+    color: #303a30;
+}
 
-        .featured {
-            background: white;
-            padding: 35px;
-            border-radius: 8px;
-            display: flex;
-            gap: 35px;
-            align-items: center;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-        }
+.card p {
+    font-size: 12px;
+    color: #555;
+    margin: 4px 0 8px;
+    line-height: 1.5;
+}
 
-        .featured-image {
-            flex: 0 0 260px;
-            text-align: center;
-        }
+.card a,
+.featured-text a,
+.international a {
+    display: inline-block;
+    background: #303a30;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 6px 13px;
+    margin-top: 4px;
+    font-size: 12px;
+}
 
-        .featured-image img {
-            max-width: 100%;
-            max-height: 350px;
-            height: auto;
-            object-fit: contain;
-        }
+.card a:hover,
+.featured-text a:hover,
+.international a:hover {
+    background: #526452;
+}
 
-        .featured-text {
-            flex: 1;
-            min-width: 0;
-        }
+/* FEATURED BOOK */
+.featured {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 14px 17px;
+    border: 1px solid #eeeae2;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+}
 
-        .featured-text h3 {
-            font-size: 28px;
-            font-weight: normal;
-            margin-top: 0;
-        }
+.featured-image {
+    flex: 0 0 125px;
+    text-align: center;
+}
 
-        .international {
-            background: #e8e3d8;
-            padding: 40px;
-            text-align: center;
-            border-radius: 8px;
-        }
+.featured-image img {
+    max-width: 115px;
+    max-height: 165px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
 
-        footer {
-            margin-top: 60px;
-            background: #202820;
-            color: #dddddd;
-            text-align: center;
-            padding: 35px 20px;
-        }
+.featured-text {
+    flex: 1;
+    min-width: 0;
+}
 
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
+.featured-text h3 {
+    font-size: 19px;
+    font-weight: normal;
+    margin: 0 0 5px;
+    color: #303a30;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+.featured-text p {
+    font-size: 13px;
+    margin: 5px 0;
+}
 
-        footer a.language-footer {
-            display: inline-block;
-            padding: 7px 18px;
-            border: 1px solid #dddddd;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+/* INTERNATIONAL */
+.international {
+    background: #e8e3d8;
+    padding: 15px 18px;
+    text-align: center;
+    border-radius: 6px;
+}
 
-        @media (max-width: 800px) {
-            header h1 {
-                font-size: 32px;
-            }
+.international h2 {
+    font-size: 19px;
+    font-weight: normal;
+    margin: 0 0 6px;
+}
 
-            .welcome-section h2 {
-                font-size: 28px;
-            }
+.international p {
+    font-size: 12px;
+    margin: 5px auto;
+    max-width: 850px;
+}
 
-            .cards {
-                grid-template-columns: 1fr;
-            }
+/* FOOTER */
+footer {
+    margin-top: 25px;
+    background: #202820;
+    color: #ddd;
+    text-align: center;
+    padding: 13px 10px;
+    font-size: 12px;
+}
 
-            .featured {
-                flex-direction: column;
-                text-align: center;
-            }
+footer p {
+    margin: 3px 0;
+}
 
-            .featured-image {
-                flex-basis: auto;
-                width: 100%;
-            }
+footer a {
+    color: white;
+    text-decoration: none;
+}
 
-            .international {
-                padding: 25px;
-            }
-        }
-    </style>
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .language-footer {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+
+    header {
+        padding: 10px 7px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        padding: 3px;
+    }
+
+    nav a,
+    .dropbtn {
+        font-size: 11px;
+        padding: 7px 8px;
+    }
+
+    .dropdown-content {
+        min-width: 175px;
+    }
+
+    .welcome-section {
+        margin: 10px auto 5px;
+        padding: 7px 12px;
+    }
+
+    .welcome-section h2 {
+        font-size: 20px;
+    }
+
+    .welcome-section p {
+        font-size: 12px;
+    }
+
+    .section {
+        margin: 12px auto;
+        padding: 0 9px;
+    }
+
+    .cards {
+        gap: 7px;
+    }
+
+    .card {
+        padding: 10px 6px;
+    }
+
+    .card h3 {
+        font-size: 13px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .card a {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .featured {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .featured-image {
+        flex: 0 0 85px;
+    }
+
+    .featured-image img {
+        max-width: 80px;
+        max-height: 125px;
+    }
+
+    .featured-text h3 {
+        font-size: 15px;
+    }
+
+    .featured-text p {
+        font-size: 11px;
+    }
+
+    .international {
+        padding: 12px;
+    }
+
+    .international h2 {
+        font-size: 17px;
+    }
+
+    .international p {
+        font-size: 11px;
+    }
+}
+
+/* VERY SMALL SCREENS */
+@media (max-width: 350px) {
+    nav a,
+    .dropbtn {
+        padding: 6px 5px;
+        font-size: 10px;
+    }
+
+    .card h3 {
+        font-size: 11px;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -261,13 +433,48 @@
 </header>
 
 <nav>
+
     <a href="index.html">Home</a>
-    <a href="literature.html">Literature &amp; Arts</a>
-    <a href="science.html">Science &amp; Knowledge</a>
-    <a href="culture.html">Religion, Culture &amp; Heritage</a>
+
+    <div class="dropdown">
+        <button class="dropbtn" type="button" aria-expanded="false">
+            Sections
+        </button>
+        <div class="dropdown-content">
+            <a href="literature.html">Literature &amp; Arts</a>
+            <a href="science.html">Science &amp; Knowledge</a>
+            <a href="culture.html">Religion, Culture &amp; Heritage</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn" type="button" aria-expanded="false">
+            Books
+        </button>
+        <div class="dropdown-content">
+            <a href="book-1.html">Book 1 – And This Is the Book of Love</a>
+            <a href="culture.html">Books on Religion and Culture</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn" type="button" aria-expanded="false">
+            Sales
+        </button>
+        <div class="dropdown-content">
+            <a href="international.html">International Sales</a>
+            <a href="../index.html#buy">Purchasing in Iran</a>
+        </div>
+    </div>
+
     <a href="books.html">All Books</a>
-    <a href="international.html">International Sales</a>
-    <a class="language-link" href="../index.html" lang="fa" dir="rtl"> | نسخهٔ فارسی</a>
+
+    <a href="international.html">International</a>
+
+    <a class="language-link" href="../index.html" lang="fa" dir="rtl">
+        فارسی
+    </a>
+
 </nav>
 
 <main>
@@ -287,14 +494,15 @@
     </section>
 
     <section class="section">
-        <h2>Our Publishing Sections</h2>
+
+        <h2 class="section-title">Our Publishing Sections</h2>
 
         <div class="cards">
 
             <div class="card">
                 <h3>Literature &amp; Arts</h3>
                 <p>
-                    Novels, stories, poetry, fiction and works of literary
+                    Novels, stories, poetry, fiction and literary
                     and artistic imagination.
                 </p>
                 <a href="literature.html">Explore</a>
@@ -303,7 +511,7 @@
             <div class="card">
                 <h3>Science &amp; Knowledge</h3>
                 <p>
-                    Scientific works, environmental knowledge, education,
+                    Science, environmental knowledge, education,
                     technology and interdisciplinary studies.
                 </p>
                 <a href="science.html">Explore</a>
@@ -312,27 +520,30 @@
             <div class="card">
                 <h3>Religion, Culture &amp; Human Heritage</h3>
                 <p>
-                    Works related to religion, culture, history and the
-                    heritage of humanity.
+                    Religion, culture, history and the heritage
+                    of humanity.
                 </p>
                 <a href="culture.html">Explore</a>
             </div>
 
         </div>
+
     </section>
 
     <section class="section">
-        <h2>Featured Book</h2>
+
+        <h2 class="section-title">Featured Book</h2>
 
         <div class="featured">
 
             <div class="featured-image">
                 <img
                     src="galatea-pygmalion-en.jpg"
-                    alt="Cover of And This Is the Book of Love: Galatea and Pygmalion">
+                    alt="And This Is the Book of Love: Galatea and Pygmalion">
             </div>
 
             <div class="featured-text">
+
                 <h3>And This Is the Book of Love: Galatea and Pygmalion</h3>
 
                 <p>A novel by Jalaleddin Valiallah.</p>
@@ -344,13 +555,17 @@
                 </p>
 
                 <a href="book-1.html">Read More</a>
+
             </div>
 
         </div>
+
     </section>
 
     <section class="section">
+
         <div class="international">
+
             <h2>International Publications</h2>
 
             <p>
@@ -366,18 +581,67 @@
             </p>
 
             <a href="international.html">International Sales</a>
+
         </div>
+
     </section>
 
 </main>
 
 <footer>
+
     <p>&copy; 2026 Salihin Publications</p>
     <p>Tehran, Iran</p>
+
     <p>
-        <a class="language-footer" href="../index.html" lang="fa" dir="rtl">بازگشت به وب‌سایت فارسی</a>
+        <a class="language-footer" href="../index.html" lang="fa" dir="rtl">
+            بازگشت به وب‌سایت فارسی
+        </a>
     </p>
+
 </footer>
+
+<script>
+document.querySelectorAll(".dropbtn").forEach(function(button) {
+
+    button.addEventListener("click", function(event) {
+
+        event.stopPropagation();
+
+        const current = button.parentElement;
+        const wasOpen = current.classList.contains("active");
+
+        document.querySelectorAll(".dropdown").forEach(function(menu) {
+            menu.classList.remove("active");
+            menu.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
+        });
+
+        if (!wasOpen) {
+            current.classList.add("active");
+            button.setAttribute("aria-expanded", "true");
+        }
+    });
+
+});
+
+document.addEventListener("click", function() {
+
+    document.querySelectorAll(".dropdown").forEach(function(menu) {
+        menu.classList.remove("active");
+        menu.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
+    });
+
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        document.querySelectorAll(".dropdown").forEach(function(menu) {
+            menu.classList.remove("active");
+            menu.querySelector(".dropbtn").setAttribute("aria-expanded", "false");
+        });
+    }
+});
+</script>
 
 </body>
 </html>
