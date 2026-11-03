@@ -1,1 +1,400 @@
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book 1R | Salihin Publications</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    background:#f5f3ed;
+    color:#292929;
+    line-height:1.9;
+}
+header{
+    background:#172b46;
+    color:white;
+    padding:22px 15px;
+    text-align:center;
+}
+header h1{margin:0;font-size:25px}
+header p{margin:5px 0 0;color:#e4d5ad}
+nav{
+    background:#263e5c;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:5px;
+    padding:9px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:7px 12px;
+    border-radius:5px;
+    font-size:14px;
+}
+nav a:hover{background:#b69a5b;color:#172b46}
+.container{max-width:1100px;margin:25px auto;padding:0 16px}
+.opening{
+    text-align:center;
+    color:#80652e;
+    font-size:24px;
+    font-weight:bold;
+    margin:25px 0 5px;
+}
+.book-title{
+    text-align:center;
+    font-size:29px;
+    color:#172b46;
+    margin:5px 0 20px;
+}
+.book-info{
+    background:white;
+    border:1px solid #ddd2b7;
+    border-radius:10px;
+    padding:22px;
+    margin:20px auto;
+    text-align:center;
+}
+.cover{
+    width:250px;
+    height:350px;
+    border:2px dashed #b8aa8c;
+    margin:20px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#82765e;
+    background:#faf9f5;
+    text-align:center;
+    padding:12px;
+}
+.cover img{max-width:100%;max-height:100%;object-fit:contain}
+.metadata{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:10px;
+    text-align:left;
+    margin-top:20px;
+}
+.metadata div{
+    background:#f7f5ef;
+    padding:10px 14px;
+    border-radius:6px;
+}
+section{
+    background:white;
+    border-radius:10px;
+    padding:24px;
+    margin:22px 0;
+    box-shadow:0 2px 8px #0000000b;
+}
+h2{
+    color:#183653;
+    border-bottom:2px solid #c4ad78;
+    padding-bottom:9px;
+    font-size:22px;
+}
+h3{color:#70572c}
+.back-cover{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:14px;
+}
+.back-card{
+    min-height:125px;
+    border:1px dashed #b9a77c;
+    background:#fbfaf6;
+    border-radius:8px;
+    padding:15px;
+    color:#887d68;
+}
+.contents{
+    background:#f8f6ef;
+    padding:18px 25px;
+    border-radius:8px;
+}
+.contents li{margin:5px 0}
+.note{
+    background:#f7f1df;
+    border-left:4px solid #a88b4e;
+    padding:15px 18px;
+    margin:20px 0;
+}
+.signature{text-align:right;margin-top:30px}
+.purchase{
+    background:#f7f1df;
+    border:1px solid #d7c69c;
+    text-align:center;
+}
+.purchase a,.button{
+    display:inline-block;
+    background:#203b5b;
+    color:white;
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:6px;
+    margin:10px 5px;
+}
+footer{
+    background:#172b46;
+    color:white;
+    text-align:center;
+    padding:22px 12px;
+    margin-top:35px;
+}
+footer a{color:#f0d99e;text-decoration:none;margin:5px 12px}
+.placeholder{color:#999;font-style:italic}
+@media(max-width:650px){
+    header h1{font-size:21px}
+    nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}
+    nav a{white-space:nowrap;font-size:13px}
+    .book-title{font-size:23px}
+    section{padding:17px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Salihin Publications</h1>
+    <p>انتشارات صالحین</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#book">About the Book</a>
+    <a href="#love">On Love</a>
+    <a href="#woman">On the Status of Women</a>
+    <a href="#majazi">Figurative Love</a>
+    <a href="#haghighi">True Love</a>
+    <a href="#tafasir">Historical Background of the Tafsirs</a>
+    <a href="#other">Other Topics</a>
+    <a href="#reviews">Reviews & Comments</a>
+    <a href="#purchase">Printed Book Purchase</a>
+    <a href="../book1r.html">Persian</a>
+</nav>
+
+<main class="container">
+
+<div class="opening">And This Is the Book of Love</div>
+
+<h1 class="book-title">[Main Title of Book 1R]</h1>
+
+<section id="book">
+    <h2>About the Book</h2>
+
+    <div class="cover">
+        <span>[Space reserved for the book cover image]</span>
+    </div>
+
+    <div class="metadata">
+        <div><strong>Book Title:</strong> <span class="placeholder">[Book title]</span></div>
+        <div><strong>Author:</strong> <span class="placeholder">[Author's name]</span></div>
+        <div><strong>Publisher:</strong> <span class="placeholder">[Publisher's name]</span></div>
+        <div><strong>Place of Publication:</strong> <span class="placeholder">[Place of publication]</span></div>
+        <div><strong>Year of Publication:</strong> <span class="placeholder">[Year of publication]</span></div>
+        <div><strong>Edition:</strong> <span class="placeholder">[Edition number]</span></div>
+        <div><strong>Number of Pages:</strong> <span class="placeholder">[Number of pages]</span></div>
+        <div><strong>ISBN:</strong> <span class="placeholder">[ISBN]</span></div>
+    </div>
+
+    <h3>About This Book</h3>
+    <p class="placeholder">[The book's introductory description will be added here.]</p>
+</section>
+
+<section id="back-cover">
+    <h2>Back-Cover Text</h2>
+    <div class="back-cover">
+        <div class="back-card">[Placeholder for the first back-cover text]</div>
+        <div class="back-card">[Placeholder for the second back-cover text]</div>
+        <div class="back-card">[Placeholder for the third back-cover text]</div>
+    </div>
+</section>
+
+<section id="contents">
+    <h2>Contents</h2>
+    <div class="contents">
+        <ol>
+            <li>On Love</li>
+            <li>On the Status of Women</li>
+            <li>Figurative Love</li>
+            <li>True Love</li>
+            <li>Historical Background of the Tafsirs Mentioned by Ibrahim Ameli</li>
+            <li>Other Topics</li>
+            <li>Reviews, Comments, and Suggestions</li>
+        </ol>
+        <p class="placeholder">This contents list is provided solely as an overview of the subjects. Its headings are not internal links.</p>
+    </div>
+</section>
+
+<section id="love">
+    <h2>On Love</h2>
+    <p class="placeholder">[The material for this section will be added later.]</p>
+</section>
+
+<section id="woman">
+    <h2>On the Status of Women</h2>
+    <p class="placeholder">[The material for this section will be added later.]</p>
+</section>
+
+<section id="majazi">
+    <h2>Figurative Love</h2>
+    <p class="placeholder">[The material for this section will be added later.]</p>
+</section>
+
+<section id="haghighi">
+    <h2>True Love</h2>
+    <p class="placeholder">[The material for this section will be added later.]</p>
+</section>
+
+<section id="tafasir">
+    <h2>Historical Background of the Tafsirs Mentioned by Ibrahim Ameli on Pages 2–16 of His Introduction to Majma‘ al-Tafasir</h2>
+
+    <p>
+    This section is necessary because the names of exegetes appear in the book alongside the tafsirs and quotations. Young researchers will need these names when searching for the scholars and their works. Ameli first presents the early exegetes in several groups:
+    </p>
+
+    <h3>Group One: The Companions of Ibn Abbas, the Scholars of Mecca</h3>
+    <ol>
+        <li>Mujahid ibn Jabr al-Makki, who died in 103 AH.</li>
+        <li>Sa‘id ibn Jubayr, who died in 94 AH.</li>
+        <li>‘Ikrimah, the client of Ibn Abbas, who died in 105 AH.</li>
+        <li>Tawus ibn Kaysan al-Yamani, who died in Mecca in 106 AH.</li>
+        <li>‘Ata ibn Abi Rabah al-Makki, who died in 114 AH.</li>
+    </ol>
+
+    <h3>Group Two: The Companions of Ibn Mas‘ud</h3>
+    <p>The companions of Ibn Mas‘ud learned from him and transmitted his interpretations. They were scholars of Kufa:</p>
+    <ol>
+        <li>‘Alqamah ibn Qays, who died in 102 AH.</li>
+        <li>Al-Aswad ibn Yazid, who died in 75 AH.</li>
+        <li>Ibrahim al-Nakha‘i, who died in 95 AH.</li>
+        <li>Al-Sha‘bi, who died in 105 AH.</li>
+    </ol>
+
+    <h3>Group Three: The Companions and Students of Zayd ibn Aslam</h3>
+    <ol>
+        <li>‘Abd al-Rahman ibn Zayd.</li>
+        <li>Malik ibn Anas.</li>
+    </ol>
+
+    <h3>Group Four: Among the Followers (Tabi‘un)</h3>
+    <ol>
+        <li>Hasan al-Basri, who died in 121 AH.</li>
+        <li>‘Ata ibn Salamah Maysarah al-Khurasani.</li>
+        <li>Muhammad ibn Ka‘b al-Qurazi, who died in 117 AH.</li>
+        <li>Abu al-‘Aliyah Rafi‘ ibn Mihran al-Riyahi, who died in 90 AH.</li>
+        <li>Al-Dahhak ibn Muzahim.</li>
+        <li>‘Atiyyah ibn Sa‘id al-‘Awfi, who died in 111 AH.</li>
+        <li>Rabi‘ ibn Anas.</li>
+        <li>Al-Suddi.</li>
+        <li>Qatadah ibn Di‘amah al-Sadusi, who died in 117 AH.</li>
+    </ol>
+
+    <p>
+    The book <em>Al-Shi‘ah wa Funun al-Islam</em>, page 11, states that the first person to write a tafsir was the Successor Sa‘id ibn Jubayr, whose martyrdom occurred in 64 AH. Another of the tafsirs written by Shi‘a scholars is the book of Jabir ibn Yazid al-Ju‘fi, who was an authority in Quranic exegesis and received his material from Imam al-Baqir (peace be upon him).
+    </p>
+
+    <h3>From the Early Exegetes, Such as ‘Ikrimah, Mujahid, and al-Dahhak, Through the Eleventh Century AH</h3>
+    <ol>
+        <li>The Tafsir of Ibn Jurayj, attributed to ‘Abd al-Malik ibn ‘Abd al-‘Aziz al-Umawi al-Makki, who died in 150 AH.</li>
+        <li>The Tafsir of Ibn Abbas, which is concise and combines different materials.</li>
+        <li>The Tafsir of Sufyan ibn ‘Uyaynah, transmitted by al-Tha‘labi.</li>
+        <li>The Tafsir of Muqatil ibn Sulayman ibn Bashir al-Azdi, who died in 150 AH.</li>
+        <li>The Tafsir of al-Adfawi, Muhammad ibn ‘Ali ibn Ahmad al-Muqri al-Nahwi, who died in 388 AH. Over twelve years, he wrote a work entitled <em>Al-Istighna’ fi ‘Ilm al-Qur’an</em> in 120 volumes.</li>
+        <li>The Tafsir of Zayd ibn Aslam al-‘Adawi al-Madani, whose death is given as 36 AH.</li>
+        <li>The tafsir known as <em>Mawahib ‘Aliyah</em>, written by Husayn ibn ‘Ali Kashifi Wa‘izi, who died around 900 AH; it is also known as <em>Tafsir Husayni</em>.</li>
+        <li>The Tafsir of Khalaf ibn Ahmad, ruler of Sistan, who died in 399 AH; it is described as one of the largest books of Quranic exegesis.</li>
+        <li>The Tafsir of Abu Bakr ‘Atiq ibn Muhammad al-Harawi, written in Persian during the reign of the Seljuk Alp Arslan.</li>
+        <li><em>Asbab al-Nuzul</em>, described as the first book devoted to the occasions of the revelation of verses, written by ‘Ali ibn al-Madini, who died in 234 AH.</li>
+        <li>The Tafsir of Khwaja Muhammad Parsa, Muhammad ibn Mahmud Hafizi Bukhari, who died in 830 AH.</li>
+        <li>‘Abdullah ibn Abi Ja‘far al-Razi wrote a book entitled <em>Diya’ al-Qulub</em>. According to al-Tha‘labi in <em>Al-Kashf wa al-Bayan</em>, he was among the early exegetes.</li>
+        <li>The Tafsir of Shu‘bah ibn al-Hajjaj al-Basri, who died in 160 AH.</li>
+        <li>The Tafsir of al-Kalbi, by Muhammad ibn al-Sa’ib, known as al-Kalbi, whose chain of transmission goes back to Ibn Abbas.</li>
+        <li>The Tafsir of Abu al-Hajjaj Mujahid ibn Jabr al-Makki, who died in 104 AH: <em>Tanwir al-Miqbas fi Tafsir Ibn Abbas</em>.</li>
+        <li>Another tafsir known as the Surabadi Tafsir, bearing the title: “Al-Shaykh al-Imam al-Zahid Abi Bakr ‘Atiq ibn Muhammad.”</li>
+    </ol>
+
+    <p>
+    Four volumes were authored by Abu Tahir Muhammad ibn Ya‘qub al-Firuzabadi, who died in 817 AH, under the title <em>Tanwir al-Miqbas</em>. This tafsir is different from the tafsir of Imam al-Baqir, which Ibn al-Nadim reports from the Imam and says was transmitted and compiled from him by Abu al-Jarud Ziyad ibn al-Mundhir.
+    </p>
+
+    <h3>Farid Wajdi's Encyclopedia</h3>
+    <p>
+    Farid Wajdi's Encyclopedia, under the letter Fa’, page 286, states that the first tafsir made available to the public was the book attributed to Ibn Abbas, who died in 68 AH; it was printed in Egypt in 1290 AH. It was followed by the Tafsir of al-Tabari, who died in 310 AH; then the <em>Gharib al-Qur’an</em> of Abu Bakr Muhammad al-Bajistani, who died in 330 AH; and thereafter the Tafsir of Imam Hafiz Abu al-Layth Nasr Muhammad al-Samarqandi, who died in 375 AH.
+    </p>
+
+    <h3>Translation of <em>I‘jaz al-Qur’an</em></h3>
+    <p>
+    In the translation of <em>I‘jaz al-Qur’an</em> by Mustafa Sadiq al-Rafi‘i, translated by ‘Abd al-Husayn Ibn al-Din, it is stated that Abu ‘Ali al-Aswari, an eloquent storyteller, spent thirty-six years interpreting Surat al-Baqarah, but died before completing it.
+    </p>
+
+    <h3>Exegetical Sources Used by Ibrahim Ameli</h3>
+    <p>
+    At the same time, the scholar Ibrahim Muwaththiq Ameli drew on exegetes and translators who were his contemporaries up to the year 1345 AH. He passed away in 1347 AH and departed this transient world to meet the Beloved and the everlasting abode. May his soul rest in peace and be granted eternal mercy, together with all the scholars, translators, mystics, and exegetes of the Great Qur’an. Amen, O Lord of the worlds.
+    </p>
+
+    <p>
+    In addition to the Tafsir of al-Tabari, the Tafsir of Abu al-Futuh al-Razi, and the exegetes mentioned above, he used <em>Fi Zilal al-Qur’an</em>, <em>Al-Mizan</em>, <em>Ruh al-Bayan</em>, <em>Majma‘ al-Bayan</em>, the Tafsir of Tantawi, <em>Kashf al-Asrar</em>, Imam Fakhr al-Razi's commentary entitled <em>Mafatih al-Ghayb</em>, also known as the Great Tafsir, the <em>Kashshaf</em> of al-Zamakhshari, the Tafsir of Mahmud ibn Hamzah al-Kirmani, Abu ‘Asim al-Nabil Dahhak ibn Makhlad al-Shaybani al-Basri, the translation of Mustafa Sadiq al-Rafi‘i's <em>I‘jaz al-Qur’an</em> by ‘Abd al-Husayn Ibn al-Din, the versified Tafsir of Safi ‘Ali Shah, Abu Ishaq al-Zajjaj, Abu ‘Ali al-Farisi, Makki ibn Abi Talib, Abu al-‘Abbas al-Mahdawi, and many others.
+    </p>
+
+    <div class="note">
+        For access to the translation of the Qur’an and a detailed discussion of the problems of translation and conceptual challenges, please refer to the book <em>The Great Qur’an</em> (forthcoming).
+    </div>
+
+    <div class="signature">
+        Jalaleddin Valiallah<br>
+        Dated: 28 Ordibehesht 1405 (18 May 2026)<br>
+        “Peace be upon whoever follows the guidance.” (Qur’an 20:47, Ta-Ha)
+    </div>
+
+    <div class="note">
+        <strong>To access all the original interpretations of the Great Qur’an, please refer to the Printed Book Purchase section.</strong>
+    </div>
+</section>
+
+<section id="other">
+    <h2>Other Topics</h2>
+    <p class="placeholder">[Other subjects and topics from the book will be added here.]</p>
+</section>
+
+<section id="reviews">
+    <h2>Reviews, Comments, and Suggestions</h2>
+    <p class="placeholder">[Reviews, views of scholars, and readers' comments will be added here later.]</p>
+</section>
+
+<section id="purchase" class="purchase">
+    <h2>Printed Book Purchase</h2>
+    <p><strong>At present, only the complete printed edition of the book is available.</strong></p>
+    <p>Individual sections and a PDF edition are not currently offered for sale.</p>
+    <p class="placeholder">[The book price, shipping cost, and ordering procedure will be added later.]</p>
+    <p>To place an order or obtain further information, please contact Salihin Publications:</p>
+    <p>salhin.publications@proton.me</p>
+</section>
+
+</main>
+
+<footer>
+    <p>Salihin Publications | انتشارات صالحین</p>
+    <a href="index.html">English Home</a>
+    <a href="../book1r.html">Persian Version of This Book</a>
+    <a href="index.html">Back to the Publisher's Homepage</a>
+</footer>
+
+</body>
+</html>
+'''
+
+path = Path("/mnt/data/book1r-en.html")
+path.write_text(html, encoding="utf-8")
+print(f"Created: {path}")
+print(f"File size: {path.stat().st_size:,} bytes")
 
