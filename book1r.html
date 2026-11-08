@@ -1,388 +1,731 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>کتاب دوم | انتشارات صالحین</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="و این کتاب عشق است؛ تجلی عشق، عرفان و برهان در قرآن عظیم، نوشتهٔ جلال‌الدین ولی‌الله، منتشرشده از سوی انتشارات صالحین.">
+  <meta name="theme-color" content="#183d3a">
+  <title>و این کتاب عشق است | انتشارات صالحین</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #183d3a;
+      --green-2: #245b53;
+      --gold: #bd9853;
+      --ink: #282d2b;
+      --muted: #66716d;
+      --paper: #fffdf8;
+      --cream: #f5f0e5;
+      --blue: #174d78;
+      --blue-light: #eaf4fb;
+      --line: #e5ddcc;
+      --shadow: 0 12px 34px rgba(29, 51, 44, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f3f1eb; color: var(--ink); font-family: "Vazirmatn", Tahoma, sans-serif; line-height: 2.05; }
+    a { color: inherit; text-decoration: none; }
+    .page-shell { width: min(1120px, calc(100% - 28px)); margin: 22px auto 36px; background: var(--paper); border: 1px solid #e9e3d7; border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); }
+    .publisher-header { position: relative; text-align: center; padding: 22px 18px 19px; color: #fff; background: linear-gradient(135deg, #123632, #24584f 65%, #927344); border-bottom: 4px solid var(--gold); }
+    .publisher-name { display: inline-block; font-family: "Noto Nastaliq Urdu", "B Nazanin", "Noto Naskh Arabic", serif; font-size: clamp(25px, 4vw, 36px); line-height: 1.9; color: #fff9e9; }
+    .publisher-en { display: block; margin-top: 1px; font-family: Georgia, serif; font-size: 13px; letter-spacing: 2px; color: #e9dfc8; direction: ltr; }
+    .language-row { display: flex; justify-content: flex-start; padding: 13px 20px 0; }
+    .language-link { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #c9b78f; background: #fffaf0; color: var(--green); border-radius: 999px; padding: 7px 17px; font-size: 13px; font-weight: 700; transition: .2s; }
+    .language-link:hover { background: var(--green); color: #fff; border-color: var(--green); }
+    .topics { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 9px; padding: 15px 20px 22px; border-bottom: 1px solid var(--line); }
+    .nav-button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 7px 14px; border: 1px solid #d8c9a8; border-radius: 999px; background: linear-gradient(180deg, #fffefa, #f7f0e2); color: #29443e; font-size: 13px; font-weight: 600; line-height: 1.7; text-align: center; box-shadow: 0 2px 6px rgba(33, 54, 46, .045); transition: transform .18s, background .18s, color .18s; }
+    .nav-button:hover { transform: translateY(-2px); background: var(--green); color: #fff; border-color: var(--green); }
+    .nav-button.home { background: #e9f0eb; border-color: #aabeb2; }
+    .nav-button.buy { background: #f5ead2; border-color: #c6a466; color: #674719; }
+    .nav-button.utility { background: #f1f4f4; border-color: #cbd8d5; }
+    main { padding: 22px clamp(16px, 4vw, 48px) 34px; }
+    .basmala { text-align: center; font-family: "Noto Naskh Arabic", "Traditional Arabic", serif; font-size: clamp(23px, 3.2vw, 30px); color: #72552d; line-height: 2; margin: 3px 0 2px; }
+    .verse { text-align: center; max-width: 900px; margin: 0 auto 22px; padding: 8px 12px 15px; color: #644a29; font-family: "Noto Naskh Arabic", "Traditional Arabic", serif; font-size: clamp(18px, 2.5vw, 23px); line-height: 2.15; border-bottom: 1px solid #e8dfcf; }
+    .blue-panel { position: relative; overflow: hidden; margin: 22px auto 27px; max-width: 950px; padding: 24px clamp(16px, 4vw, 36px); color: var(--blue); text-align: center; background: linear-gradient(135deg, #f1f8fc, #e4f0f8 55%, #f8fbfd); border: 1px solid #c7dceb; border-radius: 18px; box-shadow: inset 0 0 0 5px rgba(255,255,255,.55), 0 8px 22px rgba(31, 89, 129, .08); }
+    .blue-panel::before, .blue-panel::after { content: "✦"; position: absolute; color: #9bbbd1; font-size: 22px; top: 10px; }
+    .blue-panel::before { right: 17px; } .blue-panel::after { left: 17px; }
+    .blue-panel p { margin: 4px 0; font-size: clamp(15px, 2vw, 18px); font-weight: 600; line-height: 2.15; }
+    .hero-title { text-align: center; margin: 22px auto 7px; color: #6c4c22; font-family: "Noto Nastaliq Urdu", "B Nazanin", "Noto Naskh Arabic", serif; font-size: clamp(32px, 5vw, 48px); line-height: 2.05; font-weight: 500; }
+    .hero-subtitle { text-align: center; color: #315c51; font-family: "Noto Nastaliq Urdu", "B Nazanin", "Noto Naskh Arabic", serif; font-size: clamp(20px, 3vw, 29px); line-height: 2.2; margin: 0 auto 12px; }
+    .book-description { max-width: 960px; margin: 0 auto 18px; text-align: center; color: #4a5e57; font-family: "Noto Nastaliq Urdu", "B Nazanin", "Noto Naskh Arabic", serif; font-size: clamp(16px, 2.1vw, 20px); line-height: 2.55; }
+    .author { text-align: center; margin: 10px 0 29px; color: #795d32; font-weight: 700; font-size: 17px; }
+    .section-heading { display: flex; align-items: center; gap: 12px; margin: 30px 0 17px; color: var(--green); font-family: "Noto Nastaliq Urdu", "B Nazanin", serif; font-size: clamp(22px, 3vw, 29px); line-height: 2; }
+    .section-heading::before, .section-heading::after { content: ""; height: 1px; flex: 1; background: linear-gradient(90deg, transparent, #c6ad7a); }
+    .section-heading::after { background: linear-gradient(90deg, #c6ad7a, transparent); }
+    .intro-card { padding: clamp(17px, 3vw, 30px); background: #fffefa; border: 1px solid var(--line); border-radius: 17px; box-shadow: 0 5px 18px rgba(45, 54, 43, .035); }
+    .intro-card p { margin: 0 0 17px; text-align: justify; text-indent: 1.1em; font-size: 14px; line-height: 2.25; }
+    .intro-card p:last-child { margin-bottom: 0; }
+    .intro-subheading { margin: 22px 0 12px; padding-right: 12px; color: #775627; border-right: 3px solid var(--gold); font-size: 18px; line-height: 1.9; }
+    .signature { color: #79572a; font-weight: 700; text-align: left !important; direction: rtl; }
+    .accordion { margin: 20px 0; border: 1px solid #dfd5c2; border-radius: 15px; background: #fffefa; overflow: hidden; }
+    .accordion summary { cursor: pointer; list-style: none; position: relative; padding: 15px 54px 15px 18px; color: var(--green); font-size: 17px; font-weight: 700; background: linear-gradient(90deg, #f5f0e5, #fbf8f0); }
+    .accordion summary::-webkit-details-marker { display: none; }
+    .accordion summary::before { content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%); width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; background: var(--green); color: white; font-size: 19px; line-height: 1; }
+    .accordion[open] summary::before { content: "−"; }
+    .accordion-content { padding: 18px clamp(14px, 3vw, 26px) 23px; border-top: 1px solid var(--line); }
+    .spec-list { margin: 0; }
+    .spec-row { display: grid; grid-template-columns: minmax(125px, 190px) 1fr; gap: 12px; padding: 9px 2px; border-bottom: 1px dashed #e8e0d2; }
+    .spec-row:last-child { border-bottom: 0; }
+    .spec-row dt { color: #6b512a; font-weight: 700; }
+    .spec-row dd { margin: 0; text-align: justify; overflow-wrap: anywhere; }
+    .toc-note { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 32px; }
+    .toc-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; break-inside: avoid; padding: 5px 0; border-bottom: 1px dotted #e8e1d5; font-size: 13px; line-height: 1.9; }
+    .toc-title { flex: 1; } .toc-page { min-width: 28px; color: #8a6a34; font-weight: 700; text-align: left; direction: ltr; font-variant-numeric: tabular-nums; }
+    .bottom-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 30px 0 8px; }
+    .action-button { display: inline-flex; align-items: center; justify-content: center; min-width: 190px; padding: 11px 22px; border-radius: 999px; color: white; background: linear-gradient(135deg, #183d3a, #2d6b5f); font-weight: 700; box-shadow: 0 5px 14px rgba(24,61,58,.16); transition: .2s; }
+    .action-button:hover { transform: translateY(-2px); filter: brightness(1.08); }
+    .action-button.secondary { background: linear-gradient(135deg, #8b682e, #b28c4c); }
+    footer { padding: 23px 20px 25px; text-align: center; color: #e8e5da; background: #183d3a; border-top: 4px solid var(--gold); font-size: 13px; line-height: 2.1; }
+    footer strong { display: block; font-family: "Noto Nastaliq Urdu", "B Nazanin", serif; font-size: 22px; color: #fff7e6; font-weight: 400; }
+    footer a { color: #f2d79e; text-decoration: underline; text-underline-offset: 3px; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 20px; margin: 10px auto; }
+    @media (max-width: 680px) {
+      .page-shell { width: min(100% - 12px, 1120px); margin: 6px auto 16px; border-radius: 14px; }
+      .publisher-header { padding: 15px 10px 13px; }
+      .topics { padding: 12px 10px 17px; gap: 7px; }
+      .nav-button { min-height: 37px; padding: 6px 10px; font-size: 12px; }
+      .language-row { padding: 10px 12px 0; }
+      main { padding: 15px 13px 25px; }
+      .blue-panel { padding: 20px 16px; border-radius: 13px; }
+      .intro-card p { font-size: 13px; text-align: right; line-height: 2.15; }
+      .spec-row { grid-template-columns: 1fr; gap: 1px; }
+      .toc-list { columns: 1; }
+      .toc-list li { font-size: 13px; }
+      .action-button { width: 100%; max-width: 340px; }
+    }
 
-<style>
-*{box-sizing:border-box}
-body{
-    margin:0;
-    font-family:Tahoma,"B Nazanin",Arial,sans-serif;
-    background:#f5f3ed;
-    color:#292929;
-    line-height:2.1;
-}
-header{
-    background:#172b46;
-    color:white;
-    padding:22px 15px;
-    text-align:center;
-}
-header h1{margin:0;font-size:25px}
-header p{margin:5px 0 0;color:#e4d5ad}
-nav{
-    background:#263e5c;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:5px;
-    padding:9px;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:7px 12px;
-    border-radius:5px;
-    font-size:14px;
-}
-nav a:hover{background:#b69a5b;color:#172b46}
-.container{max-width:1100px;margin:25px auto;padding:0 16px}
-.opening{
-    text-align:center;
-    color:#80652e;
-    font-size:24px;
-    font-weight:bold;
-    margin:25px 0 5px;
-}
-.book-title{
-    text-align:center;
-    font-size:29px;
-    color:#172b46;
-    margin:5px 0 20px;
-}
-.book-info{
-    background:white;
-    border:1px solid #ddd2b7;
-    border-radius:10px;
-    padding:22px;
-    margin:20px auto;
-    text-align:center;
-}
-.cover{
-    width:250px;
-    height:350px;
-    border:2px dashed #b8aa8c;
-    margin:20px auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#82765e;
-    background:#faf9f5;
-}
-.cover img{max-width:100%;max-height:100%;object-fit:contain}
-.metadata{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:10px;
-    text-align:right;
-    margin-top:20px;
-}
-.metadata div{
-    background:#f7f5ef;
-    padding:10px 14px;
-    border-radius:6px;
-}
-section{
-    background:white;
-    border-radius:10px;
-    padding:24px;
-    margin:22px 0;
-    box-shadow:0 2px 8px #0000000b;
-}
-h2{
-    color:#183653;
-    border-bottom:2px solid #c4ad78;
-    padding-bottom:9px;
-    font-size:22px;
-}
-h3{color:#70572c}
-.back-cover{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:14px;
-}
-.back-card{
-    min-height:125px;
-    border:1px dashed #b9a77c;
-    background:#fbfaf6;
-    border-radius:8px;
-    padding:15px;
-    color:#887d68;
-}
-.contents{
-    background:#f8f6ef;
-    padding:18px 25px;
-    border-radius:8px;
-}
-.contents li{margin:5px 0}
-.note{
-    background:#f7f1df;
-    border-right:4px solid #a88b4e;
-    padding:15px 18px;
-    margin:20px 0;
-}
-.signature{text-align:left;margin-top:30px}
-.purchase{
-    background:#f7f1df;
-    border:1px solid #d7c69c;
-    text-align:center;
-}
-.purchase a,.button{
-    display:inline-block;
-    background:#203b5b;
-    color:white;
-    text-decoration:none;
-    padding:10px 22px;
-    border-radius:6px;
-    margin:10px 5px;
-}
-footer{
-    background:#172b46;
-    color:white;
-    text-align:center;
-    padding:22px 12px;
-    margin-top:35px;
-}
-footer a{color:#f0d99e;text-decoration:none;margin:5px 12px}
-.placeholder{color:#999;font-style:italic}
-@media(max-width:650px){
-    header h1{font-size:21px}
-    nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}
-    nav a{white-space:nowrap;font-size:13px}
-    .book-title{font-size:23px}
-    section{padding:17px}
-}
-</style>
+
+    /* منوی اصلی هماهنگ با صفحهٔ اول انتشارات صالحین */
+    html { scroll-padding-top: 112px; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      color: #fff;
+      background: linear-gradient(110deg, #17324d, #244967);
+      border-bottom: 3px solid #c69a52;
+      box-shadow: 0 3px 14px rgba(20, 43, 64, .19);
+    }
+    .header-inner {
+      width: min(1240px, 100%);
+      min-height: 66px;
+      margin: auto;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      flex: 0 0 auto;
+      color: #fff;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.35;
+      white-space: nowrap;
+    }
+    .brand-en {
+      display: block;
+      direction: ltr;
+      text-align: right;
+      color: #e3d4b9;
+      font: normal 11px/1.5 Georgia, serif;
+      letter-spacing: .25px;
+    }
+    .main-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 3px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+    .main-nav > a,
+    .nav-trigger {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 7px 9px;
+      border: 0;
+      border-radius: 5px;
+      background: transparent;
+      color: #fff !important;
+      font: 700 12px/1.6 Tahoma, Arial, sans-serif;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+    .main-nav > a:hover,
+    .nav-trigger:hover,
+    .nav-trigger[aria-expanded="true"] {
+      background: rgba(255,255,255,.13);
+      color: #ffe0a8 !important;
+    }
+    .nav-group { position: relative; flex: 0 0 auto; }
+    .chevron { font-size: 10px; transition: transform .2s; }
+    .nav-trigger[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 7px);
+      right: 0;
+      min-width: 218px;
+      padding: 7px;
+      background: #fff;
+      color: #263442;
+      border: 1px solid #dce3e7;
+      border-top: 3px solid #c69a52;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 9px 24px rgba(19,43,64,.19);
+      z-index: 1100;
+    }
+    .nav-group.open .dropdown { display: block; }
+    .dropdown a {
+      display: block;
+      padding: 8px 11px;
+      border-radius: 5px;
+      color: #263442 !important;
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: normal;
+    }
+    .dropdown a:hover { background: #f4eee4; color: #8a5b22 !important; }
+
+    /* دکمهٔ ورود به نسخهٔ انگلیسی همین کتاب */
+    .language-row {
+      justify-content: center;
+      padding: 10px 14px 2px;
+    }
+    .language-link {
+      border: 1px solid #b88b43;
+      background: linear-gradient(135deg, #244967, #397b78);
+      color: #fff7e8;
+      border-radius: 7px;
+      padding: 6px 15px;
+      font-size: 11px;
+      font-weight: 700;
+      box-shadow: 0 3px 9px rgba(28,58,75,.12);
+    }
+    .language-link:hover { background: linear-gradient(135deg, #8b682e, #b28c4c); color: #fff; }
+
+    /* دکمه‌های موضوعی: کوچک، رنگی و غیرسفید */
+    .topics {
+      gap: 7px;
+      padding: 13px 18px 19px;
+      background: linear-gradient(180deg, #e9eef1, #e1e8eb);
+      border-bottom: 1px solid #cdd8de;
+    }
+    .nav-button {
+      min-height: 34px;
+      padding: 5px 10px;
+      border-width: 1px;
+      border-radius: 7px;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.55;
+      box-shadow: 0 2px 5px rgba(25,47,61,.09);
+    }
+    .nav-button.home {
+      color: #fff;
+      border-color: #17324d;
+      background: linear-gradient(135deg, #17324d, #397b78);
+    }
+    .nav-button.topic:nth-child(6n+2) {
+      color: #243a4b; border-color: #9db6c8;
+      background: linear-gradient(135deg, #dceaf3, #c4d9e8);
+    }
+    .nav-button.topic:nth-child(6n+3) {
+      color: #294638; border-color: #a8c3ad;
+      background: linear-gradient(135deg, #e0eee2, #c9dfce);
+    }
+    .nav-button.topic:nth-child(6n+4) {
+      color: #66451e; border-color: #d3b77e;
+      background: linear-gradient(135deg, #f4e8ca, #ead6a9);
+    }
+    .nav-button.topic:nth-child(6n+5) {
+      color: #633d50; border-color: #d2aabb;
+      background: linear-gradient(135deg, #f2e1e9, #e6cbd8);
+    }
+    .nav-button.topic:nth-child(6n+6) {
+      color: #4d4166; border-color: #b9acd0;
+      background: linear-gradient(135deg, #eae4f2, #d8cce9);
+    }
+    .nav-button.topic:nth-child(6n+7) {
+      color: #24534f; border-color: #9fc9c1;
+      background: linear-gradient(135deg, #dcefeb, #c2e1da);
+    }
+    .nav-button.home:hover,
+    .nav-button.topic:hover,
+    .nav-button.utility:hover,
+    .nav-button.buy:hover {
+      transform: translateY(-2px);
+      filter: brightness(.96) saturate(1.08);
+    }
+    .nav-button.review {
+      color: #fff; border-color: #725477;
+      background: linear-gradient(135deg, #725477, #92739a);
+    }
+    .nav-button.contact {
+      color: #fff; border-color: #397b78;
+      background: linear-gradient(135deg, #397b78, #559b91);
+    }
+    .nav-button.buy {
+      color: #47320f; border-color: #bd9853;
+      background: linear-gradient(135deg, #e4c27d, #c99d50);
+    }
+
+    @media (max-width: 900px) {
+      .header-inner { flex-direction: column; gap: 4px; padding: 7px 10px; }
+      .brand { text-align: center; font-size: 19px; }
+      .brand-en { text-align: center; }
+      .main-nav { justify-content: center; max-width: 100%; }
+      .main-nav > a, .nav-trigger { font-size: 11px; padding: 6px 7px; }
+    }
+    @media (max-width: 600px) {
+      .header-inner { gap: 3px; }
+      .main-nav {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: thin;
+        padding-bottom: 3px;
+      }
+      .main-nav > a, .nav-trigger { font-size: 10px; padding: 6px 7px; }
+      .main-nav > * { flex: 0 0 auto; }
+      .dropdown {
+        position: fixed;
+        top: 96px;
+        right: 8px;
+        max-width: calc(100vw - 16px);
+      }
+      .topics { gap: 6px; padding: 11px 8px 15px; }
+      .nav-button { min-height: 31px; padding: 4px 8px; font-size: 10px; }
+      .language-row { padding: 9px 9px 1px; }
+      .language-link { font-size: 10px; }
+    }
+
+  </style>
 </head>
-
 <body>
+  <div class="page-shell">
+<header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html#home">
+          انتشارات صالحین
+          <span class="brand-en">Salihin Publications</span>
+        </a>
+    
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <a href="index.html#home">خانه</a>
+    
+          <div class="nav-group">
+            <button class="nav-trigger" type="button" aria-expanded="false">
+              بخش‌ها <span class="chevron">▾</span>
+            </button>
+            <div class="dropdown">
+              <a href="index.html#literature">ادبیات و هنر</a>
+              <a href="index.html#science">علم و دانش</a>
+              <a href="index.html#culture">دین، فرهنگ و میراث بشری</a>
+            </div>
+          </div>
+    
+          <div class="nav-group">
+            <button class="nav-trigger" type="button" aria-expanded="false">
+              کتاب‌ها <span class="chevron">▾</span>
+            </button>
+            <div class="dropdown">
+              <a href="index.html#books">فهرست کتاب‌ها</a>
+              <a href="book1r.html">کتاب اول: و این کتاب عشق است</a>
+            </div>
+          </div>
+    
+          <div class="nav-group">
+            <button class="nav-trigger" type="button" aria-expanded="false">
+              خرید کتاب <span class="chevron">▾</span>
+            </button>
+            <div class="dropdown">
+              <a href="index.html#sales">خرید در ایران</a>
+              <a href="index.html#international">فروش جهانی</a>
+              <a href="buy-book1.html">خرید نسخهٔ چاپی این کتاب</a>
+            </div>
+          </div>
+    
+          <a href="index.html#about">درباره ما</a>
+          <a href="contact.html">تماس</a>
+          <a href="review.html">نقد و نظر</a>
+          <a href="en/index.html" lang="en" dir="ltr">English</a>
+        </nav>
+      </div>
+    </header>
 
-<header>
-    <h1>انتشارات صالحین</h1>
-    <p>Salihin Publications</p>
-</header>
-
-<nav>
-    <a href="index.html">صفحه اصلی</a>
-    <a href="#book">معرفی کتاب</a>
-    <a href="#love">اندر شرح عشق</a>
-    <a href="#woman">اندر شرح مقام زن</a>
-    <a href="#majazi">عشق مجازی</a>
-    <a href="#haghighi">عشق حقیقی</a>
-    <a href="#tafasir">شرح تاریخی تفاسیر</a>
-    <a href="#other">سایر موضوعات</a>
-    <a href="#reviews">نقد و نظرات</a>
-    <a href="#purchase">خرید کتاب چاپی</a>
-</nav>
-
-<main class="container">
-
-<div class="opening">و این کتاب عشق است</div>
-
-<h1 class="book-title">[عنوان اصلی کتاب دوم]</h1>
-
-<section id="book">
-    <h2>معرفی کتاب</h2>
-
-    <div class="cover">
-        <span>محل قرارگیری تصویر جلد کتاب</span>
+    <div class="language-row">
+      <a class="language-link" href="book1r-en.html" lang="en" dir="ltr">نسخهٔ انگلیسی همین کتاب  |  English version ←</a>
     </div>
 
-    <div class="metadata">
-        <div><strong>عنوان کتاب:</strong> <span class="placeholder">[عنوان کتاب]</span></div>
-        <div><strong>نویسنده:</strong> <span class="placeholder">[نام نویسنده]</span></div>
-        <div><strong>ناشر:</strong> <span class="placeholder">[نام ناشر]</span></div>
-        <div><strong>محل نشر:</strong> <span class="placeholder">[محل نشر]</span></div>
-        <div><strong>سال انتشار:</strong> <span class="placeholder">[سال انتشار]</span></div>
-        <div><strong>نوبت چاپ:</strong> <span class="placeholder">[نوبت چاپ]</span></div>
-        <div><strong>تعداد صفحات:</strong> <span class="placeholder">[تعداد صفحات]</span></div>
-        <div><strong>شابک:</strong> <span class="placeholder">[شماره شابک]</span></div>
-    </div>
+    <nav class="topics" aria-label="موضوعات و بخش‌های کتاب">
+<a class="nav-button home" href="index.html#culture">بازگشت به بخش دین، فرهنگ و میراث بشری</a>
+<a class="nav-button topic" href="topics/01-nemuneh-tarjome-va-zibayi-kalam.html">نمونه‌هایی از ترجمه و زیبایی کلام</a>
+<a class="nav-button topic" href="topics/02-chalesh-haye-maenayi-quran.html">چالش‌های معنایی در قرآن عظیم</a>
+<a class="nav-button topic" href="topics/03-andar-sharh-eshgh.html">اندر شرح عشق</a>
+<a class="nav-button topic" href="topics/04-andar-sharh-alam.html">اندر شرح عالم</a>
+<a class="nav-button topic" href="topics/05-ghayat-eshgh.html">غایت عشق</a>
+<a class="nav-button topic" href="topics/06-hooshmandi-alam.html">هوشمندی عالم</a>
+<a class="nav-button topic" href="topics/07-tabir-badi-eshgh.html">تعبیر بدیع از عشق</a>
+<a class="nav-button topic" href="topics/08-andar-sharh-hayat.html">اندر شرح حیات</a>
+<a class="nav-button topic" href="topics/09-dar-bab-elm.html">در باب علم</a>
+<a class="nav-button topic" href="topics/10-dar-mani-eslam.html">در معنی اسلام</a>
+<a class="nav-button topic" href="topics/11-maghame-zan.html">در باب مقام زن</a>
+<a class="nav-button topic" href="topics/12-mehrieh-zanan.html">در شرح مهریهٔ زنان</a>
+<a class="nav-button topic" href="topics/13-mani-nafs.html">در معنی نفس</a>
+<a class="nav-button topic" href="topics/14-enfagh-va-bokhl.html">در مدح انفاق و مذمت بخل</a>
+<a class="nav-button topic" href="topics/15-masti-eshgh.html">در مستی عشق</a>
+<a class="nav-button topic" href="topics/16-hazoor-khoda-dar-ghalb.html">حضور خدا در قلب مؤمن</a>
+<a class="nav-button topic" href="topics/17-alamgiri-eshgh.html">عالم‌گیری عشق</a>
+<a class="nav-button topic" href="topics/18-eslam-din-solh.html">اسلام؛ دین صلح</a>
+<a class="nav-button topic" href="topics/19-eshgh-emam-ghazali.html">عشق از نظر امام محمد غزالی</a>
+<a class="nav-button topic" href="topics/20-azam-daraje.html">«أَعْظَمُ دَرَجَه»</a>
+<a class="nav-button topic" href="topics/21-eshgh-majazi.html">عشق مجازی</a>
+<a class="nav-button topic" href="topics/22-mashroeyat-eshgh.html">مشروعیت عشق</a>
+<a class="nav-button topic" href="topics/23-tasaid-eshgh.html">تصعید عشق</a>
+<a class="nav-button topic" href="topics/24-noori-bar-ghalb.html">نوری بر قلب</a>
+<a class="nav-button topic" href="topics/25-mosallas-eshgh.html">مثلث عشق</a>
+<a class="nav-button topic" href="topics/26-natije-mehbang.html">نتیجه‌گیری از لحظهٔ وقوع مه‌بانگ</a>
+<a class="nav-button topic" href="topics/27-varaye-vagheiat-alam.html">در ورای واقعیت این عالم چیست؟</a>
+<a class="nav-button topic" href="topics/28-elm-bashar-motaghayer.html">علم بشر؛ متغیر و غیرقطعی</a>
+<a class="nav-button topic" href="topics/29-eshgh-majaz-va-haghighat.html">اندر شرح عشق مجاز و حقیقت</a>
+<a class="nav-button topic" href="topics/30-tafasir-va-ebrahim-ameli.html">تفاسیر مورد استفادهٔ مؤلف و ابراهیم عاملی</a>
+<a class="nav-button topic" href="topics/31-sayer-mozooat.html">سایر موضوعات</a>
+<a class="nav-button utility review" href="review.html">نقد و نظرات</a>
+<a class="nav-button utility contact" href="contact.html">تماس با ما</a>
+<a class="nav-button buy" href="buy-book1.html">خرید نسخهٔ چاپی کتاب</a>
+    </nav>
 
-    <h3>درباره این کتاب</h3>
-    <p class="placeholder">[متن معرفی کتاب در این قسمت قرار خواهد گرفت.]</p>
-</section>
+    <main>
+      <div class="basmala">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+      <div class="verse">إِنَّ هذَا الْقُرْآنَ يَهْدي لِلَّتي هِيَ أَقْوَمُ وَ يُبَشِّرُ الْمُؤْمِنينَ الَّذينَ يَعْمَلُونَ الصّالِحاتِ أَنَّ لَهُمْ أَجْرًا كَبيرًا ﴿۹﴾<br>سورةُ الإسرَاء</div>
 
-<section id="back-cover">
-    <h2>مطالب پشت جلد</h2>
-    <div class="back-cover">
-        <div class="back-card">[جای خالی برای مطلب اول پشت جلد]</div>
-        <div class="back-card">[جای خالی برای مطلب دوم پشت جلد]</div>
-        <div class="back-card">[جای خالی برای مطلب سوم پشت جلد]</div>
-    </div>
-</section>
+      <section class="blue-panel" aria-label="معرفی کوتاه کتاب">
+        <p>مطالب فوق و  هزاران نکته در  باب معانی لغات ، شأن و نزول آیات، تعابیر و تفاسیر بدیع از آیات قرآن عظیم.</p>
+        <p>و هزاران پند و اندر حکیمانه از ائمه اطهار و عارفان و عالمان و شاعران و صدها شعر و ماجرا و حکایت و روایت و ترجمه های شیرین تر از عسل و به روز با نگاشت دانشگاهی  از آیات الهی همه در مجموعه :</p>
+      </section>
 
-<section id="contents">
-    <h2>فهرست مطالب</h2>
-    <div class="contents">
-        <ol>
-            <li>اندر شرح عشق</li>
-            <li>اندر شرح مقام زن</li>
-            <li>عشق مجازی</li>
-            <li>عشق حقیقی</li>
-            <li>شرح تاریخی تفاسیر نام‌برده‌شده توسط ابراهیم عاملی</li>
-            <li>سایر موضوعات</li>
-            <li>نقد، نظرات و پیشنهادات</li>
-        </ol>
-        <p class="placeholder">این فهرست صرفاً جهت معرفی مطالب است و عناوین آن پیوند داخلی ندارند.</p>
-    </div>
-</section>
+      <h1 class="hero-title">و این کتاب عشق است</h1>
+      <h2 class="hero-subtitle">تجلّی عشق، عرفان و برهان در قرآن عظیم</h2>
+      <p class="book-description">تعابیر  و تفاسیر        بد     یع از آیات قرآن عظیم درنگاشتی  دانشگاهی<br>گزیده ایی از  چالش ها ی مفهمومی   در  ترجمه های  قرآن کریم و پی نگاشتی   هایی      از مجمع التفاسیر ابراهیم عاملی و دیگر مفسران  همراه با  گزینشی از  یافته های علمی و عرفانی   از عالمان و عارفان و شاعران  بزرگ</p>
+      <div class="author">جلال‌الدین ولی‌الله</div>
 
-<section id="love">
-    <h2>اندر شرح عشق</h2>
-    <p class="placeholder">[مطالب این بخش بعداً درج خواهد شد.]</p>
-</section>
+      <h2 class="section-heading">خلاصه‌ای از مقدمه و معرفی کتاب</h2>
+      <section class="intro-card">
+        <p>و  این کتاب عشق است. تجلی عشق ، عرفان و برهان  در قرآن عظیم و تعابیر  و تفاسیر بدیع از آیات قرآن عظیم درنگاشتی  دانشگاهی است. و گزیده ایی از  چالش ها ی مفهمومی درترجمه‌های  قرآن‌کریم در پی نگاشتی‌هایی از مجمع التفاسیر ابراهیم عاملی و دیگر مفسران  همراه با  گزینشی از  یافته های علمی و عرفانی   از عالمان و عارفان و شاعران  بزرگ است. آنگونه که عنوان کتاب مبین آن است. از تعابیر بدیع این اثر شرح عشق است در قاموسی کمتر شناخته شده بیان شده است.</p><p>قرآن کتاب عشق است. سراسر محشون از عشق آن مجبوب ازلی و ابدی است. اما در قرآن کلمة عشق پنهان است؛ زیرا همگان را درک آن ممكن نیست، مانند ذّات باری تعالی. ولی قرآن سراسر سخن عشق و خدا خود عشق است.......</p><p>از دیدگاه عرفان اسلامی، عشق حقیقتي عینی است و مراحلی از طی طریق وصال و سیروسلوک، سالک است. عقل در مواردی از درک وجود خداوند تبارک و تعالی باز می‌ماند و عشق است که به مدد می‌آید. چنان‌که مولانا گوید: «رو عقل بفروش و حیرانی بخر/ که حیرانی ظن است و بصر». عشق چنان‌كه گفتیم حقیقتي عینی است. .... از آنجا كه عرفا ذات حضرت حق را معشوق حقیقی می‌دانند و آفرینش را جلوه‌گاه و مظهر آن معشوق، طبعاً همة جهان و جهانیان را دوست خواهند داشت. چنان‌كه سعدی می‌گوید: «به جهان خرم از آنم كه جهان خرم از اوست/ عاشقم بر همه عالم كه همه عالم از اوست». و اگر بیشتر دقیق شویم از دیدگاه عرفا همة عالم «اوست»، نه «از او» چنان‌كه جامی گوید: «تو را ز دوست بگویم حكایتی بی‌پوست/ همه ازوست وگر نیك بنگری همه اوست» (رسالة عشق، ابن‌سینا، فصل1و2و 3).</p><p>..... پس همة موجودات از عشق بهره‌ای دارند و این عشق برای آنان ذاتی است (رسالة عشق، ابن‌سینا، فصل1و2). ملاصدرا با نقل سخن ابن‌سینا و تحسین آن، اظهار می‌دارد كه گفتة خودش در تحلیل سریان و عمومیت عشق، كامل‌تر است و براساس مكتب وحدت وجود، وجود یك حقیقت است با مراتب متفاوت از لحاظ نقصان و كمال و ذاتاً خیر است. پس هر موجودی ذاتاً عاشق ذات و كمالات ذات خویش است؛ چون خیر و كمال، معشوق بالذات است و چون ذات هر علت، كمال معلول خویش است و چون هر معلولی از لوازم كمال علت است؛ پس هر علتی نسبت به معلول خود، و هر معلولی نسبت به علت خویش، عشق خواهد داشت (الاسفارالاربعه، چاپ جدید، ج7، ص158 به بعد).</p><p>در این عالم چیزی عظیم‌تر از فضل الهی نیست و آن علم الهی یا علم ربانی است.  آن‌کس که علم ربانی حاصل کند می‌تواند سعادت دنیا و آخرت خود را تأمین و تضمین كند. اساساً همة علوم انسان را به‌سوي خدا رهنمون می‌كنند، «علمی که ره به حق ننماید جهالت است »(سعدی). راه عرفان، حکمت و معرفت راه عاقلان، نوابغ و هوشمندان عالم است. همة عالمان ما هم علامه بوده‌اند و در قدم اول با دریای معرفت، عرفان و برهان قرآن آشنا می‌شدند و بعد به كسب معرفت در علوم تجربی و علوم انسانی زمان خود مي‌پرداختند، مانند سعدی، خیام، حافظ، مولانا، رودکی، ناصرخسرو، نظامی و فردوسی. قدم آخر در پیمودن راه عقل و نیل به علم الهی که فضل عظیم است ورود به طریق عشق و گذر از عشق‌های مجازي این دنیا و نیل به آن عشق واقعی، ازلی و ابدی است. ..... در این کتاب به تعداد صفحات آن یعنی 600 بار از عشق نام برده شده است. اگر می خواهید در این دایره وارد شوید بسم الله ...این گوی و این میدان.</p><p>اما  علم و عقل و برهان و عرفان در قرآن کجا ذکر شده است. از نظر تعابیر این کتاب، قرآن فلسفة الهی است. در این نظام فلسفی، خدا در راس مثلث و در دو راس پاپینی یک طرف انسان است و طرف دیگر قرآن و در درون این مثلث و اضلاع آن علم است و برهان و عرفان و و عشق که در چرخه ایی دوار به گرد هم اند.  تبین این فلسفه الهی را از مولانا (اشراقیون) ، ابن سینا (متکلمین) و ملاصدار و علامه حسن زاده آملی بر گرفته ام. این مجموعه شمه ایی از فلسفه الهی است که عالم گیر است و خواهد شد.</p><p>و دیگر مهمترین بخش این مجموعه گلچینی برگرفته از هشت هزار صفحه  مجمع التفاسیر علامه ابراهیم  موثق عاملی(1208- 1347) رضوان الله علیه  را در مجمع تفاسیر او و مصحح آن علامه علی اکبر غفاری(1303-1383) رضوان الله علیه که از کلیه تفاسیر اولیه و قدیم و جدید تا زمان انتشار اثر ارزشمند خود  از آنها استفاده کرده است که به مدت ده سال از سال 1335 تا  ح 1345 طول کشیده است. بنابر این مجمع تفاسیر تا سال 1345 بوده است. اما در سال های بعد از آن تفاسیر و ترجمه های بسیاری انجام شده است . از عالمان بزرگ مانند علامه طباطبایی، علامه جوادی آملی، علامه حسن زاده آملی، آیت الله مکارم شیرازی، آیت الله طالقانی در کتاب پرتویی از قرآن ، آیت الله محسن قرائتی و سایر بزرگوران صورت گرفته است که برای تکمیل این مباحث یا مورد استفاده قرار گرفته است و یا زمینه خوبی برای استفاده در آینده می باشند.</p><h3 class="intro-subheading">تفاسیر و ترجمه های مورد استفاده در این تفسیر</h3><p>ازمهمترین و وزین ترین تفاسیر و ترجمه ها که در این مجموعه از آنها استفاده شده است. از تفاسیر قدیم تفسیر شیخ ابوافتوح  رازی است. که در قرن پنجم، بزرگترین خدمت را به حفظ  زبان فارسی در عرصه علوم دینی و قرآنی کرد معادل همان خدمتی که فردوسی در قرن هشتم در حفظ زبان فارسی در عرصه ادبیات کرد. پس از آن علاوه بر استفاده هایی که ابراهیم عاملی از مفسران اولیه و سایر مفسران و مترجمان کرده است. از تفسیر وزین المیزان از علامه طباطبایی و حضرت آیت الله طالقانی است. و در عرصه اشعار عرفانی از مولانا و حافظ و سعدی و غیره است. و از آخرین یافته های دانشگاهی در علوم تجربی است. که در این اثر در پی نگاشت آیه ها آمده است. در این اثر تنها از ترجمه فارسی آن آیه های استفاده شده است که شان و نزول و خاطره و موضوع جالبی در هر زمینه اخلاق و اجتماعی و یا شعر جالبی در باره آنها یا ابراهیم عاملی استفاده کرده است و یا من از آنها استفاده کرده ام. این موضوعات در قالب پی نگاشت ها و عباراتی مانند اندر شرح عشق، اندر شرح عقل و اندر شرح علم و عالم و غیره آمده اند. تمام ترجمه کامل قرآن عظیم در نسخه های کاملی به مدت بیست سال تحقیق از عمر محقق در قرآن های رنگی با قواعد تجویدی رنگی برای انتشار به معاونت قرآن وزارت ارشاد ارسال شده است که در دست بررسی است. اما در این مجموعه تنها از قسمت هایی از یک سوره استفاده شده است که در باره آنها پی نگاشت و توضیحی لازم بوده است. و بقیه سوره جذف شده است. در آغاز هر سوره چند آیه اول به عنوان مدخل سوره به عربی آمده است و سپس با علامت ***** این قسمت جدا شده  و پی نگاشت ها آمده است. در مواردی که قسمتی از سوره حذف شده است و بقیه سوره ادامه یافته است با علامت .......... معلوم شده است.</p><h3 class="intro-subheading">نقاط قوت مجمع تفاسیر ابراهیم عاملی</h3><p>در سال های اخیر به سبب نارسایی ترجمه های قرآن کریم به زبان فارسی، دریچه جدیدی بر پژوهش های قرآنی گشوده شده است و آن نقد ترجمه های قدیم و معاصر و تحقیق در چالش های مفهمومی ترجمه فارسی در قرآن مجید است. سردمداران این عرصه جدید دو بزرگوارند به نام  های:  استاد بهاالدین خرمشاهی و استاد محمد علی کوشا که بخشی از تلاش های یک عمر آنان در دو کتاب با موضوع نقدی بر ترجمه های فارسی قرآن کریم انتشار یافته است علاوه بر مقالات و سخنرانی ها و پی نگاشت های ترجمه قرآن کریم از جانب این بزرگوران.  با نگاهی به چالش های مفهمومی ترجمه قرآن عظیم در این مدت بیست ساله متوجه شدم که مبنا فهم درست از این چالش هاست. به ویژه چالش های مهم مفهمومی دریافتم که برخی مانند ابوالفتوح رازی قدس سره و شریف، علامه  ابراهیم عاملی، صفعلی‌شاه و بسیاری دیگر از معدود کسانی هستند که در غالب موارد فهم درستی از این مفاهیم ارائه داده اند که آنچه فهم امروزی است که استاد بهاء الدین خرمشاهی و استاد محمد علی کوشا ارائه داده اند منطبق است. در عین حال علامه ابراهیم عاملی فهم درستی از علم روز آن زمان خود دارد. و همچنین به زیبایی نكته‏ هاى علمى و اخلاقى و عرفانى و ذوقى  را از همه مفسران پیشین و عرفا و شاعران آورده است و خود نیز از دوق ادبی و عرفانی برخوردار است. کار خوب کاری که خدا به آن نظر انداخته باشد و ماندگار می شود حتی اگر زمان زیادی بگذرد. مانند صدای عبدالباسط و یا اذان موذن زاده اردبیلی . و کار مجمع التفاسیر ابراهیم عاملی کاری ماندگار است. حاصل رنج و تعب و دشواری در درک حقیقت و کاملاً بی شائبه و بی آلودگی به تعلقات گذارا و ناچیز این دنیا نگاشته شده است. و تلفیقی از درک فقه و کلام و اصول و صرف و نحو عربی و علوم و فنون جدید است تلفیقی از علوم حوزه و دانشگاه است در نگاشتی ادبی و دلچسب. گرچه ترجمه او مانند هر ترجمه دیگر گرد زمان گرفته اما تحقیق او در هشت هزار صفحه ماندنی این مجموعه تنها جرعه ایی از اقیانوس معرفت قرآن و این اثر و آثار بزرگ دیگر است.</p><p>زنده یاد ابراهیم موثق عاملی در سرآغاز تفسیر خود پس از ذکر نام بسم الله ... نقل کرده است که: « بسا بود كه براى فهم آيتى از قرآن كريم تفسيرى مطالعه مى‏كردم و قانع نمى‏شدم.... دغدغه‏ى فهم قرآن ... وادارم كرد به مطالعه و نوشتن تفسير........ از قديم‏ترين كتب تفسير ...... (جامع البيان تفسير محمّد بن جرير طبرى متوفّى بسال سيصد و ده هجرى قمرى) تا آنچه از مفسّرين معاصر بدست آوردم..... برای نشان دادن اختلاف مفسّرين در مقصود و در قرائت آيات با ذكر هر نكته‏ى علمى و اخلاقى و عرفانى و ذوقى كه در كتابهاشان ديده شده بعنوان سخن مفسّرين با رعايت كمال امانت، اگر شعر مشهورى در كتابى نقل شده است از آن كتاب نقل كردم و براى زيبائى و آرايش، از نوشته‏هاى ذوقى و لطيف تفسير كشف الاسرار و ابوالفتوح رازی آنچه مناسب بود مختصرى عين عبارت آنها را نقل كردم. » او ادامه می دهد: بقول نظامى: عاريت كس نپذيرفته‏ام / آنچه دلم گفت: بگو، گفته‏ام ». و می فرمایید: آغاز اين كار در خرداد ماه سال هزار و سيصد و سى و پنج شمسى بود و انجام آن در خرداد هزار و سيصد و چهل و پنج شد. در پایان این مقدمه نام مفسرین اولیه که این محقق عالی مقام از آنها از آنها استفاده کرده است به طور مختصر و فشرده آمده است.</p><p>در دهه های اخیر تکاملی در ترجمة قرآن صورت گرفته است. غیر از ترجمه های کهن از قران مجید به همت تلاش های چند قرن اخیر مترجمان که  سرآغاز آن شاید از ولی الله دهلوی (1738 میلادی)، بصیرالملک(1316)، عبدالحسین آیتی (1326)و مهدی الهی قمشه¬ایی(1323) که محرک و سرسسله جنبان ترجمه های امروزین قرآن هستند. که با اعمال نظرات و تفسیرهای روحانی و بصیرت خداخواست خود این راه را بنیان نهادند و به سایر رهروان درک مفهوم قرآن در قالب زبان فارسی، این جرات را بخشیدند که آنان نیز بخت خود را در این راه بیازمایند. تا قرآن های ممتاز و سرآمد که سرشار از خلاقیت و نوآوری و دقیق اندیشی و نکته سنجی مترجمان امروزی است منتشر شود تا ما پشتوانه گرانقدری از تجربة ترجمة آیات الهی داشته باشیم.</p><p>گرچه امروزه نیز  بسیاری با پیمودن بخشی از  این راه با انبوهی از مشکلات روبرو می شوند و در طی این طریق دشوار به بسیاری از همان لغزش گاه هایی می رسند که سایرین با آن روبرو بوده اند. که  عشق آسان نمود اول، ولی افتادو مشکل ها. اما امروزه علم و هنر ترجمه قرآن دارای آنچنان پشتوانه¬ایی است که دیگر باید از ترجمه های قالبی ازقرآن دست برداشته و به نگارش های تخصصی  و نگارش دانشگاهی یا نگارش ادبی و هنری و غیره رو آورد. بدون توجه و بررسی دقیق و موشکافانه و نقادانه و خلاقانه و این پشتوانه گرانقدر هیچ ترجمه ایی نمی تواند به موفقیتی نائل گردد که این مترجمان به آن نائل آمده¬اند. به گفته مترجم عالی مقام قرآن آیت الله مکارم شیرازی ترجمه همچون در آوردن لباس از یک زبان و پوشاندن لباسی از یک زبان دیگر است. و این چه تعبیر جالبی است یقیناً لباسی که برگزیده می شود باید زیبا و آرسته  باشد و اگر زبان فارسی که زبانی کهن و در اوج زیبایی است. این زیبابی و تناسبات را مدیون زبان قرآن است این زیبایی در اثر پیوند و وصلت دو زبان صورت گرفته است.</p><p>قبل از تقدیر و سپاس و احساس فروتنی و خشوع در برابر همه عالمان قرآن که از آثار آنان بهره فراوان برده شد. اولاً: ضروری است از دو انسان صالح و پاک الهی علامه ابراهیم  موثق عاملی(1208- 1347) رضوان الله علیه  را در مجمع تفاسیر او و مصحح آن علامه علی اکبر غفاری(1303-1383) رضوان الله علیه قدردانی نمایم  و به شادی همه رفتگان خود و این بزرگوران و همه عالمان و عاشقان قرآن، بیایید صلوات و فاتحه ایی نثار روح پر فتوح آنان نماییم. آنگونه که گوهر گرانبهای کلام آنان را من بسی پیشروتر از زمان آنان یافتم که در حدود شصت و پنج سال پیش از این تاریخ نگاشته‌اند  و چنان  واقع بینانه و درست‌اند که گویی همین حرف و نیاز و خواست امروز بشر است. وآنگونه که به یاد و نام آنان و همه کسانی که چه به شعر و چه به کلام خود به قرآن خدمت کرده اند را درود و سلام و صلوات می فرستیم و ازدرگاه خداوند منان برای آنان شادی روح و سعادت پایدار اخروی می طلبیم. امید بر خداوند تبارک و تعالی شاید روزی کسی نیز کسی باشد که این اثر را پس از گذر سال ها پیشروتر از زمان بداند. دوماً بر خود وظیفه می دانم از تلاش های صمیمانه استاد حجت الاسلام محمد علی کوشا و استاد سید محمدرضا صفوی در کمال فروتنی از صدق دل صمیمانه تقدیر و تشکر کنم برای آنان در دنیا و آخرت سعادت و سلامت و شادکامی آرزومندم. این دو بزرگورا  نسخه اولیه ترجمه کامل  این نگارش را نقادانه و استادانه بررسی کردند و در چندین صفحه توضیحات و ایرادات و اشکال هایی را برشمردند که اکثر آنان بحق و بجا بود و سعی کردم که همه این موارد و کاستی ها را در نسخه های بعدی اعمال نمایم و همچنین از ترجمه های وزین این دو بزرگوار بسیار استفاده کردم. و برحسب میزان مراجعه به ترتیب از ترجمه های:   عبدالمحمّد آیتی، ابوالفضل بهرام پور،  مهدی الهی قمشه¬ایی ، حسین  الهی قمشه¬ایی،  محمد خواجوی، غامعلی حداد عادل ، ناصر مکارم شیرازی ، موسوی گرمارودی، کاظم پور جوادی، جلال الدین  مجتوبی، و راهنمایی ها و ترجمه فاخر استاد حسین استاد ولی،  و سایر اساتید مانند : بهاالدین خسروشاهی، ابوالقاسم پاینده، محمد مهدی فولادوند،  محمد کاظم معزی، ترجمه بر مبنای ترجمه المیزان کاری از سید محمدرضا صفوی، محمد باقر بهبودی. ترجمه قرآن از علی اصغر حلبی، ترجمه محمود یاسری، ترجمه ایی از محمد یزدی ، دو قرآن  قدیمی یکی از شیخ عباس  مصباح و  یکی از فیض الاسلام، یک ترجمه گروهی از  قرآن،  یک ترجمه دیرین از قرآن به کوشش علی رواقی، رضایی، مهندس طاهری، کاویانپور  و چند ترجمه انگلیسی از قرآن از شادروان تی. بی اروینگ (ره) و شادروان طاهرۀ صفار زاده(ره) و یوسف عبدالله، حواشی عربی قرآن چاپ بیروت از دکتر محمد الحمصی  ... و کتاب تفاسیر شامل تفسیر نمونه ، تفسیر المیزان ، پرتوی از قرآن و کتاب روش شناسی تفسیر قرآن، کتاب قرآن، برهان و عرفان از عالم ربانی حسن زاده آملی و .... همراه با نرم افزارهای قرآنی نور انوار ، صراط و  در مواجهه با چالش های مفهومی نگارشگر نگاه منتقدانه، منتقدان ترجمه های ممتاز و معاصر قرآن، در قالب دو کتاب نگارش: استاد بهاالدین خرمشاهی و استاد محمد علی کوشا را  مطالعه و بررسی کرده و تا آنجا که اشکالات مطرح شده مورد قبول  نگارشگر  بوده  در بازنگری متن نگارش از این رهنمودها استفاده کرده است در بسیاری  از موارد این اشکالات و انتقادات از نظر نگارشگر فعلی مستند و معقول جلوه¬گرشده است . دراین هرگونه نقص و ضعف و اشتباه و ابهام از جانب نگارشگر است و اگر این نگارش نقطه قوتی داشته باشد از آن تمام مترجمین گرانقدری است که از ترجمه های آنها یا نقد های آنها استفاده شده است. وظیفه خود می دانم که نه تنها از همه مترجمین چه آنها که در قید حیات هستند مراتب قدر دانی و حق شناسی خود را به جا آورم  و برای روح پر فتوح خادمان و پژوهشگران قرآن که به لقاء الله پیوسته اند و از درگاه خداوند منّان آرزوی رحمت و غفران الهی و سعادت اخروی و شادکامی کنم.  همچنین از کلیه دوستان و اساتید ارجمندی که به سبب کثرت از ذکر نام آنان خودداری می نمایم. و یا خود در پی نام نیستند ولی مرا مدیون راهنمایی ها و کمک های خود کردند مانند استاد قرآن  پژوهشگر قرآن دکتر میر باقری در دانشگاه شهید رجایی که با دادن یک نسخه از قرآن ترجمه بهبودی و با راهنمایی های ارزنده خود مرا یاری فرمودند و  از عالم و پژوهشگر قرآن حجت الاسلام و المسلمین  استاد دکتر  حسین تاج آبادی به خاطر تشویق ها و حمایت های خود و نمونه خوانی و توصیه های ارزنده،  و  از عالم و پژوهشگر قرآن حجت الاسلام و المسلمین  استاد دکتر حمید فغفور مغربی با قدر دانی و تشکر از نمونه خوانی و توصیه های ارزنده و مشورت های گرانقدر ایشان و عالم قرآن و الهیات، استاد دکتر علی اکبر شایسته نژاد که این متن طولانی و جزء هایی از این نگارش را با حوصله و دقت بسیار خوانده و توصیه های ارزنده ایی در همه موارد به ویژه احتیاط در کاربرد یافته های علمی روز ارائه کردند بسیار مراتب قدر دانی و سپاس خود را به جای می آورم.  و  از دوست عزیزم جناب آقای علی شهابیان به خاطر توصیه های ارزنده و در اختیار گذاشتن فایل های از سید محمد جزایری از ترجمه قرآن و از سایر دوستان و افراد خانواده  مراتب سپاس و قدر دانی خود را به عمل آورده و برای آنان از درگاه خداوند حی الرحمان علو درجات و عمر طولانی با عزت و سربلندی و فضل و خیر کثیر الهی آرزومندم.</p><p>و به ویژه از سرکار خانم عاطفه فرهادی  کارشناس ارشد ادبیات و ویراستار توانمند سازمان پژوهش و برنامه ریزی آموزشی، وزارت آموزش و پرورش که دو سال از عمر گرانقدر خود صرف ویراستاری فنی و ادبی کامل این اثر کرد و بسیاری از نواقص نگارشی ویرایش املایی و انشایی را برطرف کرد و رسم الخط را بی شائبه به روز کرد. مراتب قدردانی و سپاس خود را به جای می آورم و از درگاه خداومند منان برای ایشان آرزوی سلامت  و سعادت و شادکامی در دنیا و آخرت را دارم.</p><p>این نگاشت تلاشي است که خواننده را  مشتاق‌تر گرداند تا به تحقیق و تدبر بیشتر بپردازد و به ترجمه‌ها و تفسیرهاي بهتر و کامل‌تر و دقیق‌تري روي آورد.</p><p>ترجمه های ارائه شده در این نسخه  در واقع ترجمه ایی از آیات الهی نیست نگاشت ، نگارش با برداشتی از قرآن عظیم در زبان فارسی است. برای دست یابی به نگارش های کامل تر و پیرایش و پالایش شده تر به کتاب قرآن عظیم رجوع فرمایید که در آن آیات الهی به طور کامل در حاشیه یا در طرف مقایل آمده است و در مرحله ویرایش و پیرایش است و به زودی انشاالله از سوی این اتتشارات ، انتشار خواهد یافت.</p><p>این قرآن رنگی با قواعد تجویدی از سوی ویراستاران گرامی در حال پالایش و ویرایش است.</p><p>برای دستیابی که به ترجمه قرآن و  شرح مفصلی در باره مشکلات ترجمه و چالش های مفهومی به کتاب قرآن عظیم رجوع فرمایید(در حال انتشار).</p><p class="signature">جلال الدین ولی الله به تاریخ 28 اردیبهشت  1405 وَالسَّلَامُ عَلَى مَنِ اتَّبَعَ الْهُدَى ﴿۴۷﴾ طه</p>
+      </section>
 
-<section id="woman">
-    <h2>اندر شرح مقام زن</h2>
-    <p class="placeholder">[مطالب این بخش بعداً درج خواهد شد.]</p>
-</section>
+      <details class="accordion">
+        <summary>مشخصات و شناسنامهٔ کتاب</summary>
+        <div class="accordion-content">
+          <dl class="spec-list">
+            <div class="spec-row"><dt>‏سرشناسه</dt><dd>: — ولی الهی جلال - ولی‌الله، جلال‌الدین، ‏‫۱۳۴۰‏-‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬</dd></div>
+<div class="spec-row"><dt>مشخصات</dt><dd>‏عنوان و نام پديدآور</dd></div>
+<div class="spec-row"><dt>عنوان فرعی</dt><dd>: — و  این کتاب عشق است. تجلی عشق ، عرفان و برهان  در قرآن عظیم</dd></div>
+<div class="spec-row"><dt>مشخصات</dt><dd>تعابیر  و تفاسیربدیع از آیات قرآن عظیم درنگاشتی  دانشگاهی ، گزیده ایی از  چالش‌های مفهمومی   در  ترجمه‌های  قرآن کریم و پی نگاشتیهایی از مجمع التفاسیر ابراهیم عاملی و دیگر مفسران  همراه با  گزینشی ازیافته های علمی و عرفانی   از عالمان و عارفان و شاعران  بزرگ / جلال‌الدین ولی‌الله.</dd></div>
+<div class="spec-row"><dt>‏مشخصات نشر</dt><dd>: — تهران: انتشارات صالحین‏‫، ۱۴۰5‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬</dd></div>
+<div class="spec-row"><dt>‏مشخصات ظاهری</dt><dd>: — ‏‫672 ص.‬‬ قطع وزیری ، جلد گالینگور‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬</dd></div>
+<div class="spec-row"><dt>‏شابک</dt><dd>: — ‭978-622-19611-0-8‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬</dd></div>
+<div class="spec-row"><dt>موضوع                         </dt><dd>تفسیر و تعبیر آیات الهی</dd></div>
+<div class="spec-row"><dt>‏سال نشر</dt><dd>: — 1405</dd></div>
+<div class="spec-row"><dt>‏نوبت چاپ</dt><dd>: — اول</dd></div>
+<div class="spec-row"><dt>‏تیراژ</dt><dd>: — 10000</dd></div>
+<div class="spec-row"><dt>یادداشت حقوق نشر</dt><dd>کلیه حقوق اعم از چاپ ونشر و کپی و اقتباس نشر الکترونیکی و فروش و هر شکل دیگر بهره براری در انحصار  انتشارت صالین است. و هر گونه استفاده غیرقانوی مورد پیگرد قرار می گیرد. چاپ و نشر و توزیع از انتشارات صالحین. شماره تلفن: 09125791009</dd></div>
+          </dl>
+        </div>
+      </details>
 
-<section id="majazi">
-    <h2>عشق مجازی</h2>
-    <p class="placeholder">[مطالب این بخش بعداً درج خواهد شد.]</p>
-</section>
+      <details class="accordion">
+        <summary>فهرست سوره‌ها و مطالب کتاب</summary>
+        <div class="accordion-content">
+          <p class="toc-note">فهرست کامل مطالب و شمارهٔ صفحه‌ها، مطابق متن ارسالی نویسنده:</p>
+          <ol class="toc-list">
+            <li><span class="toc-title">مقدّمه:</span><span class="toc-page">13</span></li>
+<li><span class="toc-title">اما چرا مجمع تفاسیر ابراهیم عاملی؟</span><span class="toc-page">15</span></li>
+<li><span class="toc-title">سورةُ الفَاتِحَة</span><span class="toc-page">22</span></li>
+<li><span class="toc-title">سورةُ البَقَرة</span><span class="toc-page">25</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">27</span></li>
+<li><span class="toc-title">اندر شرح بسم الله، :</span><span class="toc-page">31</span></li>
+<li><span class="toc-title">اندر شرح حیات:</span><span class="toc-page">41</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">48</span></li>
+<li><span class="toc-title">اندر شرح حیات و هدف آن:</span><span class="toc-page">65</span></li>
+<li><span class="toc-title">سورةُ آل‏عِمرَان‏</span><span class="toc-page">73</span></li>
+<li><span class="toc-title">اندر شرح عشق،</span><span class="toc-page">74</span></li>
+<li><span class="toc-title">اندر شرح معنای زندگی:</span><span class="toc-page">78</span></li>
+<li><span class="toc-title">اندر شرح عشق،</span><span class="toc-page">78</span></li>
+<li><span class="toc-title">اندر شرح عشق،</span><span class="toc-page">80</span></li>
+<li><span class="toc-title">اندر شرح عشق و فراق:</span><span class="toc-page">81</span></li>
+<li><span class="toc-title">اندر شرح عشق :</span><span class="toc-page">82</span></li>
+<li><span class="toc-title">اندر شرح علم و عشق،</span><span class="toc-page">84</span></li>
+<li><span class="toc-title">اندردر باب علم: علم</span><span class="toc-page">86</span></li>
+<li><span class="toc-title">در معنی اسلام :</span><span class="toc-page">87</span></li>
+<li><span class="toc-title">در شرح علم:</span><span class="toc-page">87</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">91</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">93</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">95</span></li>
+<li><span class="toc-title">سورةُ النِسَاء</span><span class="toc-page">96</span></li>
+<li><span class="toc-title">لغو بردگی :</span><span class="toc-page">97</span></li>
+<li><span class="toc-title">اندر شرح عشق و در باب مقام زن:</span><span class="toc-page">97</span></li>
+<li><span class="toc-title">در شرح عشق و در باب مقام زن:</span><span class="toc-page">99</span></li>
+<li><span class="toc-title">در شرح مهریۀ زنان:</span><span class="toc-page">101</span></li>
+<li><span class="toc-title">در معنی نفس</span><span class="toc-page">102</span></li>
+<li><span class="toc-title">در مدح انفاق و در مذمت بٌخل گوید:</span><span class="toc-page">105</span></li>
+<li><span class="toc-title">در نکوهش تغییر خلقت خدا:</span><span class="toc-page">113</span></li>
+<li><span class="toc-title">در معانی عدل و حقّ:</span><span class="toc-page">114</span></li>
+<li><span class="toc-title">در مزمت غیبت:</span><span class="toc-page">116</span></li>
+<li><span class="toc-title">در شرح عشق مریم:</span><span class="toc-page">119</span></li>
+<li><span class="toc-title">در مستی عشق</span><span class="toc-page">119</span></li>
+<li><span class="toc-title">اندر شرح عشق و مقام زن در قرآن:</span><span class="toc-page">121</span></li>
+<li><span class="toc-title">سورةُ المَائدة</span><span class="toc-page">123</span></li>
+<li><span class="toc-title">در نکوش قتل</span><span class="toc-page">129</span></li>
+<li><span class="toc-title">وحی و الهام</span><span class="toc-page">140</span></li>
+<li><span class="toc-title">عشق و اشک</span><span class="toc-page">141</span></li>
+<li><span class="toc-title">سورةُ الأنعَام‏</span><span class="toc-page">143</span></li>
+<li><span class="toc-title">اندر شرح عالم</span><span class="toc-page">143</span></li>
+<li><span class="toc-title">رحمت محض سرشته  در وجود خالق عشق</span><span class="toc-page">145</span></li>
+<li><span class="toc-title">هر چه خواهی از خدا خواه</span><span class="toc-page">146</span></li>
+<li><span class="toc-title">لِقاءِاللهِ</span><span class="toc-page">148</span></li>
+<li><span class="toc-title">سورةُ الأعرَاف‏</span><span class="toc-page">164</span></li>
+<li><span class="toc-title">سورةُ الأنفَال</span><span class="toc-page">181</span></li>
+<li><span class="toc-title">اندر شرح عشق،</span><span class="toc-page">182</span></li>
+<li><span class="toc-title">منیّت را اگر از خود برانی / بینی آنچه گوید لن ترانی</span><span class="toc-page">183</span></li>
+<li><span class="toc-title">تعبیر بدیع از حضور خدا در قلب مومن</span><span class="toc-page">184</span></li>
+<li><span class="toc-title">عالم گیری عشق</span><span class="toc-page">186</span></li>
+<li><span class="toc-title">اسلام دین صلح</span><span class="toc-page">187</span></li>
+<li><span class="toc-title">اندر شرح عشق در قرآن:</span><span class="toc-page">188</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">190</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">192</span></li>
+<li><span class="toc-title">اندر شرح عشق: عشق در پرستش:</span><span class="toc-page">193</span></li>
+<li><span class="toc-title">عشق در رابطه با دیگران:</span><span class="toc-page">193</span></li>
+<li><span class="toc-title">اولیاء الله رهبران یکدیگر و رهبران عالم اند.</span><span class="toc-page">194</span></li>
+<li><span class="toc-title">اندر شرح عشق:  از دیدگاه  عرفا و مولانا</span><span class="toc-page">195</span></li>
+<li><span class="toc-title">سورةُ التّوبَة</span><span class="toc-page">197</span></li>
+<li><span class="toc-title">اندر شرح عشق : از نظر امام محمد غزالی</span><span class="toc-page">198</span></li>
+<li><span class="toc-title">«أَعْظَمُ دَرَجَه»: اندر شرح عشق مجازی:</span><span class="toc-page">200</span></li>
+<li><span class="toc-title">اندر شرح عشق: مشروعیت عشق:</span><span class="toc-page">201</span></li>
+<li><span class="toc-title">اندر شرح عشق: «وَ اللّهُ غَفُورٌ رَحيمٌ»:</span><span class="toc-page">202</span></li>
+<li><span class="toc-title">تصعید عشق:</span><span class="toc-page">202</span></li>
+<li><span class="toc-title">اندر شرح عشق: نوری بر قلب</span><span class="toc-page">203</span></li>
+<li><span class="toc-title">اندر شرح تداوم عشق:</span><span class="toc-page">205</span></li>
+<li><span class="toc-title">سورةُ يُونس‏</span><span class="toc-page">214</span></li>
+<li><span class="toc-title">سورةُ هُود</span><span class="toc-page">225</span></li>
+<li><span class="toc-title">سورةُ يُوسُف‏</span><span class="toc-page">231</span></li>
+<li><span class="toc-title">اندر شرح عشق : یوسف و زلیخا</span><span class="toc-page">231</span></li>
+<li><span class="toc-title">اندر شرح عشق مثلث عشق</span><span class="toc-page">234</span></li>
+<li><span class="toc-title">اندر شرح عشق زلیخا</span><span class="toc-page">238</span></li>
+<li><span class="toc-title">عشق بنده به خالق هستی</span><span class="toc-page">241</span></li>
+<li><span class="toc-title">اندر شرح عشق یعقوب به یوسف:</span><span class="toc-page">243</span></li>
+<li><span class="toc-title">تعریف عشق</span><span class="toc-page">245</span></li>
+<li><span class="toc-title">اندر شرح عشق:  در قرآن</span><span class="toc-page">246</span></li>
+<li><span class="toc-title">سورةُ الرّعد</span><span class="toc-page">248</span></li>
+<li><span class="toc-title">سورةُ إبراهيم‏</span><span class="toc-page">253</span></li>
+<li><span class="toc-title">سورةُ الحِجْر</span><span class="toc-page">255</span></li>
+<li><span class="toc-title">اندرشرح روح خدا</span><span class="toc-page">256</span></li>
+<li><span class="toc-title">سورةُ النّحل‏</span><span class="toc-page">259</span></li>
+<li><span class="toc-title">سورةُ الإسرَاء</span><span class="toc-page">266</span></li>
+<li><span class="toc-title">سورةُ الكهف‏</span><span class="toc-page">275</span></li>
+<li><span class="toc-title">سورةُ مَريَم‏</span><span class="toc-page">283</span></li>
+<li><span class="toc-title">سورةُ طه‏</span><span class="toc-page">289</span></li>
+<li><span class="toc-title">سورةُ الأنبيَاء</span><span class="toc-page">295</span></li>
+<li><span class="toc-title">سورةُ الحَجّ‏</span><span class="toc-page">301</span></li>
+<li><span class="toc-title">سورةُ المؤمنون‏</span><span class="toc-page">310</span></li>
+<li><span class="toc-title">سورةُ النّور</span><span class="toc-page">318</span></li>
+<li><span class="toc-title">اندر شرح نور:</span><span class="toc-page">318</span></li>
+<li><span class="toc-title">تفسیر مادی نور از نظر علوم طبیعی:</span><span class="toc-page">324</span></li>
+<li><span class="toc-title">سورةُ الفرقان‏</span><span class="toc-page">327</span></li>
+<li><span class="toc-title">سورةُ الشُّعَرَاء</span><span class="toc-page">334</span></li>
+<li><span class="toc-title">سورةُ النَّمل‏</span><span class="toc-page">345</span></li>
+<li><span class="toc-title">اندر شرح بهشت</span><span class="toc-page">350</span></li>
+<li><span class="toc-title">سورةُ القَصَص‏</span><span class="toc-page">354</span></li>
+<li><span class="toc-title">سورةُ العَنكبوت‏</span><span class="toc-page">361</span></li>
+<li><span class="toc-title">سورةُ الرُّوم‏</span><span class="toc-page">367</span></li>
+<li><span class="toc-title">سورةُ لقمَان‏</span><span class="toc-page">375</span></li>
+<li><span class="toc-title">سورةُ السَّجدَه‏</span><span class="toc-page">381</span></li>
+<li><span class="toc-title">سورةُ الأحزَاب‏</span><span class="toc-page">385</span></li>
+<li><span class="toc-title">سورةُ سَبَإ</span><span class="toc-page">396</span></li>
+<li><span class="toc-title">سورةُ فَاطِر</span><span class="toc-page">399</span></li>
+<li><span class="toc-title">سخن نگارشگر اندر شرح عشق:</span><span class="toc-page">404</span></li>
+<li><span class="toc-title">سورةُ يس‏</span><span class="toc-page">407</span></li>
+<li><span class="toc-title">سورةُ الصَّافات‏</span><span class="toc-page">413</span></li>
+<li><span class="toc-title">سورةُ ص‏</span><span class="toc-page">420</span></li>
+<li><span class="toc-title">سورةُ الزُّمَر</span><span class="toc-page">427</span></li>
+<li><span class="toc-title">اندر در شرح عشق:</span><span class="toc-page">429</span></li>
+<li><span class="toc-title">سورةُ غَافر</span><span class="toc-page">438</span></li>
+<li><span class="toc-title">شرح مه بانگ و لحضات آغازین جهان ما</span><span class="toc-page">443</span></li>
+<li><span class="toc-title">سورةُ فُصّلَت‏</span><span class="toc-page">451</span></li>
+<li><span class="toc-title">اندر شرح هوشمندی عالم</span><span class="toc-page">454</span></li>
+<li><span class="toc-title">تعبیر عشق به حظ عظیم</span><span class="toc-page">455</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">456</span></li>
+<li><span class="toc-title">سورةُ الشّورى‏</span><span class="toc-page">460</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">468</span></li>
+<li><span class="toc-title">سورةُ الزخرُف‏</span><span class="toc-page">469</span></li>
+<li><span class="toc-title">اندر شرح عالم</span><span class="toc-page">470</span></li>
+<li><span class="toc-title">اندر شرح امت واحده</span><span class="toc-page">473</span></li>
+<li><span class="toc-title">هدف حیات</span><span class="toc-page">476</span></li>
+<li><span class="toc-title">سورةُ الدّخان‏</span><span class="toc-page">479</span></li>
+<li><span class="toc-title">پایان دنیا</span><span class="toc-page">480</span></li>
+<li><span class="toc-title">معنای زندگی و قهرمان عشق</span><span class="toc-page">481</span></li>
+<li><span class="toc-title">سورةُ الجَاثيَة</span><span class="toc-page">483</span></li>
+<li><span class="toc-title">اندر شرح عقل</span><span class="toc-page">483</span></li>
+<li><span class="toc-title">سورةُ الأحقاف‏</span><span class="toc-page">489</span></li>
+<li><span class="toc-title">سورةُ محَمَّد</span><span class="toc-page">493</span></li>
+<li><span class="toc-title">سورةُ الفَتْح‏</span><span class="toc-page">498</span></li>
+<li><span class="toc-title">سورةُ الحُجُرات‏</span><span class="toc-page">505</span></li>
+<li><span class="toc-title">سورةُ ق‏</span><span class="toc-page">510</span></li>
+<li><span class="toc-title">سورةُ الذّاريَات‏</span><span class="toc-page">514</span></li>
+<li><span class="toc-title">سورةُ الطُّور</span><span class="toc-page">519</span></li>
+<li><span class="toc-title">قدرت پاینده</span><span class="toc-page">519</span></li>
+<li><span class="toc-title">سورةُ النّجْم‏</span><span class="toc-page">523</span></li>
+<li><span class="toc-title">سورةُ القَمَر</span><span class="toc-page">527</span></li>
+<li><span class="toc-title">در وارای واقعیت این عالم چیست؟</span><span class="toc-page">528</span></li>
+<li><span class="toc-title">سورةُ الرَّحمن</span><span class="toc-page">532</span></li>
+<li><span class="toc-title">سورةُ الواقِعَة</span><span class="toc-page">537</span></li>
+<li><span class="toc-title">علم بشر متغیر، ناقص، غیرقطعی و قابل‌تردید</span><span class="toc-page">537</span></li>
+<li><span class="toc-title">سورةُ الحَديد</span><span class="toc-page">543</span></li>
+<li><span class="toc-title">اندر شرح عشق مجاز و حقیقت</span><span class="toc-page">544</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">545</span></li>
+<li><span class="toc-title">اندر شرح عشق: آن بهشت نهان و گنج پنهان</span><span class="toc-page">547</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">547</span></li>
+<li><span class="toc-title">سورةُ المجَادلة</span><span class="toc-page">551</span></li>
+<li><span class="toc-title">سورةُ الحَشر</span><span class="toc-page">555</span></li>
+<li><span class="toc-title">اندر شرح غایت عشق</span><span class="toc-page">559</span></li>
+<li><span class="toc-title">اندر شرح عشق:</span><span class="toc-page">560</span></li>
+<li><span class="toc-title">سورةُ المُمتَحنَة</span><span class="toc-page">561</span></li>
+<li><span class="toc-title">سورةُ الصَّف‏</span><span class="toc-page">565</span></li>
+<li><span class="toc-title">سورةُ الجُمُعة</span><span class="toc-page">567</span></li>
+<li><span class="toc-title">سورةُ المنَافِقون‏</span><span class="toc-page">569</span></li>
+<li><span class="toc-title">سورةُ التّغَابُن‏</span><span class="toc-page">570</span></li>
+<li><span class="toc-title">اندر شرح مهار شوق نفس:</span><span class="toc-page">571</span></li>
+<li><span class="toc-title">سورةُ الطلاق‏</span><span class="toc-page">573</span></li>
+<li><span class="toc-title">سورةُ التّحريم‏</span><span class="toc-page">575</span></li>
+<li><span class="toc-title">اندر آزادی و کرامت زنان</span><span class="toc-page">575</span></li>
+<li><span class="toc-title">سورةُ المُلك‏</span><span class="toc-page">577</span></li>
+<li><span class="toc-title">سورةُ القَلَم‏</span><span class="toc-page">580</span></li>
+<li><span class="toc-title">معلم عشق، صاحب خلق عظیم</span><span class="toc-page">580</span></li>
+<li><span class="toc-title">سورةُ الحَاقّة</span><span class="toc-page">583</span></li>
+<li><span class="toc-title">سورةُ المعَارج‏</span><span class="toc-page">587</span></li>
+<li><span class="toc-title">اندر شرح عالم</span><span class="toc-page">588</span></li>
+<li><span class="toc-title">سورةُ نُوح‏</span><span class="toc-page">589</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">590</span></li>
+<li><span class="toc-title">سورةُ الجنّ‏</span><span class="toc-page">592</span></li>
+<li><span class="toc-title">سورةُ المُزّمّل‏</span><span class="toc-page">595</span></li>
+<li><span class="toc-title">اندر شرح عالم:</span><span class="toc-page">596</span></li>
+<li><span class="toc-title">سورةُ المدَّثِّر</span><span class="toc-page">597</span></li>
+<li><span class="toc-title">سورةُ القِيَامَة</span><span class="toc-page">600</span></li>
+<li><span class="toc-title">سورةُ الإنسَان‏</span><span class="toc-page">602</span></li>
+<li><span class="toc-title">سورةُ المُرسَلات‏</span><span class="toc-page">606</span></li>
+<li><span class="toc-title">سورةُ النّبَإ</span><span class="toc-page">609</span></li>
+<li><span class="toc-title">سورةُ النّازِعَات‏</span><span class="toc-page">610</span></li>
+<li><span class="toc-title">انا ربکم اعلی</span><span class="toc-page">612</span></li>
+<li><span class="toc-title">سورةُ عَبَسَ‏</span><span class="toc-page">614</span></li>
+<li><span class="toc-title">سورةُ التّكوير</span><span class="toc-page">615</span></li>
+<li><span class="toc-title">سورةُ الانفِطار</span><span class="toc-page">617</span></li>
+<li><span class="toc-title">سورةُ المطفّفِين‏</span><span class="toc-page">618</span></li>
+<li><span class="toc-title">نتیجه‌گیری از لحظة وقوع مه‌بانگ:</span><span class="toc-page">620</span></li>
+<li><span class="toc-title">سورةُ الانشقاق‏</span><span class="toc-page">620</span></li>
+<li><span class="toc-title">سخن نگارشگر اندر شرح عالم:</span><span class="toc-page">621</span></li>
+<li><span class="toc-title">سورةُ البُرُوج‏</span><span class="toc-page">622</span></li>
+<li><span class="toc-title">سورةُ الطّارق‏</span><span class="toc-page">623</span></li>
+<li><span class="toc-title">اندر شرح اعجاز قرآن</span><span class="toc-page">624</span></li>
+<li><span class="toc-title">سورةُ الأعلى‏</span><span class="toc-page">625</span></li>
+<li><span class="toc-title">سورةُ الغَاشِيَة</span><span class="toc-page">625</span></li>
+<li><span class="toc-title">نمونه‌های بی‌نظیری از رفتارهای پیامبر خدا (ص):</span><span class="toc-page">626</span></li>
+<li><span class="toc-title">سورةُ الفَجر</span><span class="toc-page">627</span></li>
+<li><span class="toc-title">سورةُ البَلَد</span><span class="toc-page">628</span></li>
+<li><span class="toc-title">سورةُ الشّمس‏</span><span class="toc-page">629</span></li>
+<li><span class="toc-title">سورةُ الليْل‏</span><span class="toc-page">630</span></li>
+<li><span class="toc-title">سورةُ الضّحى‏</span><span class="toc-page">630</span></li>
+<li><span class="toc-title">سورةُ الشَّرح‏</span><span class="toc-page">630</span></li>
+<li><span class="toc-title">سورةُ التِّين‏</span><span class="toc-page">632</span></li>
+<li><span class="toc-title">سورةُ العَلق‏</span><span class="toc-page">633</span></li>
+<li><span class="toc-title">سورةُ القَدر</span><span class="toc-page">633</span></li>
+<li><span class="toc-title">سورةُ البَيّنَة</span><span class="toc-page">635</span></li>
+<li><span class="toc-title">سورةُ الزّلزَلة</span><span class="toc-page">635</span></li>
+<li><span class="toc-title">سورةُ العَاديَات‏</span><span class="toc-page">636</span></li>
+<li><span class="toc-title">سورةُ القَارعَة</span><span class="toc-page">637</span></li>
+<li><span class="toc-title">سورةُ التّكاثُر</span><span class="toc-page">637</span></li>
+<li><span class="toc-title">سورةُ العَصر</span><span class="toc-page">638</span></li>
+<li><span class="toc-title">سورةُ الهُمَزة</span><span class="toc-page">639</span></li>
+<li><span class="toc-title">سورةُ الفِيل‏</span><span class="toc-page">640</span></li>
+<li><span class="toc-title">سورةُ قُرَيش‏</span><span class="toc-page">641</span></li>
+<li><span class="toc-title">سورةُ المَاعون‏</span><span class="toc-page">641</span></li>
+<li><span class="toc-title">سورةُ الكوثر</span><span class="toc-page">642</span></li>
+<li><span class="toc-title">سورةُ الكافِرون‏</span><span class="toc-page">642</span></li>
+<li><span class="toc-title">سورةُ المَسَد</span><span class="toc-page">644</span></li>
+<li><span class="toc-title">سورةُ الإخلاص‏</span><span class="toc-page">644</span></li>
+<li><span class="toc-title">سورةُ الفَلَق‏</span><span class="toc-page">645</span></li>
+<li><span class="toc-title">سورةُ النَّاس‏</span><span class="toc-page">646</span></li>
+          </ol>
+        </div>
+      </details>
 
-<section id="haghighi">
-    <h2>عشق حقیقی</h2>
-    <p class="placeholder">[مطالب این بخش بعداً درج خواهد شد.]</p>
-</section>
+      <div class="bottom-actions">
+        <a class="action-button" href="index.html#culture">بازگشت به بخش دین، فرهنگ و میراث بشری</a>
+        <a class="action-button secondary" href="buy-book1.html">خرید نسخهٔ چاپی کتاب</a>
+      </div>
+    </main>
 
-<section id="tafasir">
-    <h2>شرح تاریخی تفاسیر نام‌برده‌شده توسط ابراهیم عاملی در صفحات دو تا شانزده مقدمه او بر مجمع‌التفاسیر خود</h2>
-
-    <p>
-    ذکر این قسمت از آن جهت ضروری است که در متن کتاب و در جلو تفاسیر و عبارات نام مفسرین آمده است و محققین جوان برای جستجوی نام و آثار آنان به این اسامی نیاز خواهند داشت. ایشان اول مفسرین اولیه را در چند رشته بیان می‌کند:
-    </p>
-
-    <h3>رشته اول: اصحاب ابن‌عباس که علمای مکه بوده‌اند</h3>
-    <ol>
-        <li>مجاهد جبیر مکی که در سال صد و سه وفات کرده است.</li>
-        <li>سعید بن جبیر که در سال نود و چهار مرده است.</li>
-        <li>عکرمه مولای ابن‌عباس، متوفای سال صد و پنج.</li>
-        <li>طاوس بن کیسان یمانی که به سال صد و شش در مکه وفات کرده است.</li>
-        <li>عطاء بن ابی‌رباح مکی که در سال صد و چهارده مرده است.</li>
-    </ol>
-
-    <h3>رشته دوم: اصحاب ابن‌مسعود</h3>
-    <p>اصحاب ابن‌مسعود از او استفاده و نقل تفسیر کرده‌اند و آنان علمای کوفه بوده‌اند:</p>
-    <ol>
-        <li>علقمة بن قیس، متوفای سال صد و دو.</li>
-        <li>اسود بن یزید که به سال هفتاد و پنج مرده است.</li>
-        <li>ابراهیم نخعی که در سال نود و پنج وفات کرده است.</li>
-        <li>شعبی، متوفای صد و پنج.</li>
-    </ol>
-
-    <h3>رشته سوم: اصحاب و شاگردان زید بن اسلم</h3>
-    <ol>
-        <li>عبدالرحمان بن زید.</li>
-        <li>مالک بن انس.</li>
-    </ol>
-
-    <h3>رشته چهارم: از تابعین</h3>
-    <ol>
-        <li>حسن بصری، متوفای سال صد و بیست و یک.</li>
-        <li>عطاء بن سلمه میسره خراسانی.</li>
-        <li>محمد بن کعب قرظی، متوفای سال صد و هفده.</li>
-        <li>ابوالعالیه رفیع بن مهران ریاحی که به سال نود هجری مرده است.</li>
-        <li>ضحاک بن مزاحم.</li>
-        <li>عطیه بن سعید عوفی، متوفای سال صد و یازده.</li>
-        <li>ربیع بن انس.</li>
-        <li>سدی.</li>
-        <li>قتاده بن دعامه سدوسی، متوفای سال صد و هفده.</li>
-    </ol>
-
-    <p>
-    در کتاب «الشیعه و فنون الاسلام»، صفحه یازده، نوشته است: اول کسی که تفسیر نوشت سعید بن جبیر تابعی بود و شهادت او در سال شصت و چهار بوده است. و دیگر از تفاسیری که شیعه نوشته‌اند، کتاب جابر بن یزید جعفی است که امام در فن تفسیر بوده است و مطالب خود را از امام باقر (ع) گرفته است.
-    </p>
-
-    <h3>از مفسران اول، مثل عکرمه و مجاهد و ضحاک، تا قرن یازدهم هجری</h3>
-    <ol>
-        <li>تفسیر ابن جریح، به نام عبدالملک فرزند عبدالعزیز اموی مکی، متوفای سال صد و پنجاه.</li>
-        <li>تفسیر ابن‌عباس که مختصر است و ممزوج.</li>
-        <li>تفسیر سفیان بن عیینه که ثعلبی نقل کرده است.</li>
-        <li>تفسیر مقاتل بن سلیمان بن بشر ازدی که به سال صد و پنجاه وفات کرده است.</li>
-        <li>تفسیر ادفوی، محمد بن علی بن احمد مقری نحوی، که به سال سیصد و هشتاد و هشت مرده است و کتابی به نام «الاستغناء فی علم القرآن» را در مدت دوازده سال، در یکصد و بیست مجلد نوشته است.</li>
-        <li>تفسیر زید بن اسلم عدوی مدنی، متوفای سال سی و شش.</li>
-        <li>تفسیر «مواهب علیه»، تألیف حسین بن علی کاشفی واعظی که حدود نهصد هجری وفات کرده است؛ به نام «تفسیر حسینی».</li>
-        <li>تفسیر خلف بن احمد، فرمانروای سیستان، که به سال سیصد و نود و نه وفات کرده است و از بزرگ‌ترین کتاب‌های تفسیر است.</li>
-        <li>تفسیر ابی‌بکر عتیق بن محمد هروی که فارسی است و در زمان الب‌ارسلان سلجوقی نوشته شده است.</li>
-        <li>«اسباب النزول»، که نخستین کتاب در سبب نزول آیات معرفی شده است، تألیف علی بن مدینی، متوفای سال دویست و سی و چهار.</li>
-        <li>تفسیر خواجه محمد پارسا، محمد بن محمود حافظی بخاری، متوفای سال هشتصد و سی.</li>
-        <li>عبدالله بن ابی‌جعفر رازی، کتابی به نام «ضیاء القلوب» نوشته است و به قول ثعلبی در کتاب «الکشف و البیان» از مفسران قدیم است.</li>
-        <li>تفسیر شعبه بن حجاج بصری، متوفای سال صد و شصت.</li>
-        <li>تفسیر کلبی، محمد بن سائب مشهور به کلبی، که به ابن‌عباس منتهی می‌شود.</li>
-        <li>تفسیر ابوالحجاج مجاهد بن جبیر مکی، متوفای سال صد و چهار؛ «تنویر المقباس فی تفسیر ابن‌عباس».</li>
-        <li>تفسیر دیگری به نام سورآبادی، با این عنوان: «الشیخ الامام الزاهد ابی‌بکر عتیق بن محمد».</li>
-    </ol>
-
-    <p>
-    چهار جلد تألیف ابوطاهر محمد بن یعقوب فیروزآبادی، متوفای سال هشتصد و هفده، به نام «تنویر المقباس». این تفسیر غیر از تفسیر امام باقر است که ابن‌ندیم از آن حضرت نقل کرده و گفته است آن را ابوالجارود زیاد بن منذر از آن حضرت نقل و تدوین کرده است.
-    </p>
-
-    <h3>دائرةالمعارف فرید وجدی</h3>
-    <p>
-    دائرةالمعارف فرید وجدی، حرف فاء، صفحه ۲۸۶: اولین تفسیری که در دسترس مردم قرار گرفت، کتاب منسوب به ابن‌عباس، متوفای سال شصت و هشت هجری است که در مصر در سال هزار و دویست و نود چاپ شده است. پس از آن تفسیر طبری، متوفای سال سیصد و ده؛ بعد از آن تفسیر «غریب القرآن» ابوبکر محمد بجستانی است که در سال سیصد و سی وفات کرده است؛ و پس از آن تفسیر امام حافظ ابواللیث نصر محمد سمرقندی، متوفای سال سیصد و هفتاد و پنج.
-    </p>
-
-    <h3>ترجمه اعجاز القرآن</h3>
-    <p>
-    ترجمه «اعجاز القرآن»، مصطفی رافعی، به قلم عبدالحسین ابن‌الدین: ابوعلی اسواری که داستان‌سرایی بلیغ بود، سوره بقره را تا سی و شش سال تفسیر کرد و هنوز تمام نشده بود که از دنیا رفت.
-    </p>
-
-    <h3>منابع تفسیری مورد استفاده ابراهیم عاملی</h3>
-    <p>
-    در عین حال، علامه ابراهیم موثق عاملی از مفسرین و مترجمین معاصر خود تا سال ۱۳۴۵ استفاده کرده است و در سال ۱۳۴۷ دار فانی را ترک کرده و به دیدار یار و دیار باقی شتافته است. روحش شاد و قرین رحمت ابدی باد، به همراه همه عالمان و مترجمان و عارفان و مفسران قرآن عظیم. آمین یا رب العالمین.
-    </p>
-
-    <p>
-    ایشان علاوه بر تفسیر طبری و تفسیر ابوالفتوح رازی و مفسرینی که در بالا یاد کرده است، از تفسیر «فی ظلال القرآن»، «المیزان»، «روح البیان»، «مجمع البیان»، تفسیر طنطاوی، «کشف الاسرار»، امام فخر رازی در کتاب تفسیر خود به نام «مفاتیح الغیب» مشهور به تفسیر کبیر، تفسیر «کشاف» زمخشری، تفسیر محمود بن حمزه کرمانی، ابوعاصم النبیل ضحاک بن مخلد شیبانی بصری، ترجمه «اعجاز القرآن» مصطفی رافعی به قلم عبدالحسین ابن‌الدین، تفسیر منظوم صفی‌علیشاه، ابواسحاق زجاج، ابوعلی فارسی، مکی بن ابی‌طالب و ابوالعباس مهدوی و بسیاری دیگر استفاده کرده است.
-    </p>
-
-    <div class="note">
-        برای دستیابی به ترجمه قرآن و شرح مفصلی درباره مشکلات ترجمه و چالش‌های مفهومی، به کتاب «قرآن عظیم» رجوع فرمایید (در حال انتشار).
-    </div>
-
-    <div class="signature">
-        جلال‌الدین ولی‌الله<br>
-        به تاریخ ۲۸ اردیبهشت ۱۴۰۵<br>
-        وَالسَّلَامُ عَلَى مَنِ اتَّبَعَ الْهُدَى ﴿۴۷﴾ طه
-    </div>
-
-    <div class="note">
-        <strong>برای دست‌یابی به همه تفاسیر بدیع از قرآن عظیم، به بخش خرید کتاب چاپی رجوع فرمایید.</strong>
-    </div>
-</section>
-
-<section id="other">
-    <h2>سایر موضوعات</h2>
-    <p class="placeholder">[مطالب و موضوعات دیگر کتاب در این قسمت درج خواهد شد.]</p>
-</section>
-
-<section id="reviews">
-    <h2>نقد، نظرات و پیشنهادات</h2>
-    <p class="placeholder">[نقدها، دیدگاه‌های صاحب‌نظران و نظرات خوانندگان بعداً در این قسمت درج خواهد شد.]</p>
-</section>
-
-<section id="purchase" class="purchase">
-    <h2>خرید کتاب چاپی</h2>
-    <p><strong>در حال حاضر فقط نسخه کامل چاپی کتاب عرضه می‌شود.</strong></p>
-    <p>خرید جداگانه بخش‌ها و نسخه PDF در حال حاضر ارائه نمی‌شود.</p>
-    <p class="placeholder">[قیمت کتاب، هزینه ارسال و روش سفارش بعداً درج خواهد شد.]</p>
-    <p>برای سفارش و کسب اطلاعات بیشتر با انتشارات صالحین تماس بگیرید:</p>
-    <p>salhin.publications@proton.me</p>
-</section>
-
-</main>
-
-<footer>
-    <p>انتشارات صالحین | Salihin Publications</p>
-    <a href="index.html">صفحه اصلی فارسی</a>
-    <a href="en/book1r-en.html">نسخه انگلیسی این کتاب</a>
-    <a href="index.html">بازگشت به صفحه اصلی انتشارات</a>
-</footer>
-
+    <footer>
+      <strong>انتشارات صالحین</strong>
+      <div>ناشر و عرضه‌کنندهٔ کتاب «و این کتاب عشق است»</div>
+      <div>تهران | سال نشر: ۱۴۰۵</div>
+      <div>تلفن انتشارات: <span dir="ltr">09125791009</span></div>
+      <div>رایانامهٔ انتشارات: <span dir="ltr">salhin.publications@proton.me</span></div>
+      <div class="footer-links">
+        <a href="index.html#home">صفحهٔ اول</a>
+        <a href="index.html#culture">دین، فرهنگ و میراث بشری</a>
+        <a href="buy-book1.html">خرید کتاب</a>
+        <a href="review.html">نقد و نظرات</a>
+        <a href="contact.html">تماس با ما</a>
+        <a href="book1r-en.html" lang="en" dir="ltr">English version</a>
+      </div>
+      <div>کلیهٔ حقوق مادی و معنوی اثر برای انتشارات صالحین محفوظ است.</div>
+    </footer>
+  </div>
+<script>
+(function () {
+  const groups = Array.from(document.querySelectorAll('.main-nav .nav-group'));
+  function closeAll(except) {
+    groups.forEach(function (group) {
+      if (group !== except) {
+        group.classList.remove('open');
+        const button = group.querySelector('.nav-trigger');
+        if (button) button.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+  groups.forEach(function (group) {
+    const button = group.querySelector('.nav-trigger');
+    if (!button) return;
+    button.addEventListener('click', function (event) {
+      event.stopPropagation();
+      const open = !group.classList.contains('open');
+      closeAll(group);
+      group.classList.toggle('open', open);
+      button.setAttribute('aria-expanded', String(open));
+    });
+  });
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.nav-group')) closeAll();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeAll();
+  });
+  document.querySelectorAll('.main-nav .dropdown a').forEach(function (link) {
+    link.addEventListener('click', closeAll);
+  });
+})();
+</script>
 </body>
 </html>
