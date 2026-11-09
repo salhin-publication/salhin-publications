@@ -5,381 +5,1228 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>انتشارات صالحین | Salihin Publications</title>
   <meta name="description" content="انتشارات صالحین؛ انتشار و معرفی آثار ادبی، علمی، فرهنگی و دینی و عرضه کتاب‌های چاپی و الکترونیکی در ایران و سراسر جهان.">
+
   <style>
-    :root {
-      --ink: #292722;
-      --muted: #6d6a63;
-      --paper: #f7f6f2;
-      --white: #fff;
-      --line: #e5e0d7;
-      --gold: #8a5a25;
-      --green: #4d6f58;
-      --purple: #66558a;
-      --shadow: 0 5px 18px rgba(40, 35, 25, .06);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
-    body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: var(--paper);
-      color: var(--ink);
-      line-height: 1.8;
-    }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    .site-header {
-      position: sticky; top: 0; z-index: 1000;
-      background: rgba(255,255,255,.97);
-      border-bottom: 1px solid var(--line);
-      box-shadow: 0 2px 9px rgba(0,0,0,.025);
-    }
-    .header-inner {
-      max-width: 1240px; margin: auto; padding: 9px 22px;
-      min-height: 66px; display: flex; align-items: center;
-      justify-content: space-between; gap: 18px;
-    }
-    .brand { flex: 0 0 auto; font-size: 22px; font-weight: 700; line-height: 1.35; white-space: nowrap; }
-    .brand-en { display: block; direction: ltr; text-align: right; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .15px; }
-    .main-nav { display: flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: wrap; }
-    .main-nav > a, .nav-trigger {
-      border: 0; background: transparent; color: var(--ink);
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 7px 9px; border-radius: 5px; cursor: pointer;
-      font-size: 13px; white-space: nowrap;
-    }
-    .main-nav > a:hover, .nav-trigger:hover, .nav-trigger[aria-expanded="true"] {
-      background: #f3eee5; color: var(--gold);
-    }
-    .nav-group { position: relative; }
-    .nav-trigger .chevron { font-size: 10px; transition: transform .2s; }
-    .nav-trigger[aria-expanded="true"] .chevron { transform: rotate(180deg); }
-    .dropdown {
-      display: none; position: absolute; top: calc(100% + 5px); right: 0;
-      min-width: 220px; padding: 7px; background: #fff;
-      border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow);
-    }
-    .nav-group.open .dropdown { display: block; }
-    .dropdown a { display: block; padding: 8px 11px; border-radius: 5px; font-size: 13px; }
-    .dropdown a:hover { background: #f6f2eb; color: var(--gold); }
-    .nav-divider { height: 1px; background: var(--line); margin: 5px 3px; }
-    .hero {
-      padding: 37px 20px 34px; text-align: center;
-      background: linear-gradient(130deg, #eee8dc 0%, #fff 75%);
-      border-bottom: 1px solid #eee9df;
-    }
-    .hero h1 { font-size: 34px; line-height: 1.45; margin-bottom: 0; }
-    .hero .english-title { direction: ltr; font-size: 17px; color: #70695f; margin: 0 0 12px; }
-    .hero p { max-width: 760px; margin: auto; color: #5e5a53; font-size: 15px; }
-    .hero-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px; margin-top: 17px; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center;
-      padding: 8px 17px; border: 1px solid #333; border-radius: 5px;
-      background: #333; color: #fff; font-size: 13px; transition: .2s;
-    }
-    .button:hover { opacity: .84; transform: translateY(-1px); }
-    .button-light { background: #fff; color: #333; border-color: #bcb5a9; }
-    .section { max-width: 1240px; margin: auto; padding: 37px 22px; }
-    .section-heading { text-align: center; margin-bottom: 22px; }
-    .section-heading h2 { font-size: 25px; line-height: 1.5; }
-    .section-heading p { color: var(--muted); font-size: 13px; margin-top: 3px; }
-    .categories { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
-    .category {
-      min-width: 0; display: flex; flex-direction: column; justify-content: space-between;
-      text-align: center; background: var(--white); border: 1px solid var(--line);
-      border-top: 4px solid var(--gold); border-radius: 8px; padding: 19px 15px 16px;
-      box-shadow: var(--shadow); gap: 13px;
-    }
-    .category.science { border-top-color: var(--green); }
-    .category.culture { border-top-color: var(--purple); }
-    .category-icon { font-size: 31px; line-height: 1.3; margin-bottom: 5px; }
-    .category h3 { font-size: 19px; line-height: 1.55; margin-bottom: 2px; }
-    .category .english { direction: ltr; color: #858078; font-size: 11px; margin-bottom: 9px; }
-    .category p { color: #656159; font-size: 12px; line-height: 1.9; min-height: 68px; }
-    .category-list { color: #777168; font-size: 11px; line-height: 1.9; margin-top: 7px; }
-    .category-actions { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100%; margin-top: auto; }
-    .category .button { align-self: center; margin-top: 0; }
-    .button.button-culture-book { background: var(--purple); border-color: var(--purple); }
-    .all-books {
-      max-width: none; text-align: center; background: #fff;
-      padding: 32px 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-    }
-    .all-books-inner { max-width: 800px; margin: auto; }
-    .all-books h2 { font-size: 24px; margin-bottom: 5px; }
-    .all-books p { color: var(--muted); font-size: 13px; margin-bottom: 15px; }
-    .sales-section { max-width: 1240px; margin: auto; padding: 37px 22px; }
-    .sales { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px; }
-    .sales-box { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 21px 23px; }
-    .sales-box h3 { font-size: 19px; margin-bottom: 7px; }
-    .sales-box p { color: var(--muted); font-size: 13px; margin-bottom: 10px; }
-    .sales-box ul { padding-right: 19px; margin-bottom: 14px; font-size: 12px; color: #514e48; }
-    .sales-box li { margin-bottom: 3px; }
-    .about { max-width: none; background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .about-inner { max-width: 850px; margin: auto; text-align: center; }
-    .about-inner h2 { font-size: 24px; margin-bottom: 10px; }
-    .about-inner p { color: #5e5a53; font-size: 14px; }
-    .contact { text-align: center; }
-    .contact p { color: var(--muted); font-size: 13px; max-width: 720px; margin: 8px auto 16px; }
-    .secondary-links {
-      display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
-      gap: 7px 17px; padding: 14px 18px; background: #f0ede7;
-      border-top: 1px solid var(--line); font-size: 12px;
-    }
-    .secondary-links a:hover { color: var(--gold); text-decoration: underline; }
-    footer { background: #282723; color: #eee; text-align: center; padding: 20px 15px; font-size: 12px; }
-    footer p { margin: 3px; }
-    .footer-english { direction: ltr; color: #c9c5bc; font-size: 11px; }
-    @media (max-width: 900px) {
-      .header-inner { flex-direction: column; gap: 5px; padding: 8px 12px; }
-      .brand { font-size: 20px; text-align: center; }
-      .brand-en { text-align: center; }
-      .main-nav { gap: 2px; }
-      .main-nav > a, .nav-trigger { font-size: 12px; padding: 6px 7px; }
-      .hero { padding: 30px 17px; }
-      .hero h1 { font-size: 29px; }
-      .section, .sales-section { padding: 30px 15px; }
-    }
-    @media (max-width: 560px) {
-      .categories { gap: 7px; }
-      .category { padding: 12px 7px; gap: 8px; }
-      .category-icon { font-size: 25px; }
-      .category h3 { font-size: 14px; }
-      .category .english { font-size: 9px; min-height: 25px; }
-      .category p { font-size: 10px; min-height: 95px; line-height: 1.7; }
-      .category-list { font-size: 9px; }
-      .category .button { font-size: 10px; padding: 7px 7px; width: 100%; }
-      .sales { grid-template-columns: 1fr; }
-      .section-heading h2 { font-size: 21px; }
-      .hero h1 { font-size: 25px; }
-      .hero .english-title { font-size: 14px; }
-      .hero p { font-size: 12px; }
-      .main-nav { max-width: 100%; }
-      .main-nav > a, .nav-trigger { font-size: 10px; padding: 5px 5px; }
-      .dropdown { min-width: 190px; }
-    }
+:root{
+  --navy:#17324d;
+  --navy2:#244967;
+  --gold:#c69a52;
+  --gold-light:#f3e7d1;
+  --teal:#397b78;
+  --plum:#725477;
+  --ink:#263442;
+  --muted:#64717b;
+  --paper:#f3f5f6;
+  --white:#fff;
+  --line:#dce3e7;
+  --shadow:0 4px 13px #19344a0d;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:110px;
+}
+
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.8;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button{font:inherit}
+
+/* HEADER AND NAVIGATION */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  color:#fff;
+  background:linear-gradient(110deg,var(--navy),var(--navy2));
+  border-bottom:3px solid var(--gold);
+  box-shadow:0 3px 14px #142b4030;
+}
+
+.header-inner{
+  max-width:1240px;
+  margin:auto;
+  padding:8px 20px;
+  min-height:66px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.brand{
+  flex:0 0 auto;
+  font-size:21px;
+  font-weight:bold;
+  line-height:1.35;
+  white-space:nowrap;
+  color:#fff;
+}
+
+.brand-en{
+  display:block;
+  direction:ltr;
+  text-align:right;
+  font-size:11px;
+  font-weight:normal;
+  color:#e3d4b9;
+  letter-spacing:.25px;
+}
+
+.main-nav{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  gap:3px;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+}
+
+.main-nav>a,
+.nav-trigger{
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:7px 9px;
+  border:0;
+  border-radius:5px;
+  background:transparent;
+  color:#fff!important;
+  opacity:1;
+  font-family:Tahoma,Arial,sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  white-space:nowrap;
+  cursor:pointer;
+  transition:background .2s,color .2s;
+}
+
+.main-nav>a:hover,
+.nav-trigger:hover,
+.nav-trigger[aria-expanded="true"]{
+  background:#ffffff20;
+  color:#ffe0a8!important;
+}
+
+.nav-group{
+  position:relative;
+  flex:0 0 auto;
+}
+
+.nav-trigger .chevron{
+  font-size:10px;
+  transition:transform .2s;
+}
+
+.nav-trigger[aria-expanded="true"] .chevron{
+  transform:rotate(180deg);
+}
+
+.dropdown{
+  display:none;
+  position:absolute;
+  top:calc(100% + 7px);
+  right:0;
+  min-width:218px;
+  padding:7px;
+  background:#fff;
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-top:3px solid var(--gold);
+  border-radius:0 0 8px 8px;
+  box-shadow:0 9px 24px #132b4030;
+  z-index:1100;
+}
+
+.nav-group.open .dropdown{
+  display:block;
+}
+
+.dropdown a{
+  display:block;
+  padding:8px 11px;
+  border-radius:5px;
+  font-size:12px;
+  font-weight:bold;
+  color:var(--ink)!important;
+  background:#fff;
+  white-space:normal;
+}
+
+.dropdown a:hover{
+  background:#f4eee4;
+  color:#8a5b22!important;
+}
+
+.nav-divider{
+  height:1px;
+  background:var(--line);
+  margin:5px 3px;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:32px 18px 30px;
+  text-align:center;
+  color:#fff;
+  background:
+    radial-gradient(circle at 12% 15%,#ffffff18 0 2px,transparent 3px),
+    radial-gradient(circle at 88% 80%,#ffffff14 0 3px,transparent 4px),
+    linear-gradient(115deg,#18334e 0%,#28566b 56%,#397b78 100%);
+  border-bottom:5px solid var(--gold);
+}
+
+.hero:before,
+.hero:after{
+  content:"";
+  position:absolute;
+  border:1px solid #ffffff20;
+  border-radius:50%;
+  width:230px;
+  height:230px;
+  pointer-events:none;
+}
+
+.hero:before{
+  right:-90px;
+  top:-130px;
+}
+
+.hero:after{
+  left:-100px;
+  bottom:-160px;
+}
+
+.hero h1{
+  font-size:32px;
+  line-height:1.5;
+  color:#fff;
+  margin-bottom:0;
+}
+
+.hero .english-title{
+  direction:ltr;
+  font-size:15px;
+  color:#f1d8ad;
+  margin:0 0 9px;
+  letter-spacing:.4px;
+}
+
+.hero p{
+  max-width:760px;
+  margin:auto;
+  color:#f1f4f5;
+  font-size:13px;
+}
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:15px;
+}
+
+/* BUTTONS */
+
+.button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 15px;
+  border:1px solid var(--gold);
+  border-radius:5px;
+  background:var(--navy);
+  color:#fff;
+  font-size:12px;
+  transition:.18s;
+  cursor:pointer;
+}
+
+.button:hover{
+  background:#315a78;
+  transform:translateY(-1px);
+}
+
+.button-light{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#172d40;
+}
+
+.button-light:hover{
+  background:#d8b575;
+}
+
+.button-culture-book{
+  background:var(--plum);
+  border-color:var(--plum);
+  color:#fff;
+}
+
+.button-culture-book:hover{
+  background:#604665;
+}
+
+/* GENERAL SECTIONS */
+
+.section{
+  max-width:1200px;
+  margin:auto;
+  padding:29px 20px;
+}
+
+.section-heading{
+  text-align:center;
+  margin-bottom:17px;
+}
+
+.section-heading h2{
+  font-size:23px;
+  color:var(--navy);
+  line-height:1.5;
+}
+
+.section-heading p{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:3px;
+}
+
+.section-heading:after{
+  content:"";
+  display:block;
+  width:55px;
+  height:3px;
+  background:var(--gold);
+  margin:8px auto 0;
+  border-radius:3px;
+}
+
+/* CATEGORY BOARDS */
+
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:13px;
+}
+
+.category{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  text-align:center;
+  padding:16px 13px 14px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:9px;
+  border-top:4px solid var(--gold);
+  box-shadow:0 4px 13px #19344a0d;
+  transition:transform .18s,box-shadow .18s;
+}
+
+.category:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px #19344a18;
+}
+
+.category.science{
+  border-top-color:var(--teal);
+}
+
+.category.culture{
+  border-top-color:var(--plum);
+}
+
+.category-icon{
+  width:43px;
+  height:43px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 5px;
+  border-radius:50%;
+  background:var(--gold-light);
+  font-size:23px;
+}
+
+.science .category-icon{
+  background:#e2efed;
+}
+
+.culture .category-icon{
+  background:#eee7f0;
+}
+
+.category h3{
+  font-size:17px;
+  line-height:1.55;
+  color:var(--navy);
+}
+
+.category .english{
+  direction:ltr;
+  font-size:10px;
+  color:#87919a;
+  margin:1px 0 7px;
+}
+
+.category p{
+  font-size:11px;
+  color:#596873;
+  line-height:1.9;
+  min-height:58px;
+}
+
+.category-list{
+  font-size:10px;
+  color:#7b858b;
+  line-height:1.85;
+  margin-top:5px;
+}
+
+.category-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  width:100%;
+  margin-top:auto;
+}
+
+.category .button{
+  margin-top:3px;
+  min-width:145px;
+}
+
+.category-actions .button{
+  width:100%;
+  min-width:0;
+}
+
+/* ALL BOOKS */
+
+.all-books{
+  max-width:none;
+  text-align:center;
+  background:linear-gradient(100deg,#e8edf0,#fff 50%,#f1e8d9);
+  padding:23px 20px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.all-books-inner{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.all-books h2{
+  font-size:22px;
+  color:var(--navy);
+  margin-bottom:5px;
+}
+
+.all-books p{
+  font-size:12px;
+  color:var(--muted);
+  margin:4px 0 12px;
+}
+
+/* SALES */
+
+.sales-section{
+  max-width:1200px;
+  margin:auto;
+  padding:29px 20px;
+}
+
+.sales{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+}
+
+.sales-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:17px 19px;
+  box-shadow:0 3px 12px #19344a0a;
+}
+
+.sales-box h3{
+  font-size:17px;
+  color:var(--navy);
+  margin-bottom:5px;
+}
+
+.sales-box p{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:7px;
+}
+
+.sales-box ul{
+  padding-right:18px;
+  font-size:11px;
+  color:#53616b;
+  margin-bottom:10px;
+}
+
+.sales-box li{
+  margin:2px 0;
+}
+
+/* ABOUT */
+
+.about{
+  max-width:none;
+  background:#e9eef0;
+  border-top:1px solid #d9e1e5;
+  border-bottom:1px solid #d9e1e5;
+}
+
+.about-inner{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  padding:26px 20px;
+}
+
+.about-inner h2{
+  font-size:22px;
+  color:var(--navy);
+  margin-bottom:7px;
+}
+
+.about-inner p{
+  font-size:12px;
+  color:#53616b;
+}
+
+/* CONTACT */
+
+.contact{
+  text-align:center;
+}
+
+.contact p{
+  font-size:12px;
+  color:var(--muted);
+  max-width:700px;
+  margin:5px auto 13px;
+}
+
+/* BOTTOM LINKS */
+
+.secondary-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:7px 17px;
+  padding:12px 15px;
+  background:var(--navy);
+  color:#edf2f5;
+  font-size:11px;
+}
+
+.secondary-links a{
+  padding:3px 2px;
+  border-bottom:1px solid transparent;
+}
+
+.secondary-links a:hover{
+  color:#f3d49f;
+  border-bottom-color:var(--gold);
+}
+
+/* FOOTER */
+
+footer{
+  background:#12283d;
+  color:#e8edf0;
+  text-align:center;
+  padding:17px 12px;
+  font-size:11px;
+}
+
+footer p{
+  margin:2px;
+}
+
+.footer-english{
+  direction:ltr;
+  color:#c5d0d7;
+  font-size:10px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+  .header-inner{
+    flex-direction:column;
+    gap:4px;
+    padding:7px 10px;
+  }
+
+  .brand{
+    text-align:center;
+    font-size:19px;
+  }
+
+  .brand-en{
+    text-align:center;
+  }
+
+  .main-nav{
+    justify-content:center;
+    flex-wrap:nowrap;
+    max-width:100%;
+  }
+
+  .main-nav>a,
+  .nav-trigger{
+    font-size:11px;
+    padding:6px 7px;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+  .header-inner{
+    gap:3px;
+  }
+
+  .main-nav{
+    width:100%;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    justify-content:flex-start;
+    scrollbar-width:thin;
+    padding-bottom:3px;
+  }
+
+  .main-nav>a,
+  .nav-trigger{
+    font-size:10px;
+    padding:6px 7px;
+  }
+
+  .main-nav>*{
+    flex:0 0 auto;
+  }
+
+  .dropdown{
+    position:fixed;
+    top:93px;
+    right:8px;
+    max-width:calc(100vw - 16px);
+  }
+
+  .hero{
+    padding:25px 13px 23px;
+  }
+
+  .hero h1{
+    font-size:clamp(18px,4.5vw,25px);
+  }
+
+  .hero .english-title{
+    font-size:13px;
+  }
+
+  .hero p{
+    font-size:11px;
+  }
+
+  .section,
+  .sales-section{
+    padding:23px 10px;
+  }
+
+  .section-heading h2{
+    font-size:20px;
+  }
+
+  .categories{
+    gap:7px;
+  }
+
+  .category{
+    padding:11px 6px 10px;
+    gap:7px;
+    border-radius:7px;
+  }
+
+  .category-icon{
+    width:34px;
+    height:34px;
+    font-size:19px;
+  }
+
+  .category h3{
+    font-size:12px;
+    line-height:1.6;
+  }
+
+  .category .english{
+    font-size:8px;
+    min-height:24px;
+    line-height:1.4;
+  }
+
+  .category p{
+    font-size:9px;
+    line-height:1.7;
+    min-height:91px;
+  }
+
+  .category-list{
+    font-size:8px;
+    line-height:1.7;
+  }
+
+  .category .button{
+    min-width:0;
+    width:100%;
+    font-size:9px;
+    padding:6px 3px;
+  }
+
+  .category-actions{
+    gap:6px;
+  }
+
+  .sales{
+    grid-template-columns:1fr;
+  }
+
+  .sales-box{
+    padding:14px;
+  }
+
+  .all-books{
+    padding:20px 13px;
+  }
+
+  .about-inner{
+    padding:22px 14px;
+  }
+}
   </style>
 </head>
+
 <body>
+
+  <!-- HEADER -->
+
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="#home">انتشارات صالحین
+
+      <a class="brand" href="#home">
+        انتشارات صالحین
         <span class="brand-en">Salihin Publications</span>
       </a>
+
       <nav class="main-nav" aria-label="منوی اصلی">
+
         <a href="#home">خانه</a>
+
         <div class="nav-group">
-          <button class="nav-trigger" type="button" aria-expanded="false">بخش‌ها <span class="chevron">▾</span></button>
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            بخش‌ها <span class="chevron">▾</span>
+          </button>
+
           <div class="dropdown">
             <a href="literature.html">ادبیات و هنر</a>
             <a href="science.html">علم و دانش</a>
             <a href="culture.html">دین، فرهنگ و میراث بشری</a>
           </div>
         </div>
+
         <div class="nav-group">
-          <button class="nav-trigger" type="button" aria-expanded="false">کتاب‌ها <span class="chevron">▾</span></button>
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            کتاب‌ها <span class="chevron">▾</span>
+          </button>
+
           <div class="dropdown">
             <a href="books.html">فهرست همه کتاب‌ها</a>
             <a href="book1r.html">کتاب اول: و این کتاب عشق است</a>
           </div>
         </div>
+
         <a href="#books">همه کتاب‌ها</a>
+
         <div class="nav-group">
-          <button class="nav-trigger" type="button" aria-expanded="false">خرید کتاب <span class="chevron">▾</span></button>
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            خرید کتاب <span class="chevron">▾</span>
+          </button>
+
           <div class="dropdown">
             <a href="iran.html">خرید در ایران</a>
             <a href="international.html">فروش جهانی</a>
           </div>
         </div>
+
         <a href="#about">درباره ما</a>
         <a href="contact.html">تماس</a>
         <a href="review.html">نقد و نظر</a>
         <a href="en/index.html" lang="en" dir="ltr">English</a>
+
       </nav>
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
+
   <main id="home">
+
+    <!-- HERO -->
+
     <div class="hero">
+
       <h1>انتشارات صالحین</h1>
-      <div class="english-title">Salihin Publications</div>
-      <p>انتشارات صالحین با هدف انتشار، معرفی و عرضه آثار ادبی، علمی، فرهنگی و دینی در ایران و سراسر جهان فعالیت می‌کند.</p>
-      <div class="hero-buttons">
-        <a class="button" href="#categories">ورود به بخش‌های انتشارات</a>
-        <a class="button button-light" href="#books">مشاهده همه کتاب‌ها</a>
+
+      <div class="english-title">
+        Salihin Publications
       </div>
+
+      <p>
+        انتشارات صالحین با هدف انتشار، معرفی و عرضه آثار ادبی، علمی،
+        فرهنگی و دینی در ایران و سراسر جهان فعالیت می‌کند.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="button" href="#categories">
+          ورود به بخش‌های انتشارات
+        </a>
+
+        <a class="button button-light" href="#books">
+          مشاهده همه کتاب‌ها
+        </a>
+      </div>
+
     </div>
 
+    <!-- CATEGORIES -->
+
     <section class="section" id="categories">
+
       <div class="section-heading">
         <h2>بخش‌های اصلی انتشارات</h2>
         <p>برای ورود به حوزه موردنظر خود یکی از بخش‌های زیر را انتخاب کنید.</p>
       </div>
+
       <div class="categories">
+
+        <!-- LITERATURE -->
+
         <article class="category literature" id="literature">
+
           <div>
             <div class="category-icon">📚</div>
+
             <h3>ادبیات و هنر</h3>
-            <div class="english">Literature &amp; Arts</div>
-            <p>آثار ادبی و هنری شامل داستان، قصه، شعر، رمان، نمایشنامه و آثار ادبی کودکان و نوجوانان.</p>
-            <div class="category-list">داستان • قصه • شعر • رمان<br>نمایشنامه • ادبیات کودکان<br>و سایر آثار ادبی</div>
+
+            <div class="english">
+              Literature &amp; Arts
+            </div>
+
+            <p>
+              آثار ادبی و هنری شامل داستان، قصه، شعر، رمان،
+              نمایشنامه و آثار ادبی کودکان و نوجوانان.
+            </p>
+
+            <div class="category-list">
+              داستان • قصه • شعر • رمان<br>
+              نمایشنامه • ادبیات کودکان<br>
+              و سایر آثار ادبی
+            </div>
           </div>
-          <a class="button" href="literature.html">ورود به بخش ادبیات</a>
+
+          <a class="button" href="literature.html">
+            ورود به بخش ادبیات
+          </a>
+
         </article>
+
+        <!-- SCIENCE -->
 
         <article class="category science" id="science">
+
           <div>
             <div class="category-icon">🔬</div>
+
             <h3>علم و دانش</h3>
-            <div class="english">Science &amp; Knowledge</div>
-            <p>کتاب‌های علمی، دانشگاهی، آموزشی، پژوهشی و تخصصی در حوزه‌های گوناگون دانش.</p>
-            <div class="category-list">علوم طبیعی • محیط زیست<br>علوم انسانی • آموزش<br>پژوهش • فناوری • و سایر علوم</div>
+
+            <div class="english">
+              Science &amp; Knowledge
+            </div>
+
+            <p>
+              کتاب‌های علمی، دانشگاهی، آموزشی، پژوهشی و تخصصی
+              در حوزه‌های گوناگون دانش.
+            </p>
+
+            <div class="category-list">
+              علوم طبیعی • محیط زیست<br>
+              علوم انسانی • آموزش<br>
+              پژوهش • فناوری • و سایر علوم
+            </div>
           </div>
-          <a class="button" href="science.html">ورود به بخش علم و دانش</a>
+
+          <a class="button" href="science.html">
+            ورود به بخش علم و دانش
+          </a>
+
         </article>
+
+        <!-- CULTURE AND RELIGION -->
 
         <article class="category culture" id="culture">
+
           <div>
             <div class="category-icon">🌍</div>
+
             <h3>دین، فرهنگ و میراث بشری</h3>
-            <div class="english">Religion, Culture &amp; Human Heritage</div>
-            <p>آثار مرتبط با دین، فرهنگ، آداب و رسوم، تاریخ فرهنگی، تمدن‌ها و میراث بشری.</p>
-            <div class="category-list">دین و اندیشه • فرهنگ<br>آداب و رسوم • تمدن‌ها<br>تاریخ فرهنگی • میراث بشری</div>
+
+            <div class="english">
+              Religion, Culture &amp; Human Heritage
+            </div>
+
+            <p>
+              آثار مرتبط با دین، فرهنگ، آداب و رسوم،
+              تاریخ فرهنگی، تمدن‌ها و میراث بشری.
+            </p>
+
+            <div class="category-list">
+              دین و اندیشه • فرهنگ<br>
+              آداب و رسوم • تمدن‌ها<br>
+              تاریخ فرهنگی • میراث بشری
+            </div>
           </div>
+
           <div class="category-actions">
-            <a class="button" href="culture.html">ورود به صفحهٔ دین، فرهنگ و میراث بشری</a>
-            <a class="button button-culture-book" href="book1r.html">ورود به کتاب «و این کتاب عشق است»</a>
+
+            <a class="button" href="culture.html">
+              ورود به صفحهٔ دین، فرهنگ و میراث بشری
+            </a>
+
+            <a class="button button-culture-book" href="book1r.html">
+              ورود به کتاب «و این کتاب عشق است»
+            </a>
+
           </div>
+
         </article>
+
       </div>
     </section>
+
+    <!-- ALL BOOKS -->
 
     <section class="all-books" id="books">
+
       <div class="all-books-inner">
+
         <h2>همه کتاب‌ها</h2>
-        <p>برای مشاهده فهرست آثار انتشارات صالحین، شامل آثار ادبی، علمی، فرهنگی و دینی، به صفحه کتاب‌ها مراجعه کنید.</p>
-        <a class="button" href="books.html">مشاهده فهرست همه کتاب‌ها</a>
+
+        <p>
+          برای مشاهده فهرست آثار انتشارات صالحین، شامل آثار ادبی،
+          علمی، فرهنگی و دینی، به صفحه کتاب‌ها مراجعه کنید.
+        </p>
+
+        <a class="button" href="books.html">
+          مشاهده فهرست همه کتاب‌ها
+        </a>
+
       </div>
     </section>
 
+    <!-- IRAN SALES -->
+
     <section class="sales-section" id="sales">
+
       <div class="section-heading">
         <h2>خرید کتاب در ایران</h2>
         <p>نسخه چاپی و الکترونیکی</p>
       </div>
+
       <div class="sales">
+
         <div class="sales-box">
+
           <h3>کتاب چاپی</h3>
-          <p>خرید نسخه چاپی کتاب‌ها با قیمت به تومان و ارسال در داخل ایران.</p>
+
+          <p>
+            خرید نسخه چاپی کتاب‌ها با قیمت به تومان
+            و ارسال در داخل ایران.
+          </p>
+
           <ul>
             <li>مشاهده مشخصات کتاب</li>
             <li>قیمت به تومان</li>
             <li>پرداخت از طریق درگاه ایرانی، در صورت فراهم بودن</li>
             <li>ارسال نسخه چاپی</li>
           </ul>
-          <a class="button" href="iran.html">خرید کتاب در ایران</a>
+
+          <a class="button" href="iran.html">
+            خرید کتاب در ایران
+          </a>
+
         </div>
+
         <div class="sales-box">
+
           <h3>کتاب الکترونیکی PDF</h3>
-          <p>خرید نسخه الکترونیکی کتاب کامل یا بخش‌های منتخب.</p>
+
+          <p>
+            خرید نسخه الکترونیکی کتاب کامل یا بخش‌های منتخب.
+          </p>
+
           <ul>
             <li>PDF کامل کتاب</li>
             <li>خرید بخش منتخب</li>
             <li>روش پرداخت اعلام‌شده در صفحه خرید</li>
             <li>دریافت فایل پس از تأیید پرداخت</li>
           </ul>
-          <a class="button" href="iran.html">خرید PDF در ایران</a>
+
+          <a class="button" href="iran.html">
+            خرید PDF در ایران
+          </a>
+
         </div>
+
       </div>
     </section>
 
+    <!-- INTERNATIONAL SALES -->
+
     <section class="section" id="international">
+
       <div class="section-heading">
         <h2>فروش بین‌المللی</h2>
-        <p dir="ltr">International Book &amp; Digital Sales</p>
+
+        <p dir="ltr">
+          International Book &amp; Digital Sales
+        </p>
       </div>
+
       <div class="sales">
+
         <div class="sales-box">
+
           <h3 dir="ltr">Printed Books</h3>
-          <p dir="ltr">Purchase printed editions of Salihin Publications for international readers.</p>
+
+          <p dir="ltr">
+            Purchase printed editions of Salihin Publications
+            for international readers.
+          </p>
+
           <ul dir="ltr">
             <li>International prices</li>
             <li>Printed editions</li>
             <li>International delivery where available</li>
           </ul>
-          <a class="button" href="international.html" dir="ltr">International Book Sales</a>
+
+          <a class="button" href="international.html" dir="ltr">
+            International Book Sales
+          </a>
+
         </div>
+
         <div class="sales-box">
+
           <h3 dir="ltr">Digital Books &amp; PDF</h3>
-          <p dir="ltr">Purchase digital editions and selected parts of books.</p>
+
+          <p dir="ltr">
+            Purchase digital editions and selected parts of books.
+          </p>
+
           <ul dir="ltr">
             <li>Full PDF</li>
             <li>Selected parts</li>
             <li>Digital delivery</li>
           </ul>
-          <a class="button" href="international.html" dir="ltr">International PDF Sales</a>
+
+          <a class="button" href="international.html" dir="ltr">
+            International PDF Sales
+          </a>
+
         </div>
+
       </div>
     </section>
+
+    <!-- ABOUT -->
 
     <section class="about section" id="about">
+
       <div class="about-inner">
+
         <h2>درباره انتشارات صالحین</h2>
-        <p>انتشارات صالحین با هدف انتشار، معرفی و عرضه آثار علمی، فرهنگی، آموزشی، ادبی و دینی فعالیت می‌کند. این انتشارات تلاش دارد آثار ارزشمند نویسندگان را در اختیار خوانندگان فارسی‌زبان و مخاطبان بین‌المللی قرار دهد.</p>
+
+        <p>
+          انتشارات صالحین با هدف انتشار، معرفی و عرضه آثار علمی،
+          فرهنگی، آموزشی، ادبی و دینی فعالیت می‌کند.
+          این انتشارات تلاش دارد آثار ارزشمند نویسندگان را
+          در اختیار خوانندگان فارسی‌زبان و مخاطبان بین‌المللی قرار دهد.
+        </p>
+
       </div>
     </section>
+
+    <!-- CONTACT -->
 
     <section class="section contact" id="contact">
+
       <div class="section-heading">
+
         <h2>تماس با ما</h2>
-        <p>برای اطلاعات بیشتر درباره انتشار کتاب، خرید کتاب، فروش نسخه‌های PDF و همکاری با انتشارات صالحین، به صفحه تماس مراجعه کنید.</p>
+
+        <p>
+          برای اطلاعات بیشتر درباره انتشار کتاب، خرید کتاب،
+          فروش نسخه‌های PDF و همکاری با انتشارات صالحین،
+          به صفحه تماس مراجعه کنید.
+        </p>
+
       </div>
-      <a class="button" href="contact.html">اطلاعات تماس و راه‌های ارتباطی</a>
+
+      <a class="button" href="contact.html">
+        اطلاعات تماس و راه‌های ارتباطی
+      </a>
+
     </section>
+
   </main>
 
+  <!-- BOTTOM LINKS -->
+
   <nav class="secondary-links" aria-label="پیوندهای تکمیلی">
+
     <a href="index.html">خانه</a>
+
     <a href="books.html">همه کتاب‌ها</a>
+
     <a href="iran.html">خرید در ایران</a>
+
     <a href="international.html">فروش جهانی</a>
+
     <a href="review.html">نقد و نظر صاحب‌نظران و خوانندگان</a>
+
     <a href="contact.html">تماس با ما</a>
+
   </nav>
 
+  <!-- FOOTER -->
+
   <footer>
+
     <p>© Salihin Publications</p>
+
     <p>انتشارات صالحین</p>
-    <p class="footer-english">Literature • Science • Culture • Religion</p>
+
+    <p class="footer-english">
+      Literature • Science • Culture • Religion
+    </p>
+
   </footer>
+
+  <!-- DROPDOWN MENU SCRIPT -->
 
   <script>
     (() => {
-      const groups = Array.from(document.querySelectorAll('.nav-group'));
+
+      const groups = Array.from(
+        document.querySelectorAll('.nav-group')
+      );
+
       const closeAll = (except = null) => {
+
         groups.forEach(group => {
+
           if (group !== except) {
+
             group.classList.remove('open');
+
             const trigger = group.querySelector('.nav-trigger');
-            if (trigger) trigger.setAttribute('aria-expanded', 'false');
+
+            if (trigger) {
+              trigger.setAttribute('aria-expanded', 'false');
+            }
+
           }
+
         });
+
       };
+
       groups.forEach(group => {
+
         const trigger = group.querySelector('.nav-trigger');
+
         trigger.addEventListener('click', event => {
+
           event.stopPropagation();
+
           const willOpen = !group.classList.contains('open');
+
           closeAll(group);
+
           group.classList.toggle('open', willOpen);
-          trigger.setAttribute('aria-expanded', String(willOpen));
+
+          trigger.setAttribute(
+            'aria-expanded',
+            String(willOpen)
+          );
+
         });
+
       });
+
       document.addEventListener('click', event => {
-        if (!event.target.closest('.nav-group')) closeAll();
+
+        if (!event.target.closest('.nav-group')) {
+          closeAll();
+        }
+
       });
+
       document.addEventListener('keydown', event => {
-        if (event.key === 'Escape') closeAll();
+
+        if (event.key === 'Escape') {
+          closeAll();
+        }
+
       });
+
     })();
   </script>
+
 </body>
 </html>
